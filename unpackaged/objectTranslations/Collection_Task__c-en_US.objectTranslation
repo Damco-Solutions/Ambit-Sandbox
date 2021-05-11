@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Collection Task</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Collection Task</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount Pending --></label>
+        <name>Amount_Pending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Recovered --></label>
+        <name>Amount_Recovered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Date --></label>
+        <name>Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Associated Cost --></label>
+        <name>Associated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- Collection Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EMI Overdue Amount --></label>
+        <name>EMI_Overdue_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Total Amount To Be Recovered --></label>
+        <name>Initial_Total_Amount_To_Be_Recovered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Account --></label>
+        <name>Loan_Account__c</name>
+        <relationshipLabel><!-- Collection Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Next Step Date --></label>
+        <name>Next_Step_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Step --></label>
+        <name>Next_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes/Outcome --></label>
+        <name>Notes_Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Overdue Amount --></label>
+        <name>Other_Overdue_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- PTP Date --></label>
+        <name>PTP_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete - Fully Recovered</masterLabel>
+            <translation><!-- Complete - Fully Recovered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete - Overdue amount Pending</masterLabel>
+            <translation><!-- Complete - Overdue amount Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Collection Task Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

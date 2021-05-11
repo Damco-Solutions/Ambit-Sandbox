@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Connector Details</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Connector Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- DSA/Connector --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only DSA/Connector can be selected --></errorMessage>
+        </lookupFilter>
+        <name>DSA_Connector__c</name>
+        <relationshipLabel><!-- Connector Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name,If DSA/ Connector does not Exist --></label>
+        <name>Name_If_DSA_Connector_does_not_Exist__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Logins --></label>
+        <name>No_Of_Logins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume (in Lakhs) --></label>
+        <name>Volume_in_Lakhs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly Sales Plan --></label>
+        <name>Weekly_Sales_Plan__c</name>
+        <relationshipLabel><!-- Connector Details --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Connector Details Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If DSA/Connector not available, then name if DSA/Connector does not Exist should not be blank --></errorMessage>
+        <name>dsa_connector_is_blank</name>
+    </validationRules>
+</CustomObjectTranslation>

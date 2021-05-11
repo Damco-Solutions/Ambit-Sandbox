@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Incentive</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Incentives</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contest Incentive for Secured Loans --></label>
+        <name>Contest_Incentive_for_Secured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contest Incentive for UCV --></label>
+        <name>Contest_Incentive_for_UCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contest Incentive for Unsecured Loans --></label>
+        <name>Contest_Incentive_for_Unsecured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSA/Connector --></label>
+        <name>DSA_Connector__c</name>
+        <relationshipLabel><!-- Sales Incentives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive Forecast For Rural Secure Loan --></label>
+        <name>Incentive_Forecast_For_Rural_Secure_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive Forecast For UCV --></label>
+        <name>Incentive_Forecast_For_UCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive Forecast Rural Unsecured Loan --></label>
+        <name>Incentive_Forecast_Rural_Unsecured_Loan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive for Rural Secured Loans --></label>
+        <name>Incentive_for_Rural_Secured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive for Rural Un-secured Loans --></label>
+        <name>Incentive_for_Rural_Unsecured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive for Secured Loans --></label>
+        <name>Incentive_for_Secured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive for UCV --></label>
+        <name>Incentive_for_UCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive for Unsecured Loans --></label>
+        <name>Incentive_for_Unsecured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive Forecast For Secured Loans --></label>
+        <name>Incentive_forecast_for_Secured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incentive Forecast For Unsecured Loans --></label>
+        <name>Incentive_forecast_for_Unsecured_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Potential Regular Incentive Amount --></label>
+        <name>Potential_Regular_Incentive_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Seasonal Incentive Amount --></label>
+        <name>Potential_Seasonal_Incentive_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regular Incentive Amount --></label>
+        <name>Regular_Incentive_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson/Agent --></label>
+        <name>Salesperson_Agent__c</name>
+        <relationshipLabel><!-- Sales Incentives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Seasonal Incentive Amount --></label>
+        <name>Seasonal_Incentive_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contest Incentive Amount --></label>
+        <name>Total_Contest_Incentive_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Forecast Incentive Amount --></label>
+        <name>Total_Forecast_Incentive_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Regular Incentive Amount --></label>
+        <name>Total_Regular_Incentive_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Sales Incentive Layout</layout>
+        <sections>
+            <label><!-- Contest / Seasonal Incentive --></label>
+            <section>Contest / Seasonal Incentive</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Final Incentive --></label>
+            <section>Final Incentive</section>
+        </sections>
+        <sections>
+            <label><!-- Incentive Forecast --></label>
+            <section>Incentive Forecast</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

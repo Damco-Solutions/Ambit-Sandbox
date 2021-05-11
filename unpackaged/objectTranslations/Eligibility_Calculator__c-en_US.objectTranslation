@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Eligibility Calculator</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Eligibility Calculator</value>
+    </caseValues>
+    <fields>
+        <help><!-- Choose lower of the 3 months and add --></help>
+        <label><!-- ABB --></label>
+        <name>ABB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Installment Of Proposed Loan --></label>
+        <name>Annual_Installment_Of_Proposed_Loan__c</name>
+    </fields>
+    <fields>
+        <help><!-- (excl. takeover loan installment ) --></help>
+        <label><!-- Annual Installment on Existing Loans --></label>
+        <name>Annual_Installment_on_Existing_Loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Profit --></label>
+        <name>Annual_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual T/O as per GST return --></label>
+        <name>Annual_T_O_as_per_GST_return__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>Applicant__c</name>
+        <relationshipLabel><!-- Eligibility Calculator --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Balance 1 --></label>
+        <name>Average_Monthly_Balance_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Balance 2 --></label>
+        <name>Average_Monthly_Balance_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Balance 3 --></label>
+        <name>Average_Monthly_Balance_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Balance 4 --></label>
+        <name>Average_Monthly_Balance_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Balance 5 --></label>
+        <name>Average_Monthly_Balance_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Balance 6 --></label>
+        <name>Average_Monthly_Balance_6__c</name>
+    </fields>
+    <fields>
+        <help><!-- As per latest 3 month kachha Bills record --></help>
+        <label><!-- Average Monthly Sales --></label>
+        <name>Average_Monthly_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Margin --></label>
+        <name>Business_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSCR --></label>
+        <name>DSCR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Obligation --></label>
+        <name>Debt_Obligation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depreciation --></label>
+        <name>Depreciation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible EMI --></label>
+        <name>Eligible_EMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOIR Calculation For GST Surrogates --></label>
+        <name>FOIR_Calculation_For_GST_Surrogates__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOIR --></label>
+        <name>FOIR_GST__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOIR --></label>
+        <name>FOIR_LIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOIR --></label>
+        <name>FOIR_NIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Net Income --></label>
+        <name>Final_Net_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Mothly Obligations --></label>
+        <name>Fixed_Mothly_Obligations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Margin --></label>
+        <name>Industry_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest On Existing CC/OD Loans --></label>
+        <name>Interest_On_Existing_CC_OD_Loans__c</name>
+    </fields>
+    <fields>
+        <help><!-- Relatives &amp; Friends --></help>
+        <label><!-- Interest Paid on Unsecured loans --></label>
+        <name>Interest_Paid_on_Unsecured_loans__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest paid to Partners --></label>
+        <name>Interest_paid_to_Partners__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTV % --></label>
+        <name>LTV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Current Account --></label>
+        <name>Main_Current_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 1 --></label>
+        <name>Month_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 2 --></label>
+        <name>Month_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 3 --></label>
+        <name>Month_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 4 --></label>
+        <name>Month_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 5 --></label>
+        <name>Month_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month 6 --></label>
+        <name>Month_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Average --></label>
+        <name>Monthly_Average__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly EMI --></label>
+        <name>Monthly_EMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Expense --></label>
+        <name>Monthly_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Gross Income --></label>
+        <name>Monthly_Gross_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Interest On CC/OD Limit --></label>
+        <name>Monthly_Interest_On_CC_OD_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mothly Income --></label>
+        <name>Mothly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- NIP Monthly Income --></label>
+        <name>NIP_Monthly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Annual Income lower of both --></label>
+        <name>Net_Annual_Income_lower_of_both__c</name>
+    </fields>
+    <fields>
+        <help><!-- As per provide document Latest ITR --></help>
+        <label><!-- Net Income as per ITR --></label>
+        <name>Net_Income_as_per_ITR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Monthly Income --></label>
+        <name>Net_Monthly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Profit As Per LIP Report --></label>
+        <name>Net_Profit_As_Per_LIP_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Income --></label>
+        <name>Operating_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Monthly Income --></label>
+        <name>Other_Monthly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAT --></label>
+        <name>PAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner/ Prop. Income --></label>
+        <name>Partner_Prop_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Valuation in Lakhs --></label>
+        <name>Property_Valuation_in_Lakhs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Loan Amount (In Lakhs) --></label>
+        <name>Proposed_Loan_Amount_In_Lakhs__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI  (%) --></label>
+        <name>ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate of Interest --></label>
+        <name>Rate_of_Interest__c</name>
+    </fields>
+    <fields>
+        <help><!-- To Partner/Director --></help>
+        <label><!-- Remuneration/Salary Paid --></label>
+        <name>Remuneration_Salary_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- In case of direct bank deposit of rent consider 100% for calculation purposes. In case rent is received in cash then 50% of rent received for calculation purposes --></help>
+        <label><!-- Rental Income --></label>
+        <name>Rental_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Running EMI --></label>
+        <name>Running_EMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- T/O as per First Quarter GST Return --></label>
+        <name>T_O_as_per_First_Quarter_GST_Return__c</name>
+    </fields>
+    <fields>
+        <label><!-- T/O as per Fouth Quarter GST Return --></label>
+        <name>T_O_as_per_Fouth_Quarter_GST_Return__c</name>
+    </fields>
+    <fields>
+        <label><!-- T/O as per Second Quarter GST Return --></label>
+        <name>T_O_as_per_Second_Quarter_GST_Return__c</name>
+    </fields>
+    <fields>
+        <label><!-- T/O as per Third Quarter GST Return --></label>
+        <name>T_O_as_per_Third_Quarter_GST_Return__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tenure In Months --></label>
+        <name>Tenure_In_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Debt Obligation (B) --></label>
+        <name>Total_Debt_Obligation_B__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total EMI --></label>
+        <name>Total_EMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Income --></label>
+        <name>Total_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Interest on existing facility --></label>
+        <name>Total_Interest_on_existing_facility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly EMI Obligation --></label>
+        <name>Total_Monthly_EMI_Obligation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Operating Income (A) --></label>
+        <name>Total_Operating_Income_A__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15th of Month --></label>
+        <name>X15th_of_Month1__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15th of Month --></label>
+        <name>X15th_of_Month2__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15th of Month --></label>
+        <name>X15th_of_Month3__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15th of Month --></label>
+        <name>X15th_of_Month4__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15th of Month --></label>
+        <name>X15th_of_Month5__c</name>
+    </fields>
+    <fields>
+        <label><!-- 15th of Month --></label>
+        <name>X15th_of_Month6__c</name>
+    </fields>
+    <fields>
+        <label><!-- 22nd of Month --></label>
+        <name>X22nd_of_Month1__c</name>
+    </fields>
+    <fields>
+        <label><!-- 22nd of Month --></label>
+        <name>X22nd_of_Month2__c</name>
+    </fields>
+    <fields>
+        <label><!-- 22nd of Month --></label>
+        <name>X22nd_of_Month3__c</name>
+    </fields>
+    <fields>
+        <label><!-- 22nd of Month --></label>
+        <name>X22nd_of_Month4__c</name>
+    </fields>
+    <fields>
+        <label><!-- 22nd of Month --></label>
+        <name>X22nd_of_Month5__c</name>
+    </fields>
+    <fields>
+        <label><!-- 22nd of Month --></label>
+        <name>X22nd_of_Month6__c</name>
+    </fields>
+    <fields>
+        <label><!-- 27th of Month --></label>
+        <name>X27th_of_Month1__c</name>
+    </fields>
+    <fields>
+        <label><!-- 27th of Month --></label>
+        <name>X27th_of_Month2__c</name>
+    </fields>
+    <fields>
+        <label><!-- 27th of Month --></label>
+        <name>X27th_of_Month3__c</name>
+    </fields>
+    <fields>
+        <label><!-- 27th of Month --></label>
+        <name>X27th_of_Month4__c</name>
+    </fields>
+    <fields>
+        <label><!-- 27th of Month --></label>
+        <name>X27th_of_Month5__c</name>
+    </fields>
+    <fields>
+        <label><!-- 27th of Month --></label>
+        <name>X27th_of_Month6__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd of Month --></label>
+        <name>X2nd_of_Month1__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd of Month --></label>
+        <name>X2nd_of_Month2__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd of Month --></label>
+        <name>X2nd_of_Month3__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd of Month --></label>
+        <name>X2nd_of_Month4__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd of Month --></label>
+        <name>X2nd_of_Month5__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd of Month --></label>
+        <name>X2nd_of_Month6__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4.5 Time of Net profit as per ITR --></label>
+        <name>X4_5_Time_of_Net_profit_as_per_ITR__c</name>
+    </fields>
+    <fields>
+        <label><!-- 8th of Month --></label>
+        <name>X8th_of_Month1__c</name>
+    </fields>
+    <fields>
+        <label><!-- 8th of Month --></label>
+        <name>X8th_of_Month2__c</name>
+    </fields>
+    <fields>
+        <label><!-- 8th of Month --></label>
+        <name>X8th_of_Month3__c</name>
+    </fields>
+    <fields>
+        <label><!-- 8th of Month --></label>
+        <name>X8th_of_Month4__c</name>
+    </fields>
+    <fields>
+        <label><!-- 8th of Month --></label>
+        <name>X8th_of_Month5__c</name>
+    </fields>
+    <fields>
+        <label><!-- 8th of Month --></label>
+        <name>X8th_of_Month6__c</name>
+    </fields>
+    <fields>
+        <label><!-- 90% of Net profit as per LIP report --></label>
+        <name>X90_of_Net_profit_as_per_LIP_report__c</name>
+    </fields>
+    <layouts>
+        <layout>ABB Program</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Month 1 Details --></label>
+            <section>Month 1 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Month 2 Details --></label>
+            <section>Month 2 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Month 3 Details --></label>
+            <section>Month 3 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Month 4 Details --></label>
+            <section>Month 4 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Month 5 Details --></label>
+            <section>Month 5 Details</section>
+        </sections>
+        <sections>
+            <label><!-- Month 6 Details --></label>
+            <section>Month 6 Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DSCR Based</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>GST Program</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LIP Program</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NIP Program</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- ABB Program --></label>
+        <name>ABB_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DSCR Based --></label>
+        <name>DSCR_Based</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GST Program --></label>
+        <name>GST_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LIP Program --></label>
+        <name>LIP_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NIP Program --></label>
+        <name>NIP_Program</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Login Checklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Login Checklists</value>
+    </caseValues>
+    <fields>
+        <label><!-- Applicant Type --></label>
+        <name>Applicant_Type__c</name>
+        <picklistValues>
+            <masterLabel>Co-Applicant</masterLabel>
+            <translation><!-- Co-Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Applicant</masterLabel>
+            <translation><!-- Primary Applicant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>Applicant__c</name>
+        <relationshipLabel><!-- Login Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>CAT A - Secured</masterLabel>
+            <translation><!-- CAT A - Secured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT A - Unsecured</masterLabel>
+            <translation><!-- CAT A - Unsecured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT B - Secured</masterLabel>
+            <translation><!-- CAT B - Secured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAT B - Unsecured</masterLabel>
+            <translation><!-- CAT B - Unsecured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCV</masterLabel>
+            <translation><!-- UCV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Not applicable in case of Primary Applicant --></help>
+        <label><!-- Co-Applicant/Guarantor --></label>
+        <name>Co_Applicant_Guarantor__c</name>
+        <relationshipLabel><!-- Login Checklists (Co-Applicant/Guarantor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>12 months banking of main business current accounts</masterLabel>
+            <translation><!-- 12 months banking of main business current accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 months old Bank Passbook / Latest Bank Account Statement</masterLabel>
+            <translation><!-- 12 months old Bank Passbook / Latest Bank Account Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 years ITR and audited financials &amp; reports with schedules</masterLabel>
+            <translation><!-- 2 years ITR and audited financials &amp; reports with schedules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 years location stability</masterLabel>
+            <translation><!-- 2 years location stability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 months banking of main business current accounts</masterLabel>
+            <translation><!-- 6 months banking of main business current accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 months existing Repayment track</masterLabel>
+            <translation><!-- 9 months existing Repayment track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A resolution from the Board of Directors &amp; power of attorney</masterLabel>
+            <translation><!-- A resolution from the Board of Directors &amp; power of attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aadhar Card</masterLabel>
+            <translation><!-- Aadhar Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aadhar Card with DOB</masterLabel>
+            <translation><!-- Aadhar Card with DOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affidavit on stamp paper with Notary</masterLabel>
+            <translation><!-- Affidavit on stamp paper with Notary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annexure to application form</masterLabel>
+            <translation><!-- Annexure to application form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Any other documents asked by Credit post PD</masterLabel>
+            <translation><!-- Any other documents asked by Credit post PD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>As per Customer category</masterLabel>
+            <translation><!-- As per Customer category --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Verification (Only Scheduled Commercial Banks)</masterLabel>
+            <translation><!-- Bank Verification (Only Scheduled Commercial Banks) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank Verification of entity&apos;s authorized signatory</masterLabel>
+            <translation><!-- Bank Verification of entity&apos;s authorized signatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bank account verification request</masterLabel>
+            <translation><!-- Bank account verification request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA certified - Non GST declaration</masterLabel>
+            <translation><!-- CA certified - Non GST declaration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA certified - Turnover</masterLabel>
+            <translation><!-- CA certified - Turnover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CST/VAT/ GST certificate (provisional/final)</masterLabel>
+            <translation><!-- CST/VAT/ GST certificate (provisional/final) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate document issued by Tax/Service Tax/Professional</masterLabel>
+            <translation><!-- Certificate document issued by Tax/Service Tax/Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate of Incorporation</masterLabel>
+            <translation><!-- Certificate of Incorporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate of Registration with Registrar of Trusts/Charity</masterLabel>
+            <translation><!-- Certificate of Registration with Registrar of Trusts/Charity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate/licence issued by the municipal authorities</masterLabel>
+            <translation><!-- Certificate/licence issued by the municipal authorities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closure Proof of facilities closed in last 6 months</masterLabel>
+            <translation><!-- Closure Proof of facilities closed in last 6 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete Income Tax Return</masterLabel>
+            <translation><!-- Complete Income Tax Return --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete SOA of BT financier till latest month</masterLabel>
+            <translation><!-- Complete SOA of BT financier till latest month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copy of Defense ID Card</masterLabel>
+            <translation><!-- Copy of Defense ID Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current/OD Account Banking</masterLabel>
+            <translation><!-- Current/OD Account Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Signature on Obligation Sheet</masterLabel>
+            <translation><!-- Customer Signature on Obligation Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documents to collectively establish the legal existence</masterLabel>
+            <translation><!-- Documents to collectively establish the legal existence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driving License</masterLabel>
+            <translation><!-- Driving License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dully Filled and signed MID format (confirming the Non-refundable Fee)</masterLabel>
+            <translation><!-- Dully Filled and signed MID format (confirming the Non-refundable Fee) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECS Mandate authorized by officials of the same bank</masterLabel>
+            <translation><!-- ECS Mandate authorized by officials of the same bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMI reflection in banking of all the running credit facilities</masterLabel>
+            <translation><!-- EMI reflection in banking of all the running credit facilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electricity Bill (Not older than 3 months &amp; showing consumption)</masterLabel>
+            <translation><!-- Electricity Bill (Not older than 3 months &amp; showing consumption) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing loans EMI repayment accounts</masterLabel>
+            <translation><!-- Existing loans EMI repayment accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLEET List</masterLabel>
+            <translation><!-- FLEET List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOP of previous owner mandatory</masterLabel>
+            <translation><!-- FOP of previous owner mandatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Factory Registration Certificate</masterLabel>
+            <translation><!-- Factory Registration Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreclosure Statement</masterLabel>
+            <translation><!-- Foreclosure Statement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreclosure statement and List of document of BT financier</masterLabel>
+            <translation><!-- Foreclosure statement and List of document of BT financier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form No. 60 as defined in Income-tax Rules, 1962</masterLabel>
+            <translation><!-- Form No. 60 as defined in Income-tax Rules, 1962 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IEC issued to the proprietary concern</masterLabel>
+            <translation><!-- IEC issued to the proprietary concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Importer-Exporter Code Certificate</masterLabel>
+            <translation><!-- Importer-Exporter Code Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Tax Assessment Order</masterLabel>
+            <translation><!-- Income Tax Assessment Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Card Issued by NREGA</masterLabel>
+            <translation><!-- Job Card Issued by NREGA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kaccha bills for purchase / sales for last 3 months</masterLabel>
+            <translation><!-- Kaccha bills for purchase / sales for last 3 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last 12 months GST return including last months</masterLabel>
+            <translation><!-- Last 12 months GST return including last months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last 12 months banking of main business accounts</masterLabel>
+            <translation><!-- Last 12 months banking of main business accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last 6 months Kaccha bill copy for Sales and Purchase</masterLabel>
+            <translation><!-- Last 6 months Kaccha bill copy for Sales and Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last six months banking of main business accounts</masterLabel>
+            <translation><!-- Last six months banking of main business accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last six months banking where rent is credited</masterLabel>
+            <translation><!-- Last six months banking where rent is credited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last two year ITR with computation</masterLabel>
+            <translation><!-- Last two year ITR with computation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest ITR filed</masterLabel>
+            <translation><!-- Latest ITR filed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest Tax / Fitness / Permit Copy</masterLabel>
+            <translation><!-- Latest Tax / Fitness / Permit Copy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest sanction letter of OD / CC along with TOD letter</masterLabel>
+            <translation><!-- Latest sanction letter of OD / CC along with TOD letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latest years ITR with computation of income</masterLabel>
+            <translation><!-- Latest years ITR with computation of income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter issued by the National Population Register</masterLabel>
+            <translation><!-- Letter issued by the National Population Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOA and AOA along with certificate of Incorporation</masterLabel>
+            <translation><!-- MOA and AOA along with certificate of Incorporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memorandum &amp; Articles of Association</masterLabel>
+            <translation><!-- Memorandum &amp; Articles of Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipality Tax Receipt / Property Tax Receipt</masterLabel>
+            <translation><!-- Municipality Tax Receipt / Property Tax Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OVD Documents of the managers, officers or employees</masterLabel>
+            <translation><!-- OVD Documents of the managers, officers or employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OVD Documents of the person holding an attorney</masterLabel>
+            <translation><!-- OVD Documents of the person holding an attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAN Intimation letter</masterLabel>
+            <translation><!-- PAN Intimation letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PF Cheque clearance in the bank</masterLabel>
+            <translation><!-- PF Cheque clearance in the bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership deed</masterLabel>
+            <translation><!-- Partnership deed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent Account Number</masterLabel>
+            <translation><!-- Permanent Account Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photo Debit / Credit card</masterLabel>
+            <translation><!-- Photo Debit / Credit card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photo Pan Card</masterLabel>
+            <translation><!-- Photo Pan Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power of attorney granted to transact on its behalf</masterLabel>
+            <translation><!-- Power of attorney granted to transact on its behalf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proof of existing loan of any type (Live or Closed)</masterLabel>
+            <translation><!-- Proof of existing loan of any type (Live or Closed) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proof of possession of Aadhaar number</masterLabel>
+            <translation><!-- Proof of possession of Aadhaar number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposed Vehicle Insurance Policy</masterLabel>
+            <translation><!-- Proposed Vehicle Insurance Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposed Vehicle RC copy</masterLabel>
+            <translation><!-- Proposed Vehicle RC copy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposed Vehicle Valuation report</masterLabel>
+            <translation><!-- Proposed Vehicle Valuation report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RC Copies</masterLabel>
+            <translation><!-- RC Copies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM visit report</masterLabel>
+            <translation><!-- RM visit report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered / Notorized rent agreement</masterLabel>
+            <translation><!-- Registered / Notorized rent agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered Sale deed</masterLabel>
+            <translation><!-- Registered Sale deed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered Trust Deed, constitutional document of Trust/Society</masterLabel>
+            <translation><!-- Registered Trust Deed, constitutional document of Trust/Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registration Certificate</masterLabel>
+            <translation><!-- Registration Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repayment Schedule with clearance of last 12 EMI</masterLabel>
+            <translation><!-- Repayment Schedule with clearance of last 12 EMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repayment Track Record</masterLabel>
+            <translation><!-- Repayment Track Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolution of the managing body</masterLabel>
+            <translation><!-- Resolution of the managing body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sale Registration Certificate</masterLabel>
+            <translation><!-- Sale Registration Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales PD Sheet</masterLabel>
+            <translation><!-- Sales PD Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Tax / VAT / Service Tax Registration Certificate</masterLabel>
+            <translation><!-- Sales Tax / VAT / Service Tax Registration Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Tax Return duly acknowledged by the department</masterLabel>
+            <translation><!-- Sales Tax Return duly acknowledged by the department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales and income tax returns</masterLabel>
+            <translation><!-- Sales and income tax returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sanction letter / Welcome letter of loan disbursed in last 100 days</masterLabel>
+            <translation><!-- Sanction letter / Welcome letter of loan disbursed in last 100 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sanction letters of loans disb. in last three months</masterLabel>
+            <translation><!-- Sanction letters of loans disb. in last three months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Leaving certificate</masterLabel>
+            <translation><!-- School Leaving certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Share certificate along with society maintenance receipt</masterLabel>
+            <translation><!-- Share certificate along with society maintenance receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shop &amp; Establishment Certificate</masterLabel>
+            <translation><!-- Shop &amp; Establishment Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statement of Account (SOA)</masterLabel>
+            <translation><!-- Statement of Account (SOA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Audited P&amp;L, Balance sheet for last two years</masterLabel>
+            <translation><!-- Tax Audited P&amp;L, Balance sheet for last two years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust Deed</masterLabel>
+            <translation><!-- Trust Deed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility bills</masterLabel>
+            <translation><!-- Utility bills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid Indian Passport</masterLabel>
+            <translation><!-- Valid Indian Passport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voter ID</masterLabel>
+            <translation><!-- Voter ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Letter</masterLabel>
+            <translation><!-- Welcome Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome letter with last 6/12 months clearance</masterLabel>
+            <translation><!-- Welcome letter with last 6/12 months clearance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Uploaded --></label>
+        <name>Document_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Checklist --></label>
+        <name>Login_Checklist__c</name>
+        <picklistValues>
+            <masterLabel>Address Proof</masterLabel>
+            <translation><!-- Address Proof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Age Proof</masterLabel>
+            <translation><!-- Age Proof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BT Top up Case</masterLabel>
+            <translation><!-- BT Top up Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Stability</masterLabel>
+            <translation><!-- Business Stability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Loan Document</masterLabel>
+            <translation><!-- Existing Loan Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Proof</masterLabel>
+            <translation><!-- ID Proof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Document (Scheme: Captive)</masterLabel>
+            <translation><!-- Income Document (Scheme: Captive) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Documents - BANKING (ABB) SCHEME</masterLabel>
+            <translation><!-- Income Documents - BANKING (ABB) SCHEME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Documents - GST Scheme</masterLabel>
+            <translation><!-- Income Documents - GST Scheme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Documents - Income Scheme</masterLabel>
+            <translation><!-- Income Documents - Income Scheme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Documents - LIP Scheme</masterLabel>
+            <translation><!-- Income Documents - LIP Scheme --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Documents - MICRO LAP SCHEME</masterLabel>
+            <translation><!-- Income Documents - MICRO LAP SCHEME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Documents - Multi Tenanted</masterLabel>
+            <translation><!-- Income Documents - Multi Tenanted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Documents - SARAL UDHYAM (100 DAYS)</masterLabel>
+            <translation><!-- Income Documents - SARAL UDHYAM (100 DAYS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KYC Documents</masterLabel>
+            <translation><!-- KYC Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Existence Proof</masterLabel>
+            <translation><!-- Legal Existence Proof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Existence Proof (For companies)</masterLabel>
+            <translation><!-- Legal Existence Proof (For companies) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Existence Proof - Companies</masterLabel>
+            <translation><!-- Legal Existence Proof - Companies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Existence Proof - Partnership Firms</masterLabel>
+            <translation><!-- Legal Existence Proof - Partnership Firms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Existence Proof - Proprietary Firms</masterLabel>
+            <translation><!-- Legal Existence Proof - Proprietary Firms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Existence Proof - Trust</masterLabel>
+            <translation><!-- Legal Existence Proof - Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Existence Proof - Unincorporated association</masterLabel>
+            <translation><!-- Legal Existence Proof - Unincorporated association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limit and Existing Loan Documents</masterLabel>
+            <translation><!-- Limit and Existing Loan Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MID</masterLabel>
+            <translation><!-- MID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others(CAT A)</masterLabel>
+            <translation><!-- Others(CAT A) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others(CAT B)</masterLabel>
+            <translation><!-- Others(CAT B) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others(UCV)</masterLabel>
+            <translation><!-- Others(UCV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership proof</masterLabel>
+            <translation><!-- Ownership proof --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTR (Scheme: Captive)</masterLabel>
+            <translation><!-- RTR (Scheme: Captive) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resi Stability</masterLabel>
+            <translation><!-- Resi Stability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signature Verification</masterLabel>
+            <translation><!-- Signature Verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Documents - Existing / Proposed (Scheme: Captive)</masterLabel>
+            <translation><!-- Vehicle Documents - Existing / Proposed (Scheme: Captive) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>RemarksRemarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>SECURED</masterLabel>
+            <translation><!-- SECURED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCV</masterLabel>
+            <translation><!-- UCV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNSECURED</masterLabel>
+            <translation><!-- UNSECURED --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Login Checklist Layout</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Document Category Details --></label>
+            <section>Document Category Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Meeting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Meetings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>Applicant__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category  --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Connector</masterLabel>
+            <translation><!-- Connector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSA</masterLabel>
+            <translation><!-- DSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Customer</masterLabel>
+            <translation><!-- Existing Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Customer </masterLabel>
+            <translation><!-- New Customer  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Referral Source</masterLabel>
+            <translation><!-- Other Referral Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others </masterLabel>
+            <translation><!-- Others  --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check In GeoLocation --></label>
+        <name>Check_In_GeoLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check In Location --></label>
+        <name>Check_In_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out GeoLocation --></label>
+        <name>Check_Out_GeoLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Out Location --></label>
+        <name>Check_Out_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check-in Time --></label>
+        <name>Check_in_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check-out Time --></label>
+        <name>Check_out_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Task --></label>
+        <name>Collection_Task__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Number of Person Met --></label>
+        <name>Contact_Number_of_Person_Met__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSA/Connector --></label>
+        <name>DSA_Connector__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Distance Traveled In km --></label>
+        <name>Distance_Traveled_In_km__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Account --></label>
+        <name>Loan_Account__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Meeting Agenda --></label>
+        <name>Meeting_Agenda__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Details --></label>
+        <name>Meeting_Details__c</name>
+        <picklistValues>
+            <masterLabel>BT Cost</masterLabel>
+            <translation><!-- BT Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Not Eligible</masterLabel>
+            <translation><!-- Client Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation Issue</masterLabel>
+            <translation><!-- Documentation Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Cost</masterLabel>
+            <translation><!-- Insurance Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Amount Issue</masterLabel>
+            <translation><!-- Loan Amount Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negative Profile</masterLabel>
+            <translation><!-- Negative Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PF Issue</masterLabel>
+            <translation><!-- PF Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Policy norms not met</masterLabel>
+            <translation><!-- Policy norms not met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor Banking</masterLabel>
+            <translation><!-- Poor Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor CIBIL</masterLabel>
+            <translation><!-- Poor CIBIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor RTR</masterLabel>
+            <translation><!-- Poor RTR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property not acceptable</masterLabel>
+            <translation><!-- Property not acceptable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate of Interest Issue</masterLabel>
+            <translation><!-- Rate of Interest Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rescheduled date</masterLabel>
+            <translation><!-- Rescheduled date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rescheduled time</masterLabel>
+            <translation><!-- Rescheduled time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenor Issue</masterLabel>
+            <translation><!-- Tenor Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>Meeting_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Appointment Re-scheduled / Collection pending / Client not met</masterLabel>
+            <translation><!-- Appointment Re-scheduled / Collection pending / Client not met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automation to create the meeting plan</masterLabel>
+            <translation><!-- Automation to create the meeting plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat A checklist document collected fully</masterLabel>
+            <translation><!-- Cat A checklist document collected fully --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat A checklist document collected partially</masterLabel>
+            <translation><!-- Cat A checklist document collected partially --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Not Interested</masterLabel>
+            <translation><!-- Client Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit PD Visit done</masterLabel>
+            <translation><!-- Credit PD Visit done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disbursement documentation collected fully</masterLabel>
+            <translation><!-- Disbursement documentation collected fully --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disbursement documentation collected partially</masterLabel>
+            <translation><!-- Disbursement documentation collected partially --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document Collected to fetch CIBIL</masterLabel>
+            <translation><!-- Document Collected to fetch CIBIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMI Partially collected</masterLabel>
+            <translation><!-- EMI Partially collected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMI fully collected</masterLabel>
+            <translation><!-- EMI fully collected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation( Connector )</masterLabel>
+            <translation><!-- Lead Generation( Connector ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation( DSA )</masterLabel>
+            <translation><!-- Lead Generation( DSA ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTC / PDD documents collected fully</masterLabel>
+            <translation><!-- OTC / PDD documents collected fully --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTC / PDD documents collected partially</masterLabel>
+            <translation><!-- OTC / PDD documents collected partially --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PTP</masterLabel>
+            <translation><!-- PTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post PD Queries given</masterLabel>
+            <translation><!-- Post PD Queries given --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post PD Queries resolved</masterLabel>
+            <translation><!-- Post PD Queries resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Queries given</masterLabel>
+            <translation><!-- Pre-Queries given --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Queries resolved</masterLabel>
+            <translation><!-- Pre-Queries resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Visit Done</masterLabel>
+            <translation><!-- Property Visit Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference collected</masterLabel>
+            <translation><!-- Reference collected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales PD Done</masterLabel>
+            <translation><!-- Sales PD Done --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Meeting Plan  --></label>
+        <name>Meeting_Plan__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes/Remarks --></label>
+        <name>Notes_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Met --></label>
+        <name>Person_Met__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson --></label>
+        <name>Salesperson__c</name>
+        <relationshipLabel><!-- Meetings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduled End Time  --></label>
+        <name>Scheduled_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Start Time  --></label>
+        <name>Scheduled_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Scheduled</masterLabel>
+            <translation><!-- Re-Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TL Remark --></label>
+        <name>TL_Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Collection Task </masterLabel>
+            <translation><!-- Collection Task  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting </masterLabel>
+            <translation><!-- Meeting  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other </masterLabel>
+            <translation><!-- Other  --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Meeting Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Meeting Details --></label>
+            <section>Meeting Details</section>
+        </sections>
+        <sections>
+            <label><!-- Meeting Outcome Details --></label>
+            <section>Meeting Outcome Details</section>
+        </sections>
+        <sections>
+            <label><!-- Meeting Related To --></label>
+            <section>Meeting Related To</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Check In --></label>
+        <name>Check_In</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Check Out --></label>
+        <name>Check_Out</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- In Progress/Completed Meetings cannot be re-assigned --></errorMessage>
+        <name>In_Progress_Completed_Meetings</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Person Met and Meeting Outcome can only be added for &apos;In Progress&apos;/&apos;Completed&apos; meetings --></errorMessage>
+        <name>Person_Met_and_Meeting_Outcome_can_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled End Time Should be Greater than Scheduled Start Time --></errorMessage>
+        <name>Scheduled_End_Time_Should_be_Greater</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled Start Time Should be Greater than Equal to Current Time --></errorMessage>
+        <name>Scheduled_Start_Time_Should_be_Greater</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- change the sch time --></errorMessage>
+        <name>resheading_meeting</name>
+    </validationRules>
+</CustomObjectTranslation>

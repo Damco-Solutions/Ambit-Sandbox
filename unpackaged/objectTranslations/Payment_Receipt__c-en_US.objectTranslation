@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Receipt</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Receipt</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocation Type --></label>
+        <name>Allocation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ambit Account Number --></label>
+        <name>Ambit_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ambit Branch Name --></label>
+        <name>Ambit_Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ambit Deposit Bank Details --></label>
+        <name>Ambit_Deposit_Bank_Details__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch Manager --></label>
+        <name>Branch_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant Mobile --></label>
+        <name>Co_Applicant_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant Name --></label>
+        <name>Co_Applicant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant Office Address --></label>
+        <name>Co_Applicant_Office_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant Residence Address --></label>
+        <name>Co_Applicant_Residence_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Task --></label>
+        <name>Collection_Task__c</name>
+        <relationshipLabel><!-- Payment Receipt --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Bank Name --></label>
+        <name>Customer_Bank_Name__c</name>
+        <picklistValues>
+            <masterLabel>Autopopulate if possible</masterLabel>
+            <translation><!-- Autopopulate if possible --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Names --></label>
+        <name>Customer_Names__c</name>
+        <relationshipLabel><!-- Payment Receipt --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Entity Type --></label>
+        <name>Entity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Mobile --></label>
+        <name>Guarantor_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Name --></label>
+        <name>Guarantor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Official Address --></label>
+        <name>Guarantor_Official_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Residence Address --></label>
+        <name>Guarantor_Residence_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- IFSC Code --></label>
+        <name>IFSC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instrument Date --></label>
+        <name>Instrument_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instrument No --></label>
+        <name>Instrument_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instrument Type --></label>
+        <name>Instrument_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demand Draft</masterLabel>
+            <translation><!-- Demand Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEFT</masterLabel>
+            <translation><!-- NEFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTGS</masterLabel>
+            <translation><!-- RTGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPI</masterLabel>
+            <translation><!-- UPI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Landline Number --></label>
+        <name>Landline_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Amount --></label>
+        <name>Last_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Date --></label>
+        <name>Last_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MICR Code --></label>
+        <name>MICR_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Address --></label>
+        <name>Office_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pay In Slip Number --></label>
+        <name>Pay_In_Slip_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Address (In case of LAP) --></label>
+        <name>Property_Address_In_case_of_LAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Number --></label>
+        <name>Prospect_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receipt Amount --></label>
+        <name>Receipt_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receipt Entry --></label>
+        <name>Receipt_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receipt Number --></label>
+        <name>Receipt_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receipt Type --></label>
+        <name>Receipt_Type__c</name>
+        <picklistValues>
+            <masterLabel>DSRA</masterLabel>
+            <translation><!-- DSRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receipt</masterLabel>
+            <translation><!-- Receipt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reference Mobile --></label>
+        <name>Reference_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Name --></label>
+        <name>Reference_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Address --></label>
+        <name>Residence_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>Sales_Manager__c</name>
+    </fields>
+    <layouts>
+        <layout>Payment Capture Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Co-Applicant Details --></label>
+            <section>Co-Applicant Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Guarantor Details --></label>
+            <section>Guarantor Details</section>
+        </sections>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Instrument Date is Required To Be Filled --></errorMessage>
+        <name>Instrument_Date_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Instrument No should be only numbers --></errorMessage>
+        <name>Instrument_Type_selected_as_Cheque_or_DD</name>
+    </validationRules>
+</CustomObjectTranslation>

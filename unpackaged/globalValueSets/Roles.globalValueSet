@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ASM/Cluster Manager</fullName>
+        <default>false</default>
+        <label>ASM/Cluster Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Branch Manager-Rest of India</fullName>
+        <default>false</default>
+        <label>Branch Manager-Rest of India</label>
+    </customValue>
+    <customValue>
+        <fullName>Branch Manager-South</fullName>
+        <default>false</default>
+        <label>Branch Manager-South</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Head -Rest of India</fullName>
+        <default>false</default>
+        <label>Business Head -Rest of India</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Head - South</fullName>
+        <default>false</default>
+        <label>Business Head - South</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Head UCV</fullName>
+        <default>false</default>
+        <label>Business Head UCV</label>
+    </customValue>
+    <customValue>
+        <fullName>Cluster Manager-Rest of India</fullName>
+        <default>false</default>
+        <label>Cluster Manager-Rest of India</label>
+    </customValue>
+    <customValue>
+        <fullName>Cluster Manager-South</fullName>
+        <default>false</default>
+        <label>Cluster Manager-South</label>
+    </customValue>
+    <customValue>
+        <fullName>RSM / Zonal Sales Manager</fullName>
+        <default>false</default>
+        <label>RSM / Zonal Sales Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Manager</fullName>
+        <default>false</default>
+        <label>Sales Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Manager-Rest of India</fullName>
+        <default>false</default>
+        <label>Sales Manager-Rest of India</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Manager-South</fullName>
+        <default>false</default>
+        <label>Sales Manager-South</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Officer-UCV</fullName>
+        <default>false</default>
+        <label>Sales Officer-UCV</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Officer-Rest of India</fullName>
+        <default>false</default>
+        <label>Sales Officer-Rest of India</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Officer-South</fullName>
+        <default>false</default>
+        <label>Sales Officer-South</label>
+    </customValue>
+    <customValue>
+        <fullName>ZSM-Rest of India</fullName>
+        <default>false</default>
+        <label>ZSM-Rest of India</label>
+    </customValue>
+    <customValue>
+        <fullName>ZSM-South</fullName>
+        <default>false</default>
+        <label>ZSM-South</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Manager-UCV</fullName>
+        <default>false</default>
+        <label>Sales Manager-UCV</label>
+    </customValue>
+    <customValue>
+        <fullName>State Head</fullName>
+        <default>false</default>
+        <label>State Head</label>
+    </customValue>
+    <masterLabel>Roles</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

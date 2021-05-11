@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Login_Checklist_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Login_Checklist_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Applicant_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Applicant Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary Applicant</fullName>
+                    <default>false</default>
+                    <label>Primary Applicant</label>
+                </value>
+                <value>
+                    <fullName>Co-Applicant</fullName>
+                    <default>false</default>
+                    <label>Co-Applicant</label>
+                </value>
+                <value>
+                    <fullName>Guarantor</fullName>
+                    <default>false</default>
+                    <label>Guarantor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Applicant__c</fullName>
+        <externalId>false</externalId>
+        <label>Applicant</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Login Checklists</relationshipLabel>
+        <relationshipName>Login_Checklists</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CAT A - Secured</fullName>
+                    <default>false</default>
+                    <label>CAT A - Secured</label>
+                </value>
+                <value>
+                    <fullName>CAT A - Unsecured</fullName>
+                    <default>false</default>
+                    <label>CAT A - Unsecured</label>
+                </value>
+                <value>
+                    <fullName>CAT B - Secured</fullName>
+                    <default>false</default>
+                    <label>CAT B - Secured</label>
+                </value>
+                <value>
+                    <fullName>CAT B - Unsecured</fullName>
+                    <default>false</default>
+                    <label>CAT B - Unsecured</label>
+                </value>
+                <value>
+                    <fullName>UCV</fullName>
+                    <default>false</default>
+                    <label>UCV</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>SECURED</controllingFieldValue>
+                <valueName>CAT A - Secured</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SECURED</controllingFieldValue>
+                <valueName>CAT A - Unsecured</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UNSECURED</controllingFieldValue>
+                <valueName>CAT B - Secured</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UNSECURED</controllingFieldValue>
+                <valueName>CAT B - Unsecured</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>UCV</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Co_Applicant_Guarantor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Not applicable in case of Primary Applicant</inlineHelpText>
+        <label>Co-Applicant/Guarantor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Login Checklists (Co-Applicant/Guarantor)</relationshipLabel>
+        <relationshipName>Login_Checklists1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Document_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Login_Checklist__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Photo Pan Card</fullName>
+                    <default>false</default>
+                    <label>Photo Pan Card</label>
+                </value>
+                <value>
+                    <fullName>Driving License</fullName>
+                    <default>false</default>
+                    <label>Driving License</label>
+                </value>
+                <value>
+                    <fullName>Valid Indian Passport</fullName>
+                    <default>false</default>
+                    <label>Valid Indian Passport</label>
+                </value>
+                <value>
+                    <fullName>School Leaving certificate</fullName>
+                    <default>false</default>
+                    <label>School Leaving certificate</label>
+                </value>
+                <value>
+                    <fullName>Affidavit on stamp paper with Notary</fullName>
+                    <default>false</default>
+                    <label>Affidavit on stamp paper with Notary</label>
+                </value>
+                <value>
+                    <fullName>Aadhar Card with DOB</fullName>
+                    <default>false</default>
+                    <label>Aadhar Card with DOB</label>
+                </value>
+                <value>
+                    <fullName>Proof of possession of Aadhaar number</fullName>
+                    <default>false</default>
+                    <label>Proof of possession of Aadhaar number</label>
+                </value>
+                <value>
+                    <fullName>Job Card Issued by NREGA</fullName>
+                    <default>false</default>
+                    <label>Job Card Issued by NREGA</label>
+                </value>
+                <value>
+                    <fullName>Letter issued by the National Population Register</fullName>
+                    <default>false</default>
+                    <label>Letter issued by the National Population Register</label>
+                </value>
+                <value>
+                    <fullName>Voter ID</fullName>
+                    <default>false</default>
+                    <label>Voter ID</label>
+                </value>
+                <value>
+                    <fullName>Certificate of Incorporation</fullName>
+                    <default>false</default>
+                    <label>Certificate of Incorporation</label>
+                </value>
+                <value>
+                    <fullName>Memorandum &amp; Articles of Association</fullName>
+                    <default>false</default>
+                    <label>Memorandum &amp; Articles of Association</label>
+                </value>
+                <value>
+                    <fullName>Permanent Account Number</fullName>
+                    <default>false</default>
+                    <label>Permanent Account Number</label>
+                </value>
+                <value>
+                    <fullName>Registration Certificate</fullName>
+                    <default>false</default>
+                    <label>Registration Certificate</label>
+                </value>
+                <value>
+                    <fullName>Partnership deed</fullName>
+                    <default>false</default>
+                    <label>Partnership deed</label>
+                </value>
+                <value>
+                    <fullName>OVD Documents of the person holding an attorney</fullName>
+                    <default>false</default>
+                    <label>OVD Documents of the person holding an attorney</label>
+                </value>
+                <value>
+                    <fullName>Trust Deed</fullName>
+                    <default>false</default>
+                    <label>Trust Deed</label>
+                </value>
+                <value>
+                    <fullName>Resolution of the managing body</fullName>
+                    <default>false</default>
+                    <label>Resolution of the managing body</label>
+                </value>
+                <value>
+                    <fullName>Form No. 60 as defined in Income-tax Rules, 1962</fullName>
+                    <default>false</default>
+                    <label>Form No. 60 as defined in Income-tax Rules, 1962</label>
+                </value>
+                <value>
+                    <fullName>Power of attorney granted to transact on its behalf</fullName>
+                    <default>false</default>
+                    <label>Power of attorney granted to transact on its behalf</label>
+                </value>
+                <value>
+                    <fullName>Documents to collectively establish the legal existence</fullName>
+                    <default>false</default>
+                    <label>Documents to collectively establish the legal existence</label>
+                </value>
+                <value>
+                    <fullName>Certificate/licence issued by the municipal authorities</fullName>
+                    <default>false</default>
+                    <label>Certificate/licence issued by the municipal authorities</label>
+                </value>
+                <value>
+                    <fullName>Sales and income tax returns</fullName>
+                    <default>false</default>
+                    <label>Sales and income tax returns</label>
+                </value>
+                <value>
+                    <fullName>CST/VAT/ GST certificate (provisional/final)</fullName>
+                    <default>false</default>
+                    <label>CST/VAT/ GST certificate (provisional/final)</label>
+                </value>
+                <value>
+                    <fullName>Certificate document issued by Tax/Service Tax/Professional</fullName>
+                    <default>false</default>
+                    <label>Certificate document issued by Tax/Service Tax/Professional</label>
+                </value>
+                <value>
+                    <fullName>IEC issued to the proprietary concern</fullName>
+                    <default>false</default>
+                    <label>IEC issued to the proprietary concern</label>
+                </value>
+                <value>
+                    <fullName>Complete Income Tax Return</fullName>
+                    <default>false</default>
+                    <label>Complete Income Tax Return</label>
+                </value>
+                <value>
+                    <fullName>Utility bills</fullName>
+                    <default>false</default>
+                    <label>Utility bills</label>
+                </value>
+                <value>
+                    <fullName>Sale Registration Certificate</fullName>
+                    <default>false</default>
+                    <label>Sale Registration Certificate</label>
+                </value>
+                <value>
+                    <fullName>12 months old Bank Passbook / Latest Bank Account Statement</fullName>
+                    <default>false</default>
+                    <label>12 months old Bank Passbook / Latest Bank Account Statement</label>
+                </value>
+                <value>
+                    <fullName>PAN Intimation letter</fullName>
+                    <default>false</default>
+                    <label>PAN Intimation letter</label>
+                </value>
+                <value>
+                    <fullName>Income Tax Assessment Order</fullName>
+                    <default>false</default>
+                    <label>Income Tax Assessment Order</label>
+                </value>
+                <value>
+                    <fullName>Municipality Tax Receipt / Property Tax Receipt</fullName>
+                    <default>false</default>
+                    <label>Municipality Tax Receipt / Property Tax Receipt</label>
+                </value>
+                <value>
+                    <fullName>Last two year ITR with computation</fullName>
+                    <default>false</default>
+                    <label>Last two year ITR with computation</label>
+                </value>
+                <value>
+                    <fullName>Tax Audited P&amp;L, Balance sheet for last two years</fullName>
+                    <default>false</default>
+                    <label>Tax Audited P&amp;L, Balance sheet for last two years</label>
+                </value>
+                <value>
+                    <fullName>Last six months banking of main business accounts</fullName>
+                    <default>false</default>
+                    <label>Last six months banking of main business accounts</label>
+                </value>
+                <value>
+                    <fullName>Last 6 months Kaccha bill copy for Sales and Purchase</fullName>
+                    <default>false</default>
+                    <label>Last 6 months Kaccha bill copy for Sales and Purchase</label>
+                </value>
+                <value>
+                    <fullName>Last 12 months banking of main business accounts</fullName>
+                    <default>false</default>
+                    <label>Last 12 months banking of main business accounts</label>
+                </value>
+                <value>
+                    <fullName>Proof of existing loan of any type (Live or Closed)</fullName>
+                    <default>false</default>
+                    <label>Proof of existing loan of any type (Live or Closed)</label>
+                </value>
+                <value>
+                    <fullName>Last 12 months GST return including last months</fullName>
+                    <default>false</default>
+                    <label>Last 12 months GST return including last months</label>
+                </value>
+                <value>
+                    <fullName>Sanction letter / Welcome letter of loan disbursed in last 100 days</fullName>
+                    <default>false</default>
+                    <label>Sanction letter / Welcome letter of loan disbursed in last 100 days</label>
+                </value>
+                <value>
+                    <fullName>Existing loans EMI repayment accounts</fullName>
+                    <default>false</default>
+                    <label>Existing loans EMI repayment accounts</label>
+                </value>
+                <value>
+                    <fullName>6 months banking of main business current accounts</fullName>
+                    <default>false</default>
+                    <label>6 months banking of main business current accounts</label>
+                </value>
+                <value>
+                    <fullName>9 months existing Repayment track</fullName>
+                    <default>false</default>
+                    <label>9 months existing Repayment track</label>
+                </value>
+                <value>
+                    <fullName>12 months banking of main business current accounts</fullName>
+                    <default>false</default>
+                    <label>12 months banking of main business current accounts</label>
+                </value>
+                <value>
+                    <fullName>Sanction letters of loans disb. in last three months</fullName>
+                    <default>false</default>
+                    <label>Sanction letters of loans disb. in last three months</label>
+                </value>
+                <value>
+                    <fullName>Registered / Notorized rent agreement</fullName>
+                    <default>false</default>
+                    <label>Registered / Notorized rent agreement</label>
+                </value>
+                <value>
+                    <fullName>Last six months banking where rent is credited</fullName>
+                    <default>false</default>
+                    <label>Last six months banking where rent is credited</label>
+                </value>
+                <value>
+                    <fullName>Latest years ITR with computation of income</fullName>
+                    <default>false</default>
+                    <label>Latest years ITR with computation of income</label>
+                </value>
+                <value>
+                    <fullName>Complete SOA of BT financier till latest month</fullName>
+                    <default>false</default>
+                    <label>Complete SOA of BT financier till latest month</label>
+                </value>
+                <value>
+                    <fullName>Welcome Letter</fullName>
+                    <default>false</default>
+                    <label>Welcome Letter</label>
+                </value>
+                <value>
+                    <fullName>Repayment Schedule with clearance of last 12 EMI</fullName>
+                    <default>false</default>
+                    <label>Repayment Schedule with clearance of last 12 EMI</label>
+                </value>
+                <value>
+                    <fullName>Latest sanction letter of OD / CC along with TOD letter</fullName>
+                    <default>false</default>
+                    <label>Latest sanction letter of OD / CC along with TOD letter</label>
+                </value>
+                <value>
+                    <fullName>Statement of Account (SOA)</fullName>
+                    <default>false</default>
+                    <label>Statement of Account (SOA)</label>
+                </value>
+                <value>
+                    <fullName>Welcome letter with last 6/12 months clearance</fullName>
+                    <default>false</default>
+                    <label>Welcome letter with last 6/12 months clearance</label>
+                </value>
+                <value>
+                    <fullName>Foreclosure Statement</fullName>
+                    <default>false</default>
+                    <label>Foreclosure Statement</label>
+                </value>
+                <value>
+                    <fullName>Closure Proof of facilities closed in last 6 months</fullName>
+                    <default>false</default>
+                    <label>Closure Proof of facilities closed in last 6 months</label>
+                </value>
+                <value>
+                    <fullName>Bank Verification (Only Scheduled Commercial Banks)</fullName>
+                    <default>false</default>
+                    <label>Bank Verification (Only Scheduled Commercial Banks)</label>
+                </value>
+                <value>
+                    <fullName>Bank account verification request</fullName>
+                    <default>false</default>
+                    <label>Bank account verification request</label>
+                </value>
+                <value>
+                    <fullName>PF Cheque clearance in the bank</fullName>
+                    <default>false</default>
+                    <label>PF Cheque clearance in the bank</label>
+                </value>
+                <value>
+                    <fullName>ECS Mandate authorized by officials of the same bank</fullName>
+                    <default>false</default>
+                    <label>ECS Mandate authorized by officials of the same bank</label>
+                </value>
+                <value>
+                    <fullName>Bank Verification of entity&apos;s authorized signatory</fullName>
+                    <default>false</default>
+                    <label>Bank Verification of entity&apos;s authorized signatory</label>
+                </value>
+                <value>
+                    <fullName>A resolution from the Board of Directors &amp; power of attorney</fullName>
+                    <default>false</default>
+                    <label>A resolution from the Board of Directors &amp; power of attorney</label>
+                </value>
+                <value>
+                    <fullName>OVD Documents of the managers, officers or employees</fullName>
+                    <default>false</default>
+                    <label>OVD Documents of the managers, officers or employees</label>
+                </value>
+                <value>
+                    <fullName>Electricity Bill (Not older than 3 months &amp; showing consumption)</fullName>
+                    <default>false</default>
+                    <label>Electricity Bill (Not older than 3 months &amp; showing consumption)</label>
+                </value>
+                <value>
+                    <fullName>Registered Sale deed</fullName>
+                    <default>false</default>
+                    <label>Registered Sale deed</label>
+                </value>
+                <value>
+                    <fullName>Share certificate along with society maintenance receipt</fullName>
+                    <default>false</default>
+                    <label>Share certificate along with society maintenance receipt</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Kaccha bills for purchase / sales for last 3 months</fullName>
+                    <default>false</default>
+                    <label>Kaccha bills for purchase / sales for last 3 months</label>
+                </value>
+                <value>
+                    <fullName>Dully Filled and signed MID format (confirming the Non-refundable Fee)</fullName>
+                    <default>false</default>
+                    <label>Dully Filled and signed MID format (confirming the Non-refundable Fee)</label>
+                </value>
+                <value>
+                    <fullName>CA certified - Turnover</fullName>
+                    <default>false</default>
+                    <label>CA certified - Turnover</label>
+                </value>
+                <value>
+                    <fullName>CA certified - Non GST declaration</fullName>
+                    <default>false</default>
+                    <label>CA certified - Non GST declaration</label>
+                </value>
+                <value>
+                    <fullName>Any other documents asked by Credit post PD</fullName>
+                    <default>false</default>
+                    <label>Any other documents asked by Credit post PD</label>
+                </value>
+                <value>
+                    <fullName>Customer Signature on Obligation Sheet</fullName>
+                    <default>false</default>
+                    <label>Customer Signature on Obligation Sheet</label>
+                </value>
+                <value>
+                    <fullName>Foreclosure statement and List of document of BT financier</fullName>
+                    <default>false</default>
+                    <label>Foreclosure statement and List of document of BT financier</label>
+                </value>
+                <value>
+                    <fullName>Copy of Defense ID Card</fullName>
+                    <default>false</default>
+                    <label>Copy of Defense ID Card</label>
+                </value>
+                <value>
+                    <fullName>Photo Debit / Credit card</fullName>
+                    <default>false</default>
+                    <label>Photo Debit / Credit card</label>
+                </value>
+                <value>
+                    <fullName>Aadhar Card</fullName>
+                    <default>false</default>
+                    <label>Aadhar Card</label>
+                </value>
+                <value>
+                    <fullName>MOA and AOA along with certificate of Incorporation</fullName>
+                    <default>false</default>
+                    <label>MOA and AOA along with certificate of Incorporation</label>
+                </value>
+                <value>
+                    <fullName>Sales Tax / VAT / Service Tax Registration Certificate</fullName>
+                    <default>false</default>
+                    <label>Sales Tax / VAT / Service Tax Registration Certificate</label>
+                </value>
+                <value>
+                    <fullName>Shop &amp; Establishment Certificate</fullName>
+                    <default>false</default>
+                    <label>Shop &amp; Establishment Certificate</label>
+                </value>
+                <value>
+                    <fullName>Factory Registration Certificate</fullName>
+                    <default>false</default>
+                    <label>Factory Registration Certificate</label>
+                </value>
+                <value>
+                    <fullName>Current/OD Account Banking</fullName>
+                    <default>false</default>
+                    <label>Current/OD Account Banking</label>
+                </value>
+                <value>
+                    <fullName>Latest ITR filed</fullName>
+                    <default>false</default>
+                    <label>Latest ITR filed</label>
+                </value>
+                <value>
+                    <fullName>Importer-Exporter Code Certificate</fullName>
+                    <default>false</default>
+                    <label>Importer-Exporter Code Certificate</label>
+                </value>
+                <value>
+                    <fullName>Sales Tax Return duly acknowledged by the department</fullName>
+                    <default>false</default>
+                    <label>Sales Tax Return duly acknowledged by the department</label>
+                </value>
+                <value>
+                    <fullName>Registered Trust Deed, constitutional document of Trust/Society</fullName>
+                    <default>false</default>
+                    <label>Registered Trust Deed, constitutional document of Trust/Society</label>
+                </value>
+                <value>
+                    <fullName>Certificate of Registration with Registrar of Trusts/Charity</fullName>
+                    <default>false</default>
+                    <label>Certificate of Registration with Registrar of Trusts/Charity</label>
+                </value>
+                <value>
+                    <fullName>Annexure to application form</fullName>
+                    <default>false</default>
+                    <label>Annexure to application form</label>
+                </value>
+                <value>
+                    <fullName>Sales PD Sheet</fullName>
+                    <default>false</default>
+                    <label>Sales PD Sheet</label>
+                </value>
+                <value>
+                    <fullName>2 years location stability</fullName>
+                    <default>false</default>
+                    <label>2 years location stability</label>
+                </value>
+                <value>
+                    <fullName>2 years ITR and audited financials &amp; reports with schedules</fullName>
+                    <default>false</default>
+                    <label>2 years ITR and audited financials &amp; reports with schedules</label>
+                </value>
+                <value>
+                    <fullName>Repayment Track Record</fullName>
+                    <default>false</default>
+                    <label>Repayment Track Record</label>
+                </value>
+                <value>
+                    <fullName>EMI reflection in banking of all the running credit facilities</fullName>
+                    <default>false</default>
+                    <label>EMI reflection in banking of all the running credit facilities</label>
+                </value>
+                <value>
+                    <fullName>RC Copies</fullName>
+                    <default>false</default>
+                    <label>RC Copies</label>
+                </value>
+                <value>
+                    <fullName>FLEET List</fullName>
+                    <default>false</default>
+                    <label>FLEET List</label>
+                </value>
+                <value>
+                    <fullName>Proposed Vehicle RC copy</fullName>
+                    <default>false</default>
+                    <label>Proposed Vehicle RC copy</label>
+                </value>
+                <value>
+                    <fullName>FOP of previous owner mandatory</fullName>
+                    <default>false</default>
+                    <label>FOP of previous owner mandatory</label>
+                </value>
+                <value>
+                    <fullName>Proposed Vehicle Insurance Policy</fullName>
+                    <default>false</default>
+                    <label>Proposed Vehicle Insurance Policy</label>
+                </value>
+                <value>
+                    <fullName>Latest Tax / Fitness / Permit Copy</fullName>
+                    <default>false</default>
+                    <label>Latest Tax / Fitness / Permit Copy</label>
+                </value>
+                <value>
+                    <fullName>Proposed Vehicle Valuation report</fullName>
+                    <default>false</default>
+                    <label>Proposed Vehicle Valuation report</label>
+                </value>
+                <value>
+                    <fullName>RM visit report</fullName>
+                    <default>false</default>
+                    <label>RM visit report</label>
+                </value>
+                <value>
+                    <fullName>As per Customer category</fullName>
+                    <default>false</default>
+                    <label>As per Customer category</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Business Stability</controllingFieldValue>
+                <valueName>As per Customer category</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Document (Scheme: Captive)</controllingFieldValue>
+                <valueName>2 years ITR and audited financials &amp; reports with schedules</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RTR (Scheme: Captive)</controllingFieldValue>
+                <controllingFieldValue>BT Top up Case</controllingFieldValue>
+                <valueName>Welcome Letter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RTR (Scheme: Captive)</controllingFieldValue>
+                <controllingFieldValue>Limit and Existing Loan Documents</controllingFieldValue>
+                <valueName>Foreclosure Statement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RTR (Scheme: Captive)</controllingFieldValue>
+                <controllingFieldValue>Limit and Existing Loan Documents</controllingFieldValue>
+                <valueName>Closure Proof of facilities closed in last 6 months</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RTR (Scheme: Captive)</controllingFieldValue>
+                <valueName>Repayment Track Record</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RTR (Scheme: Captive)</controllingFieldValue>
+                <valueName>EMI reflection in banking of all the running credit facilities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vehicle Documents - Existing / Proposed (Scheme: Captive)</controllingFieldValue>
+                <valueName>RC Copies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vehicle Documents - Existing / Proposed (Scheme: Captive)</controllingFieldValue>
+                <valueName>FLEET List</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vehicle Documents - Existing / Proposed (Scheme: Captive)</controllingFieldValue>
+                <valueName>Proposed Vehicle RC copy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vehicle Documents - Existing / Proposed (Scheme: Captive)</controllingFieldValue>
+                <valueName>FOP of previous owner mandatory</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vehicle Documents - Existing / Proposed (Scheme: Captive)</controllingFieldValue>
+                <valueName>Proposed Vehicle Insurance Policy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vehicle Documents - Existing / Proposed (Scheme: Captive)</controllingFieldValue>
+                <valueName>Latest Tax / Fitness / Permit Copy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vehicle Documents - Existing / Proposed (Scheme: Captive)</controllingFieldValue>
+                <valueName>Proposed Vehicle Valuation report</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - BANKING (ABB) SCHEME</controllingFieldValue>
+                <valueName>6 months banking of main business current accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - BANKING (ABB) SCHEME</controllingFieldValue>
+                <valueName>9 months existing Repayment track</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - BANKING (ABB) SCHEME</controllingFieldValue>
+                <valueName>12 months banking of main business current accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - BANKING (ABB) SCHEME</controllingFieldValue>
+                <valueName>Sanction letters of loans disb. in last three months</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - Multi Tenanted</controllingFieldValue>
+                <valueName>Registered / Notorized rent agreement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - Multi Tenanted</controllingFieldValue>
+                <valueName>Last six months banking where rent is credited</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - Multi Tenanted</controllingFieldValue>
+                <valueName>Latest years ITR with computation of income</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BT Top up Case</controllingFieldValue>
+                <valueName>Complete SOA of BT financier till latest month</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BT Top up Case</controllingFieldValue>
+                <valueName>Repayment Schedule with clearance of last 12 EMI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BT Top up Case</controllingFieldValue>
+                <valueName>Foreclosure statement and List of document of BT financier</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Limit and Existing Loan Documents</controllingFieldValue>
+                <valueName>Latest sanction letter of OD / CC along with TOD letter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Limit and Existing Loan Documents</controllingFieldValue>
+                <valueName>Statement of Account (SOA)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Limit and Existing Loan Documents</controllingFieldValue>
+                <valueName>Welcome letter with last 6/12 months clearance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Companies</controllingFieldValue>
+                <valueName>Certificate of Incorporation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Companies</controllingFieldValue>
+                <valueName>Memorandum &amp; Articles of Association</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Companies</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof - Partnership Firms</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof - Trust</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof - Unincorporated association</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <valueName>Permanent Account Number</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <controllingFieldValue>Age Proof</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Photo Pan Card</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <controllingFieldValue>Age Proof</controllingFieldValue>
+                <controllingFieldValue>KYC Documents</controllingFieldValue>
+                <valueName>Driving License</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <controllingFieldValue>Age Proof</controllingFieldValue>
+                <controllingFieldValue>KYC Documents</controllingFieldValue>
+                <valueName>Valid Indian Passport</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <valueName>Bank Verification (Only Scheduled Commercial Banks)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <valueName>Bank account verification request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <valueName>PF Cheque clearance in the bank</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <valueName>ECS Mandate authorized by officials of the same bank</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Signature Verification</controllingFieldValue>
+                <valueName>Bank Verification of entity&apos;s authorized signatory</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Partnership Firms</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof - Trust</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Registration Certificate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Partnership Firms</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Partnership deed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Partnership Firms</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof - Trust</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof - Unincorporated association</controllingFieldValue>
+                <valueName>OVD Documents of the person holding an attorney</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof (For companies)</controllingFieldValue>
+                <valueName>A resolution from the Board of Directors &amp; power of attorney</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof (For companies)</controllingFieldValue>
+                <valueName>OVD Documents of the managers, officers or employees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Trust</controllingFieldValue>
+                <valueName>Trust Deed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ownership proof</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Municipality Tax Receipt / Property Tax Receipt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ownership proof</controllingFieldValue>
+                <valueName>Electricity Bill (Not older than 3 months &amp; showing consumption)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ownership proof</controllingFieldValue>
+                <valueName>Registered Sale deed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ownership proof</controllingFieldValue>
+                <valueName>Share certificate along with society maintenance receipt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ownership proof</controllingFieldValue>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Unincorporated association</controllingFieldValue>
+                <valueName>Resolution of the managing body</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Unincorporated association</controllingFieldValue>
+                <valueName>Form No. 60 as defined in Income-tax Rules, 1962</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Unincorporated association</controllingFieldValue>
+                <valueName>Power of attorney granted to transact on its behalf</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Unincorporated association</controllingFieldValue>
+                <valueName>Documents to collectively establish the legal existence</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MID</controllingFieldValue>
+                <valueName>Dully Filled and signed MID format (confirming the Non-refundable Fee)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Certificate/licence issued by the municipal authorities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Sales and income tax returns</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>CST/VAT/ GST certificate (provisional/final)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Certificate document issued by Tax/Service Tax/Professional</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>IEC issued to the proprietary concern</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Complete Income Tax Return</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Utility bills</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof - Proprietary Firms</controllingFieldValue>
+                <valueName>Sale Registration Certificate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Loan Document</controllingFieldValue>
+                <valueName>Customer Signature on Obligation Sheet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <controllingFieldValue>KYC Documents</controllingFieldValue>
+                <valueName>Voter ID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <valueName>Copy of Defense ID Card</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <valueName>Photo Debit / Credit card</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ID Proof</controllingFieldValue>
+                <valueName>Aadhar Card</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Age Proof</controllingFieldValue>
+                <valueName>School Leaving certificate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Age Proof</controllingFieldValue>
+                <valueName>Affidavit on stamp paper with Notary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Age Proof</controllingFieldValue>
+                <valueName>Aadhar Card with DOB</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>KYC Documents</controllingFieldValue>
+                <valueName>Proof of possession of Aadhaar number</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>KYC Documents</controllingFieldValue>
+                <valueName>Job Card Issued by NREGA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>KYC Documents</controllingFieldValue>
+                <valueName>Letter issued by the National Population Register</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>MOA and AOA along with certificate of Incorporation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Sales Tax / VAT / Service Tax Registration Certificate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Shop &amp; Establishment Certificate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Factory Registration Certificate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Current/OD Account Banking</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Latest ITR filed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Importer-Exporter Code Certificate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Sales Tax Return duly acknowledged by the department</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Registered Trust Deed, constitutional document of Trust/Society</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal Existence Proof</controllingFieldValue>
+                <valueName>Certificate of Registration with Registrar of Trusts/Charity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>12 months old Bank Passbook / Latest Bank Account Statement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>PAN Intimation letter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Address Proof</controllingFieldValue>
+                <valueName>Income Tax Assessment Order</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - Income Scheme</controllingFieldValue>
+                <controllingFieldValue>Income Documents - LIP Scheme</controllingFieldValue>
+                <controllingFieldValue>Income Documents - MICRO LAP SCHEME</controllingFieldValue>
+                <valueName>Last two year ITR with computation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - Income Scheme</controllingFieldValue>
+                <controllingFieldValue>Income Documents - LIP Scheme</controllingFieldValue>
+                <controllingFieldValue>Income Documents - MICRO LAP SCHEME</controllingFieldValue>
+                <valueName>Tax Audited P&amp;L, Balance sheet for last two years</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - Income Scheme</controllingFieldValue>
+                <controllingFieldValue>Income Documents - LIP Scheme</controllingFieldValue>
+                <controllingFieldValue>Income Documents - SARAL UDHYAM (100 DAYS)</controllingFieldValue>
+                <controllingFieldValue>Income Documents - MICRO LAP SCHEME</controllingFieldValue>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <valueName>Last six months banking of main business accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - LIP Scheme</controllingFieldValue>
+                <valueName>Last 6 months Kaccha bill copy for Sales and Purchase</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - LIP Scheme</controllingFieldValue>
+                <controllingFieldValue>Income Documents - GST Scheme</controllingFieldValue>
+                <valueName>Last 12 months banking of main business accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - LIP Scheme</controllingFieldValue>
+                <valueName>Proof of existing loan of any type (Live or Closed)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - GST Scheme</controllingFieldValue>
+                <valueName>Last 12 months GST return including last months</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - SARAL UDHYAM (100 DAYS)</controllingFieldValue>
+                <valueName>Sanction letter / Welcome letter of loan disbursed in last 100 days</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Income Documents - MICRO LAP SCHEME</controllingFieldValue>
+                <valueName>Kaccha bills for purchase / sales for last 3 months</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Others(CAT A)</controllingFieldValue>
+                <valueName>RM visit report</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Others(CAT B)</controllingFieldValue>
+                <valueName>CA certified - Turnover</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Others(CAT B)</controllingFieldValue>
+                <valueName>CA certified - Non GST declaration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Others(CAT B)</controllingFieldValue>
+                <valueName>Any other documents asked by Credit post PD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Others(UCV)</controllingFieldValue>
+                <valueName>Annexure to application form</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Others(UCV)</controllingFieldValue>
+                <valueName>Sales PD Sheet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Resi Stability</controllingFieldValue>
+                <valueName>2 years location stability</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Document_Uploaded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Document Uploaded</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Login_Checklist__c</fullName>
+        <externalId>false</externalId>
+        <label>Login Checklist</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Age Proof</fullName>
+                    <default>false</default>
+                    <label>Age Proof</label>
+                </value>
+                <value>
+                    <fullName>KYC Documents</fullName>
+                    <default>false</default>
+                    <label>KYC Documents</label>
+                </value>
+                <value>
+                    <fullName>Legal Existence Proof - Companies</fullName>
+                    <default>false</default>
+                    <label>Legal Existence Proof - Companies</label>
+                </value>
+                <value>
+                    <fullName>Legal Existence Proof - Partnership Firms</fullName>
+                    <default>false</default>
+                    <label>Legal Existence Proof - Partnership Firms</label>
+                </value>
+                <value>
+                    <fullName>Legal Existence Proof - Trust</fullName>
+                    <default>false</default>
+                    <label>Legal Existence Proof - Trust</label>
+                </value>
+                <value>
+                    <fullName>Legal Existence Proof - Unincorporated association</fullName>
+                    <default>false</default>
+                    <label>Legal Existence Proof - Unincorporated association</label>
+                </value>
+                <value>
+                    <fullName>Legal Existence Proof - Proprietary Firms</fullName>
+                    <default>false</default>
+                    <label>Legal Existence Proof - Proprietary Firms</label>
+                </value>
+                <value>
+                    <fullName>Legal Existence Proof</fullName>
+                    <default>false</default>
+                    <label>Legal Existence Proof</label>
+                </value>
+                <value>
+                    <fullName>Address Proof</fullName>
+                    <default>false</default>
+                    <label>Address Proof</label>
+                </value>
+                <value>
+                    <fullName>Income Documents - Income Scheme</fullName>
+                    <default>false</default>
+                    <label>Income Documents - Income Scheme</label>
+                </value>
+                <value>
+                    <fullName>Income Documents - LIP Scheme</fullName>
+                    <default>false</default>
+                    <label>Income Documents - LIP Scheme</label>
+                </value>
+                <value>
+                    <fullName>Income Documents - GST Scheme</fullName>
+                    <default>false</default>
+                    <label>Income Documents - GST Scheme</label>
+                </value>
+                <value>
+                    <fullName>Income Documents - SARAL UDHYAM (100 DAYS)</fullName>
+                    <default>false</default>
+                    <label>Income Documents - SARAL UDHYAM (100 DAYS)</label>
+                </value>
+                <value>
+                    <fullName>Income Documents - MICRO LAP SCHEME</fullName>
+                    <default>false</default>
+                    <label>Income Documents - MICRO LAP SCHEME</label>
+                </value>
+                <value>
+                    <fullName>Income Documents - BANKING (ABB) SCHEME</fullName>
+                    <default>false</default>
+                    <label>Income Documents - BANKING (ABB) SCHEME</label>
+                </value>
+                <value>
+                    <fullName>Income Documents - Multi Tenanted</fullName>
+                    <default>false</default>
+                    <label>Income Documents - Multi Tenanted</label>
+                </value>
+                <value>
+                    <fullName>BT Top up Case</fullName>
+                    <default>false</default>
+                    <label>BT Top up Case</label>
+                </value>
+                <value>
+                    <fullName>Limit and Existing Loan Documents</fullName>
+                    <default>false</default>
+                    <label>Limit and Existing Loan Documents</label>
+                </value>
+                <value>
+                    <fullName>Signature Verification</fullName>
+                    <default>false</default>
+                    <label>Signature Verification</label>
+                </value>
+                <value>
+                    <fullName>Legal Existence Proof (For companies)</fullName>
+                    <default>false</default>
+                    <label>Legal Existence Proof (For companies)</label>
+                </value>
+                <value>
+                    <fullName>Ownership proof</fullName>
+                    <default>false</default>
+                    <label>Ownership proof</label>
+                </value>
+                <value>
+                    <fullName>MID</fullName>
+                    <default>false</default>
+                    <label>MID</label>
+                </value>
+                <value>
+                    <fullName>Existing Loan Document</fullName>
+                    <default>false</default>
+                    <label>Existing Loan Document</label>
+                </value>
+                <value>
+                    <fullName>ID Proof</fullName>
+                    <default>false</default>
+                    <label>ID Proof</label>
+                </value>
+                <value>
+                    <fullName>Banking</fullName>
+                    <default>false</default>
+                    <label>Banking</label>
+                </value>
+                <value>
+                    <fullName>Resi Stability</fullName>
+                    <default>false</default>
+                    <label>Resi Stability</label>
+                </value>
+                <value>
+                    <fullName>Business Stability</fullName>
+                    <default>false</default>
+                    <label>Business Stability</label>
+                </value>
+                <value>
+                    <fullName>Income Document (Scheme: Captive)</fullName>
+                    <default>false</default>
+                    <label>Income Document (Scheme: Captive)</label>
+                </value>
+                <value>
+                    <fullName>RTR (Scheme: Captive)</fullName>
+                    <default>false</default>
+                    <label>RTR (Scheme: Captive)</label>
+                </value>
+                <value>
+                    <fullName>Vehicle Documents - Existing / Proposed (Scheme: Captive)</fullName>
+                    <default>false</default>
+                    <label>Vehicle Documents - Existing / Proposed (Scheme: Captive)</label>
+                </value>
+                <value>
+                    <fullName>Others(CAT A)</fullName>
+                    <default>false</default>
+                    <label>Others(CAT A)</label>
+                </value>
+                <value>
+                    <fullName>Others(CAT B)</fullName>
+                    <default>false</default>
+                    <label>Others(CAT B)</label>
+                </value>
+                <value>
+                    <fullName>Others(UCV)</fullName>
+                    <default>false</default>
+                    <label>Others(UCV)</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Age Proof</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>KYC Documents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Legal Existence Proof - Companies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Legal Existence Proof - Partnership Firms</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Legal Existence Proof - Trust</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Legal Existence Proof - Unincorporated association</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Legal Existence Proof - Proprietary Firms</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Address Proof</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Income Documents - Income Scheme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Income Documents - LIP Scheme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Income Documents - GST Scheme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <valueName>Income Documents - SARAL UDHYAM (100 DAYS)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Income Documents - MICRO LAP SCHEME</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Income Documents - BANKING (ABB) SCHEME</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <valueName>Income Documents - Multi Tenanted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <valueName>BT Top up Case</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Limit and Existing Loan Documents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT A - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT A - Unsecured</controllingFieldValue>
+                <valueName>Others(CAT A)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Unsecured</controllingFieldValue>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Signature Verification</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Unsecured</controllingFieldValue>
+                <valueName>Legal Existence Proof (For companies)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Unsecured</controllingFieldValue>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Ownership proof</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Unsecured</controllingFieldValue>
+                <valueName>MID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Unsecured</controllingFieldValue>
+                <valueName>Existing Loan Document</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CAT B - Secured</controllingFieldValue>
+                <controllingFieldValue>CAT B - Unsecured</controllingFieldValue>
+                <valueName>Others(CAT B)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Legal Existence Proof</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>ID Proof</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Banking</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Resi Stability</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Business Stability</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Income Document (Scheme: Captive)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>RTR (Scheme: Captive)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Vehicle Documents - Existing / Proposed (Scheme: Captive)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UCV</controllingFieldValue>
+                <valueName>Others(UCV)</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RemarksRemarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SECURED</fullName>
+                    <default>false</default>
+                    <label>SECURED</label>
+                </value>
+                <value>
+                    <fullName>UNSECURED</fullName>
+                    <default>false</default>
+                    <label>UNSECURED</label>
+                </value>
+                <value>
+                    <fullName>UCV</fullName>
+                    <default>false</default>
+                    <label>UCV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Login Checklist</label>
+    <nameField>
+        <displayFormat>LC-{000000}</displayFormat>
+        <label>Login Checklist #</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Login Checklists</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

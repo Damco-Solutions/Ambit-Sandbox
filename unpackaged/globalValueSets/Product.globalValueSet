@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Secured </fullName>
+        <default>false</default>
+        <label>Secured </label>
+    </customValue>
+    <customValue>
+        <fullName>Unsecured </fullName>
+        <default>false</default>
+        <label>Unsecured </label>
+    </customValue>
+    <customValue>
+        <fullName>UCV </fullName>
+        <default>false</default>
+        <label>UCV </label>
+    </customValue>
+    <masterLabel>Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

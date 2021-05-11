@@ -1,0 +1,100 @@
+/***  Sales Incentive batch for secured loans (DSA)- By Shabana Tarannum  ***/
+global class SecuredIncentive_Batch_DSA_Contest implements Database.batchable<sObject>, Schedulable,Database.Stateful{
+    
+    private Map<id,Decimal> Salesperson_Incentive_Map = new Map<id,decimal>();
+    private Map<id,Decimal> DSA_Incentive_Map = new Map<id,decimal>();
+    
+    global Database.QueryLocator start(Database.BatchableContext bc){
+        Integer mnth = System.Today().MOnth();
+        Integer yr = System.Today().Year();
+        String product = 'Lead - VYAPAR (SECURED LOAN)';
+        String product2 = 'Lead - Rural Vyapar';
+        string type = 'DSA';
+        String query = 'Select Id,name,Disbursal_Date__c,Disbursal_Amount__c,ROI__c,OwnerId,DSA_Connector__r.DSA_Connector__c From Loan_Account__c WHERE (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) AND DSA_Connector__r.DSA_Connector__c=:type and CALENDAR_MONTH(Disbursal_Date__c) =:mnth and CALENDAR_YEAR(Disbursal_Date__c) =:yr';
+        return Database.getQueryLocator(query);
+    }
+    
+    global void execute(Database.BatchableContext BC, List<Loan_Account__c> scope){
+        if(scope != null && scope.size()>0){
+            Incentive_Setup__mdt[] Incent = [select MasterLabel,Start_Date__c,End_Date__c, Incentive__c from Incentive_Setup__mdt where Sourcing__c = 'DSA'AND
+                                             Product__c ='Lead - VYAPAR (SECURED LOAN)' AND Type__c ='Salesperson' AND Active__c=true AND RecordType__c='Contest' LIMIT 1];
+            if(Incent[0] !=null && Incent[0].Start_Date__c!=null && Incent[0].End_Date__c !=null){
+                
+                /****** Incentives Calculation for Secured Loans- if sourcing through DSA, then for internal employee ******/
+                
+                Map<id,List<Loan_Account__c>> Agent_SecuredLoanList_Map = new Map<id,List<Loan_Account__c>>();
+                Map<id,List<Loan_Account__c>> DSA_ConnectorLoans_Map = new Map<id,List<Loan_Account__c>>();
+                Map<id,decimal> Agent_WIRR_Secured_Map = new Map<id,decimal>();
+                Map<id,decimal> Agent_LoanAmt_Secured_Map = new Map<id,decimal>();
+                Map<id,Decimal> dsa_LoanAmt_Map = new Map<id,Decimal>();
+                for(Loan_Account__c Loan:scope){
+                    if(Loan.Disbursal_Date__c <=Incent[0].End_Date__c && Loan.Disbursal_Date__c >=Incent[0].Start_Date__c){
+                        if(Agent_SecuredLoanList_Map.get(loan.OwnerId)==null){
+                            Agent_SecuredLoanList_Map.put(loan.OwnerId,new List<Loan_Account__c>{loan});
+                        }else{
+                            Agent_SecuredLoanList_Map.get(loan.OwnerId).add(loan);
+                        }
+                        if(DSA_ConnectorLoans_Map.get(loan.DSA_Connector__c)==null){
+                            DSA_ConnectorLoans_Map.put(loan.DSA_Connector__c,new List<Loan_Account__c>{loan});
+                        }else{
+                            DSA_ConnectorLoans_Map.get(loan.DSA_Connector__c).add(loan);
+                        }
+                    }
+                }
+                
+                //calculate wirr of all loan accounts against each agent
+                for(id personId:Agent_SecuredLoanList_Map.keyset()){
+                    decimal Amt_ROI_Mul = 0;
+                    decimal Sum_Amt = 0;
+                    for(Loan_Account__c la:Agent_SecuredLoanList_Map.get(personId)){
+                        if(la.Disbursal_Amount__c != null && la.ROI__c !=null){
+                            Amt_ROI_Mul = Amt_ROI_Mul + (la.Disbursal_Amount__c * la.ROI__c);
+                            Sum_Amt = Sum_Amt+la.Disbursal_Amount__c;
+                        }
+                    }
+                    Agent_LoanAmt_Secured_Map.put(personId,Sum_Amt);
+                    Agent_WIRR_Secured_Map.put(personId,Amt_ROI_Mul/Sum_Amt);
+                }
+                //WIRR Calculation ended
+                
+                //total loans of DSA
+                for(id dsa:DSA_ConnectorLoans_Map.keyset()){
+                    decimal Sum_Amt = 0;
+                    for(Loan_Account__c la:DSA_ConnectorLoans_Map.get(dsa)){
+                        if(la.Disbursal_Amount__c != null && la.ROI__c !=null){
+                            Sum_Amt = Sum_Amt+la.Disbursal_Amount__c;
+                        }
+                    }
+                    dsa_LoanAmt_Map.put(dsa,Sum_Amt);
+                }
+                //DSA Loans total
+                
+                /****** get incentive mapping from metadata *******/
+                for(id salesperson:Agent_LoanAmt_Secured_Map.keyset()){
+                    decimal WIRR = Agent_WIRR_Secured_Map.get(salesperson);
+                    Incentive_Setup__mdt[] Incentive = [select MasterLabel, Incentive__c from Incentive_Setup__mdt where WIRR_Lower_Limit__c <=: WIRR AND Sourcing__c = 'DSA'AND
+                                                        WIRR_Higher_Limit__c >=: WIRR AND Product__c ='Lead - VYAPAR (SECURED LOAN)' AND Type__c ='Salesperson' AND Active__c=true AND RecordType__c='Contest' LIMIT 1];
+                    if(Incentive != null && Incentive[0].Incentive__c != null){
+                        Salesperson_Incentive_Map.put(salesperson,Agent_LoanAmt_Secured_Map.get(salesperson)*0.01*Incentive[0].Incentive__c);
+                    }
+                }
+                for(id dsa:dsa_LoanAmt_Map.keyset()){
+                    decimal amt= dsa_LoanAmt_Map.get(dsa);
+                    Incentive_Setup__mdt[] Incentive = [select MasterLabel, Incentive__c from Incentive_Setup__mdt where Minimum_Amount__c <=: amt AND Sourcing__c = 'DSA'AND
+                                                        Maximum_Amount__c >=: amt AND Product__c ='Lead - VYAPAR (SECURED LOAN)' AND Type__c ='DSA' AND Active__c=true AND RecordType__c='Contest' LIMIT 1];
+                    if(Incentive != null && Incentive[0].Incentive__c != null){
+                        DSA_Incentive_Map.put(dsa,dsa_LoanAmt_Map.get(dsa)*0.01*Incentive[0].Incentive__c);
+                    }
+                }
+            }   
+        }
+    }
+    global void finish(Database.BatchableContext BC){
+        SecuredIncentive_Batch_Connector_Contest bt = new SecuredIncentive_Batch_Connector_Contest(Salesperson_Incentive_Map,DSA_Incentive_Map);
+        database.executebatch(bt);
+    }
+    global void execute(SchedulableContext sc){
+        SecuredIncentive_Batch_DSA_Contest conInstance = new SecuredIncentive_Batch_DSA_Contest();
+        database.executebatch(conInstance);
+    }
+}

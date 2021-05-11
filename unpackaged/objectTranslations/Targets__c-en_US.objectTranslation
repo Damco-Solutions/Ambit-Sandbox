@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Target</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Targets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active  --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adherence to Ambit Values Weightage --></label>
+        <name>Adherence_to_Ambit_Values_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adherence to Ambit Values --></label>
+        <name>Adherence_to_Ambit_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Ratio Weightage --></label>
+        <name>Approval_Ratio_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Ratio (%) --></label>
+        <name>Approval_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved </masterLabel>
+            <translation><!-- Approved  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated </masterLabel>
+            <translation><!-- Initiated  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Line Manager Approval </masterLabel>
+            <translation><!-- Pending Line Manager Approval  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected </masterLabel>
+            <translation><!-- Rejected  --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approver/ Line Manager --></label>
+        <name>Approver_Line_Manager__c</name>
+        <relationshipLabel><!-- Targets (Approver/ Line Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cases Disbursed in last 3 days Weightage --></label>
+        <name>Cases_Disbursed_in_last_3_days_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cases Disbursed in last 3 days (%) --></label>
+        <name>Cases_Disbursed_in_last_3_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communication and email skill Weightage --></label>
+        <name>Communication_and_email_skill_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communication and email skillset --></label>
+        <name>Communication_and_email_skillset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Biz Sourced Weightage --></label>
+        <name>Direct_Biz_Sourced_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Biz Sourced (%) --></label>
+        <name>Direct_Biz_Sourced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTR Weightage --></label>
+        <name>FTR_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTR (%) --></label>
+        <name>FTR__c</name>
+    </fields>
+    <fields>
+        <label><!-- IRR Weightage --></label>
+        <name>IRR_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- IRR (%) --></label>
+        <name>IRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Penetration Weightage --></label>
+        <name>Insurance_Penetration_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Penetration (%) --></label>
+        <name>Insurance_Penetration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Generation Target --></label>
+        <name>Lead_Generation_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Generation Weightage --></label>
+        <name>Lead_Generation_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting/Lead Conversation Ratio (%) --></label>
+        <name>Meeting_Lead_Conversation_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting/Lead Conversion Ratio Weightage --></label>
+        <name>Meeting_Lead_Conversion_Ratio_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings Target --></label>
+        <name>Meeting_Targets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings Weightage --></label>
+        <name>Meetings_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPA Weightage --></label>
+        <name>NPA_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPA (%) --></label>
+        <name>NPA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net PF Weightage --></label>
+        <name>Net_PF_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net PF(%) --></label>
+        <name>Net_PF__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Files Logged In (No) Weightage --></label>
+        <name>No_of_Files_Logged_In_No_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Files Logged In (No) --></label>
+        <name>No_of_Files_Logged_In_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Files Logged In (Value) Weightage --></label>
+        <name>No_of_Files_Logged_In_Value_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Files Logged In (Value) --></label>
+        <name>No_of_Files_Logged_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- No.of Units Disbursed Weightage --></label>
+        <name>No_of_Units_Disbursed_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- No.of Units Disbursed --></label>
+        <name>No_of_Units_Disbursed__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTC/PDD above norms Weightage --></label>
+        <name>OTC_PDD_above_norms_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTC/PDD above norms --></label>
+        <name>OTC_PDD_above_norms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overallconduct/Crossfunction dealings --></label>
+        <name>Overall_conduct_and_Cross_function_deali__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall-grooming/attendance Weightage --></label>
+        <name>Overall_grooming_attendance_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall-grooming/attendance/discipline --></label>
+        <name>Overall_grooming_attendance_discipline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overallconduct/Crossfunction Weightage --></label>
+        <name>Overallconduct_Crossfunction_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query TAT Resolution Weightage --></label>
+        <name>Query_TAT_Resolution_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query TAT Resolution (%) --></label>
+        <name>Query_TAT_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson --></label>
+        <name>Salesperson__c</name>
+        <relationshipLabel><!-- Targets (Salesperson) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date  --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Targets (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Volume Weightage --></label>
+        <name>Volume_Weightage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume (In Cr) --></label>
+        <name>Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yearly Target --></label>
+        <name>Yearly_Target__c</name>
+    </fields>
+    <layouts>
+        <layout>Generic layouts</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Targets --></label>
+            <section>Targets</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Product Target --></label>
+        <name>Product_Target</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

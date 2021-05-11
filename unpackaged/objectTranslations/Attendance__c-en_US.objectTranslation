@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attendance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attendance</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accomplished Results in the day --></label>
+        <name>Accomplished_Results_in_the_day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day of the Week --></label>
+        <name>Day_of_the_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson --></label>
+        <name>Employee__c</name>
+        <relationshipLabel><!-- Attendance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- High Level Work Plan --></label>
+        <name>High_Level_Work_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Location --></label>
+        <name>Location_Login__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Logout --></label>
+        <name>Location_Logout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Address --></label>
+        <name>Login_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login coordinate --></label>
+        <name>Login_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Time --></label>
+        <name>Login_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logout Address --></label>
+        <name>Logout_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logout Location --></label>
+        <name>Logout_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logout Time --></label>
+        <name>Logout_Time__c</name>
+    </fields>
+    <layouts>
+        <layout>Team&apos;s Daily Attendance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

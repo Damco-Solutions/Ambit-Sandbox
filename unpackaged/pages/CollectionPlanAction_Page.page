@@ -1,0 +1,4 @@
+<apex:page standardController="Loan_Account__c" docType="html-5.0" lightningStylesheets="true" title="Assign Collection Plan" >
+   
+    
+</apex:page>

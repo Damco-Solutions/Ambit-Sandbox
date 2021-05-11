@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Next EMI Working Day Consideration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Next EMI Working Day Consideration</value>
+    </caseValues>
+    <fields>
+        <help><!-- If next EMI day is falling on holiday, then Next working day will be consided as next EMI day --></help>
+        <label><!-- Next EMI Day --></label>
+        <name>Next_EMI_Day__c</name>
+    </fields>
+    <fields>
+        <help><!-- If next EMI day is falling on holiday, then Previous working day will be consided as next EMI day --></help>
+        <label><!-- Previous Working Day --></label>
+        <name>Previous_Working_Day__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

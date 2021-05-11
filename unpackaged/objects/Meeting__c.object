@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Meeting_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Meeting</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Meeting</fullName>
+        <fields>Name</fields>
+        <fields>Category__c</fields>
+        <fields>Status__c</fields>
+        <fields>Salesperson__c</fields>
+        <fields>Scheduled_Start_Time__c</fields>
+        <label>Meeting</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Applicant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Applicant</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Meetings</relationshipLabel>
+        <relationshipName>Meetings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category </label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DSA</fullName>
+                    <default>false</default>
+                    <label>DSA</label>
+                </value>
+                <value>
+                    <fullName>Connector</fullName>
+                    <default>false</default>
+                    <label>Connector</label>
+                </value>
+                <value>
+                    <fullName>New Customer </fullName>
+                    <default>false</default>
+                    <label>New Customer </label>
+                </value>
+                <value>
+                    <fullName>Existing Customer</fullName>
+                    <default>false</default>
+                    <label>Existing Customer</label>
+                </value>
+                <value>
+                    <fullName>Others </fullName>
+                    <default>false</default>
+                    <label>Others </label>
+                </value>
+                <value>
+                    <fullName>Other Referral Source</fullName>
+                    <default>false</default>
+                    <label>Other Referral Source</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Check_In_GeoLocation__c</fullName>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Check In GeoLocation</label>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Check_In_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Check In Location</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Check_Out_GeoLocation__c</fullName>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Check Out GeoLocation</label>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Check_Out_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Out Location</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Check_in_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Check-in Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Check_out_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Check-out Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Task__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Collection Task</label>
+        <referenceTo>Collection_Task__c</referenceTo>
+        <relationshipLabel>Meetings</relationshipLabel>
+        <relationshipName>Meetings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Number_of_Person_Met__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Number of Person Met</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>DSA_Connector__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DSA/Connector</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Meetings</relationshipLabel>
+        <relationshipName>Meetings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Distance_Traveled_In_km__c</fullName>
+        <externalId>false</externalId>
+        <label>Distance Traveled In km</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loan_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Loan Account</label>
+        <referenceTo>Loan_Account__c</referenceTo>
+        <relationshipLabel>Meetings</relationshipLabel>
+        <relationshipName>Meetings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Agenda__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Agenda</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Meeting_Outcome__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rate of Interest Issue</fullName>
+                    <default>false</default>
+                    <label>Rate of Interest Issue</label>
+                </value>
+                <value>
+                    <fullName>Loan Amount Issue</fullName>
+                    <default>false</default>
+                    <label>Loan Amount Issue</label>
+                </value>
+                <value>
+                    <fullName>Tenor Issue</fullName>
+                    <default>false</default>
+                    <label>Tenor Issue</label>
+                </value>
+                <value>
+                    <fullName>PF Issue</fullName>
+                    <default>false</default>
+                    <label>PF Issue</label>
+                </value>
+                <value>
+                    <fullName>Insurance Cost</fullName>
+                    <default>false</default>
+                    <label>Insurance Cost</label>
+                </value>
+                <value>
+                    <fullName>BT Cost</fullName>
+                    <default>false</default>
+                    <label>BT Cost</label>
+                </value>
+                <value>
+                    <fullName>Documentation Issue</fullName>
+                    <default>false</default>
+                    <label>Documentation Issue</label>
+                </value>
+                <value>
+                    <fullName>Client Not Eligible</fullName>
+                    <default>false</default>
+                    <label>Client Not Eligible</label>
+                </value>
+                <value>
+                    <fullName>Property not acceptable</fullName>
+                    <default>false</default>
+                    <label>Property not acceptable</label>
+                </value>
+                <value>
+                    <fullName>Policy norms not met</fullName>
+                    <default>false</default>
+                    <label>Policy norms not met</label>
+                </value>
+                <value>
+                    <fullName>Negative Profile</fullName>
+                    <default>false</default>
+                    <label>Negative Profile</label>
+                </value>
+                <value>
+                    <fullName>Poor RTR</fullName>
+                    <default>false</default>
+                    <label>Poor RTR</label>
+                </value>
+                <value>
+                    <fullName>Poor Banking</fullName>
+                    <default>false</default>
+                    <label>Poor Banking</label>
+                </value>
+                <value>
+                    <fullName>Poor CIBIL</fullName>
+                    <default>false</default>
+                    <label>Poor CIBIL</label>
+                </value>
+                <value>
+                    <fullName>Rescheduled date</fullName>
+                    <default>false</default>
+                    <label>Rescheduled date</label>
+                </value>
+                <value>
+                    <fullName>Rescheduled time</fullName>
+                    <default>false</default>
+                    <label>Rescheduled time</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Rate of Interest Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Loan Amount Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Tenor Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>PF Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Insurance Cost</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>BT Cost</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Documentation Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Client Not Eligible</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Property not acceptable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Policy norms not met</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Negative Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Poor RTR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Poor Banking</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Not Interested</controllingFieldValue>
+                <valueName>Poor CIBIL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Appointment Re-scheduled / Collection pending / Client not met</controllingFieldValue>
+                <valueName>Rescheduled date</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Appointment Re-scheduled / Collection pending / Client not met</controllingFieldValue>
+                <valueName>Rescheduled time</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meeting_Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Client Not Interested</fullName>
+                    <default>false</default>
+                    <label>Client Not Interested</label>
+                </value>
+                <value>
+                    <fullName>Appointment Re-scheduled / Collection pending / Client not met</fullName>
+                    <default>false</default>
+                    <label>Appointment Re-scheduled / Collection pending / Client not met</label>
+                </value>
+                <value>
+                    <fullName>Automation to create the meeting plan</fullName>
+                    <default>false</default>
+                    <label>Automation to create the meeting plan</label>
+                </value>
+                <value>
+                    <fullName>Lead Generation( DSA )</fullName>
+                    <default>false</default>
+                    <label>Lead Generation( DSA )</label>
+                </value>
+                <value>
+                    <fullName>Lead Generation( Connector )</fullName>
+                    <default>false</default>
+                    <label>Lead Generation( Connector )</label>
+                </value>
+                <value>
+                    <fullName>Document Collected to fetch CIBIL</fullName>
+                    <default>false</default>
+                    <label>Document Collected to fetch CIBIL</label>
+                </value>
+                <value>
+                    <fullName>Cat A checklist document collected partially</fullName>
+                    <default>false</default>
+                    <label>Cat A checklist document collected partially</label>
+                </value>
+                <value>
+                    <fullName>Cat A checklist document collected fully</fullName>
+                    <default>false</default>
+                    <label>Cat A checklist document collected fully</label>
+                </value>
+                <value>
+                    <fullName>Sales PD Done</fullName>
+                    <default>false</default>
+                    <label>Sales PD Done</label>
+                </value>
+                <value>
+                    <fullName>Property Visit Done</fullName>
+                    <default>false</default>
+                    <label>Property Visit Done</label>
+                </value>
+                <value>
+                    <fullName>Pre-Queries given</fullName>
+                    <default>false</default>
+                    <label>Pre-Queries given</label>
+                </value>
+                <value>
+                    <fullName>Pre-Queries resolved</fullName>
+                    <default>false</default>
+                    <label>Pre-Queries resolved</label>
+                </value>
+                <value>
+                    <fullName>Credit PD Visit done</fullName>
+                    <default>false</default>
+                    <label>Credit PD Visit done</label>
+                </value>
+                <value>
+                    <fullName>Post PD Queries given</fullName>
+                    <default>false</default>
+                    <label>Post PD Queries given</label>
+                </value>
+                <value>
+                    <fullName>Post PD Queries resolved</fullName>
+                    <default>false</default>
+                    <label>Post PD Queries resolved</label>
+                </value>
+                <value>
+                    <fullName>Disbursement documentation collected partially</fullName>
+                    <default>false</default>
+                    <label>Disbursement documentation collected partially</label>
+                </value>
+                <value>
+                    <fullName>Disbursement documentation collected fully</fullName>
+                    <default>false</default>
+                    <label>Disbursement documentation collected fully</label>
+                </value>
+                <value>
+                    <fullName>OTC / PDD documents collected partially</fullName>
+                    <default>false</default>
+                    <label>OTC / PDD documents collected partially</label>
+                </value>
+                <value>
+                    <fullName>OTC / PDD documents collected fully</fullName>
+                    <default>false</default>
+                    <label>OTC / PDD documents collected fully</label>
+                </value>
+                <value>
+                    <fullName>Reference collected</fullName>
+                    <default>false</default>
+                    <label>Reference collected</label>
+                </value>
+                <value>
+                    <fullName>EMI Partially collected</fullName>
+                    <default>false</default>
+                    <label>EMI Partially collected</label>
+                </value>
+                <value>
+                    <fullName>EMI fully collected</fullName>
+                    <default>false</default>
+                    <label>EMI fully collected</label>
+                </value>
+                <value>
+                    <fullName>PTP</fullName>
+                    <default>false</default>
+                    <label>PTP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Meeting_Plan__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Meeting Plan </label>
+        <referenceTo>Meeting_Plan__c</referenceTo>
+        <relationshipLabel>Meetings</relationshipLabel>
+        <relationshipName>Meetings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Notes_Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes/Remarks</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Person_Met__c</fullName>
+        <externalId>false</externalId>
+        <label>Person Met</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salesperson__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Salesperson</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Meetings</relationshipLabel>
+        <relationshipName>Meetings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Scheduled_End_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Scheduled End Time </label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Scheduled_Start_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Scheduled Start Time </label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Re-Scheduled</fullName>
+                    <default>false</default>
+                    <label>Re-Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TL_Remark__c</fullName>
+        <externalId>false</externalId>
+        <label>TL Remark</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Collection Task </fullName>
+                    <default>false</default>
+                    <label>Collection Task </label>
+                </value>
+                <value>
+                    <fullName>Meeting </fullName>
+                    <default>false</default>
+                    <label>Meeting </label>
+                </value>
+                <value>
+                    <fullName>Other </fullName>
+                    <default>false</default>
+                    <label>Other </label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Meeting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Meeting_Plan__c</columns>
+        <columns>Category__c</columns>
+        <columns>Status__c</columns>
+        <columns>Scheduled_Start_Time__c</columns>
+        <columns>Salesperson__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>MEET-{0000}</displayFormat>
+        <label>Meeting #</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Meetings</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Scheduled_Start_Time__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Meeting_Outcome__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>In_Progress_Completed_Meetings</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(ISPICKVAL(Status__c, &apos;Completed&apos;), ISPICKVAL(Status__c, &apos;In Progress&apos;))
+&amp;&amp; ISCHANGED(Salesperson__c)</errorConditionFormula>
+        <errorMessage>In Progress/Completed Meetings cannot be re-assigned</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Person_Met_and_Meeting_Outcome_can_only</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(OR(ISPICKVAL (Status__c,&quot;In Progress&quot;),ISPICKVAL (Status__c, &quot;Completed&quot; )),
+((ISBLANK(Person_Met__c))||(ISPICKVAL(Meeting_Outcome__c,&apos;&apos;))
+))</errorConditionFormula>
+        <errorMessage>Person Met and Meeting Outcome can only be added for &apos;In Progress&apos;/&apos;Completed&apos; meetings</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Scheduled_End_Time_Should_be_Greater</fullName>
+        <active>true</active>
+        <errorConditionFormula>Scheduled_End_Time__c &lt;=  Scheduled_Start_Time__c</errorConditionFormula>
+        <errorMessage>Scheduled End Time Should be Greater than Scheduled Start Time</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Scheduled_Start_Time_Should_be_Greater</fullName>
+        <active>true</active>
+        <errorConditionFormula>(Scheduled_Start_Time__c &lt; NOW() ) &amp;&amp;
+ISNEW()</errorConditionFormula>
+        <errorMessage>Scheduled Start Time Should be Greater than Equal to Current Time</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>resheading_meeting</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISPICKVAL(Status__c,&apos;Re-Scheduled&apos;) &amp;&amp; TIMEVALUE(Scheduled_Start_Time__c)&lt;  TIMENOW()</errorConditionFormula>
+        <errorMessage>change the sch time</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Property Checklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Property Checklists</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Of The Property --></label>
+        <name>Address_Of_The_Property__c</name>
+    </fields>
+    <fields>
+        <help><!-- For purchase cases only) --></help>
+        <label><!-- Amount To Be Paid For The Property --></label>
+        <name>Amount_To_Be_Paid_For_The_Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>Applicant__c</name>
+        <relationshipLabel><!-- Property Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Built Up/Super Built Up Area (In sq ft) --></label>
+        <name>Built_Up_Super_Built_Up_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Occupation Status --></label>
+        <name>Current_Occupation_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Comments --></label>
+        <name>Document_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Received --></label>
+        <name>Document_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Land Area (In Sq Ft.) --></label>
+        <name>Land_Area_In_Sq_Ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Of The Owner/s Of The Property --></label>
+        <name>Name_Of_The_Owners_Of_The_Property__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Details (In Case of LAP) --></label>
+        <name>Property_Details_In_Case_of_LAP__c</name>
+    </fields>
+    <fields>
+        <help><!-- *2 Internal and 1 external photograph  with selfie of Ambit Employee and Borrower . --></help>
+        <label><!-- Property Photos Uploaded --></label>
+        <name>Property_Photos_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtype --></label>
+        <name>Subtype__c</name>
+        <picklistValues>
+            <masterLabel>Dummy</masterLabel>
+            <translation><!-- Dummy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tentative Market Value --></label>
+        <name>Tentative_Market_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Document --></label>
+        <name>Type_of_Document__c</name>
+        <picklistValues>
+            <masterLabel>Dummy</masterLabel>
+            <translation><!-- Dummy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Property --></label>
+        <name>Type_of_Property__c</name>
+        <picklistValues>
+            <masterLabel>Dummy</masterLabel>
+            <translation><!-- Dummy --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Property Checklist Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

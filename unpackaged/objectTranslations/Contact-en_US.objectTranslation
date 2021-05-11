@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Applicant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applicants</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Business Applicant</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Business Applicants</value>
+        </caseValues>
+        <name>business_contact</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Access</value>
+        </caseValues>
+        <name>contact_access</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Access Level</value>
+        </caseValues>
+        <name>contact_access_level</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Account</value>
+        </caseValues>
+        <name>contact_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Currency</value>
+        </caseValues>
+        <name>contact_currency</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Description</value>
+        </caseValues>
+        <name>contact_description</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Division</value>
+        </caseValues>
+        <name>contact_division</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Edit</value>
+        </caseValues>
+        <name>contact_edit</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Email</value>
+        </caseValues>
+        <name>contact_email</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Fax</value>
+        </caseValues>
+        <name>contact_fax</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Fields</value>
+        </caseValues>
+        <name>contact_field</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant History</value>
+        </caseValues>
+        <name>contact_history</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant History Report</value>
+        </caseValues>
+        <name>contact_history_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant ID</value>
+        </caseValues>
+        <name>contact_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Information</value>
+        </caseValues>
+        <name>contact_information</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Mobile</value>
+        </caseValues>
+        <name>contact_mobile</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Names</value>
+        </caseValues>
+        <name>contact_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Note</value>
+        </caseValues>
+        <name>contact_note</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Number</value>
+        </caseValues>
+        <name>contact_number</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Owner</value>
+        </caseValues>
+        <name>contact_owner</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Owner Alias</value>
+        </caseValues>
+        <name>contact_owner_alias</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Phone</value>
+        </caseValues>
+        <name>contact_phone</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Record</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Records</value>
+        </caseValues>
+        <name>contact_record</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Record Types</value>
+        </caseValues>
+        <name>contact_record_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reports To Applicant</value>
+        </caseValues>
+        <name>contact_reports_to</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Role</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Roles</value>
+        </caseValues>
+        <name>contact_role</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Role ID</value>
+        </caseValues>
+        <name>contact_role_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Role Report</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Role Reports</value>
+        </caseValues>
+        <name>contact_role_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Stage ID</value>
+        </caseValues>
+        <name>contact_stage_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Status</value>
+        </caseValues>
+        <name>contact_status</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Types</value>
+        </caseValues>
+        <name>contact_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Applicant View</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Applicant Views</value>
+        </caseValues>
+        <name>contact_view</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Address Type --></label>
+        <name>Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Office Address</masterLabel>
+            <translation><!-- Office Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent Address</masterLabel>
+            <translation><!-- Permanent Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Address</masterLabel>
+            <translation><!-- Residential Address --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Age Norm Eligibility Remarks --></label>
+        <name>Age_Norm_Eligibility_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age Norm Eligibility --></label>
+        <name>Age_Norm_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent --></label>
+        <name>Agent__c</name>
+        <relationshipLabel><!-- Contacts (Agent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applicant Father Name --></label>
+        <name>Applicant_Father_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Spouse Name --></label>
+        <name>Applicant_Spouse_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Type --></label>
+        <name>Applicant_Type__c</name>
+        <picklistValues>
+            <masterLabel>Applicant</masterLabel>
+            <translation><!-- Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Applicant</masterLabel>
+            <translation><!-- Co-Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application Form Type --></label>
+        <name>Application_Form_Type__c</name>
+        <picklistValues>
+            <masterLabel>E-Application Form</masterLabel>
+            <translation><!-- E-Application Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Application Form</masterLabel>
+            <translation><!-- Physical Application Form --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorised Person --></label>
+        <name>Authorised_Person__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer Belongs to Negative Property Address( Valid only for SME or Rural type of loans) --></help>
+        <label><!-- Belongs to negative property address --></label>
+        <name>Belongs_to_negative_property_address__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Branch Manager --></label>
+        <name>Branch_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Contacts (Branch) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Building / Street Name --></label>
+        <name>Building_Street_Name_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building / Street Name --></label>
+        <name>Building_Street_Name_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type Remark --></label>
+        <name>Business_Type_Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>Business_Type__c</name>
+        <picklistValues>
+            <masterLabel>HUF</masterLabel>
+            <translation><!-- HUF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-HUF</masterLabel>
+            <translation><!-- Non-HUF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Vintage Policy Rules --></label>
+        <name>Business_Vintage_Policy_Rules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Vintage as per policy --></label>
+        <name>Business_Vintage__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Vintage as per policy Remarks --></label>
+        <name>Business_Vintage_as_per_policy_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIBIL ID Number --></label>
+        <name>CIBIL_ID_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIBIL ID --></label>
+        <name>CIBIL_ID__c</name>
+        <picklistValues>
+            <masterLabel>Driving License Number (Permanent only)</masterLabel>
+            <translation><!-- Driving License Number (Permanent only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport Number</masterLabel>
+            <translation><!-- Passport Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voter ID Number</masterLabel>
+            <translation><!-- Voter ID Number --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIBIL Score Eligibility Remarks --></label>
+        <name>CIBIL_Score_Eligibility_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIBIL Score Eligibility --></label>
+        <name>CIBIL_Score_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIBIL Score --></label>
+        <name>CIBIL_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only for Private Ltd/Public Ltd/LLP --></help>
+        <label><!-- CIN Number --></label>
+        <name>CIN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel Type --></label>
+        <name>Channel_Type__c</name>
+        <picklistValues>
+            <masterLabel>Sales Team</masterLabel>
+            <translation><!-- Sales Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+        <picklistValues>
+            <masterLabel>DSA Manager</masterLabel>
+            <translation><!-- DSA Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DST Manager</masterLabel>
+            <translation><!-- DST Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 10 --></label>
+        <name>Co_Applicant_10__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 10) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 11 --></label>
+        <name>Co_Applicant_11__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 11) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 12 --></label>
+        <name>Co_Applicant_12__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 12) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 13 --></label>
+        <name>Co_Applicant_13__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 13) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 14 --></label>
+        <name>Co_Applicant_14__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 14) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 15 --></label>
+        <name>Co_Applicant_15__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 15) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 1 --></label>
+        <name>Co_Applicant_1__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 2 --></label>
+        <name>Co_Applicant_2__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 3 --></label>
+        <name>Co_Applicant_3__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 4 --></label>
+        <name>Co_Applicant_4__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 5 --></label>
+        <name>Co_Applicant_5__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 5) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 6 --></label>
+        <name>Co_Applicant_6__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 6) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 7 --></label>
+        <name>Co_Applicant_7__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 7) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 8 --></label>
+        <name>Co_Applicant_8__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 8) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant 9 --></label>
+        <name>Co_Applicant_9__c</name>
+        <relationshipLabel><!-- Contacts (Co-Applicant 9) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Type --></label>
+        <name>Company_Type__c</name>
+        <picklistValues>
+            <masterLabel>MSME</masterLabel>
+            <translation><!-- MSME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non MSME</masterLabel>
+            <translation><!-- Non MSME --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Constitution --></label>
+        <name>Constitution__c</name>
+        <picklistValues>
+            <masterLabel>LLP</masterLabel>
+            <translation><!-- LLP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Limited</masterLabel>
+            <translation><!-- Private Limited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proprietership</masterLabel>
+            <translation><!-- Proprietership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Limited</masterLabel>
+            <translation><!-- Public Limited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SENP</masterLabel>
+            <translation><!-- SENP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEP</masterLabel>
+            <translation><!-- SEP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salaried</masterLabel>
+            <translation><!-- Salaried --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Society</masterLabel>
+            <translation><!-- Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust</masterLabel>
+            <translation><!-- Trust --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cross Sell --></label>
+        <name>Cross_Sell__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Age --></label>
+        <name>Current_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Existing</masterLabel>
+            <translation><!-- Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of Incorporation --></label>
+        <name>Date_of_Incorporation__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_Mailing__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be uploaded in case of physical form only --></help>
+        <label><!-- Document Uploaded --></label>
+        <name>Document_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>Graduate</masterLabel>
+            <translation><!-- Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Graduate</masterLabel>
+            <translation><!-- Post Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Graduate</masterLabel>
+            <translation><!-- Under Graduate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employee Code --></label>
+        <name>Employee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flat / House Number --></label>
+        <name>Flat_House_Number_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flat / House Number --></label>
+        <name>Flat_House_Number_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form 60 Uploaded --></label>
+        <name>Form_60_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transgender</masterLabel>
+            <translation><!-- Transgender --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 1 --></label>
+        <name>Guarantor_1__c</name>
+        <relationshipLabel><!-- Contacts (Guarantor 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 2 --></label>
+        <name>Guarantor_2__c</name>
+        <relationshipLabel><!-- Contacts (Guarantor 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 3 --></label>
+        <name>Guarantor_3__c</name>
+        <relationshipLabel><!-- Contacts (Guarantor 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 4 --></label>
+        <name>Guarantor_4__c</name>
+        <relationshipLabel><!-- Contacts (Guarantor 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Guarantor 5 --></label>
+        <name>Guarantor_5__c</name>
+        <relationshipLabel><!-- Contacts (Guarantor 5) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- KYC Details --></label>
+        <name>KYC_Details__c</name>
+        <picklistValues>
+            <masterLabel>Form 60</masterLabel>
+            <translation><!-- Form 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAN Card</masterLabel>
+            <translation><!-- PAN Card --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Land Mark --></label>
+        <name>Land_Mark_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Land Mark --></label>
+        <name>Land_Mark_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Amount --></label>
+        <name>Loan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>Marital_Status__c</name>
+        <picklistValues>
+            <masterLabel>Divorced</masterLabel>
+            <translation><!-- Divorced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation><!-- Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Widowed</masterLabel>
+            <translation><!-- Widowed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nature of Loan --></label>
+        <name>Nature_of_Loan__c</name>
+        <picklistValues>
+            <masterLabel>External BT plus Top-up</masterLabel>
+            <translation><!-- External BT plus Top-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fresh Loan</masterLabel>
+            <translation><!-- Fresh Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal BT</masterLabel>
+            <translation><!-- Internal BT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase of Commercial Property</masterLabel>
+            <translation><!-- Purchase of Commercial Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance</masterLabel>
+            <translation><!-- Refinance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repurchase</masterLabel>
+            <translation><!-- Repurchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top-Up Loan</masterLabel>
+            <translation><!-- Top-Up Loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Negative property address Remarks --></label>
+        <name>Negative_property_address_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Years in Business --></label>
+        <name>No_of_Years_in_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- OK to Proceed --></label>
+        <name>OK_to_Proceed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - With Deviation</masterLabel>
+            <translation><!-- Yes - With Deviation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes - Without Deviation</masterLabel>
+            <translation><!-- Yes - Without Deviation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Occupancy Status --></label>
+        <name>Occupancy_Status__c</name>
+        <picklistValues>
+            <masterLabel>Co-Provided</masterLabel>
+            <translation><!-- Co-Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owned</masterLabel>
+            <translation><!-- Owned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parental</masterLabel>
+            <translation><!-- Parental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Organisation Name --></label>
+        <name>Organisation_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAN Number --></label>
+        <name>PAN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Lead - Rural Udyam</masterLabel>
+            <translation><!-- Lead - Rural Udyam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead - Rural Vyapar</masterLabel>
+            <translation><!-- Lead - Rural Vyapar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead - UCV</masterLabel>
+            <translation><!-- Lead - UCV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead - UDYAM (UNSECURED LOAN)</masterLabel>
+            <translation><!-- Lead - UDYAM (UNSECURED LOAN) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead - VYAPAR (SECURED LOAN)</masterLabel>
+            <translation><!-- Lead - VYAPAR (SECURED LOAN) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promo Scheme --></label>
+        <name>Promo_Scheme__c</name>
+        <picklistValues>
+            <masterLabel>Bus 1 - FTB</masterLabel>
+            <translation><!-- Bus 1 - FTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bus 2 - Retail 2 - 5</masterLabel>
+            <translation><!-- Bus 2 - Retail 2 - 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bus 3 - Retail 6 - 9</masterLabel>
+            <translation><!-- Bus 3 - Retail 6 - 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bus 4 - Strategic</masterLabel>
+            <translation><!-- Bus 4 - Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Captive 1 - Super Strategic</masterLabel>
+            <translation><!-- Captive 1 - Super Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Captive 2 - Strategic</masterLabel>
+            <translation><!-- Captive 2 - Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Captive 3 - Retail</masterLabel>
+            <translation><!-- Captive 3 - Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat A - FTU</masterLabel>
+            <translation><!-- Cat A - FTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat A1 - FTB</masterLabel>
+            <translation><!-- Cat A1 - FTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat B - Retail 2-5</masterLabel>
+            <translation><!-- Cat B - Retail 2-5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat C - Retail 6-9</masterLabel>
+            <translation><!-- Cat C - Retail 6-9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FBC-1</masterLabel>
+            <translation><!-- FBC-1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FBC-2</masterLabel>
+            <translation><!-- FBC-2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School-1</masterLabel>
+            <translation><!-- School-1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School-2</masterLabel>
+            <translation><!-- School-2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School-3</masterLabel>
+            <translation><!-- School-3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic</masterLabel>
+            <translation><!-- Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Super Strategic</masterLabel>
+            <translation><!-- Super Strategic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Bus Operator</masterLabel>
+            <translation><!-- Bus Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Expansion</masterLabel>
+            <translation><!-- Business Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital equipment purchase (CAPEX)</masterLabel>
+            <translation><!-- Capital equipment purchase (CAPEX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Captive</masterLabel>
+            <translation><!-- Captive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Institutions</masterLabel>
+            <translation><!-- Education Institutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freight Booking Company</masterLabel>
+            <translation><!-- Freight Booking Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase of commercial property</masterLabel>
+            <translation><!-- Purchase of commercial property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance of existing loans</masterLabel>
+            <translation><!-- Refinance of existing loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To meet temporary mismatch in cash flow</masterLabel>
+            <translation><!-- To meet temporary mismatch in cash flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporter - Retail</masterLabel>
+            <translation><!-- Transporter - Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transporter - Strategic</masterLabel>
+            <translation><!-- Transporter - Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working capital</masterLabel>
+            <translation><!-- Working capital --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RTR Norms Eligibility --></label>
+        <name>RTR_Norm_Eligibility__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RTR Norms Remarks --></label>
+        <name>RTR_Norms_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- RTR Norms --></label>
+        <name>RTR_Norms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Of Interest --></label>
+        <name>Rate_Of_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Source Name --></label>
+        <name>Referral_Source_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship with Applicant --></label>
+        <name>Relationship_with_Applicant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role name --></label>
+        <name>Role_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SM/SO --></label>
+        <name>SM_SO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same As Destination Address --></label>
+        <name>Same_As_Destination_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheme --></label>
+        <name>Scheme__c</name>
+        <picklistValues>
+            <masterLabel>AMBIT UDYAM - 100 DAYS VARIANT</masterLabel>
+            <translation><!-- AMBIT UDYAM - 100 DAYS VARIANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT UDYAM - AVERAGE BANK BALANCE (ABB)</masterLabel>
+            <translation><!-- AMBIT UDYAM - AVERAGE BANK BALANCE (ABB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT UDYAM - COVID LINE OF CREDIT</masterLabel>
+            <translation><!-- AMBIT UDYAM - COVID LINE OF CREDIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT UDYAM - GST UDYAM</masterLabel>
+            <translation><!-- AMBIT UDYAM - GST UDYAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT UDYAM - INCOME BASED</masterLabel>
+            <translation><!-- AMBIT UDYAM - INCOME BASED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT UDYAM - LIP ASSESSMENT</masterLabel>
+            <translation><!-- AMBIT UDYAM - LIP ASSESSMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - BANKING SURROGATE</masterLabel>
+            <translation><!-- AMBIT VYAPAR - BANKING SURROGATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - COVID LINE OF CREDIT</masterLabel>
+            <translation><!-- AMBIT VYAPAR - COVID LINE OF CREDIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - GST VYAPAR LOAN</masterLabel>
+            <translation><!-- AMBIT VYAPAR - GST VYAPAR LOAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - INCOME BASED</masterLabel>
+            <translation><!-- AMBIT VYAPAR - INCOME BASED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - LAP AGAINST MULTI TENANTED PROPERTIES</masterLabel>
+            <translation><!-- AMBIT VYAPAR - LAP AGAINST MULTI TENANTED PROPERTIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - LIP Program</masterLabel>
+            <translation><!-- AMBIT VYAPAR - LIP Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - MICRO LAP</masterLabel>
+            <translation><!-- AMBIT VYAPAR - MICRO LAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - TATKAL VYAPAR</masterLabel>
+            <translation><!-- AMBIT VYAPAR - TATKAL VYAPAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBIT VYAPAR - TOP-UP LOANS FOR EXISTING CUSTOMERS</masterLabel>
+            <translation><!-- AMBIT VYAPAR - TOP-UP LOANS FOR EXISTING CUSTOMERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assessed Income Program</masterLabel>
+            <translation><!-- Assessed Income Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goods Segment UCV</masterLabel>
+            <translation><!-- Goods Segment UCV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income Based Program</masterLabel>
+            <translation><!-- Income Based Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - AHMEDABAD</masterLabel>
+            <translation><!-- MICROLAP - AHMEDABAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - DELHI</masterLabel>
+            <translation><!-- MICROLAP - DELHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - INDORE</masterLabel>
+            <translation><!-- MICROLAP - INDORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - JAIPUR</masterLabel>
+            <translation><!-- MICROLAP - JAIPUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - KALYAN</masterLabel>
+            <translation><!-- MICROLAP - KALYAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - LUDHIANA</masterLabel>
+            <translation><!-- MICROLAP - LUDHIANA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - NASHIK</masterLabel>
+            <translation><!-- MICROLAP - NASHIK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICROLAP - RAJKOT</masterLabel>
+            <translation><!-- MICROLAP - RAJKOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NIP in Imperfect Collateral</masterLabel>
+            <translation><!-- NIP in Imperfect Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NIP in Perfect Collateral</masterLabel>
+            <translation><!-- NIP in Perfect Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passenger Segment UCV</masterLabel>
+            <translation><!-- Passenger Segment UCV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Location --></label>
+        <name>Service_Location__c</name>
+        <relationshipLabel><!-- Contacts (Service Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sourcing Channel --></label>
+        <name>Sourcing_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sourcing Location --></label>
+        <name>Sourcing_Location__c</name>
+        <relationshipLabel><!-- Contacts (Sourcing Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sourcing Team --></label>
+        <name>Sourcing_Team__c</name>
+        <picklistValues>
+            <masterLabel>CF</masterLabel>
+            <translation><!-- CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institutional</masterLabel>
+            <translation><!-- Institutional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_Destination__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Appointment Re-schdeduled</masterLabel>
+            <translation><!-- Appointment Re-schdeduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment Scheduled</masterLabel>
+            <translation><!-- Appointment Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BM Queue</masterLabel>
+            <translation><!-- BM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIBIL Updated</masterLabel>
+            <translation><!-- CIBIL Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation in process</masterLabel>
+            <translation><!-- Documentation in process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Contactable</masterLabel>
+            <translation><!-- Not Contactable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Eligible</masterLabel>
+            <translation><!-- Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open - Lead</masterLabel>
+            <translation><!-- Open - Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SM Queue</masterLabel>
+            <translation><!-- SM Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Co-ordinator Queue</masterLabel>
+            <translation><!-- Sales Co-ordinator Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Team Qualified</masterLabel>
+            <translation><!-- Sales Team Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Qualification process</masterLabel>
+            <translation><!-- Under Qualification process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Channel Type --></label>
+        <name>Sub_Channel_Type__c</name>
+        <picklistValues>
+            <masterLabel>Connector</masterLabel>
+            <translation><!-- Connector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Sales Agent</masterLabel>
+            <translation><!-- Direct Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Sourcing</masterLabel>
+            <translation><!-- Direct Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLDG DSA</masterLabel>
+            <translation><!-- FLDG DSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used CV Broker</masterLabel>
+            <translation><!-- Used CV Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Sub Status is Others, please specify --></help>
+        <label><!-- Sub Status, If Other --></label>
+        <name>Sub_Status_If_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Status --></label>
+        <name>Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer disconnecting call</masterLabel>
+            <translation><!-- Customer disconnecting call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer frequently rescheduling the appointment</masterLabel>
+            <translation><!-- Customer frequently rescheduling the appointment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not disclosing the reason</masterLabel>
+            <translation><!-- Customer not disclosing the reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not providing documentation</masterLabel>
+            <translation><!-- Customer not providing documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Amount Issue</masterLabel>
+            <translation><!-- Loan Amount Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negative Profile</masterLabel>
+            <translation><!-- Negative Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not picking up</masterLabel>
+            <translation><!-- Not picking up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Policy norms not met</masterLabel>
+            <translation><!-- Policy norms not met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor Banking</masterLabel>
+            <translation><!-- Poor Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor CIBIL</masterLabel>
+            <translation><!-- Poor CIBIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor RTR</masterLabel>
+            <translation><!-- Poor RTR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property in negative area</masterLabel>
+            <translation><!-- Property in negative area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property not doable</masterLabel>
+            <translation><!-- Property not doable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate of Interest Issue</masterLabel>
+            <translation><!-- Rate of Interest Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Number</masterLabel>
+            <translation><!-- Wrong Number --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tenure (In Months) --></label>
+        <name>Tenure_In_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time At Address (In Years) --></label>
+        <name>Time_At_Address_In_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Cross Sell --></label>
+        <name>Type_of_Cross_Sell__c</name>
+    </fields>
+    <fields>
+        <help><!-- If with deviation, kindly provide justification --></help>
+        <label><!-- Yes - With Deviation Reason --></label>
+        <name>Yes_With_Deviation_Reason__c</name>
+    </fields>
+    <layouts>
+        <layout>Individual</layout>
+        <sections>
+            <label><!-- CIBIL &amp; KYC Details --></label>
+            <section>CIBIL &amp; KYC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Cardinal Rules --></label>
+            <section>Cardinal Rules</section>
+        </sections>
+        <sections>
+            <label><!-- Co-Applicants --></label>
+            <section>Co-Applicants</section>
+        </sections>
+        <sections>
+            <label><!-- Destination Address --></label>
+            <section>Destination Address</section>
+        </sections>
+        <sections>
+            <label><!-- Guarantors --></label>
+            <section>Guarantors</section>
+        </sections>
+        <sections>
+            <label><!-- Loan Specific Details --></label>
+            <section>Loan Specific Details</section>
+        </sections>
+        <sections>
+            <label><!-- Mailing Address --></label>
+            <section>Mailing Address</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Details --></label>
+            <section>Referral Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Individual</layout>
+        <sections>
+            <label><!-- CIBIL &amp; KYC Details --></label>
+            <section>CIBIL &amp; KYC Details</section>
+        </sections>
+        <sections>
+            <label><!-- Cardinal Rules --></label>
+            <section>Cardinal Rules</section>
+        </sections>
+        <sections>
+            <label><!-- Co-Applicants --></label>
+            <section>Co-Applicants</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Destination Address --></label>
+            <section>Destination Address</section>
+        </sections>
+        <sections>
+            <label><!-- Guarantors --></label>
+            <section>Guarantors</section>
+        </sections>
+        <sections>
+            <label><!-- Loan Specific Details --></label>
+            <section>Loan Specific Details</section>
+        </sections>
+        <sections>
+            <label><!-- Mailing Address --></label>
+            <section>Mailing Address</section>
+        </sections>
+        <sections>
+            <label><!-- Referral Details --></label>
+            <section>Referral Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Check CIBIL Score --></label>
+        <name>Check_CIBIL_Score</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Individual --></label>
+        <name>Individual</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non Individual --></label>
+        <name>Non_Individual</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select agent --></errorMessage>
+        <name>Agent_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Business Vintage as per policy remarks is required --></errorMessage>
+        <name>Business_Vintage_as_per_policy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CIBIL Score Eligibility Remarks Is Required --></errorMessage>
+        <name>CIBIL_Score_Eligibility_remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide CIN No. --></errorMessage>
+        <name>CIN_No_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Employee Code --></errorMessage>
+        <name>Employee_Code_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Business Type Remark is required --></errorMessage>
+        <name>For_Business_Type_Remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Age Norm Eligibility Remarks Is Required --></errorMessage>
+        <name>If_Age_Norm_Eligibility_Remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Negative property address Remarks  Required --></errorMessage>
+        <name>If_Negative_property_address_Remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- RTR Norms Remarks is required --></errorMessage>
+        <name>If_RTR_Norms_Remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide a Sub Status --></errorMessage>
+        <name>Other_Sub_Status_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter PAN Number --></errorMessage>
+        <name>PAN_No_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Type of Cross sell --></errorMessage>
+        <name>Type_of_Cross_Sell_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide Deviation Reason --></errorMessage>
+        <name>With_Deviation_Reason</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Applicant_Not_Contactable_Please_contact</name>
+        <subject><!-- Applicant Not Contactable- Please contact --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

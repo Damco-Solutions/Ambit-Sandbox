@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>ZSM-Rest of India</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Business_Head_Rest_of_India</parentRole>
+</Role>

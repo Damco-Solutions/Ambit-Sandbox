@@ -1,0 +1,118 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" controller="DailyAttendance" access="global" >
+    <!-- captures the latitude and longitude of the current user -->
+    <aura:attribute name="lat" type="String" />
+    <aura:attribute name="lon" type="String" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="isLogin" type="boolean" default="false"/>
+    <aura:attribute name="isLogout" type="boolean" default="false"/>
+    <aura:attribute name="HighLevelWorkPlan" type="String" />
+    <aura:attribute name="mapMarkers" type="Object" access="PRIVATE" />
+    <aura:attribute name="markersTitle" type="String" access="PRIVATE" />
+    
+    <aura:attribute name="disableLoginBtn" type ="boolean" default="true"/>
+    <aura:attribute name="disableLogoutBtn" type ="boolean" default="true"/>
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="loginTime" type="DateTime"/>
+    
+    <!-- To Show/Hide Spinner loginTime -->
+    <aura:attribute name="ShowSpinner" type="boolean" default="false"/>
+    <!-- calls on page load -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:if isTrue="{!v.ShowSpinner}"> 
+        <lightning:spinner alternativeText="Loading" aura:id="mySpinner" variant="brand" />
+    </aura:if>  
+    
+    <div class="slds-tabs_default">
+        <div >
+            <div class="slds-page-header slds-page-header_vertical" >
+                <center>
+                    <span><b>Today's Attendance: </b></span>
+                    <lightning:button label="Attendance In" value="Login" title="Attendance In" onclick="{! c.openModel }" disabled="{!v.disableLoginBtn}" />
+                    <lightning:button label="Attendance Out" value="Logout" title="Attendance Out" onclick="{!c.openModel}" disabled="{!v.disableLogoutBtn}" />
+                </center>
+                <br/>
+                <aura:if isTrue="{!v.disableLoginBtn}">
+                <div class="slds-box">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <aura:if isTrue="{!v.disableLoginBtn}">
+                                <b>Day Started at: </b><lightning:formattedDateTime value="{!v.record.Login_Time__c}" year="numeric" day="2-digit" month="long" hour="2-digit" minute="2-digit"/><br/>
+                                <b>High Level Work Plan: </b><lightning:formattedText value="{!v.record.High_Level_Work_Plan__c}" />
+                            </aura:if>
+                        </div>
+                        <div class="slds-col">
+                            <aura:if isTrue="{!and(v.disableLoginBtn,v.disableLogoutBtn)}">
+                                <b>Day Ended at: </b><lightning:formattedDateTime value="{!v.record.Logout_Time__c}" year="numeric" day="2-digit" month="long" hour="2-digit" minute="2-digit"/><br/>
+                                <b>Accomplished Results in the day: </b><lightning:formattedText value="{!v.record.Accomplished_Results_in_the_day__c}" />
+                            </aura:if>
+                        </div>
+                    </div>
+                    
+                    </div></aura:if><br/>
+                
+                <aura:if isTrue="{!v.mapMarkers.length > 0}" >
+                    <lightning:map style="overflow: hidden;"
+                                   mapMarkers="{!v.mapMarkers}" 
+                                   markersTitle="{!v.markersTitle}"
+                                   zoomLevel="15"
+                                   />
+                </aura:if>
+            </div>
+        </div>
+    </div>
+    <aura:if isTrue="{!v.isOpen}">
+        
+        <!--###### MODAL BOX Start######--> 
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.closeModel }"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <aura:if isTrue="{!v.isLogin}">
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Log in</h2>
+                        <aura:set attribute="else">
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Log out</h2>
+                        </aura:set>
+                    </aura:if> 
+                    
+                </header>
+                <!--###### MODAL BOX BODY Part Start######-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <aura:if isTrue="{!v.isLogin}">
+                        <lightning:textarea name="input3" label="High Level Work Plan" required="true" value="{!v.HighLevelWorkPlan}"/>
+                    </aura:if>
+                    <aura:if isTrue="{!v.isLogout}">
+                        <lightning:textarea name="input3" label="Accomplished Results in the day" required="true" value="{!v.HighLevelWorkPlan}"/>
+                    </aura:if>
+                </div>
+                <!--###### MODAL BOX FOOTER Part Start ######-->
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" 
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{! c.closeModel }"/>
+                    <aura:if isTrue="{!v.isLogin}">
+                        <lightning:button variant="brand" 
+                                          label="Update"
+                                          title="Update"
+                                          onclick="{! c.login }" disabled="{!v.disableLoginBtn}"/>
+                        <aura:set attribute="else">
+                            <lightning:button variant="brand" 
+                                              label="Update"
+                                              title="Update"
+                                              onclick="{! c.logout }" disabled="{!v.disableLogoutBtn}"/>
+                        </aura:set>
+                    </aura:if> 
+                    
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <!--###### MODAL BOX Part END Here ######-->
+        
+    </aura:if>
+</aura:component>

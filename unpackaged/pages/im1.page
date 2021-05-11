@@ -1,0 +1,791 @@
+<apex:page >
+<table border="1" cellspacing="0" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <tbody>
+        <tr>
+            <td width="880" valign="top" colspan="4">
+                <p align="center" >
+                    <strong style="font-size:2vw;">Industry Margin List</strong>
+                    <strong></strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p align="center" style="font-size:18px;">
+                    Activity
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center" style="font-size:18px;">
+                    Max Net profit margin
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p style="font-size:18px;">
+                    Critical Indicators of turnover and net margin
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p align="center" style="font-size:18px;">
+                    Remarks
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p>
+                    Real Estate
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    20-25 %
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Last year’s declared turnover to be considered. Minimum
+                    three years vintage is a must. Actual turnover to be
+                    assumed @ 120 % of the last year audited turnover.
+                    Incremental WIP shall also be taken in to account if the
+                    same has been reflected consistently in last three years.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Individuals involved in construction, NA land development,
+                    plotting, selling, brokerage/ commission income, sales of
+                    building materials etc. Proof of past and future projects
+                    in terms of getting Layout Plans, sanctions of projects
+                    implemented from competent authority.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p>
+                    Government Contractors
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    10%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Last year audited turnover only to be considered.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Margin can be considered, due to uneven inflow of cash,
+                    from their bills and as also influenced by factors like
+                    changes in prices of raw material required and changes in
+                    govt. and its policies and seasonality of the work
+                    progress.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p>
+                    Private Contractors
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    10%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    On the basis of actual bills produced for a period
+                </p>
+                <p>
+                    for minimum of one year.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p>
+                    Restaurant/ Sweet Shop/ Confectionary
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    40%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    On the basis of actual invoices/ bills produced/ ledger
+                    extracts
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Considering on the basis of location, seating capacity,
+                    type, standard, details of the ration purchased
+                    (suppliers), authenticated ledger available with the party.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p>
+                    Hotel Industry
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    30%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Average turnover for last 3 years to be considered. In case
+                    of institutional catering services margin to be considered
+                    at 15%)
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Considering average 60% occupancy depending upon the
+                    location and customer flow seasonality. No. of rooms,
+                    Banquet Hall, tariff etc.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p>
+                    Education
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    35%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Based on the strength and average fee structure of the
+                    institution plus donations (if adequately supported by
+                    evidence) deducting the expenses like staff salary,
+                    maintenance, etc.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on the strength and average fee structure of the
+                    institution plus donations (if adequately supported by
+                    evidence) deducting the expenses like staff salary,
+                    maintenance, etc.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="157" valign="top">
+                <p>
+                    Dairy/ Animal Husbandry
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    40%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    40% margin can be considered based on number of mulch
+                    animals for a lactation period of 240 days depending on the
+                    breed of the animal.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    40% margin can be considered based on number of mulch
+                    animals for a lactation period of 240 days depending on the
+                    breed of the animal.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    <div>
+    <table border="1" cellspacing="0" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <tbody>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Transport
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    20%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Income can be considered per Vehicle basis. Viability
+                    Matrix for the Vehicle wrt businesses will be circulated
+                    separately
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Only for the vehicles in the name of the
+                </p>
+                <p>
+                    borrower/ firms standing party to agreement. Xerox of RC
+                    Copy or Insurance copies should be made available to
+                    credit.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Spinning and weaving
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="justify">
+                    5 % for the spinning plant. 10% for the weaving plant. For
+                    integrated plants -10%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on declared turnover.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Petrol Pumps
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    2.50%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on turnover as mentioned in last year
+                </p>
+                <p>
+                    audited balance sheets.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Mining/ Quarry/ Brick Kiln/ Crushers
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    20%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Maximum exposure to Quarry owners to be restricted to
+                    100.00 Lacs and for brick kiln and Crusher owner’s exposure
+                    to be restricted to 50.00 Lacs. (If the activity is single/
+                    major source of income).
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on the basis of any of the following: challans, sale
+                    tax paid, royalty paid, demand, ledger maintained, receipts
+                    of weigh bridge, etc. (Minimum six months supporting
+                    documents Should be made available for analysis.)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Mining
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    20%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    3 Times reported turnover to be considered.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Due to implication of Excise on turnover above Rs
+                </p>
+                <p>
+                    150 Lacs, clients cap T.O. below Rs 150 lacs whereas actual
+                    TO may be 5 times of reported turnover.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    All Retail Stores of agri input, medicines, grocery,
+                    machinery, hardware, electrical &amp; electronics,Timber
+                    &amp; Wood, Crockery, Books &amp; Stationary, Cloth Stores,
+                    Shoe &amp; Leather Articles, Cosmetics, Slaughter Houses,
+                    Bangle Stores etc
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    10%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    As per different industry margins vis. Based on the basis
+                    of bills/ invoices produced at least for one year.
+                </p>
+            </td>
+            <td width="272" valign="top">
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Franchise Stores
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    15%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on declared T/O for the retail out lets for
+                </p>
+                <p>
+                    branded products.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Private Practitioners Doctors, Compounders
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    80%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p align="justify">
+                    Maximum exposure to be capped at Rs.50 Lacs for
+                </p>
+                <p align="justify">
+                    those who provide only advice to patients and do not have
+                    any bed at the clinic where patients can be admitted.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on average no. of patients attended per day and fee
+                    received.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+<table border="1" cellspacing="0" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+    <tbody>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Nursing Homes/ Hospitals
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    25%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Number of beds, tariff structure and occupancy
+                </p>
+                <p>
+                    rate. Purchase bills of medical equipment/ machinery can
+                    also be collected to show amount of investment.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p align="justify">
+                    Based on last year declared turnover. Availability of
+                    authenticated Monty ledger of receivables by concerned
+                    Doctor.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top" rowspan="2">
+                <p>
+                    Printing Press/ Publisher
+                </p>
+            </td>
+            <td width="164" valign="top" rowspan="2">
+                <p align="center">
+                    15%
+                </p>
+            </td>
+            <td width="285" valign="top" rowspan="2">
+                <p>
+                    15% margin on own printing. In case of Job work
+                </p>
+                <p>
+                    commission, 50% of commission can be taken as net income.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on declared turn over.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="272" valign="top">
+                <p>
+                    In case of Job work, 1.5 times of turnover to be
+                </p>
+                <p>
+                    considered.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Entertainment (Cinema, etc.)
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    15%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    From declared turn over or Considering turnover
+                </p>
+                <p>
+                    45% of seating capacity at the declared ticket rates.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Tent House
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    40%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Taking 60 working days for a year and rent
+                </p>
+                <p>
+                    received on each item. From authenticated
+                </p>
+                <p>
+                    income proofs.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Marriage Gardens
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    70%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Taking 60 working days for a year.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Automobile Industry
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    15%
+                </p>
+            </td>
+            <td width="285" valign="top">
+                <p>
+                    Only for spare parts dealer, for dealer ships of 2-
+                </p>
+                <p>
+                    wheeler and 4 wheeler it should be 3-4% of reported
+                    turnover.
+                </p>
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    From declared turn over
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Gems &amp; Jewellers
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    6% dealing only in Gold, 10% for clients in stones and
+                    stone related Jewellery
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    3 times of turnover based on nature of business.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Diamond Polishing
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    8%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    TDS certificate from purchasers and 1.2 times of
+                </p>
+                <p>
+                    that.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Service Centres/ Workshop
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    50%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    From authenticated proofs of income. Average
+                </p>
+                <p>
+                    daily vehicles.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Agro Processing Industries
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    8%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    120% of declared turn over
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Wholesale &amp; Trading
+                </p>
+                <p>
+                    Business
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    5%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    From declared turn over.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Commission agents/ Arties
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    1.50%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Considering three times the declared turnover.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    C &amp; F Agents
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    4%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    From declared turnover.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Poultry/ Trading of eggs
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    10% (Layer &amp; Breeding), 3%
+                </p>
+                <p align="center">
+                    (Trading of Eggs)
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    From declared turnover / Depending on Bird
+                </p>
+                <p>
+                    capacity
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Consulting activity
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    50%
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on Declared receipts
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="153" valign="top">
+                <p>
+                    Manufacturing of industrial
+                </p>
+                <p>
+                    gases
+                </p>
+            </td>
+            <td width="164" valign="top">
+                <p align="center">
+                    20
+                </p>
+            </td>
+            <td width="285" valign="top">
+            </td>
+            <td width="272" valign="top">
+                <p>
+                    Based on declared turnover
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>    
+</apex:page>

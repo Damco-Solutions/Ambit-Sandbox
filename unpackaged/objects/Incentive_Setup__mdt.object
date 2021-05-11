@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Active </label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Basis_of_Incentives__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Basis of Incentives</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No of Logins</fullName>
+                    <default>true</default>
+                    <label>No of Logins</label>
+                </value>
+                <value>
+                    <fullName>Disbursal Amount</fullName>
+                    <default>false</default>
+                    <label>Disbursal Amount</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DSA_Partner_Connector__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>DSA/Partner/ Connector</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eligible_Role__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Eligible Role</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Officer</fullName>
+                    <default>true</default>
+                    <label>Sales Officer</label>
+                </value>
+                <value>
+                    <fullName>Sr Sales Officer</fullName>
+                    <default>false</default>
+                    <label>Sr Sales Officer</label>
+                </value>
+                <value>
+                    <fullName>Sales Manager -Asst Manager</fullName>
+                    <default>false</default>
+                    <label>Sales Manager -Asst Manager</label>
+                </value>
+                <value>
+                    <fullName>Sr Sales Manager-Deputy Manager</fullName>
+                    <default>false</default>
+                    <label>Sr Sales Manager-Deputy Manager</label>
+                </value>
+                <value>
+                    <fullName>Sales Manager-UCV</fullName>
+                    <default>false</default>
+                    <label>Sales Manager-UCV</label>
+                </value>
+                <value>
+                    <fullName>Sales Officer-UCV</fullName>
+                    <default>false</default>
+                    <label>Sales Officer-UCV</label>
+                </value>
+                <value>
+                    <fullName>$User.Username</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>$User.Username</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>End Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Incentive_Connector__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Incentive Connector %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Incentive__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Incentive %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Loan_Type_Applied__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Loan Type Applied</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business Loan</fullName>
+                    <default>true</default>
+                    <label>Business Loan</label>
+                </value>
+                <value>
+                    <fullName>Loan against Property</fullName>
+                    <default>false</default>
+                    <label>Loan against Property</label>
+                </value>
+                <value>
+                    <fullName>Industrial or Commercial Purchase</fullName>
+                    <default>false</default>
+                    <label>Industrial or Commercial Purchase</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Maximum_Amount__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Maximum Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_File_Input__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Maximum File Input</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minimum_Amount__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Minimum Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minimum_File_Input__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Minimum File Input</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Product</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead - VYAPAR (SECURED LOAN)</fullName>
+                    <default>true</default>
+                    <label>Lead - VYAPAR (SECURED LOAN)</label>
+                </value>
+                <value>
+                    <fullName>Lead - UDYAM (UNSECURED LOAN)</fullName>
+                    <default>false</default>
+                    <label>Lead - UDYAM (UNSECURED LOAN)</label>
+                </value>
+                <value>
+                    <fullName>Lead - UCV</fullName>
+                    <default>false</default>
+                    <label>Lead - UCV</label>
+                </value>
+                <value>
+                    <fullName>Lead - Rural Vyapar</fullName>
+                    <default>false</default>
+                    <label>Lead - Rural Vyapar</label>
+                </value>
+                <value>
+                    <fullName>Lead - Rural Udyam</fullName>
+                    <default>false</default>
+                    <label>Lead - Rural Udyam</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RecordType__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>RecordType</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Regular Incentive</fullName>
+                    <default>true</default>
+                    <label>Regular Incentive</label>
+                </value>
+                <value>
+                    <fullName>Contest</fullName>
+                    <default>false</default>
+                    <label>Contest</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sourcing__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Sourcing</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct</fullName>
+                    <default>true</default>
+                    <label>Direct</label>
+                </value>
+                <value>
+                    <fullName>Non Direct</fullName>
+                    <default>false</default>
+                    <label>Non Direct</label>
+                </value>
+                <value>
+                    <fullName>DSA</fullName>
+                    <default>false</default>
+                    <label>DSA</label>
+                </value>
+                <value>
+                    <fullName>Connector</fullName>
+                    <default>false</default>
+                    <label>Connector</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Target__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Target</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DSA</fullName>
+                    <default>true</default>
+                    <label>DSA</label>
+                </value>
+                <value>
+                    <fullName>Salesperson</fullName>
+                    <default>false</default>
+                    <label>Salesperson</label>
+                </value>
+                <value>
+                    <fullName>Connector</fullName>
+                    <default>false</default>
+                    <label>Connector</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WIRR_Higher_Limit__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>WIRR Higher Limit %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>WIRR_Lower_Limit__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>WIRR Lower Limit %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <label>Incentive Setup</label>
+    <listViews>
+        <fullName>Secured</fullName>
+        <columns>MasterLabel</columns>
+        <columns>Type__c</columns>
+        <columns>WIRR_Lower_Limit__c</columns>
+        <columns>WIRR_Higher_Limit__c</columns>
+        <columns>Minimum_Amount__c</columns>
+        <columns>Maximum_Amount__c</columns>
+        <columns>Sourcing__c</columns>
+        <columns>Incentive__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product__c</field>
+            <operation>equals</operation>
+            <value>Lead - VYAPAR (SECURED LOAN)</value>
+        </filters>
+        <filters>
+            <field>RecordType__c</field>
+            <operation>equals</operation>
+            <value>Regular Incentive</value>
+        </filters>
+        <label>Secured</label>
+    </listViews>
+    <listViews>
+        <fullName>Secured_for_Contest</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType__c</field>
+            <operation>equals</operation>
+            <value>Contest</value>
+        </filters>
+        <filters>
+            <field>Product__c</field>
+            <operation>equals</operation>
+            <value>Lead - VYAPAR (SECURED LOAN)</value>
+        </filters>
+        <label>Secured for Contest</label>
+    </listViews>
+    <listViews>
+        <fullName>UCV</fullName>
+        <columns>MasterLabel</columns>
+        <columns>Product__c</columns>
+        <columns>WIRR_Lower_Limit__c</columns>
+        <columns>WIRR_Higher_Limit__c</columns>
+        <columns>Minimum_Amount__c</columns>
+        <columns>Maximum_Amount__c</columns>
+        <columns>Incentive__c</columns>
+        <columns>Sourcing__c</columns>
+        <columns>Eligible_Role__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product__c</field>
+            <operation>equals</operation>
+            <value>Lead - UCV</value>
+        </filters>
+        <filters>
+            <field>RecordType__c</field>
+            <operation>equals</operation>
+            <value>Regular Incentive</value>
+        </filters>
+        <label>UCV</label>
+    </listViews>
+    <listViews>
+        <fullName>UCV_for_contest</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType__c</field>
+            <operation>equals</operation>
+            <value>Contest</value>
+        </filters>
+        <filters>
+            <field>Product__c</field>
+            <operation>equals</operation>
+            <value>Lead - UCV</value>
+        </filters>
+        <label>UCV for contest</label>
+    </listViews>
+    <listViews>
+        <fullName>UnSecured</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <columns>Minimum_Amount__c</columns>
+        <columns>Maximum_Amount__c</columns>
+        <columns>Product__c</columns>
+        <columns>Sourcing__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product__c</field>
+            <operation>equals</operation>
+            <value>Lead - UDYAM (UNSECURED LOAN)</value>
+        </filters>
+        <filters>
+            <field>RecordType__c</field>
+            <operation>equals</operation>
+            <value>Regular Incentive</value>
+        </filters>
+        <label>UnSecured</label>
+    </listViews>
+    <listViews>
+        <fullName>unsecured_for_contest</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>NamespacePrefix</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType__c</field>
+            <operation>equals</operation>
+            <value>Contest</value>
+        </filters>
+        <filters>
+            <field>Product__c</field>
+            <operation>equals</operation>
+            <value>Lead - UDYAM (UNSECURED LOAN)</value>
+        </filters>
+        <label>unsecured for contest</label>
+    </listViews>
+    <pluralLabel>Incentive Setups</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

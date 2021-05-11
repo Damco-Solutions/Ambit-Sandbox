@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Achievement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Achievements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adherence to Ambit Values Target --></label>
+        <name>Adherence_to_Ambit_Values_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adherence To Ambit Values --></label>
+        <name>Adherence_to_Ambit_Values__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Ratio Achieved (%) --></label>
+        <name>Approval_Ratio_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Ratio Target (%) --></label>
+        <name>Approval_Ratio_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cases Disbursed in last 3 days Ach (%) --></label>
+        <name>Cases_Disbursed_in_last_3_days_Ach__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cases Disbursed in last 3 days Target(%) --></label>
+        <name>Cases_Disbursed_in_last_3_days_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communication and email skillset Target --></label>
+        <name>Communication_and_email_skillset_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Communication and Email Skill Set --></label>
+        <name>Communication_and_email_skillset__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Direct Biz Sourced Achieved (%) --></label>
+        <name>Direct_Biz_Sourced_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Biz Sourced Target (%) --></label>
+        <name>Direct_Biz_Sourced_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration Achievement --></label>
+        <name>Duration_Achievement__c</name>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FTR Achieved (%) --></label>
+        <name>FTR_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTR Target (%) --></label>
+        <name>FTR_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- IRR Achieved (%) --></label>
+        <name>IRR_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- IRR Target (%) --></label>
+        <name>IRR_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Penetration Achieved (%) --></label>
+        <name>Insurance_Penetration_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Penetration Target (%) --></label>
+        <name>Insurance_Penetration_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Generation Achieved --></label>
+        <name>Lead_Generation_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Generation Target --></label>
+        <name>Lead_Generation_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Achievement --></label>
+        <name>Meeting_Achievement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting/Lead Conversation Ratio Ach (%) --></label>
+        <name>Meeting_Lead_Conversation_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting/Lead Conversion Ratio Target (%) --></label>
+        <name>Meeting_Lead_Conversion_Ratio_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings Target --></label>
+        <name>Meetings_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month  --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPA Achieved --></label>
+        <name>NPA_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPA Target --></label>
+        <name>NPA_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net PF Achieved (%) --></label>
+        <name>Net_PF_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net PF Target (%) --></label>
+        <name>Net_PF_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Files Logged In Achieved --></label>
+        <name>No_of_Files_Logged_In_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Files Logged In Target --></label>
+        <name>No_of_Files_Logged_In_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Units Disbursed Achieved --></label>
+        <name>No_of_Units_Disbursed_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Units Disbursed Target --></label>
+        <name>No_of_Units_Disbursed_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTC/PDD above norms Achieved --></label>
+        <name>OTC_PDD_above_norms_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTC/PDD above norms Target --></label>
+        <name>OTC_PDD_above_norms_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Grooming, Attendance and Time --></label>
+        <name>OverallGrooming_attendance_and_time__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall Conduct and Cross Function --></label>
+        <name>Overall_conduct_and_Cross_function__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall-grooming/attendance/dis Target --></label>
+        <name>Overall_grooming_attendance_dis_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overallconduct/Crossfunction deal Target --></label>
+        <name>Overallconduct_Crossfunction_deal_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarter  --></label>
+        <name>Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query TAT Resolution Achieved (%) --></label>
+        <name>Query_TAT_Resolution_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query TAT Resolution Target (%) --></label>
+        <name>Query_TAT_Resolution_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target --></label>
+        <name>Target__c</name>
+        <relationshipLabel><!-- Achievements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Targets Achieved  --></label>
+        <name>Targets_Achieved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Weighted Achievement  --></label>
+        <name>Total_Weighted_Achievement__c</name>
+    </fields>
+    <fields>
+        <label><!-- UCV Amount --></label>
+        <name>UCV_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unsecured Amount --></label>
+        <name>Unsecured_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Achievements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Value of Files Logged In Achieved --></label>
+        <name>Value_of_Files_Logged_In_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of Files Logged In Target --></label>
+        <name>Value_of_Files_Logged_In_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume Achieved --></label>
+        <name>Volume_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume Target (In Cr) --></label>
+        <name>Volume_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year  --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Achievement Layout</layout>
+        <sections>
+            <label><!-- Achievements --></label>
+            <section>Achievements</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

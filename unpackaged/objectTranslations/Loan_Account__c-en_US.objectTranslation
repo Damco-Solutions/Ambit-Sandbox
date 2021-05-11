@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Loan Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Loan Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agent Code --></label>
+        <name>Agent_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Name --></label>
+        <name>Agent_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Contact Number 1 --></label>
+        <name>Applicant_Contact_Number_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Contact Number 2 --></label>
+        <name>Applicant_Contact_Number_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant E-Mail ID --></label>
+        <name>Applicant_E_Mail_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>Applicant__c</name>
+        <relationshipLabel><!-- Loan Accounts (Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DPD --></label>
+        <name>DPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSA/Connector --></label>
+        <name>DSA_Connector__c</name>
+        <relationshipLabel><!-- Loan Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disbursal Amount --></label>
+        <name>Disbursal_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disbursal Date --></label>
+        <name>Disbursal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- EMI Overdue Amount --></label>
+        <name>EMI_Overdue_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- FI Inititation Date --></label>
+        <name>FI_Inititation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FI Report Received Date --></label>
+        <name>FI_Report_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FI Report Status --></label>
+        <name>FI_Report_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Decision Date --></label>
+        <name>Final_Decision_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Decision Status --></label>
+        <name>Final_Decision_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- First EMI Date --></label>
+        <name>First_EMI_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMD Deposit Date --></label>
+        <name>IMD_Deposit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMD Status Date --></label>
+        <name>IMD_Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Principle Go-No-Go Date --></label>
+        <name>In_Principle_Go_No_Go_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- In case of Reject, Reject Reason --></label>
+        <name>In_case_of_Reject_Reject_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Amount --></label>
+        <name>Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Amount --></label>
+        <name>Insurance_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOAN STATUS --></label>
+        <name>LOAN_STATUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last EMI Date --></label>
+        <name>Last_EMI_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Amount --></label>
+        <name>Last_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Payment Date --></label>
+        <name>Last_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legai-1 Report Status --></label>
+        <name>Legai_1_Report_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal-1 Completion Date --></label>
+        <name>Legal_1_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal-1 Inititation Date --></label>
+        <name>Legal_1_Inititation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal-2 Completion Date --></label>
+        <name>Legal_2_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal-2 Inititation Date --></label>
+        <name>Legal_2_Inititation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal-2 Report Status --></label>
+        <name>Legal_2_Report_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Account Number --></label>
+        <name>Loan_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Date --></label>
+        <name>Login_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maturity Date --></label>
+        <name>Maturity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Open Queries --></label>
+        <name>No_of_Open_Queries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Address --></label>
+        <name>Office_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Overdue Amount --></label>
+        <name>Other_Overdue_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD  Date --></label>
+        <name>PD_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD Done By- Employee Designation --></label>
+        <name>PD_Done_By_Employee_Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD Done By- Employee Name --></label>
+        <name>PD_Done_By_Employee_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- PF Amount --></label>
+        <name>PF_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROPERTY ADDRESS (IN CASE OF LAP) --></label>
+        <name>PROPERTY_ADDRESS_IN_CASE_OF_LAP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post PD Completion Date --></label>
+        <name>Post_PD_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post PD Queries Raised Date --></label>
+        <name>Post_PD_Queries_Raised_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principal Outstanding --></label>
+        <name>Principal_Outstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect ID --></label>
+        <name>Prospect_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCU Inititation Date --></label>
+        <name>RCU_Inititation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCU Report Received Date --></label>
+        <name>RCU_Report_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCU Report Status --></label>
+        <name>RCU_Report_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI --></label>
+        <name>ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reject Remarks --></label>
+        <name>Reject_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Address --></label>
+        <name>Residence_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residual Tenure --></label>
+        <name>Residual_Tenure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Date --></label>
+        <name>Sanction_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanctioned Amount --></label>
+        <name>Sanctioned_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheme --></label>
+        <name>Scheme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Channel Agent Code --></label>
+        <name>Second_Channel_Agent_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seocnd Channel Agent Name --></label>
+        <name>Seocnd_Channel_Agent_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Applied</masterLabel>
+            <translation><!-- Applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disbursed</masterLabel>
+            <translation><!-- Disbursed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMI Scheduled</masterLabel>
+            <translation><!-- EMI Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Closure</masterLabel>
+            <translation><!-- Pending Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TENURE --></label>
+        <name>TENURE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-1 Completion Date --></label>
+        <name>Technical_1_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-1 Inititation Date --></label>
+        <name>Technical_1_Inititation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-1 Report Status --></label>
+        <name>Technical_1_Report_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-2 Completion Date --></label>
+        <name>Technical_2_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-2 Inititation Date --></label>
+        <name>Technical_2_Inititation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-2 Report Status --></label>
+        <name>Technical_2_Report_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-3 Completion Date --></label>
+        <name>Technical_3_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-3 Inititation Date --></label>
+        <name>Technical_3_Inititation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical-3 Report Status --></label>
+        <name>Technical_3_Report_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Loan Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 1st Decision Date (CPA Stage) --></label>
+        <name>X1st_Decision_Date_CPA_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Decision Status --></label>
+        <name>X1st_Decision_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Recommendation Date (Credit Manager) --></label>
+        <name>X1st_Recommendation_Date_Credit_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Recommendation Status --></label>
+        <name>X1st_Recommendation_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- create year --></label>
+        <name>create_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- created month --></label>
+        <name>created_month__c</name>
+    </fields>
+    <layouts>
+        <layout>Loan Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Post Sanction Details --></label>
+            <section>Post Sanction Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pre Sanction Details --></label>
+            <section>Pre Sanction Details</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- sharing  record with above role --></label>
+        <name>sharing_record_with_above_role</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please provide DSA/Connector --></errorMessage>
+        <name>DSA_Connector_For_Unsecured_Loans</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Assign_to_Collection_Plan --></label>
+        <name>Assign_to_Collection_Plan</name>
+    </webLinks>
+</CustomObjectTranslation>

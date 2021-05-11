@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>GoogleApiURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GoogleApiURL</shortDescription>
+        <value>https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&amp;origins=</value>
+    </labels>
+    <labels>
+        <fullName>googelApikey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>googelApikey</shortDescription>
+        <value>AIzaSyDOzfa37-Dvfv9dlX_OKhkxQxHh4EJKVmg</value>
+    </labels>
+</CustomLabels>

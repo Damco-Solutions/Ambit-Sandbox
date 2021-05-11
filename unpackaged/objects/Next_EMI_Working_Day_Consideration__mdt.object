@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Will be used to Check if Next EMI day is falling on Holiday, then weather next or previous day should be selected.</description>
+    <fields>
+        <fullName>Next_EMI_Day__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If next EMI day is falling on holiday, then Next working day will be consided as next EMI day</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If next EMI day is falling on holiday, then Next working day will be consided as next EMI day</inlineHelpText>
+        <label>Next EMI Day</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Working_Day__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If next EMI day is falling on holiday, then Previous working day will be consided as next EMI day</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If next EMI day is falling on holiday, then Previous working day will be consided as next EMI day</inlineHelpText>
+        <label>Previous Working Day</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Next EMI Working Day Consideration</label>
+    <pluralLabel>Next EMI Working Day Consideration</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

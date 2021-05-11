@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Names</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Owner</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Owners</value>
+        </caseValues>
+        <name>account_owner</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Agent Branch --></label>
+        <name>Agent_Branch__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>Approver__c</name>
+        <relationshipLabel><!-- Accounts (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branch Code --></label>
+        <name>Branch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Manager Name --></label>
+        <name>Branch_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Branch Manager Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DSA / Connector Code --></label>
+        <name>DSA_Connector_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSA / Connector --></label>
+        <name>DSA_Connector__c</name>
+        <picklistValues>
+            <masterLabel>Connector</masterLabel>
+            <translation><!-- Connector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSA</masterLabel>
+            <translation><!-- DSA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>SME</masterLabel>
+            <translation><!-- SME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCV</masterLabel>
+            <translation><!-- UCV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile No --></label>
+        <name>Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary User --></label>
+        <name>Primary_User__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Branch Layout</layout>
+        <sections>
+            <label><!-- Branch Address --></label>
+            <section>Branch Address</section>
+        </sections>
+        <sections>
+            <label><!-- Branch Details --></label>
+            <section>Branch Details</section>
+        </sections>
+        <sections>
+            <label><!-- Branch Information --></label>
+            <section>Branch Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Branch --></label>
+        <name>Branch</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner --></label>
+        <name>Partner</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayoutAssignment>Person_Account</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Person_Account</fullName>
+        <fields>Name</fields>
+        <fields>PersonTitle</fields>
+        <fields>Phone</fields>
+        <fields>Email__c</fields>
+        <fields>DSA_Connector_Code__c</fields>
+        <label>Person Account</label>
+    </compactLayouts>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <recordTypes>
+        <fullName>PersonAccount</fullName>
+        <active>true</active>
+        <label>Person Account</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Address_Type__pc</picklist>
+            <values>
+                <fullName>Office Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential Address</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicant_Type__pc</picklist>
+            <values>
+                <fullName>Applicant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Co-Applicant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guarantor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Application_Form_Type__pc</picklist>
+            <values>
+                <fullName>E-Application Form</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Application Form</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Belongs_to_negative_property_address__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Type__pc</picklist>
+            <values>
+                <fullName>HUF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-HUF</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Business_Vintage__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CIBIL_ID__pc</picklist>
+            <values>
+                <fullName>Driving License Number %28Permanent only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passport Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voter ID Number</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_Type__pc</picklist>
+            <values>
+                <fullName>Sales Team</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel__pc</picklist>
+            <values>
+                <fullName>DSA Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DST Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Type__pc</picklist>
+            <values>
+                <fullName>MSME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non MSME</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Constitution__pc</picklist>
+            <values>
+                <fullName>LLP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Limited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proprietership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Limited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SENP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salaried</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Society</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cross_Sell__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Type__pc</picklist>
+            <values>
+                <fullName>Existing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>DSA_Connector__c</picklist>
+            <values>
+                <fullName>Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DSA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Division__c</picklist>
+            <values>
+                <fullName>SME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Education__pc</picklist>
+            <values>
+                <fullName>Graduate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Graduate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Graduate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gender__pc</picklist>
+            <values>
+                <fullName>Female</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Male</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transgender</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>KYC_Details__pc</picklist>
+            <values>
+                <fullName>Form 60</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAN Card</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Marital_Status__pc</picklist>
+            <values>
+                <fullName>Divorced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Married</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Widowed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Nature_of_Loan__pc</picklist>
+            <values>
+                <fullName>External BT plus Top-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fresh Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal BT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchase of Commercial Property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refinance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repurchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top-Up Loan</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OK_to_Proceed__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes - With Deviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes - Without Deviation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Occupancy_Status__pc</picklist>
+            <values>
+                <fullName>Co-Provided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__pc</picklist>
+            <values>
+                <fullName>Lead - Rural Udyam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead - Rural Vyapar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead - UCV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead - UDYAM %28UNSECURED LOAN%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead - VYAPAR %28SECURED LOAN%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promo_Scheme__pc</picklist>
+            <values>
+                <fullName>Bus 1 - FTB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bus 2 - Retail 2 - 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bus 3 - Retail 6 - 9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bus 4 - Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Captive 1 - Super Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Captive 2 - Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Captive 3 - Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cat A - FTU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cat A1 - FTB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cat B - Retail 2-5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cat C - Retail 6-9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FBC-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FBC-2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School-1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School-2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School-3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Super Strategic</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose__pc</picklist>
+            <values>
+                <fullName>Bus Operator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Expansion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Capital equipment purchase %28CAPEX%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Captive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Institutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freight Booking Company</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchase of commercial property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refinance of existing loans</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>To meet temporary mismatch in cash flow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transporter - Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transporter - Strategic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Working capital</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RTR_Norm_Eligibility__pc</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scheme__pc</picklist>
+            <values>
+                <fullName>AMBIT UDYAM - 100 DAYS VARIANT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT UDYAM - AVERAGE BANK BALANCE %28ABB%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT UDYAM - COVID LINE OF CREDIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT UDYAM - GST UDYAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT UDYAM - INCOME BASED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT UDYAM - LIP ASSESSMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - BANKING SURROGATE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - COVID LINE OF CREDIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - GST VYAPAR LOAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - INCOME BASED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - LAP AGAINST MULTI TENANTED PROPERTIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - LIP Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - MICRO LAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - TATKAL VYAPAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBIT VYAPAR - TOP-UP LOANS FOR EXISTING CUSTOMERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assessed Income Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Segment UCV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Income Based Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - AHMEDABAD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - DELHI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - INDORE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - JAIPUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - KALYAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - LUDHIANA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - NASHIK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICROLAP - RAJKOT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NIP in Imperfect Collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NIP in Perfect Collateral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger Segment UCV</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sourcing_Team__pc</picklist>
+            <values>
+                <fullName>CF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Institutional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__pc</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__pc</picklist>
+            <values>
+                <fullName>Appointment Re-schdeduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Appointment Scheduled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BM Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIBIL Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documentation in process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Contactable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Eligible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open - Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SM Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Co-ordinator Queue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Team Qualified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Under Qualification process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Channel_Type__pc</picklist>
+            <values>
+                <fullName>Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sourcing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLDG DSA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Used CV Broker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Status__pc</picklist>
+            <values>
+                <fullName>Customer disconnecting call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer frequently rescheduling the appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer not disclosing the reason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer not providing documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Amount Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Profile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not picking up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Policy norms not met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor CIBIL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor RTR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Property in negative area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Property not doable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rate of Interest Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DSA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

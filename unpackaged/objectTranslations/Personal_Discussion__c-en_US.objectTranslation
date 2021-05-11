@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Personal Discussion</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Personal Discussions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Applicant/Co-Applicant Staying Together --></label>
+        <name>Applicant_Co_Applicant_Staying_TogetherS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Applicant --></label>
+        <name>Applicant__c</name>
+        <relationshipLabel><!-- Personal Discussions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assessed Rental Income --></label>
+        <name>Assessed_Rental_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Margin In The Sector --></label>
+        <name>Average_Margin_In_The_Sector__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Business_Detail_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Engaged Into --></label>
+        <name>Business_Engaged_Into__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Registration --></label>
+        <name>Business_Registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Business_Residence_Detail_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Cashflow_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comfortable Loan Amount --></label>
+        <name>Comfortable_Loan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Level of Stock --></label>
+        <name>Current_Level_of_Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance From Branch (in Km) --></label>
+        <name>Distance_From_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Family_Background_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Business Generation --></label>
+        <name>Family_Business_Generation__c</name>
+    </fields>
+    <fields>
+        <label><!-- GST Applicable --></label>
+        <name>GST_Applicable__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GST Number --></label>
+        <name>GST_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>General_Detail_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Monthly Assessed Income --></label>
+        <name>Gross_Monthly_Assessed_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level of Activity --></label>
+        <name>Level_of_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lifestyle --></label>
+        <name>Lifestyle__c</name>
+        <picklistValues>
+            <masterLabel>Above Average</masterLabel>
+            <translation><!-- Above Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Average</masterLabel>
+            <translation><!-- Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below Average</masterLabel>
+            <translation><!-- Below Average --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Purpose --></label>
+        <name>Loan_Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Obligation As Per Customer --></label>
+        <name>Monthly_Obligation_As_Per_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Residence Bill --></label>
+        <name>Monthly_Residence_Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Monthly Assessed Income --></label>
+        <name>Net_Monthly_Assessed_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Earning Members Staying Together --></label>
+        <name>No_of_Earning_Members_Staying_Together__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Partners/Director --></label>
+        <name>No_of_Partners_Director__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Staff --></label>
+        <name>No_of_Staff__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Years in Current Business --></label>
+        <name>No_of_Years_in_Current_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Years in Current Premises --></label>
+        <name>No_of_Years_in_Current_Premises__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Of Business Premise --></label>
+        <name>Ownership_Of_Business_Premise__c</name>
+        <picklistValues>
+            <masterLabel>Owned</masterLabel>
+            <translation><!-- Owned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rented</masterLabel>
+            <translation><!-- Rented --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PD Date --></label>
+        <name>PD_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD Done by --></label>
+        <name>PD_Done_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD Status --></label>
+        <name>PD_Status__c</name>
+        <picklistValues>
+            <masterLabel>Negative</masterLabel>
+            <translation><!-- Negative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive</masterLabel>
+            <translation><!-- Positive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Person Met --></label>
+        <name>Person_Met__c</name>
+    </fields>
+    <fields>
+        <label><!-- Place of Meeting --></label>
+        <name>Place_of_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Detail --></label>
+        <name>Residence_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seasonality --></label>
+        <name>Seasonality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>Agriculture and Allied Activities</masterLabel>
+            <translation><!-- Agriculture and Allied Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TV Present --></label>
+        <name>TV_Present__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time at Current Address (In Years) --></label>
+        <name>Time_at_Current_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No of Member --></label>
+        <name>Total_No_of_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Business --></label>
+        <name>Type_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2 Wheeler Present --></label>
+        <name>X2_Wheeler_Present__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4 Wheeler Present --></label>
+        <name>X4_Wheeler_Present__c</name>
+    </fields>
+    <layouts>
+        <layout>Personal Discussion Layout</layout>
+        <sections>
+            <label><!-- Business Details --></label>
+            <section>Business Details</section>
+        </sections>
+        <sections>
+            <label><!-- Business/Residence Setup --></label>
+            <section>Business/Residence Setup</section>
+        </sections>
+        <sections>
+            <label><!-- CASHFLOW --></label>
+            <section>CASHFLOW</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Family Background Details --></label>
+            <section>Family Background Details</section>
+        </sections>
+        <sections>
+            <label><!-- General Details --></label>
+            <section>General Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter GST Number --></errorMessage>
+        <name>GST_Number_Required</name>
+    </validationRules>
+</CustomObjectTranslation>
