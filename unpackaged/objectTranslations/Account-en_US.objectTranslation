@@ -146,4 +146,8 @@
         <label><!-- GoogleSearch --></label>
         <name>GoogleSearch</name>
     </webLinks>
+    <webLinks>
+        <label><!-- change_owner --></label>
+        <name>change_owner</name>
+    </webLinks>
 </CustomObjectTranslation>

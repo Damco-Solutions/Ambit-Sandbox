@@ -367,6 +367,12 @@
     </nameField>
     <pluralLabel>Collection Task</pluralLabel>
     <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
         <searchResultsAdditionalFields>Customer__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Loan_Account__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Initial_Total_Amount_To_Be_Recovered__c</searchResultsAdditionalFields>

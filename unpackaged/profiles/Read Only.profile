@@ -101,6 +101,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>Achievement_Trigger_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Attendance_Trigger_test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -6204,6 +6208,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>IndustryMargin</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>accountchangeowner</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

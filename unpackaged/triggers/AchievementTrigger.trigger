@@ -1,5 +1,5 @@
-trigger AchievementTrigger on Achievement__c (after insert) {
-    if(trigger.isAfter && trigger.IsAfter){
+trigger AchievementTrigger on Achievement__c (after insert , after Update) {
+    if(trigger.isAfter && trigger.isInsert ||trigger.isAfter && trigger.isUpdate){
         Map<id,id> RecId_OwnerId_Map = new Map<id,id>();
         List<Achievement__share> shareRecList = new List<Achievement__share>();
         for(Achievement__c ac:trigger.new){
@@ -26,4 +26,5 @@ trigger AchievementTrigger on Achievement__c (after insert) {
             ShareRecordsToManagers.shareRecords(RecId_OwnerId_Map,'Achievement__c');
         }
     }
+   
 }

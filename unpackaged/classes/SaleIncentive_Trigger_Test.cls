@@ -14,8 +14,7 @@ public class SaleIncentive_Trigger_Test {
         sa.Incentive_for_Secured_Loans__c=1234.00;
        sa.Incentive_for_Unsecured_Loans__c=25000.00;
        insert sa;
-      
-      
+        
   }
 
 }

@@ -25,6 +25,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Achievement_Trigger_Test</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>Attendance_Trigger_test</members>
         <name>ApexClass</name>
     </types>
@@ -314,6 +318,10 @@
     </types>
     <types>
         <members>IndustryMargin</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>accountchangeowner</members>
         <name>ApexPage</name>
     </types>
     <types>
@@ -8506,6 +8514,10 @@
     </types>
     <types>
         <members>Account.GoogleSearch</members>
+        <name>WebLink</name>
+    </types>
+    <types>
+        <members>Account.change_owner</members>
         <name>WebLink</name>
     </types>
     <types>

@@ -32,10 +32,6 @@
                 <outputField>PostalCode</outputField>
             </mappingFields>
             <mappingFields>
-                <inputField>FirstName</inputField>
-                <outputField>FirstName</outputField>
-            </mappingFields>
-            <mappingFields>
                 <inputField>MailingCity</inputField>
                 <outputField>City</outputField>
             </mappingFields>
@@ -46,6 +42,10 @@
             <mappingFields>
                 <inputField>Email</inputField>
                 <outputField>Email</outputField>
+            </mappingFields>
+            <mappingFields>
+                <inputField>FirstName</inputField>
+                <outputField>FirstName</outputField>
             </mappingFields>
             <mappingFields>
                 <inputField>LastName</inputField>
