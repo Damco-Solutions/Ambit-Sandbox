@@ -1,0 +1,3 @@
+Hi {!Meeting__c.Applicant__c}, thank you for your time. We want to provide the best experience possible! To help us, please take a moment to leave your feedback. <a href="https://dev-ambitportal.cs76.force.com/MeetingFeedback/Meeting_Feedback?id={!Meeting__c.Id}">Click here to rate </a> 
+
+<p>Thanks for your help!</p>

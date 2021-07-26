@@ -205,6 +205,21 @@
             <field>Salesperson__c</field>
             <table>Targets__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>No_of_Files_Logged_In_Value__c</field>
+            <table>Targets__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Volumes__c</field>
+            <table>Targets__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Branch_Manager__c</field>
+            <table>Targets__c</table>
+        </columns>
         <masterLabel>Targets</masterLabel>
     </sections>
     <sections>
@@ -396,6 +411,21 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Adherence_to_Ambit_Values__c</field>
+            <table>Targets__c.Achievements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Value_of_Files_Logged_In_Targets__c</field>
+            <table>Targets__c.Achievements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Value_Target__c</field>
+            <table>Targets__c.Achievements__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Value_Achieved__c</field>
             <table>Targets__c.Achievements__r</table>
         </columns>
         <masterLabel>Achievements</masterLabel>

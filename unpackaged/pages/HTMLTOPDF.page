@@ -1,0 +1,4 @@
+<apex:page controller="CibiDocIntegration" docType="html-5.0" >
+  
+   {!PDFREPORT}
+</apex:page>

@@ -455,6 +455,10 @@
             <translation><!-- Driving License Number (Permanent only) --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Pan No</masterLabel>
+            <translation><!-- Pan No --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Passport Number</masterLabel>
             <translation><!-- Passport Number --></translation>
         </picklistValues>
@@ -1568,6 +1572,14 @@
     <validationRules>
         <errorMessage><!-- CIBIL Score Eligibility Remarks Is Required --></errorMessage>
         <name>CIBIL_Score_Eligibility_remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- 1.Applicant Information - Gender, Date of Birth
+2.Address - all the fields except for landmark
+3.Loan Specific details - all the fields except for Authorised Person,Company Name
+4.CIBIL section all the fields except for OK to Proceed
+5.Branch name --></errorMessage>
+        <name>CIBIL_Trigger_stage_for_Individual</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please provide CIN No. --></errorMessage>

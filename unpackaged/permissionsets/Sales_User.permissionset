@@ -432,12 +432,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Achievement__c.Value_Achieved__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Achievement__c.Value_Target__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Achievement__c.Value_of_Files_Logged_In_Achieved__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Achievement__c.Value_of_Files_Logged_In_Target__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Achievement__c.Value_of_Files_Logged_In_Targets__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2592,6 +2607,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Loan_Account__c.Eligible_for_Top_Up_loan__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Loan_Account__c.FI_Inititation_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2722,6 +2742,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Loan_Account__c.Not_Interested_for_Top_Up__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Loan_Account__c.Office_Address__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2793,6 +2818,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Loan_Account__c.ROI__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Account__c.Reason_For_Not_Interested_In_Top_up__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2923,6 +2953,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Loan_Account__c.created_month__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Loan_Account__c.loan_disbursal_time__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3058,6 +3093,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Meeting_Plan__c.Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Meeting_Rating__c.Feeback__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Meeting_Rating__c.Rating__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4712,6 +4757,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Targets__c.Branch_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Targets__c.Cases_Disbursed_in_last_3_days_Weightage__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4847,6 +4897,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Targets__c.No_of_Files_Logged_In_Value__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Targets__c.No_of_Files_Logged_In__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4923,6 +4978,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Targets__c.Volume__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Targets__c.Volumes__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

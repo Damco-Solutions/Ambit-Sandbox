@@ -54,6 +54,11 @@
         <relationshipLabel><!-- Targets (Approver/ Line Manager) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Branch Manager --></label>
+        <name>Branch_Manager__c</name>
+        <relationshipLabel><!-- Targets (Branch Manager) --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Cases Disbursed in last 3 days Weightage --></label>
         <name>Cases_Disbursed_in_last_3_days_Weightage__c</name>
     </fields>
@@ -167,6 +172,10 @@
     </fields>
     <fields>
         <label><!-- No of Files Logged In (Value) --></label>
+        <name>No_of_Files_Logged_In_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- No of Files Logged In (Value) --></label>
         <name>No_of_Files_Logged_In__c</name>
     </fields>
     <fields>
@@ -230,6 +239,10 @@
     <fields>
         <label><!-- Volume (In Cr) --></label>
         <name>Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume --></label>
+        <name>Volumes__c</name>
     </fields>
     <fields>
         <label><!-- Yearly Target --></label>

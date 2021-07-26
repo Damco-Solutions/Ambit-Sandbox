@@ -13,6 +13,7 @@
     <tabs>Attendance__c</tabs>
     <tabs>Industry_Margin</tabs>
     <tabs>Sales_Plan__c</tabs>
+    <tabs>Meeting_Rating__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningBolt_UtilityBar</utilityBar>
 </CustomApplication>

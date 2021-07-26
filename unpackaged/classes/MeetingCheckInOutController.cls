@@ -81,7 +81,7 @@ public class MeetingCheckInOutController {
     
     @AuraEnabled
     public static string checkOut(String latitude, String longitude,String recId){
-        Meeting__c meet = [select id,Status__c, Salesperson__c,OwnerId FROM Meeting__c WHERE id=:recId];
+        Meeting__c meet = [select id,Status__c, Salesperson__c,Meeting_Details__c,OwnerId FROM Meeting__c WHERE id=:recId];
         string result = '';
         if(meet.Status__c != 'In Progress'){
             result = 'Only In Progress meetings can be checked out';
@@ -100,8 +100,10 @@ public class MeetingCheckInOutController {
                 u.LastKnownLocation__Latitude__s = Decimal.valueOf(latitude);
                 u.LastKnownLocation__Longitude__s = Decimal.valueOf(longitude);    
             }
+           
             try{
                 update meet;
+                
                 update u;
                 result = 'success';
             }

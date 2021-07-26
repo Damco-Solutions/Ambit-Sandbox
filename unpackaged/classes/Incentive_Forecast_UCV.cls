@@ -1,9 +1,11 @@
 global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Schedulable{
-     global Database.QueryLocator start(Database.BatchableContext bc){
+    global Database.QueryLocator start(Database.BatchableContext bc){
         Integer mnth = System.Today().MOnth();
         Integer yr = System.Today().Year();
         String Product = 'Lead - UCV';
-        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__c,OwnerId,Applicant__r.Product__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE Applicant__r.Product__c=\''+String.escapeSingleQuotes(Product)+'\' and  created_month__c=:mnth and create_year__c=:yr';
+        String loanstatus= 'Disbursed';
+        String loanstatus1= 'Rejected';
+        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__c,OwnerId,Applicant__r.Product__c,LOAN_STATUS__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE Applicant__r.Product__c=\''+String.escapeSingleQuotes(Product)+'\' and create_year__c=:yr and LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\' ';
         system.debug(query);
         return Database.getQueryLocator(query);
     }
@@ -28,11 +30,11 @@ global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Sche
         for(Loan_Account__c Loan:scope){
             if(Loan.Disbursal_Amount__c==null|| Loan.Disbursal_Date__c==null){
                 if(Agent_UCVLoanList_Map.get(loan.OwnerId)==null){
-                Agent_UCVLoanList_Map.put(loan.OwnerId,new List<Loan_Account__c>{loan});
-            }else{
-                Agent_UCVLoanList_Map.get(loan.OwnerId).add(loan);
+                    Agent_UCVLoanList_Map.put(loan.OwnerId,new List<Loan_Account__c>{loan});
+                }else{
+                    Agent_UCVLoanList_Map.get(loan.OwnerId).add(loan);
+                }
             }
-          }
             
         }
         
@@ -44,7 +46,6 @@ global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Sche
             Decimal Sum_Amt_NonDirect = 0;
             
             for(Loan_Account__c la:Agent_UCVLoanList_Map.get(personId)){
-                if(la.Disbursal_Amount__c == null ||la.Disbursal_Date__c==null ){
                     if(la.DSA_Connector__c == null && la.Applicant__r.Loan_Amount__c!=null && la.Applicant__r.Rate_Of_Interest__c!=null){
                         Amt_ROI_Mul_Direct = Amt_ROI_Mul_Direct + (la.Applicant__r.Loan_Amount__c *la.Applicant__r.Rate_Of_Interest__c);
                         Sum_Amt_Direct = Sum_Amt_Direct +la.Applicant__r.Loan_Amount__c;
@@ -54,7 +55,7 @@ global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Sche
                         Amt_ROI_Mul_NonDirect = Amt_ROI_Mul_NonDirect + (la.Applicant__r.Loan_Amount__c *la.Applicant__r.Rate_Of_Interest__c);
                         Sum_Amt_NonDirect = Sum_Amt_NonDirect+la.Applicant__r.Loan_Amount__c;
                     }
-                }
+                
             }
             Agent_LoanAmt_UCV_DS_Map.put(personId,Sum_Amt_Direct);
             Agent_LoanAmt_UCV_NDS_Map.put(personId,Sum_Amt_NonDirect);
@@ -166,5 +167,5 @@ global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Sche
         SalesIncentiveUCV_Batch conInstance = new SalesIncentiveUCV_Batch();
         database.executebatch(conInstance);
     }
-
+    
 }

@@ -14,11 +14,12 @@ public class TestDataFactory {
     }
     public static User CreateUser2(){
          Profile p = [SELECT Id FROM Profile WHERE Name='System Administrator'];
+        UserRole ur = [select id,Name FROM UserRole WHERE Name ='RSM / Zonal Sales Manager'];
         //creating user
         User u = new User(Alias = 'standt', Email='demouser2@damcogroup.com',
                            EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
                            LocaleSidKey='en_US', ProfileId = p.Id, 
-                           TimeZoneSidKey='America/Los_Angeles', UserName='demouser2@damcogroup.com.ambit');
+                           TimeZoneSidKey='America/Los_Angeles',UserRoleId = ur.id, UserName='demouser2@damcogroup.com.ambit');
         insert u;
         return u;
     }

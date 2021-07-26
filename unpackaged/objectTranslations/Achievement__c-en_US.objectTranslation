@@ -315,12 +315,24 @@
         <relationshipLabel><!-- Achievements --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Value Achieved --></label>
+        <name>Value_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Target --></label>
+        <name>Value_Target__c</name>
+    </fields>
+    <fields>
         <label><!-- Value of Files Logged In Achieved --></label>
         <name>Value_of_Files_Logged_In_Achieved__c</name>
     </fields>
     <fields>
         <label><!-- Value of Files Logged In Target --></label>
         <name>Value_of_Files_Logged_In_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of Files Logged In Target --></label>
+        <name>Value_of_Files_Logged_In_Targets__c</name>
     </fields>
     <fields>
         <label><!-- Volume Achieved --></label>

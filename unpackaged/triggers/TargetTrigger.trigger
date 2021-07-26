@@ -2,9 +2,27 @@ trigger TargetTrigger on Targets__c (before insert,before update,after insert,af
     
     if(trigger.isAfter){
         Map<id,id> RecId_OwnerId_Map = new Map<id,id>();
+        List<Targets__share> shareRecList = new List<Targets__share>();
         for(Targets__c t:trigger.new){
             if(trigger.isInsert ||(trigger.isUpdate && t.Salesperson__c != trigger.oldMap.get(t.id).Salesperson__c))
                 RecId_OwnerId_Map.put(t.id,t.OwnerId);
+                if(t.Branch_Manager__c!=null){
+                Targets__share obj = new Targets__share();
+                obj.AccessLevel = 'Read';
+                obj.UserOrGroupId =t.Branch_Manager__c;
+                obj.ParentID = t.id;
+                obj.RowCause = 'Manual';
+                shareRecList.add(obj);
+                    
+                }
+            }
+        if(shareRecList != null && shareRecList.size()>0){
+            try{
+                insert shareRecList;
+            }
+            catch(exception e){
+                system.debug('ex: '+e.getMessage());
+            }
         }
         if(RecId_OwnerId_Map != null){
             system.debug('call sharing method');
@@ -60,8 +78,9 @@ trigger TargetTrigger on Targets__c (before insert,before update,after insert,af
             }
             for(Targets__c tg:trigger.new){
                 if(TargetMap.containskey(tg.Salesperson__c))
-                    tg.Volume__c = TargetMap.get(tg.Salesperson__c);
+                    tg.Volumes__c = TargetMap.get(tg.Salesperson__c);
             }
+           
         }
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Meeting completed rating</name>
+    <style>none</style>
+    <subject>Meeting Rating Survey</subject>
+    <textOnly>Hi {!Meeting__c.Applicant__c}, thank you for your time. We want to provide the best experience possible! To help us, please take a moment to leave your feedback. Click here to rate
+
+Thanks for your help!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

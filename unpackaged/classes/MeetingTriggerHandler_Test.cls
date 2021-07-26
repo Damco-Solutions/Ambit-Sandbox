@@ -15,7 +15,8 @@ public class MeetingTriggerHandler_Test {
         ma.Category__c='New Customer';
         ma.Status__c='Scheduled';
         ma.Type__c='Meeting';
-        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 5, 11, 17, 45, 0);
+        ma.Meeting_Outcome__c='Lead Generation( Customer )';
+        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 6, 2, 20, 45, 0);
         insert ma;
         
         ma.Status__c='Re-Scheduled';
@@ -45,10 +46,11 @@ public class MeetingTriggerHandler_Test {
         ma.Category__c='New Customer';
         ma.Status__c='Scheduled';
         ma.Type__c='Meeting';
-        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 5, 11, 17, 45, 0);
+        ma.Meeting_Outcome__c='Lead Generation( Customer )';
+        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 6, 2, 20, 45, 0);
         insert ma;
         
-        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 5, 9, 14, 45, 0);
+        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 5, 25, 14, 45, 0);
         //ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 3, 30, 8, 45, 0);
         test.startTest();
         try{
@@ -75,7 +77,8 @@ public class MeetingTriggerHandler_Test {
         ma.Category__c='New Customer';
         ma.Status__c='Completed';
         ma.Type__c='Meeting';
-        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 5, 11, 17, 45, 0);
+        ma.Meeting_Outcome__c='Lead Generation( Customer )';
+        ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 6, 2, 20, 45, 0);
         insert ma;
         
         ma.Status__c='Scheduled';
@@ -98,21 +101,48 @@ public class MeetingTriggerHandler_Test {
             // create meeting
             Meeting__c ma= new Meeting__c();
             ma.Category__c='New Customer';
-            ma.Status__c='Completed';
+            ma.Status__c='Scheduled';
             ma.Type__c='Meeting';
-            ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 5, 11, 17, 45, 0);
+            ma.Meeting_Outcome__c='Lead Generation( Customer )';
+            ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 6, 2, 17, 45, 0);
             
             insert ma;
-            
-            ma.Type__c='Collection Task';
-            //ma.Salesperson__c=u1.id;
-            //ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 3, 30, 8, 45, 0);
+              ma.Status__c='Completed';
             test.startTest();
             try{
                 update ma;
             }
             catch (Exception e){
-                System.assert(e.getMessage().contains('On Completed Stage We Can Not Update Type,Category,Purpose,Salesperson,Owner,Scheduled Start Time,Scheduled End Time,Applicant,Collection Task,Loan Account,DSA/Connector'));
+                System.assert(e.getMessage().contains('Meeting Outcome is required to Complete the meeting'));
+            }
+            
+            test.stopTest();
+        }
+        
+    }
+    
+    public static testmethod void Meetingoutcome(){
+        
+        user u1=TestDataFactory.CreateUser();
+        System.runAs ( u1 ){
+            // create meeting
+            Meeting__c ma= new Meeting__c();
+            ma.Category__c='New Customer';
+            ma.Status__c='Scheduled';
+            ma.Type__c='Meeting';
+            ma.Meeting_Outcome__c='Lead Generation( Customer )';
+            ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 6, 2, 17, 45, 0);
+   
+            
+            insert ma;
+            
+            ma.Meeting_Details__c='Customer Interested';
+            test.startTest();
+            try{
+                update ma;
+            }
+            catch (Exception e){
+                System.assert(e.getMessage().contains('Meeting Outcome can only be captured while completing the meeting'));
             }
             
             test.stopTest();
@@ -130,7 +160,8 @@ public class MeetingTriggerHandler_Test {
             ma.Category__c='New Customer';
             ma.Status__c='Completed';
             ma.Type__c='Meeting';
-            ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 5, 11, 17, 45, 0);
+            ma.Meeting_Outcome__c='Lead Generation( Customer )';
+            ma.Scheduled_Start_Time__c=datetime.newInstance(2021, 6, 2, 17, 45, 0);
             ma.Salesperson__c=u1.Id;
             test.startTest();
             try{

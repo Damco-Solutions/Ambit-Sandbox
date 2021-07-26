@@ -1,4 +1,4 @@
-trigger Meeting_Trigger on Meeting__c (after insert, before Update, Before insert) {
+trigger Meeting_Trigger on Meeting__c (after insert, before Update, Before insert, After Update) {
     if(trigger.isInsert && trigger.isAfter){
         Map<id,id> RecId_OwnerId_Map = new Map<id,id>();
         for(Meeting__c ct:trigger.new){
@@ -26,6 +26,16 @@ trigger Meeting_Trigger on Meeting__c (after insert, before Update, Before inser
                MeetingTriggerHandler.Ownerupdateoninsert(Trigger.New);
               
           }               
+    }
+    
+    if(trigger.isUpdate && trigger.isAfter){       
+        for(Meeting__c ma:trigger.new){
+            if(true){ 
+                MeetingTriggerHandler.validationcheckonCompleted(Trigger.OldMap,Trigger.NewMap);
+                
+            }
+        }
+            
     }
     
     }

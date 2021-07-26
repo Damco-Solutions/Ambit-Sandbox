@@ -16,8 +16,8 @@
                 <field>Start_Date__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Duration__c</field>
+                <behavior>Edit</behavior>
+                <field>Branch_Manager__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -126,6 +126,10 @@
                 <behavior>Edit</behavior>
                 <field>Adherence_to_Ambit_Values__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>No_of_Files_Logged_In_Value__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -211,6 +215,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Adherence_to_Ambit_Values_Weightage__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Volumes__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

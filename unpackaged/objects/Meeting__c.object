@@ -454,7 +454,25 @@
                     <default>false</default>
                     <label>Rescheduled time</label>
                 </value>
+                <value>
+                    <fullName>Customer Interested</fullName>
+                    <default>false</default>
+                    <label>Customer Interested</label>
+                </value>
+                <value>
+                    <fullName>Customer Not Interested</fullName>
+                    <default>false</default>
+                    <label>Customer Not Interested</label>
+                </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Lead Generation( Customer )</controllingFieldValue>
+                <valueName>Customer Interested</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lead Generation( Customer )</controllingFieldValue>
+                <valueName>Customer Not Interested</valueName>
+            </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Client Not Interested</controllingFieldValue>
                 <valueName>Rate of Interest Issue</valueName>
@@ -652,6 +670,11 @@
                     <default>false</default>
                     <label>PTP</label>
                 </value>
+                <value>
+                    <fullName>Lead Generation( Customer )</fullName>
+                    <default>false</default>
+                    <label>Lead Generation( Customer )</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -807,7 +830,27 @@
         <columns>Scheduled_Start_Time__c</columns>
         <columns>Salesperson__c</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>completed_meetings</fullName>
+        <columns>NAME</columns>
+        <columns>Category__c</columns>
+        <columns>Meeting_Outcome__c</columns>
+        <columns>Salesperson__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <label>completed meetings</label>
     </listViews>
     <nameField>
         <displayFormat>MEET-{0000}</displayFormat>
@@ -833,10 +876,9 @@
     <validationRules>
         <fullName>Person_Met_and_Meeting_Outcome_can_only</fullName>
         <active>false</active>
-        <errorConditionFormula>AND(OR(ISPICKVAL (Status__c,&quot;In Progress&quot;),ISPICKVAL (Status__c, &quot;Completed&quot; )),
-((ISBLANK(Person_Met__c))||(ISPICKVAL(Meeting_Outcome__c,&apos;&apos;))
-))</errorConditionFormula>
-        <errorMessage>Person Met and Meeting Outcome can only be added for &apos;In Progress&apos;/&apos;Completed&apos; meetings</errorMessage>
+        <errorConditionFormula>AND( !ISPICKVAL (Status__c, &quot;Completed&quot; ),
+ !ISNULL(Text(Meeting_Outcome__c)))</errorConditionFormula>
+        <errorMessage>Meeting Outcome can only be added for &apos;Completed&apos; meetings</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Scheduled_End_Time_Should_be_Greater</fullName>

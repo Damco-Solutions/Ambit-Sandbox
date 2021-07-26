@@ -1,3 +1,5 @@
-<aura:component implements="force:lightningQuickAction,force:hasRecordId" controller="Cibil_Score_Class">
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" controller="CIBIL_Integration">
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="status" type="String" />
+    <aura:attribute name="Error" type="String" />
 </aura:component>

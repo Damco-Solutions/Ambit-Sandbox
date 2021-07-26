@@ -146,7 +146,7 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <allowInChatterGroups>false</allowInChatterGroups>
+    <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>Loan_Account</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Loan_Account</fullName>
@@ -294,6 +294,15 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Eligible_for_Top_Up_loan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Eligible for Top up Loan</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>FI_Inititation_Date__c</fullName>
@@ -555,6 +564,15 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Not_Interested_for_Top_Up__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Not Interested for Top up Loan</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Office_Address__c</fullName>
         <externalId>false</externalId>
         <label>Office Address</label>
@@ -707,6 +725,41 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_For_Not_Interested_In_Top_up__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Interested</fullName>
+                    <default>false</default>
+                    <label>Not Interested</label>
+                </value>
+                <value>
+                    <fullName>Not Eligible</fullName>
+                    <default>false</default>
+                    <label>Not Eligible</label>
+                </value>
+                <value>
+                    <fullName>Documents Not Provided</fullName>
+                    <default>false</default>
+                    <label>Documents Not Provided</label>
+                </value>
+                <value>
+                    <fullName>Loan Not Availed</fullName>
+                    <default>false</default>
+                    <label>Loan Not Availed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Reject_Remarks__c</fullName>
@@ -1031,6 +1084,20 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>loan_disbursal_time__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY()- Disbursal_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Till Disbursal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <label>Loan Account</label>
     <listViews>
         <fullName>All1</fullName>
@@ -1043,6 +1110,32 @@
         <columns>OWNER.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Eligible_Loan_Accounts_for_Top_Up</fullName>
+        <columns>NAME</columns>
+        <columns>Applicant__c</columns>
+        <columns>Disbursal_Date__c</columns>
+        <columns>DSA_Connector__c</columns>
+        <columns>loan_disbursal_time__c</columns>
+        <columns>Eligible_for_Top_Up_loan__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>loan_disbursal_time__c</field>
+            <operation>greaterThan</operation>
+            <value>365</value>
+        </filters>
+        <filters>
+            <field>Eligible_for_Top_Up_loan__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Not_Interested_for_Top_Up__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Eligible Loan Accounts for Top Up</label>
     </listViews>
     <nameField>
         <displayFormat>Loan-{0000}</displayFormat>
@@ -1071,6 +1164,14 @@
 ISPICKVAL(Applicant__r.Product__c,&apos;Lead - Rural Udyam&apos;)) &amp;&amp;
 ISBLANK(DSA_Connector__c)</errorConditionFormula>
         <errorMessage>Please provide DSA/Connector</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Reason_For_Not_Interested_In_Top_up</fullName>
+        <active>true</active>
+        <description>if Not_Interested_In_Top_up is check , Reason For Not Interested In Top up should not be blank.</description>
+        <errorConditionFormula>AND(Not_Interested_for_Top_Up__c, ISBLANK(TEXT( Reason_For_Not_Interested_In_Top_up__c )))</errorConditionFormula>
+        <errorDisplayField>Reason_For_Not_Interested_In_Top_up__c</errorDisplayField>
+        <errorMessage>Please enter the reason for decline</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
     <webLinks>

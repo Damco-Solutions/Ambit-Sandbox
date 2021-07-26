@@ -35,6 +35,7 @@
     <tabs>Attendance__c</tabs>
     <tabs>Industry_Margin</tabs>
     <tabs>Sales_Plan__c</tabs>
+    <tabs>Meeting_Rating__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Relationship_Management_UtilityBar</utilityBar>
 </CustomApplication>

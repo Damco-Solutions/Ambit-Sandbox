@@ -108,6 +108,14 @@
             <translation><!-- Client Not Eligible --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Customer Interested</masterLabel>
+            <translation><!-- Customer Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Not Interested</masterLabel>
+            <translation><!-- Customer Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Documentation Issue</masterLabel>
             <translation><!-- Documentation Issue --></translation>
         </picklistValues>
@@ -214,6 +222,10 @@
         <picklistValues>
             <masterLabel>Lead Generation( Connector )</masterLabel>
             <translation><!-- Lead Generation( Connector ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation( Customer )</masterLabel>
+            <translation><!-- Lead Generation( Customer ) --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Lead Generation( DSA )</masterLabel>
@@ -367,7 +379,7 @@
         <name>In_Progress_Completed_Meetings</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Person Met and Meeting Outcome can only be added for &apos;In Progress&apos;/&apos;Completed&apos; meetings --></errorMessage>
+        <errorMessage><!-- Meeting Outcome can only be added for &apos;Completed&apos; meetings --></errorMessage>
         <name>Person_Met_and_Meeting_Outcome_can_only</name>
     </validationRules>
     <validationRules>
@@ -382,4 +394,8 @@
         <errorMessage><!-- change the sch time --></errorMessage>
         <name>resheading_meeting</name>
     </validationRules>
+    <workflowTasks>
+        <name>email_sent_successfully</name>
+        <subject><!-- email sent successfully --></subject>
+    </workflowTasks>
 </CustomObjectTranslation>

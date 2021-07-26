@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>Environment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Environment</shortDescription>
+        <value>QA/UAT</value>
+    </labels>
+    <labels>
         <fullName>GoogleApiURL</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>GoogleApiURL</shortDescription>
         <value>https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&amp;origins=</value>
+    </labels>
+    <labels>
+        <fullName>Secured_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Secured Product</shortDescription>
+        <value>LAP</value>
+    </labels>
+    <labels>
+        <fullName>SourceSystemName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sourcesystemname</shortDescription>
+        <value>GoNOGo</value>
+    </labels>
+    <labels>
+        <fullName>UCV_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UCV Product</shortDescription>
+        <value>AUTO LOAN</value>
+    </labels>
+    <labels>
+        <fullName>Unsecured_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unsecured Product</shortDescription>
+        <value>BL</value>
     </labels>
     <labels>
         <fullName>googelApikey</fullName>

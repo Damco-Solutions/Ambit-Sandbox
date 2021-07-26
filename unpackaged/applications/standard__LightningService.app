@@ -19,6 +19,7 @@
     <tabs>Meeting__c</tabs>
     <tabs>Attendance__c</tabs>
     <tabs>Sales_Plan__c</tabs>
+    <tabs>Meeting_Rating__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -30,6 +31,9 @@
         </mappings>
         <mappings>
             <tab>Loan_Account__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Meeting_Rating__c</tab>
         </mappings>
         <mappings>
             <tab>Meeting__c</tab>

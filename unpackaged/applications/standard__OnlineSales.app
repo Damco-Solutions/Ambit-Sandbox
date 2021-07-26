@@ -6,5 +6,6 @@
     <label>Online Sales</label>
     <navType>Standard</navType>
     <tabs>standard-OnlineSalesHome</tabs>
+    <tabs>Meeting_Rating__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

@@ -55,6 +55,10 @@
         <name>EMI_Overdue_Amount__c</name>
     </fields>
     <fields>
+        <label><!-- Eligible for Top up Loan --></label>
+        <name>Eligible_for_Top_Up_loan__c</name>
+    </fields>
+    <fields>
         <label><!-- FI Inititation Date --></label>
         <name>FI_Inititation_Date__c</name>
     </fields>
@@ -159,6 +163,10 @@
         <name>No_of_Open_Queries__c</name>
     </fields>
     <fields>
+        <label><!-- Not Interested for Top up Loan --></label>
+        <name>Not_Interested_for_Top_Up__c</name>
+    </fields>
+    <fields>
         <label><!-- Office Address --></label>
         <name>Office_Address__c</name>
     </fields>
@@ -217,6 +225,26 @@
     <fields>
         <label><!-- ROI --></label>
         <name>ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason_For_Not_Interested_In_Top_up__c</name>
+        <picklistValues>
+            <masterLabel>Documents Not Provided</masterLabel>
+            <translation><!-- Documents Not Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Not Availed</masterLabel>
+            <translation><!-- Loan Not Availed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Eligible</masterLabel>
+            <translation><!-- Not Eligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Reject Remarks --></label>
@@ -355,6 +383,10 @@
         <label><!-- created month --></label>
         <name>created_month__c</name>
     </fields>
+    <fields>
+        <label><!-- Days Till Disbursal --></label>
+        <name>loan_disbursal_time__c</name>
+    </fields>
     <layouts>
         <layout>Loan Account Layout</layout>
         <sections>
@@ -369,6 +401,10 @@
             <label><!-- Pre Sanction Details --></label>
             <section>Pre Sanction Details</section>
         </sections>
+        <sections>
+            <label><!-- Top-up Loan Eligibility --></label>
+            <section>Top-up Loan Eligibility</section>
+        </sections>
     </layouts>
     <sharingReasons>
         <label><!-- sharing  record with above role --></label>
@@ -378,6 +414,10 @@
     <validationRules>
         <errorMessage><!-- Please provide DSA/Connector --></errorMessage>
         <name>DSA_Connector_For_Unsecured_Loans</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the reason for decline --></errorMessage>
+        <name>Reason_For_Not_Interested_In_Top_up</name>
     </validationRules>
     <webLinks>
         <label><!-- Assign_to_Collection_Plan --></label>

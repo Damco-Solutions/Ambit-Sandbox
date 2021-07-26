@@ -450,6 +450,7 @@
         <columns>Product__c</columns>
         <columns>Sourcing__c</columns>
         <columns>Type__c</columns>
+        <columns>Incentive__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Product__c</field>

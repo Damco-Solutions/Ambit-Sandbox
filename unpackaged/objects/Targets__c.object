@@ -263,6 +263,18 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Branch_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Branch Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Targets3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Cases_Disbursed_in_last_3_days_Weightage__c</fullName>
         <defaultValue>0.05</defaultValue>
         <externalId>false</externalId>
@@ -585,6 +597,17 @@
         <type>Percent</type>
     </fields>
     <fields>
+        <fullName>No_of_Files_Logged_In_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>No of Files Logged In (Value)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>No_of_Files_Logged_In__c</fullName>
         <externalId>false</externalId>
         <label>No of Files Logged In (Value)</label>
@@ -772,6 +795,17 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Volumes__c</fullName>
+        <externalId>false</externalId>
+        <label>Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Yearly_Target__c</fullName>

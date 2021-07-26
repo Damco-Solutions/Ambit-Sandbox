@@ -1,3 +1,4 @@
+/***  Sales Incentive Forecast batch for Unsecured loans- By Ashwini kumar ***/
 global class Incentive_Forecast_Unsecured implements Database.Batchable<sObject>,Schedulable,Database.Stateful {
     global DateTime dt = Datetime.now();
     global string premnth=string.valueOf(dt.format('MMMM'));
@@ -6,8 +7,10 @@ global class Incentive_Forecast_Unsecured implements Database.Batchable<sObject>
         Integer mnth = System.Today().MOnth();
         String Product='Lead - UDYAM (UNSECURED LOAN)';
         String product2 = 'Lead - Rural Udyam';
+        String loanstatus= 'Disbursed';
+        String loanstatus1= 'Rejected';
         Integer yr = System.Today().Year();
-        String query = 'Select Id,name,Disbursal_Amount__c,ROI__c,OwnerId,DSA_Connector__c,Applicant__r.Product__c,DSA_Connector__r.DSA_Connector__c,Disbursal_Date__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c From Loan_Account__c WHERE created_month__c=:mnth and create_year__c =:yr and (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) ';
+        String query = 'Select Id,name,Disbursal_Amount__c,ROI__c,OwnerId,DSA_Connector__c,Applicant__r.Product__c,DSA_Connector__r.DSA_Connector__c,Disbursal_Date__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c From Loan_Account__c WHERE create_year__c =:yr and (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product)  and LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\'';
         return Database.getQueryLocator(query);
     }
     global void execute(Database.BatchableContext BC, List<Loan_Account__c> scope){

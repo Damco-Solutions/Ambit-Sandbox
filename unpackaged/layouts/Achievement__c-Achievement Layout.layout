@@ -138,6 +138,10 @@
                 <behavior>Edit</behavior>
                 <field>Adherence_to_Ambit_Values_Target__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Value_of_Files_Logged_In_Targets__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -163,10 +167,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>No_of_Units_Disbursed_Achieved__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Volume_Achieved__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -223,6 +223,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Adherence_to_Ambit_Values__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Value_Achieved__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Value_Target__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

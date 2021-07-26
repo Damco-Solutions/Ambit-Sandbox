@@ -36,7 +36,7 @@
     </values>
     <values>
         <field>Maximum_Amount__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:double">1.0E11</value>
     </values>
     <values>
         <field>Maximum_File_Input__c</field>

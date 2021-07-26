@@ -749,6 +749,11 @@ Branch__r.Branch_Manager__r.LastName</formula>
                     <default>false</default>
                     <label>Voter ID Number</label>
                 </value>
+                <value>
+                    <fullName>Pan No</fullName>
+                    <default>false</default>
+                    <label>Pan No</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -3450,6 +3455,10 @@ Branch__r.Branch_Manager__r.LastName</formula>
                 <default>false</default>
             </values>
             <values>
+                <fullName>Pan No</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Passport Number</fullName>
                 <default>false</default>
             </values>
@@ -4253,6 +4262,10 @@ Branch__r.Branch_Manager__r.LastName</formula>
             <picklist>CIBIL_ID__c</picklist>
             <values>
                 <fullName>Driving License Number %28Permanent only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pan No</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5080,6 +5093,24 @@ ISBLANK(Agent__c)</errorConditionFormula>
         <errorConditionFormula>CIBIL_Score_Eligibility_Remarks__c=&apos;Non-Eligible&apos;&amp;&amp;  ISBLANK(CIBIL_Score_Eligibility_Remarks__c )</errorConditionFormula>
         <errorDisplayField>CIBIL_Score_Eligibility_Remarks__c</errorDisplayField>
         <errorMessage>CIBIL Score Eligibility Remarks Is Required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CIBIL_Trigger_stage_for_Individual</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+AND (
+ISPICKVAL(Status__c ,&quot;CIBIL Updated&quot;), RecordType.Name=&quot;Individual&quot;
+),
+ISBLANK(TEXT( Gender__c))|| ISBLANK( Birthdate )||
+ISBLANK( Flat_House_Number_Destination__c )|| ISBLANK( Flat_House_Number_Mailing__c )|| ISBLANK( Building_Street_Name_Mailing__c )|| ISBLANK( Building_Street_Name_Destination__c )|| ISBLANK( Area_Destination__c )|| ISBLANK( Area_Mailing__c )|| ISBLANK( District_Mailing__c )|| ISBLANK( District_Destination__c ) || ISBLANK( State_Mailing__c ) || ISBLANK( State_Destination__c ) || ISBLANK( City_Mailing__c ) || ISBLANK( City_Destination__c ) || ISBLANK( Pincode_Mailing__c ) || ISBLANK( Pincode_Destination__c )|| ISBLANK( Loan_Amount__c ) ||
+ISBLANK(TEXT( Product__c ))|| ISBLANK(TEXT( Scheme__c ))|| ISBLANK(TEXT( Purpose__c ))|| ISBLANK( Rate_Of_Interest__c ) ||
+ISBLANK(TEXT( Customer_Type__c )) || ISBLANK( Tenure_In_Months__c ) || ISBLANK(TEXT( Nature_of_Loan__c )) || ISBLANK(TEXT( Occupancy_Status__c ))|| ISBLANK(TEXT(CIBIL_ID__c))||ISBLANK(CIBIL_ID_Number__c)|| NOT( Form_60_Uploaded__c )|| ISBLANK( Branch__c )
+)</errorConditionFormula>
+        <errorMessage>1.Applicant Information - Gender, Date of Birth
+2.Address - all the fields except for landmark
+3.Loan Specific details - all the fields except for Authorised Person,Company Name
+4.CIBIL section all the fields except for OK to Proceed
+5.Branch name</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CIN_No_Mandatory</fullName>

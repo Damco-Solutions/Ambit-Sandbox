@@ -1,3 +1,4 @@
+/***  Sales Incentive Forecast batch for secured loans (DSA)- By Ashwini kumar ***/
 global class SecuredIncentiveForecast_Batch_DSA implements Database.batchable<sObject>, Schedulable,Database.Stateful {
      private Map<id,Decimal> Salesperson_Incentive_Map = new Map<id,decimal>();
     private Map<id,Decimal> DSA_Incentive_Map = new Map<id,decimal>();
@@ -8,7 +9,10 @@ global class SecuredIncentiveForecast_Batch_DSA implements Database.batchable<sO
         String product = 'Lead - VYAPAR (SECURED LOAN)';
         String product2 = 'Lead - Rural Vyapar';
         string type = 'DSA';
-        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__r.DSA_Connector__c,OwnerId,Applicant__r.Product__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) AND DSA_Connector__r.DSA_Connector__c=:type and  created_month__c=:mnth and create_year__c=:yr';
+        String loanstatus= 'Disbursed';
+        String loanstatus1= 'Rejected';
+       
+        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__r.DSA_Connector__c,OwnerId,Applicant__r.Product__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) AND DSA_Connector__r.DSA_Connector__c=:type and create_year__c=:yr and  LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\'';
         return Database.getQueryLocator(query);
     }
     
@@ -23,7 +27,6 @@ global class SecuredIncentiveForecast_Batch_DSA implements Database.batchable<sO
             Map<id,decimal> Agent_LoanAmt_Secured_Map = new Map<id,decimal>();
             Map<id,Decimal> dsa_LoanAmt_Map = new Map<id,Decimal>();
             for(Loan_Account__c Loan:scope){
-                if(Loan.Disbursal_Amount__c==null|| Loan.Disbursal_Date__c==null){
                   if(Agent_SecuredLoanList_Map.get(loan.OwnerId)==null){
                     Agent_SecuredLoanList_Map.put(loan.OwnerId,new List<Loan_Account__c>{loan});
                 }else{
@@ -34,7 +37,7 @@ global class SecuredIncentiveForecast_Batch_DSA implements Database.batchable<sO
                 }else{
                     DSA_ConnectorLoans_Map.get(loan.DSA_Connector__c).add(loan);
                 }  
-              }
+              
                 
             }
            
@@ -43,7 +46,7 @@ global class SecuredIncentiveForecast_Batch_DSA implements Database.batchable<sO
                 decimal Amt_ROI_Mul = 0;
                 decimal Sum_Amt = 0;
                 for(Loan_Account__c la:Agent_SecuredLoanList_Map.get(personId)){
-                    if(la.Disbursal_Amount__c==null && la.Applicant__r.Loan_Amount__c!=null && la.Applicant__r.Rate_Of_Interest__c!=null){
+                    if(la.Applicant__r.Loan_Amount__c!=null && la.Applicant__r.Rate_Of_Interest__c!=null){
                         Amt_ROI_Mul = Amt_ROI_Mul + (la.Applicant__r.Loan_Amount__c *la.Applicant__r.Rate_Of_Interest__c);
                         Sum_Amt = Sum_Amt+la.Applicant__r.Loan_Amount__c;
                     }
@@ -57,7 +60,7 @@ global class SecuredIncentiveForecast_Batch_DSA implements Database.batchable<sO
             for(id dsa:DSA_ConnectorLoans_Map.keyset()){
                 decimal Sum_Amt = 0;
                 for(Loan_Account__c la:DSA_ConnectorLoans_Map.get(dsa)){
-                    if(la.Disbursal_Amount__c== null && la.Applicant__r.Loan_Amount__c!=null){
+                    if(la.Applicant__r.Loan_Amount__c!=null){
                         Sum_Amt = Sum_Amt+la.Applicant__r.Loan_Amount__c;
                     }
                 }

@@ -871,6 +871,28 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Value_Achieved__c</fullName>
+        <externalId>false</externalId>
+        <label>Value Achieved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Value_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Value Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Value_of_Files_Logged_In_Achieved__c</fullName>
         <externalId>false</externalId>
         <label>Value of Files Logged In Achieved</label>
@@ -892,6 +914,17 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Value_of_Files_Logged_In_Targets__c</fullName>
+        <externalId>false</externalId>
+        <label>Value of Files Logged In Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Volume_Achieved__c</fullName>

@@ -8,6 +8,8 @@ public class NPA_Achievement_Batch_Test {
         
         // create the User
         user u1=TestDataFactory.CreateUser();
+        
+        user u2=TestDataFactory.CreateUser2();
         system.runAs(u1){
         // create the Dsa Account
         Account acc=TestDataFactory.CreateAccount(accrecordtypeid, dsaorconnector);
@@ -22,7 +24,11 @@ public class NPA_Achievement_Batch_Test {
         la1.DPD__c=120;
         la1.Applicant__c=c1.id;
         la1.Insurance_Amount__c=50000;
+        la1.PF_Amount__c=25000;
         la1.LOAN_STATUS__c='Disbursed';
+        la1.Disbursal_Date__c=system.today();
+        la1.Status__c='Disbursed';
+        
         insert la1;
         
          
@@ -35,8 +41,7 @@ public class NPA_Achievement_Batch_Test {
         dtt.Product__c = 'UCV';
         dtt.Product_Multiplier_UCV__c = 100;
         insert dtt;
-         // create the target
-         Targets__c ta= TestDataFactory.CreatTargets(true, u1.id);
+        
         
         
         //create the meeting
@@ -52,7 +57,28 @@ public class NPA_Achievement_Batch_Test {
         
         insert ma;
         
+        // creating Target
         
+            Targets__c tg= new Targets__c();
+            tg.Name='test target';
+            tg.Meeting_Targets__c=10;
+            tg.No_of_Files_Logged_In_No__c=10;
+            tg.No_of_Files_Logged_In_Value__c=25000000;
+            tg.Lead_Generation_Target__c=10;
+            tg.IRR__c=16;
+            tg.Insurance_Penetration__c=5;
+            tg.Net_PF__c=4;
+            tg.Start_Date__c=date.newInstance(2021, 4, 1);
+            tg.End_Date__c=date.newInstance(2022, 3, 31);
+            tg.Salesperson__c=u1.id;
+            tg.Meeting_Lead_Conversation_Ratio__c=30;
+            tg.No_of_Units_Disbursed__c=5;
+            tg.Direct_Biz_Sourced__c=10;
+            tg.FTR__c=8;
+            tg.Approval_Ratio__c=50;
+            tg.Branch_Manager__c=u2.id;
+             insert tg;
+            
             Test.startTest();
             Map<id,Decimal> AllLoans = new Map<id,Decimal>();
             Map<id,Decimal> NPA_DPD_Map = new Map<id,Decimal>();

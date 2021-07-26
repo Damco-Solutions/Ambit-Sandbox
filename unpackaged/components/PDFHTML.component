@@ -1,0 +1,4 @@
+<apex:component >
+     <apex:attribute type="string" name="conObj" description="con object instance"/>
+     <apex:outputText value="{!conObj}" escape="false"></apex:outputText>
+</apex:component>

@@ -1,4 +1,5 @@
 /***Created by Shabana Tarannum on 01-03-2021***/
+/***Modification done by Ashwini kumar on 01-june-2021***/
 global class Target_Achievement_batch implements Database.Batchable<sObject> {
     Private Map<id,Decimal> AllLoans = new Map<id,Decimal>();
     Private Map<id,Decimal> NPA_DPD_Map = new Map<id,Decimal>();
@@ -12,18 +13,18 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
         Integer CurrentYear = system.today().year();
         Date StartDate = date.newinstance(CurrentYear,4,1);
         Date todayDate = system.today();
-        String query = 'Select Id,OwnerId,name,Active__c,Meeting_Targets__c,Meeting_Lead_Conversation_Ratio__c,Lead_Generation_Target__c,No_of_Files_Logged_In_No__c,No_of_Files_Logged_In__c,No_of_Units_Disbursed__c,Volume__c,IRR__c,Net_PF__c,Insurance_Penetration__c,Direct_Biz_Sourced__c,FTR__c,Query_TAT_Resolution__c,Approval_Ratio__c,OTC_PDD_above_norms__c,Cases_Disbursed_in_last_3_days__c,NPA__c,Salesperson__c,Adherence_to_Ambit_Values__c,Communication_and_email_skillset__c,Overall_grooming_attendance_discipline__c,Overall_conduct_and_Cross_function_deali__c from Targets__c WHERE Start_Date__c=:StartDate AND End_Date__c >=: todayDate';
+        String query = 'Select Id,OwnerId,name,Active__c,Meeting_Targets__c,Meeting_Lead_Conversation_Ratio__c,Lead_Generation_Target__c,No_of_Files_Logged_In_No__c,No_of_Files_Logged_In_Value__c,No_of_Units_Disbursed__c,Volumes__c,IRR__c,Net_PF__c,Insurance_Penetration__c,Direct_Biz_Sourced__c,FTR__c,Query_TAT_Resolution__c,Approval_Ratio__c,OTC_PDD_above_norms__c,Cases_Disbursed_in_last_3_days__c,NPA__c,Salesperson__c,Adherence_to_Ambit_Values__c,Communication_and_email_skillset__c,Overall_grooming_attendance_discipline__c,Overall_conduct_and_Cross_function_deali__c,Branch_Manager__c from Targets__c WHERE Start_Date__c=:StartDate AND End_Date__c >=: todayDate';
         return Database.getQueryLocator(query);
     }
     global void execute(Database.BatchableContext BC, List<Targets__c> scope){
-        system.debug('list: '+scope.size());
+        
         if(scope != null && scope.size()>0){
             
             //Targets per user
-            Map<id,Targets__c> UserTargetMap = new Map<id,Targets__c>();
+            Map<id,Targets__c> UserTargetMap = new Map<id,Targets__c>();           
             for(Targets__c tg: scope){
                 if(tg.Salesperson__c !=null)
-                    UserTargetMap.put(tg.Salesperson__c,tg);
+                    UserTargetMap.put(tg.Salesperson__c,tg);                
             }
             //target per role added
             
@@ -41,21 +42,26 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
             monthMap.put(11, 'November'); monthMap.put(12, 'December');
             //Already added achievement for the period
             Map<id,Achievement__c> AchievementMap = new Map<id,Achievement__c>();
+            Map<id,Achievement__c> AchievementMapUpdate = new Map<id,Achievement__c>();
             for(Achievement__c ac:[select id,User__c FROM Achievement__c WHERE Month__c=:monthMap.get(mnth) AND Year__c=:string.valueOf(CurrentYear)]){
                 AchievementMap.put(ac.User__c,ac);
+                 
             }
+            
+            
+
             //achievements added
             
             //meetings per user---Meeting Targets
             Map<id,integer> userMeetingsMap = new Map<id,integer>();
-            for(Meeting__c meet:[select id,OwnerId FROM Meeting__c WHERE CALENDAR_MONTH(Scheduled_Start_Time__c) =:mnth AND CALENDAR_YEAR(Scheduled_Start_Time__c) =:CurrentYear AND Status__c= 'Completed' AND(Meeting_Outcome__c ='Lead Generation( DSA )' OR Meeting_Outcome__c='Lead Generation( Connector )')]){
+            for(Meeting__c meet:[select id,OwnerId FROM Meeting__c WHERE CALENDAR_MONTH(Scheduled_Start_Time__c) =:mnth AND CALENDAR_YEAR(Scheduled_Start_Time__c) =:CurrentYear AND Status__c= 'Completed' AND Meeting_Outcome__c LIKE 'Lead Generation%']){
                 if(userMeetingsMap.containsKey(meet.OwnerId)){
                     userMeetingsMap.put(meet.OwnerId,(userMeetingsMap.get(meet.OwnerId))+1);
                 }else{
                     userMeetingsMap.put(meet.OwnerId,1);
                 }
             }
-            system.debug('meeting: '+userMeetingsMap);
+            
             //meetings count added
             
             //Meeting/Lead conversion ratio 
@@ -65,23 +71,27 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
             Map<id,decimal> ApprovedLA_Map = new Map<id,decimal>();
             for(Loan_Account__c la:[select id,name,Status__c,Applicant__r.OwnerId,Applicant__r.Loan_Amount__c from Loan_Account__c WHERE CALENDAR_MONTH(CreatedDate) =:mnth AND CALENDAR_YEAR(CreatedDate) =:CurrentYear]){
                 if(string.isNotBlank(la.Status__c) && (la.Status__c =='Approved' || la.Status__c =='Disbursed' || la.Status__c =='Authorized' || la.Status__c =='Partially Disbursed')){
-                    system.debug('la: '+la.name);
                     if(ApprovedLA_Map.containsKey(la.Applicant__r.OwnerId)){
                         ApprovedLA_Map.put(la.Applicant__r.OwnerId,(ApprovedLA_Map.get(la.Applicant__r.OwnerId))+1);
                     }else{
                         ApprovedLA_Map.put(la.Applicant__r.OwnerId,1);
                     }
+                    
+
                 }
                 if(ConvertedLeadsMap.containsKey(la.Applicant__r.OwnerId)){
                     ConvertedLeadsMap.put(la.Applicant__r.OwnerId,(ConvertedLeadsMap.get(la.Applicant__r.OwnerId))+1);
                 }else{
                     ConvertedLeadsMap.put(la.Applicant__r.OwnerId,1);
                 }
+              
+
                 if(ConvertedLeadsAmountMap.containsKey(la.Applicant__r.OwnerId)){
                     ConvertedLeadsAmountMap.put(la.Applicant__r.OwnerId,(ConvertedLeadsAmountMap.get(la.Applicant__r.OwnerId))+la.Applicant__r.Loan_Amount__c);
                 }else{
                     ConvertedLeadsAmountMap.put(la.Applicant__r.OwnerId,la.Applicant__r.Loan_Amount__c);
                 }
+                
             }
             for(Contact con:[select id,OwnerId,Loan_Amount__c FROM Contact WHERE CALENDAR_MONTH(CreatedDate) =:mnth AND CALENDAR_YEAR(CreatedDate) =:CurrentYear AND Applicant_Type__c='Applicant']){
                 if(allLeadsMap.containsKey(con.OwnerId)){
@@ -90,15 +100,18 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                     allLeadsMap.put(con.OwnerId,1);
                 }
             }
+            
+            
             Map<id,decimal> conversionRateMap = new Map<id,decimal>();
             for(id own:allLeadsMap.keySet()){
                 decimal denum= allLeadsMap.get(own);
                 decimal num= 0;
                 if(ConvertedLeadsMap.containsKey(own))
                     num = ConvertedLeadsMap.get(own);
-                system.debug('num '+num + 'denum '+denum);
+              
                 conversionRateMap.put(own,(num/denum)*100);
             }
+            
             //
             
             //Disbursed Loan Accounts
@@ -118,6 +131,7 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                 }else{
                     DisbursedLAMap.put(la.OwnerId,1);
                 }
+                
                 //Loan Amount total
                 decimal loanAmount = 0;
                 if(la.Disbursal_Amount__c !=null)
@@ -127,6 +141,8 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                 }else{
                     DisbursedAmountMap.put(la.OwnerId,loanAmount);
                 }
+               
+
                 //average roi
                 decimal roi = 0;
                 if(la.ROI__c != null)
@@ -136,7 +152,7 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                 }else{
                     ROIMap.put(la.OwnerId,roi);
                 }
-                
+               
                 //Net PF
                 decimal pf = 0;
                 if(la.PF_Amount__c != null)
@@ -146,7 +162,7 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                 }else{
                     PfAmountMap.put(la.OwnerId,pf);
                 }
-                
+                 
                 //Insurance Penetration
                 if(la.Insurance_Amount__c !=null){
                     if(InsuranceLoanMap.containsKey(la.OwnerId)){
@@ -179,10 +195,8 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
             
             //Create Achievement record
             for(User u:[select id, UserRoleId FROM User WHERE Id=:UserTargetMap.keySet()]){
-                system.debug('new achievement');
                 Achievement__c ac = new Achievement__c();
                 if(userMeetingsMap.containskey(u.id)){
-                    system.debug('>'+userMeetingsMap.get(u.id));
                     ac.Meeting_Achievement__c = userMeetingsMap.get(u.id);
                 }
                 if(conversionRateMap.containsKey(u.id)){
@@ -193,14 +207,12 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                 if(ConvertedLeadsMap.containsKey(u.id))
                     ac.No_of_Files_Logged_In_Achieved__c = ConvertedLeadsMap.get(u.id);
                 if(ApprovedLA_Map.containsKey(u.id) && ac.No_of_Files_Logged_In_Achieved__c !=null){
-                    system.debug('ac.No_of_Files_Logged_In__c: '+ac.No_of_Files_Logged_In_Achieved__c);
-                    system.debug('Approved: '+ApprovedLA_Map.get(u.id));
                     ac.Approval_Ratio_Achieved__c = (ApprovedLA_Map.get(u.id)/ac.No_of_Files_Logged_In_Achieved__c)*100;
                 }
                 if(DisbursedLAMap.containsKey(u.id))
                     ac.No_of_Units_Disbursed_Achieved__c = DisbursedLAMap.get(u.id);
                 if(DisbursedAmountMap.containsKey(u.id))
-                    ac.Volume_Achieved__c = DisbursedAmountMap.get(u.id);
+                    ac.Value_Achieved__c = DisbursedAmountMap.get(u.id);
                 if(ROIMap.containsKey(u.id) && DisbursedLAMap.containsKey(u.id)){
                     decimal averageROI = ROIMap.get(u.id)/DisbursedLAMap.get(u.id);
                     ac.IRR_Achieved__c = averageROI;
@@ -222,42 +234,47 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                     Decimal DisbursedIn3Days= 0;
                     if(DisbursedIn3DaysMap.containsKey(u.id))
                         DisbursedIn3Days = DisbursedIn3DaysMap.get(u.id);
-                    system.debug('DisbursedIn3DaysMap: '+DisbursedIn3DaysMap.get(u.id) +'>DisbursedLAMap: '+DisbursedLAMap.get(u.id));
                     decimal CasesDisbursed = (DisbursedIn3Days/DisbursedLAMap.get(u.id));
                     ac.Cases_Disbursed_in_last_3_days_Ach__c = CasesDisbursed;
                 }
                 if(ConvertedLeadsAmountMap.containsKey(u.id)){
-                    ac.Value_of_Files_Logged_In_Achieved__c = ConvertedLeadsAmountMap.get(u.id);
+                    ac.Value_of_Files_Logged_In_Achieved__c = ConvertedLeadsAmountMap.get(u.id);                  
                 }
                 if(NPA_DPD_Map.containsKey(u.id) && AllLoans.containsKey(u.id)){
                     system.debug('dpd: '+NPA_DPD_Map.get(u.id)+' outof: '+AllLoans.get(u.id));
                     decimal npa= ((NPA_DPD_Map.get(u.id))/(AllLoans.get(u.id)))*100;
-                    ac.NPA_Achieved__c = npa;
+                    ac.NPA_Achieved__c = npa;    
                 }
                 
                 if(AchievementMap.containsKey(u.id)){
                     ac.id= AchievementMap.get(u.id).id;
+                    AchievementMapUpdate.put(u.id,ac);
+                    system.debug('AchievementMapUpdate'+AchievementMapUpdate.values()); 
+                    
                 }else{
                     ac.User__c = u.id;
                     ac.Month__c = monthMap.get(system.today().month());
                     ac.Year__c = string.valueOf(system.today().year());
                     if(UserTargetMap.containsKey(u.id)){
-                        ac.target__c = UserTargetMap.get(u.id).id;
-                        ac.OwnerId = UserTargetMap.get(u.id).OwnerId;
+                          ac.target__c = UserTargetMap.get(u.id).id;
+                          ac.OwnerId = UserTargetMap.get(u.id).Branch_Manager__c;   
                         if(UserTargetMap.get(u.id).Meeting_Targets__c !=null)
                             ac.Meetings_Target__c = UserTargetMap.get(u.id).Meeting_Targets__c;
                         if(UserTargetMap.get(u.id).Meeting_Lead_Conversation_Ratio__c !=null)
                             ac.Meeting_Lead_Conversion_Ratio_Target__c = UserTargetMap.get(u.id).Meeting_Lead_Conversation_Ratio__c;
                         if(UserTargetMap.get(u.id).Lead_Generation_Target__c !=null)
                             ac.Lead_Generation_Target__c = UserTargetMap.get(u.id).Lead_Generation_Target__c;
+                          
                         if(UserTargetMap.get(u.id).No_of_Files_Logged_In_No__c !=null)
                             ac.No_of_Files_Logged_In_Target__c = UserTargetMap.get(u.id).No_of_Files_Logged_In_No__c;
-                        if(UserTargetMap.get(u.id).No_of_Files_Logged_In__c !=null)
-                            ac.Value_of_Files_Logged_In_Target__c = UserTargetMap.get(u.id).No_of_Files_Logged_In__c;
+                        if(UserTargetMap.get(u.id).No_of_Files_Logged_In_Value__c !=null)
+                            ac.Value_of_Files_Logged_In_Targets__c = UserTargetMap.get(u.id).No_of_Files_Logged_In_Value__c;
+                      
                         if(UserTargetMap.get(u.id).No_of_Units_Disbursed__c !=null)
                             ac.No_of_Units_Disbursed_Target__c = UserTargetMap.get(u.id).No_of_Units_Disbursed__c;
-                        if(UserTargetMap.get(u.id).Volume__c !=null)
-                            ac.Volume_Target__c = UserTargetMap.get(u.id).Volume__c;
+                        if(UserTargetMap.get(u.id).Volumes__c !=null)
+                            ac.Value_Target__c = UserTargetMap.get(u.id).Volumes__c;
+                       
                         if(UserTargetMap.get(u.id).IRR__c !=null)
                             ac.IRR_Target__c = UserTargetMap.get(u.id).IRR__c;
                         if(UserTargetMap.get(u.id).Net_PF__c !=null)
@@ -288,16 +305,27 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                             ac.Adherence_to_Ambit_Values_Target__c = UserTargetMap.get(u.id).Adherence_to_Ambit_Values__c;
                     }
                 }
-                if(ac.Target__c != null)
-                AchievementMap.put(u.id,ac);
-                
+               if(ac.Target__c != null)
+               AchievementMap.put(u.id,ac);
+              system.debug('AchievementMap'+AchievementMap.values());  
             }
             //achievement added
-            system.debug('size: '+AchievementMap.size());
+
+            if(AchievementMapUpdate!=null && AchievementMap.size()>0){
+                try{
+                     system.debug('AchievementMapUpdate'+AchievementMapUpdate.values());
+                    upsert AchievementMapUpdate.values();
+                    
+                }
+                catch(dmlexception ex){
+                    system.debug('error: '+ex.getMessage());
+                }
+            }
             if(AchievementMap != null && AchievementMap.size()>0){
                 try{
+                    system.debug('AchievementMap'+AchievementMap.values());
                     upsert AchievementMap.values();
-                    system.debug('added'+AchievementMap);
+                  
                 }
                 catch(dmlexception ex){
                     system.debug('error: '+ex.getMessage());

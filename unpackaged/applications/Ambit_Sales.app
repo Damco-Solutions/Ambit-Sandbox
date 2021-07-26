@@ -28,6 +28,70 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Branch Manger Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Branch Manger Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Sales Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Sales Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Executive Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Collection_Task_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Collection_Task__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Executive Profile</profile>
+    </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>Mark_Attendance</tabs>
     <tabs>standard-Contact</tabs>
@@ -43,6 +107,7 @@
     <tabs>Achievement__c</tabs>
     <tabs>Sales_Plan__c</tabs>
     <tabs>Disbursement_Target_Table__c</tabs>
+    <tabs>Meeting_Rating__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Ambit_Sales_UtilityBar</utilityBar>
 </CustomApplication>
