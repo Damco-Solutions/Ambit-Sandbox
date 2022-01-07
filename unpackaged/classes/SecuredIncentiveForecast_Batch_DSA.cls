@@ -12,13 +12,13 @@ global class SecuredIncentiveForecast_Batch_DSA implements Database.batchable<sO
         String loanstatus= 'Disbursed';
         String loanstatus1= 'Rejected';
        
-        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__r.DSA_Connector__c,OwnerId,Applicant__r.Product__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) AND DSA_Connector__r.DSA_Connector__c=:type and create_year__c=:yr and  LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\'';
+        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__r.DSA_Connector__c,OwnerId,Applicant__r.Product__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) AND DSA_Connector__r.DSA_Connector__c=:type and create_year__c=:yr and  LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus1 + '\'';
         return Database.getQueryLocator(query);
     }
     
     global void execute(Database.BatchableContext BC, List<Loan_Account__c> scope){
         if(scope != null && scope.size()>0){
-            
+            system.debug('List: '+scope);
             /****** Incentives Calculation for Secured Loans- if sourcing through DSA, then for internal employee ******/
             
             Map<id,List<Loan_Account__c>> Agent_SecuredLoanList_Map = new Map<id,List<Loan_Account__c>>();

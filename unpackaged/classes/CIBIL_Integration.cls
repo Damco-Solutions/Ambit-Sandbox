@@ -1,14 +1,40 @@
 global  with sharing class CIBIL_Integration {
     
     public static string urlstring {get;set;}
+    public static string html_code {get;set;}
+ 
     @AuraEnabled
     global  static string AcknowledgementRequest(Id AppId){
         system.debug('class called');
-        Contact [] con = [SELECT id,Loan_Amount__c,Product__c,Gender__c,Birthdate,Name,CIBIL_ID__c,MobilePhone,Address_Type__c,MailingAddress,Flat_House_Number_Destination__c,Building_Street_Name_Destination__c,Area_Destination__c,District_Destination__c,City_Destination__c,
-                          State_Destination__c,Pincode_Destination__c,CIBIL_ID_Number__c,Firstname,Lastname,Middlename FROM Contact WHERE id=:AppId LIMIT 1];
-        
-        System.debug('======= Contact List ====='+con);
         string issuerespone;
+        string Validation;
+        set<Decimal> score= new set<Decimal>();
+        Contact [] con = [SELECT id,Loan_Amount__c,Product__c,Gender__c,Birthdate,Name,CIBIL_ID__c,MobilePhone,Address_Type__c,MailingAddress,Flat_House_Number_Destination__c,Building_Street_Name_Destination__c,Area_Destination__c,District_Destination__c,City_Destination__c,
+                          State_Destination__c,Pincode_Destination__c,CIBIL_ID_Number__c,CIBIL_Score__c,Firstname,Lastname,Middlename FROM Contact WHERE id=:AppId LIMIT 1];
+        for( contact c1:con){
+             
+            if(c1.CIBIL_Score__c!=null){
+                score.add(c1.CIBIL_Score__c);
+            }
+            if(c1.CIBIL_Score__c==null){
+                score=null;
+            }
+            if(c1.Loan_Amount__c==null||c1.Product__c==null||c1.Gender__c==null||c1.Birthdate==null||c1.CIBIL_ID__c==null||c1.CIBIL_ID_Number__c==null||c1.Flat_House_Number_Destination__c==null||c1.Building_Street_Name_Destination__c==null||c1.Area_Destination__c==null|c1.City_Destination__c==null||c1.State_Destination__c==null||c1.Pincode_Destination__c==null||c1.District_Destination__c==null)
+               {
+                    Validation=System.Label.cibil_Validation;
+                }
+            
+        }
+        
+        if(Validation!=null){
+            issuerespone=Validation;
+        }
+        if(score!=null){
+            issuerespone=System.Label.Cibil_Score_check;
+        }
+        if(score==null && Validation==null ){
+             System.debug('======= Contact List ====='+con);
+        
         // Acknowledgement request header creation
         String  header = CIBIL_Integration.HeaderJSON(con[0]);
         system.debug('header'+header);
@@ -24,10 +50,11 @@ global  with sharing class CIBIL_Integration {
             // Issues request creation and getting response 
             issuerespone=CIBIL_Integration.getissuesparameter(response);
              CIBIL_Integration.getissuesrespnse(issuerespone);
-        }
-        
-        return issuerespone;
-    }
+        }   
+      }
+         return issuerespone;
+       
+   }
     
     @AuraEnabled
     global  static String HeaderJSON(Contact headerlist){
@@ -56,7 +83,7 @@ global  with sharing class CIBIL_Integration {
         string brdate;
         string Loanname;
         string AddressType;
-        
+        String Name;
         if(Requestlist.Product__c!=null){
             if(Requestlist.Product__c=='Lead - UCV'){
                 Loanname=System.Label.UCV_Product;
@@ -74,6 +101,17 @@ global  with sharing class CIBIL_Integration {
             Datetime dt1 =(Datetime)br; 
             brdate = dt1.format('ddMMyyyy');
         }
+        if(Requestlist.MiddleName==null){
+        Name ='"21":{';      
+        Name += '"01":"'+Requestlist.FirstName+'",';
+        Name += '"03":"'+Requestlist.LastName+'"},';
+        }
+        else if(Requestlist.MiddleName!=null){
+        Name ='"21":{';      
+        Name += '"01":"'+Requestlist.FirstName+'",';
+        Name += '"02":"'+Requestlist.MiddleName+'",';
+        Name += '"03":"'+Requestlist.LastName+'"},';
+        }
         if(Requestlist!=null){
             tempJson +='{"03":"'+Loanname+'",';
             tempJson +='"04":'+Requestlist.Loan_Amount__c+',';
@@ -82,12 +120,6 @@ global  with sharing class CIBIL_Integration {
             tempJson +='"22":"'+Requestlist.Gender__c+'",';
             tempJson +='"27":"'+brdate+'",';
         }
-        
-        String Name ='"21":{';      
-        Name += '"01":"'+Requestlist.FirstName+'",';
-        Name += '"02":"'+Requestlist.MiddleName+'",';
-        Name += '"03":"'+Requestlist.LastName+'"},';
-        
         String ID ='"30":{';
         ID += '"01":"'+Requestlist.CIBIL_ID_Number__c+'",';
         ID += '"13":"",';
@@ -155,9 +187,7 @@ global  with sharing class CIBIL_Integration {
         req.setTimeout(120000);
         res = h.send(req); 
         String responseBody = res.getBody();
-        system.debug('Status Code: '+res.getStatusCode());
         system.debug('response: '+responseBody);
-         urlstring=url;
         return responseBody;     
     }
     
@@ -178,20 +208,19 @@ global  with sharing class CIBIL_Integration {
                 parser.nextValue();
                 if(parser.getCurrentName() =='ACKNOWLEDGEMENT-ID') {
                     Acknowledgementid = parser.getText();
-                } else if (parser.getCurrentName() =='STATUS') {
+                }  if (parser.getCurrentName() =='STATUS') {
                     Status = parser.getText();
                 }
-                else if (parser.getCurrentName() =='REQUEST-RECEIVED-TIME') {
+                if (parser.getCurrentName() =='REQUEST-RECEIVED-TIME') {
                     REQUESTRECEIVEDTIME = parser.getText();
                 }
-                else if (parser.getCurrentName() =='CUST-ID') {
+                if (parser.getCurrentName() =='CUST-ID') {
                     CUSTID = parser.getText();
-                }else if (parser.getCurrentName() =='APPLICATION-ID') {
+                } 
+                if (parser.getCurrentName() =='APPLICATION-ID') {
                     APPLICATIONID = parser.getText();
                     break;
-                }
-                
-                
+                }   
             }
             
             system.debug('Acknowledgementid: '+Acknowledgementid);
@@ -206,13 +235,9 @@ global  with sharing class CIBIL_Integration {
         
         // if Acknowledgement status is success ,then Issue input json creation is called
         else if(Status=='Success'){
-            
-            issuesresponse=CIBIL_Integration.IssueHeaderJSON(CUSTID,APPLICATIONID,Acknowledgementid,REQUESTRECEIVEDTIME);
-            
+            issuesresponse=CIBIL_Integration.IssueHeaderJSON(CUSTID,APPLICATIONID,Acknowledgementid,REQUESTRECEIVEDTIME);  
         }
-        
-        return issuesresponse;
-        
+        return issuesresponse;  
     }
     
     // Issue input json creation 
@@ -221,9 +246,6 @@ global  with sharing class CIBIL_Integration {
         String jsonString = '"HEADER":';
         String tempJson ='';
         string RequestType='ISSUE';
-        
-        //Datetime dt=date.valueOf(RequestRecivedtime);
-      
         string REQUESTTIME =RequestRecivedtime;
         
         tempJson +='{"APPLICATION-ID":"'+APPLICATIONID+'",';
@@ -235,12 +257,10 @@ global  with sharing class CIBIL_Integration {
         tempJson +='"SOURCE-SYSTEM":"'+System.Label.SourceSystemName+'"},';
         tempJson +='"ACKNOWLEDGEMENT-ID":'+Acknowledgementid.trim()+',';
         
-        
         String ResponseFormat ='"RESPONSE-FORMAT":[';
-        
         ResponseFormat +='"04",';
         ResponseFormat +='"03",';
-        ResponseFormat +='"02",';
+        ResponseFormat +='"08",';
         ResponseFormat +='"01"]}';   
         
         String IssuesheaderJson = jsonString+tempJson+ResponseFormat;
@@ -284,9 +304,8 @@ global  with sharing class CIBIL_Integration {
         String responseBody = res.getBody();
         system.debug('Status Code: '+res.getStatusCode());
         system.debug('response: '+responseBody);
-        return responseBody;
-        
-        
+        urlstring=url;
+        return responseBody;   
     }
     @AuraEnabled 
     global static string getissuesrespnse(String responseBody){
@@ -313,19 +332,10 @@ global  with sharing class CIBIL_Integration {
             if(parser.getCurrentToken() == JSONToken.FIELD_NAME) {
                 parser.nextValue();
                  if (parser.getCurrentName() =='STATUS') {
-                    instatus = parser.getText();
-                    
-                }
-                 if(parser.getCurrentName() =='DESCRIPTION') {
-                    DESCRIPTION = parser.getText();
-                     break;
-                }
-                
-                   
-                }
-                
-                
-            }
+                    instatus = parser.getText();   
+                } 
+             }    
+          }
             
             system.debug('Status main: '+MainStatus);
             system.debug('instatus:'+instatus);
@@ -333,36 +343,42 @@ global  with sharing class CIBIL_Integration {
             
         if(MainStatus=='IN-PROCESS' && instatus=='WAITING'){
             string url=urlstring;
-            CIBIL_Integration.inprogessresponse(url);
-            
+            CIBIL_Integration.inprogessresponse(url);   
+        }
+        if(MainStatus=='IN-PROCESS' && instatus==null){
+            string url=urlstring;
+            CIBIL_Integration.inprogessresponse(url);  
+        }
+        if(MainStatus=='COMPLETED' && instatus=='WAITING'){
+            string url=urlstring;
+            CIBIL_Integration.inprogessresponse(url);  
+        }
+        if(MainStatus=='COMPLETED' && instatus=='WAITING'){
+            string url=urlstring;
+            CIBIL_Integration.inprogessresponse(url);  
         }
         if(MainStatus=='COMPLETED' && instatus=='ERROR'){
-            
-            return jsonResult;
-            
+            return jsonResult;  
         }
         if(MainStatus=='COMPLETED' && instatus=='BUREAU-ERROR'){
-            
-            return jsonResult;
-            
+            return jsonResult; 
         }
         
         // if Issues response status is success ,then Issue input json creation is called
         else if(MainStatus=='COMPLETED' && instatus=='SUCCESS'){
-            
-            issuesresponse=CIBIL_Integration.UpdateCibilScore(responseBody);
-            
+            issuesresponse=CIBIL_Integration.UpdateCibilScore(responseBody);  
         }
-        
-        return issuesresponse;
-        
+        return issuesresponse;  
     }
     
     @AuraEnabled 
     global static string UpdateCibilScore(String responseBody){
         string csscore;
+        string score;
+        string ENCODED_STRING;
         string APPLICATIONID;
         list<contact> con= new list<contact>();
+        list<Attachment> csattach= new list<Attachment>();
         String jsonResult = responseBody;
         System.debug('jsonResult '+jsonResult);
         JSONParser parser = JSON.createParser(jsonResult);
@@ -373,31 +389,67 @@ global  with sharing class CIBIL_Integration {
                     APPLICATIONID = parser.getText();
                 }if (parser.getCurrentName() =='score') {
                     csscore = parser.getText();
-                    break;
                 }
-            }
+                  if(parser.getCurrentName() =='ENCODED STRING') {
+                  ENCODED_STRING = parser.getText();
+                   break;  
+                }
+             }
          }
-       
-            string score=String.valueOf(Integer.valueOf(csscore));
+         
+               System.debug('========== Heap Size :: ' + Limits.getHeapSize());
+        system.debug('ENCODED STRING: '+ENCODED_STRING);
+     
+        if(csscore=='000-1'){
+             score='000';
+        }else{
+          score=String.valueOf(Integer.valueOf(csscore)); 
+        }
+            
             Decimal CIBILScore = decimal.valueOf(score);
             
             system.debug('APPLICATIONID: '+APPLICATIONID);
             system.debug('score: '+csscore);
             system.debug('CIBILScore: '+CIBILScore);
+            system.debug('ENCODED STRING: '+ENCODED_STRING);
             if(APPLICATIONID!=null){
-                for (contact cs:[select id,name,CIBIL_Score__c from contact where id=:APPLICATIONID]){
+                for (contact cs:[select id,name,CIBIL_Score__c,OwnerId from contact where id=:APPLICATIONID]){
                     contact app= new contact();
                     app.Id=cs.id;
                     app.CIBIL_Score__c=CIBILScore;
-                    
                     con.add(app);
                     
-                } 
-            }
+                    if(ENCODED_STRING!=null){
+                        blob cibilpdf = EncodingUtil.base64Decode(ENCODED_STRING);
+                        ContentVersion conVer = new ContentVersion();
+              conVer.ContentLocation = 'S'; // to use S specify this document is in Salesforce, to use E for external files
+              conVer.PathOnClient = 'Cibilscore.PDF'; // The files name, extension is very important here which will help the file in preview.
+              conVer.Title = 'Cibilscore'; // Display name of the files
+              conVer.VersionData =cibilpdf; // converting your binary string to Blog
+              conver.OwnerId=cs.OwnerId;         
+              insert conVer;    //Insert ContentVersion
+
+
+         // First get the Content Document Id from ContentVersion Object
+       Id conDoc = [SELECT ContentDocumentId FROM ContentVersion WHERE Id =:conVer.Id].ContentDocumentId;
+       //create ContentDocumentLink  record 
+       ContentDocumentLink conDocLink = New ContentDocumentLink();
+       conDocLink.LinkedEntityId =APPLICATIONID ; // Specify RECORD ID here i.e Any Object ID (Standard Object/Custom Object)
+       conDocLink.ContentDocumentId = conDoc;  //ContentDocumentId Id from ContentVersion
+       conDocLink.shareType = 'I';              
+       insert conDocLink;
+                        
+               system.debug('ContVerFile->'+conVer);
+               system.debug('conDocLink->'+conDocLink);
             
+        }
+                    
+      } 
+    }
             if(!con.isEmpty()){
-                update con;
+                update con;     
             }
+        
             return null;  
         }
     
@@ -414,11 +466,6 @@ global  with sharing class CIBIL_Integration {
         system.debug('Status Code: '+res.getStatusCode());
         system.debug('response: '+responseBody);
         CIBIL_Integration.getissuesrespnse(responseBody);
-        return null;
-
-        
-       
+        return null; 
     }
-    
-    
-}
+ }

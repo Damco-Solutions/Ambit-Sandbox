@@ -66,7 +66,7 @@ public class ShareRecordsToManagers {
         if(sharesToCreate != null && sharesToCreate.size()>0){
             system.debug('sharesToCreate size= '+sharesToCreate.size());
             try{
-                insert sharesToCreate;
+                database.insert (sharesToCreate);
             }
             catch(exception e){
                 system.debug('e: '+e.getMessage());

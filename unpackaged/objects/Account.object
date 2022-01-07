@@ -308,6 +308,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Branch_Coordinate__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Branch Coordinate</label>
+        <required>false</required>
+        <scale>7</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Location</type>
+    </fields>
+    <fields>
         <fullName>Branch_Manager__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -343,13 +354,14 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>DSA</fullName>
-                    <default>false</default>
-                    <label>DSA</label>
+                    <fullName>Direct Sales Agent</fullName>
+                    <default>true</default>
+                    <label>Direct Sales Agent</label>
                 </value>
                 <value>
                     <fullName>Connector</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Connector</label>
                 </value>
             </valueSetDefinition>
@@ -399,6 +411,18 @@
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Index_no__c</fullName>
+        <externalId>false</externalId>
+        <label>Index no</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Industry</fullName>
@@ -575,6 +599,41 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Relationship_Manager_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Relationship Manager 1</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Relationship_Manager_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Relationship Manager 2</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts6</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sec_Sourcing_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Sec Sourcing Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ShippingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -595,9 +654,23 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>Sourcing_Channel_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Agent_Code__pc +&apos;-&apos;+LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sourcing Channel-2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>TickerSymbol</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Tier</fullName>
     </fields>
     <fields>
         <fullName>Type</fullName>
@@ -606,9 +679,33 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>UCV_Relationship_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>UCV Relationship Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Website</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>last_assign_user__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>last assign user</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <listViews>
         <fullName>AllAccounts</fullName>
@@ -639,9 +736,9 @@
     <listViews>
         <fullName>All_DSA_Connectors</fullName>
         <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.RECORDTYPE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>DSA_Connector_Code__c</columns>
+        <columns>Agent_Code__pc</columns>
+        <columns>Sec_Sourcing_Channel__c</columns>
+        <columns>Sourcing_Channel_2__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.RECORDTYPE</field>
@@ -727,11 +824,7 @@
         <picklistValues>
             <picklist>DSA_Connector__c</picklist>
             <values>
-                <fullName>Connector</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DSA</fullName>
+                <fullName>Direct Sales Agent</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1022,11 +1115,7 @@
         <picklistValues>
             <picklist>DSA_Connector__c</picklist>
             <values>
-                <fullName>Connector</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DSA</fullName>
+                <fullName>Direct Sales Agent</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

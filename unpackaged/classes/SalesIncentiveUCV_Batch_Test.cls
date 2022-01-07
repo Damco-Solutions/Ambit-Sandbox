@@ -33,7 +33,7 @@ public class SalesIncentiveUCV_Batch_Test {
     public static testmethod void testUCVNonDirect(){
         id AccRecordType = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Person Account').getRecordTypeId();
         // create a Dsa account
-        Account acc=TestDataFactory.CreateAccount(AccRecordType);
+        Account acc=TestDataFactory.CreateAccount(AccRecordType,null);
         id RecordType = Schema.SObjectType.Contact.getRecordTypeInfosByName().get('Individual').getRecordTypeId();
         // create Applicant
         Contact c = TestDataFactory.CreateApplicant(RecordType,'Lead - UCV',system.today(),5000000,17);

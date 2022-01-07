@@ -325,6 +325,17 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Manager_Incentive__c</fullName>
+        <externalId>false</externalId>
+        <label>Rural Manager Incentive</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Month__c</fullName>
         <externalId>false</externalId>
         <label>Month</label>
@@ -494,7 +505,7 @@
     <fields>
         <fullName>Total_Regular_Incentive_Amount__c</fullName>
         <externalId>false</externalId>
-        <formula>Incentive_for_Secured_Loans__c +  Incentive_for_Unsecured_Loans__c +  Incentive_for_UCV__c</formula>
+        <formula>Incentive_for_Secured_Loans__c +  Incentive_for_Unsecured_Loans__c +  Incentive_for_UCV__c +  Incentive_for_Rural_Secured_Loans__c  +  Incentive_for_Rural_Unsecured_Loans__c + Manager_Incentive__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Total Regular Incentive Amount</label>
         <precision>18</precision>

@@ -207,10 +207,30 @@
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>Branch_Manager__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch Manager</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Branch__c</fullName>
         <externalId>false</externalId>
         <label>Branch</label>
         <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Head__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Head</label>
+        <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
@@ -311,6 +331,34 @@
         <fullName>Channel__c</fullName>
         <externalId>false</externalId>
         <label>Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DSA Manager</fullName>
+                    <default>false</default>
+                    <label>DSA Manager</label>
+                </value>
+                <value>
+                    <fullName>DST Manager</fullName>
+                    <default>false</default>
+                    <label>DST Manager</label>
+                </value>
+                <value>
+                    <fullName>UCV Manager</fullName>
+                    <default>false</default>
+                    <label>UCV Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cluster_Head__c</fullName>
+        <externalId>false</externalId>
+        <label>Cluster Head</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -407,6 +455,46 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Service_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sourcing_Channel_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Sourcing Channel-1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sourcing_location__c</fullName>
+        <externalId>false</externalId>
+        <label>Sourcing location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Head__c</fullName>
+        <externalId>false</externalId>
+        <label>State Head</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Status__c</fullName>
         <externalId>false</externalId>
         <label>Status</label>
@@ -424,6 +512,26 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Zonal_Head__c</fullName>
+        <externalId>false</externalId>
+        <label>Zonal Head</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>channel_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>channel Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <listViews>
         <fullName>ActiveUsers</fullName>
@@ -464,8 +572,10 @@
         <columns>CORE.USERS.USERNAME</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>MANAGER</columns>
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.PROFILE.NAME</columns>
+        <columns>Branch__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Users</label>
     </listViews>

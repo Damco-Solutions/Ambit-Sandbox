@@ -70,6 +70,10 @@
         <name>Incentive_forecast_for_Unsecured_Loans__c</name>
     </fields>
     <fields>
+        <label><!-- Rural Manager Incentive --></label>
+        <name>Manager_Incentive__c</name>
+    </fields>
+    <fields>
         <label><!-- Month --></label>
         <name>Month__c</name>
         <picklistValues>
@@ -162,6 +166,25 @@
         <label><!-- Year --></label>
         <name>Year__c</name>
     </fields>
+    <layouts>
+        <layout>Branch Manager Profile Sales Incentive</layout>
+        <sections>
+            <label><!-- Contest / Seasonal Incentive --></label>
+            <section>Contest / Seasonal Incentive</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Final Incentive --></label>
+            <section>Final Incentive</section>
+        </sections>
+        <sections>
+            <label><!-- Incentive Forecast --></label>
+            <section>Incentive Forecast</section>
+        </sections>
+    </layouts>
     <layouts>
         <layout>Sales Incentive Layout</layout>
         <sections>

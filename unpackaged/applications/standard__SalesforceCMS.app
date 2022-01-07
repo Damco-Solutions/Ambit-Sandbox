@@ -16,16 +16,26 @@
     <tabs>Industry_Margin</tabs>
     <tabs>Sales_Plan__c</tabs>
     <tabs>Meeting_Rating__c</tabs>
+    <tabs>Leave_Management</tabs>
+    <tabs>Batch_Log__c</tabs>
+    <tabs>User_Statistics__c</tabs>
+    <tabs>State_Code_Mapping__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
             <tab>Attendance__c</tab>
         </mappings>
         <mappings>
+            <tab>Batch_Log__c</tab>
+        </mappings>
+        <mappings>
             <tab>Collection_Task__c</tab>
         </mappings>
         <mappings>
             <tab>Industry_Margin</tab>
+        </mappings>
+        <mappings>
+            <tab>Leave_Management</tab>
         </mappings>
         <mappings>
             <tab>Loan_Account__c</tab>
@@ -41,6 +51,12 @@
         </mappings>
         <mappings>
             <tab>Sales_Plan__c</tab>
+        </mappings>
+        <mappings>
+            <tab>State_Code_Mapping__c</tab>
+        </mappings>
+        <mappings>
+            <tab>User_Statistics__c</tab>
         </mappings>
         <mappings>
             <tab>standard-CmsChannel</tab>

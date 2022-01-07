@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Statistics</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Statistics</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch Manager --></label>
+        <name>Branch_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Head --></label>
+        <name>Business_Head__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster Head --></label>
+        <name>Cluster_Head__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Achievement MTD --></label>
+        <name>Login_Achievement_MTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login Commitment for the month --></label>
+        <name>Login_Commitment_for_the_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Active Leads --></label>
+        <name>No_of_Active_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Disbursement --></label>
+        <name>No_of_Disbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Logins --></label>
+        <name>No_of_Logins__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Meetings --></label>
+        <name>No_of_Meetings__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Sanctions --></label>
+        <name>No_of_Sanctions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson --></label>
+        <name>Salesperson__c</name>
+        <relationshipLabel><!-- User Statistics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State Head --></label>
+        <name>State_Head__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of Disbursement Achieved --></label>
+        <name>Value_of_Disbursement_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- VOD Commitment For The Month --></label>
+        <name>Value_of_Disbursement_Commitment_For_the__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value of Disbursement --></label>
+        <name>Value_of_Disbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zonal Head --></label>
+        <name>Zonal_Head__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

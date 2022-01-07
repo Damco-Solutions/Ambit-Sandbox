@@ -21,7 +21,7 @@
             <name>email_sent_successfully</name>
             <type>Task</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Meeting__c.Status__c</field>
             <operation>equals</operation>

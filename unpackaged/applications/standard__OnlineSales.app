@@ -7,5 +7,9 @@
     <navType>Standard</navType>
     <tabs>standard-OnlineSalesHome</tabs>
     <tabs>Meeting_Rating__c</tabs>
+    <tabs>Leave_Management</tabs>
+    <tabs>Batch_Log__c</tabs>
+    <tabs>User_Statistics__c</tabs>
+    <tabs>State_Code_Mapping__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

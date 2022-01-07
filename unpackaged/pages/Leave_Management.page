@@ -1,0 +1,64 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false">
+   
+        <style>
+        body{
+           text-align: center; 
+           
+        } 
+        html {
+            text-align: center;
+             
+        }
+    </style>
+    <apex:form >
+        <apex:pageBlock >
+             <td width="880" valign="top" colspan="4">
+                <p align="center" >
+                    <strong style="font-size:3.0vw;text-decoration: underline"> LEAVE MANGAGEMENT</strong>
+                    <strong></strong>
+                </p>
+            </td>
+            <br/>
+            <br/>
+            <br/>
+              <td width="285" valign="top">
+                <p align="center" style="font-size:12px;">
+                   <apex:CommandLink styleClass="btn" style="padding: 4px; text-decoration: none;font-size:2.2vw;font-weight: bold;" Value="Apply Leave" onclick="window.open('https://ambithr.ambit.co/index.php/my-leaves/apply-for-leave')"/><br/>
+                </p>
+            </td>
+            <br/>
+            <br/>
+                <td width="285" valign="top">
+                <p align="center" style="font-size:12px;">
+                    <apex:CommandLink styleClass="btn" style="padding: 4px; text-decoration: none;font-size:2.2vw;font-weight: bold;" Value="Check Leave History" onclick="window.open('https://ambithr.ambit.co/index.php/my-leaves/my-leave-history')"/><br/>
+         </p>
+            </td>
+            <br/>
+            <br/>
+                <td width="285" valign="top">
+                <p align="center" style="font-size:12px;">
+                    <apex:CommandLink styleClass="btn" style="padding: 4px; text-decoration: none;font-size:2.2vw;font-weight: bold;" Value="Check Leave Balance" onclick="window.open('https://ambithr.ambit.co/index.php/my-leaves/my-leave-balance')"/><br/>
+     </p>
+            </td>
+            <br/>
+            <br/>
+           
+                <td width="285" valign="top">
+                <p align="center" style="font-size:12px;">
+                    <apex:CommandLink styleClass="btn" style="padding: 4px; text-decoration: none;font-size:2.2vw;font-weight: bold;" Value="Payroll-Zing HR" onclick="window.open('https://app.zinghr.com/2015/Pages/Authentication/Login.aspx')"/><br/>
+     </p>
+            </td>
+              
+        </apex:pageBlock>
+         
+    </apex:form>
+    <script language="javascript" type="text/javascript">
+    
+    function SamePage(url) {
+        newwindow=window.open(url,'Malika','height=500,width=750');
+        if (window.focus) {newwindow.focus()}
+        return false;
+    }
+    </script>
+       
+</apex:page>

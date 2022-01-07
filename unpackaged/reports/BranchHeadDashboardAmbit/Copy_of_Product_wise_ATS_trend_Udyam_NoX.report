@@ -13,7 +13,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Applicant</value>
+            <value>APPLICANT</value>
         </criteriaItems>
         <criteriaItems>
             <column>Contact$Product__c</column>

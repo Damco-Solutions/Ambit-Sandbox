@@ -74,30 +74,30 @@
         <picklistValues>
             <picklist>Address_Type__pc</picklist>
             <values>
-                <fullName>Office Address</fullName>
+                <fullName>OFFICE ADDRESS</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Permanent Address</fullName>
+                <fullName>PERMANENT ADDRESS</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Residential Address</fullName>
+                <fullName>RESIDENCE ADDRESS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
             <picklist>Applicant_Type__pc</picklist>
             <values>
-                <fullName>Applicant</fullName>
+                <fullName>APPLICANT</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Co-Applicant</fullName>
+                <fullName>CO-APPLICANT</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Guarantor</fullName>
+                <fullName>GUARANTOR</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -163,7 +163,19 @@
         <picklistValues>
             <picklist>Channel_Type__pc</picklist>
             <values>
-                <fullName>Sales Team</fullName>
+                <fullName>Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DSA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sourcing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCV Broker</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -175,6 +187,917 @@
             </values>
             <values>
                 <fullName>DST Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UCV Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cluster__pc</picklist>
+            <values>
+                <fullName>ACTOR%2F SINGER%2F ENTERTAINER%2F PHOTOGRAPHER%2F PAINTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ADVERTISING %26 PROMOTIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGRI BUSINESS CENTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGRI COLD-STORAGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGRI GODOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGRI WAREHOUSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGRICULATURAL TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AIR CARGO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ALUMINIUM PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMBULANCE SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANIMAL HUSBANDARY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANIMATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ARCHITECT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ARTIFICIAL%2FIMITATION JEWELLERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILE ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILE PARTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILE SERVICE CENTRE%2FGARAGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILES  -  AUTOMOBILE ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILES  -  AUTOMOBILE DEALER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILES  -  AUTOMOBILE PARTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BABY CARE PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEDSHEET%2FBLANKET%2FQUILT%2FCUSHION COVER%2FCURTAINS%2FFLOOR CUSHION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEE-KEEPING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BIO-FERTILIZER PRODUCTION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BIO-PESTICIDES PRODUCTION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BROKER %2F AGENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BUILDER %2F DEVELOPER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BUS ROUTE OPERATOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CALL CENTERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAPTIVE USAGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASTING %26 FORGINGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CATERER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CATTLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CERAMICS%2FMARBLE%2FSTONE%2FGRANITE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHARTERED ACCOUNTANT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEMICAL  -  CHEMICALS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEMICAL  -  PAINT %26 VARNISHES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEMICAL  -  PESTICIDES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEMICALS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIVIL CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLEARING %26 FORWARDING AGENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COACHING CLASS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COLLEGE %2F PROFESSIONAL COURSE INSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COLOUR%2FPLUMBING CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMMISSION AGENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPUTER  -  COMPUTER HARDWARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPUTER  -  COMPUTER SPAREPARTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPUTER HARDWARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPUTER REPAIR %26 SERVICING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPUTER SPAREPARTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION MATERIAL  -  CEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION MATERIAL  -  CERAMICS%2FMARBLE%2FSTONE%2FGRANITE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL %2F BRICK %2F SAND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION MATERIAL  -  HARDWARE STORE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION MATERIAL  -  SANITARYWARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION MATERIAL %2F BRICK %2F SAND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS  -  BABY CARE PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS  -  COSMETICS %2FBEAUTY PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS  -  DAIRY %26 DAIRY PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS  -  EDIBLE OIL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS  -  GROCERY%2FFRUITS %26 VEGETABLE STORE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS  -  HANDICRAFT%2FGIFT%2FARTWORK%2FPOOJA ITEMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS  -  STATIONERY %2F GENERAL STORE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTAINERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTRACT BASED DEPLOYMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COPPER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COSMETICS %2FBEAUTY PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COURIER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAIRY %26 DAIRY PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DELIVERY AGENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIAGNOSTIC CENTRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIAMONDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIARY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIRECT %2FBFSI SERVICE%2FSALES AGENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOCTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DRIVER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DYING%2FGINNING%2FTEXTURISING%2FTWISTING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-COMMERCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDIBLE OIL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDUCATION SERVICE PROVIDER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT%2FGOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT%2FGOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES %26 ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRICAL CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRICAL EQUIPMENT%2FGOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRONICS EQUIPMENT%2FGOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMBROIDERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENGINEER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EVENT MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EXPORT %26 IMPORT AGENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FAST FOOD %2F JUICE CENTRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOOD %26 RESTAURANT  -  ICECREAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOOD %26 RESTAURANT  -  SWEETMEAT SHOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOOD %26 RESTAURANT  -  WINE%2FLIQUOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOOD PROCESSING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FURNITURE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GEMS %26 STONES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENERATORS %26 TRANSFORMERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOLD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOOD TRANSPORT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOVERNMENT CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GUEST HOUSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HANDICRAFT%2FGIFT%2FARTWORK%2FPOOJA ITEMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HANDLING %26 CONVEYORS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HANDLOOM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTHCARE  -  EYE CARE %2F OPTICIAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTHCARE  -  HEALTHCARE PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTHCARE  -  MEDICINE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTHCARE  -  SURGICAL EQUIPMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTHCARE PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HORTICULTURE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOSPITAL%2FNURSING HOME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOTEL %2F LODGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOUSING FINANCE COMPANY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICECREAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS %26 TRANSFORMERS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING %26 CONVEYORS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  VALVES %26 FITTINGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL SAFETY PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INTERIOR DESIGNER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IRON %26 STEEL PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT%2FSOFTWARE CONSULTANT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JEWELLERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JEWELLERY  -  ARTIFICIAL%2FIMITATION JEWELLERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JEWELLERY  -  DIAMONDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JEWELLERY  -  GEMS %26 STONES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JEWELLERY  -  GOLD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JEWELLERY  -  JEWELLERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOB%2FRECRUITMENT CONSULTANT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LABOUR CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAMINATES %26 PLYWOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEATHER  -  LUGGAGE AND LEATHER BAGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEATHER  -  OTHER LEATHER GOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEATHER  -  SHOE%2FFOOTWARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LIFT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LUGGAGE AND LEATHER BAGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MECHANICAL GOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MECHNICAL CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEDICINE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METAL MOULD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METAL SCRAPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METALS  -  ALUMINIUM PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METALS  -  CASTING %26 FORGINGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METALS  -  COPPER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METALS  -  IRON %26 STEEL PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METALS  -  METAL MOULD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METALS  -  METAL SCRAPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICRO FINANCE INSTITUTION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MILLING PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOBILE %2F ELECTRONIC %2F ELECTRIC GOODS REPAIRS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOBILE PHONES %26 ACCESSORIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOTORS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NBFC - NON REAL ESTATE FUNDING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NBFC - REAL ESTATE FUNDING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER LEATHER GOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER TRASPORTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PACKAGING MATERIAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAINT %26 VARNISHES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAPER  -  PAPER %26 PAPER PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAPER  -  PAPER SCRAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAPER %26 PAPER PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAYING GUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PESTICIDES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PETROLEUM PRODUCTS  -  KEROSENE %2F OTHER PETROLEUM PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PETROLEUM PRODUCTS  -  LPG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PETROLEUM PRODUCTS  -  LUBRICANT OIL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PETROLEUM PRODUCTS  -  PETROL PUMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PISCICULTURE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLASTIC MOULDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLASTIC PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLASTICS  -  PLASTIC MOULDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLASTICS  -  PLASTIC PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLASTICS  -  PLASTIC SCRAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POULTRY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POWERLOOM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRINTING %2F PUBLISHING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PROJECT MANGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC COMPOUND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>READYMADE%2FLADIES%2FUNISEX GARMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RENTAL BUSINESS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTAURANT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RUBBER  -  RUBBER PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RUBBER  -  TYRES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RUBBER PRODUCTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SALOON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SANITARYWARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SCHOOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SCIENTIST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SECURITY%2FFACILITY MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEED PRODUCTION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERICULTURE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SHIPPING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SHOE%2FFOOTWARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOFTWARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STORAGE %26 WAREHOUSING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STORAGE BATTERIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUB CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGICAL EQUIPMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TAX %26 ACCOUNT CONSULTING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEXTILES  -  BEDSHEET%2FBLANKET%2FQUILT%2FCUSHION COVER%2FCURTAINS%2FFLOOR CUSHION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEXTILES  -  EMBROIDERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEXTILES  -  HANDLOOM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEXTILES  -  KNITTING%2FWEAVING%2FSEWING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEXTILES  -  READYMADE%2FLADIES%2FUNISEX GARMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEXTILES  -  YARN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TICKETING AGENCY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIFFIN SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOUR %26 TAVEL AGENCY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRANSMISSION LINE TOWER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TYRES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALVES %26 FITTINGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WOOD AND WOODEN PRODUCTS  -  FURNITURE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WOOD AND WOODEN PRODUCTS  -  LAMINATES %26 PLYWOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YARN</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -192,47 +1115,19 @@
         <picklistValues>
             <picklist>Constitution__pc</picklist>
             <values>
-                <fullName>LLP</fullName>
+                <fullName>COMPANY %28PUBLIC%2FPRIVATE LIMITED%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
+                <fullName>HINDU UNDIVIDED FAMILY</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partnership</fullName>
+                <fullName>PARTNERSHIP FIRM%2FLIMITED LIABILITY PARTNERSHIP</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Private Limited</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Proprietership</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public Limited</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SENP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SEP</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Salaried</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Society</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Trust</fullName>
+                <fullName>PROPRIETARY</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -261,11 +1156,7 @@
         <picklistValues>
             <picklist>DSA_Connector__c</picklist>
             <values>
-                <fullName>Connector</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DSA</fullName>
+                <fullName>Direct Sales Agent</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -281,17 +1172,75 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Document_Type__pc</picklist>
+            <values>
+                <fullName>Aadhar as KYC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driving License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voter ID</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Education__pc</picklist>
+            <values>
+                <fullName>Diploma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doctor</fullName>
+                <default>false</default>
+            </values>
             <values>
                 <fullName>Graduate</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Post Graduate</fullName>
+                <fullName>High School</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Under Graduate</fullName>
+                <fullName>ITI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Graduate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Graduate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Primary School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Professional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>GST_Applicable__pc</picklist>
+            <values>
+                <fullName>N</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Y</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -306,7 +1255,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Transgender</fullName>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -455,38 +1404,38 @@
         <picklistValues>
             <picklist>Marital_Status__pc</picklist>
             <values>
-                <fullName>Divorced</fullName>
+                <fullName>BACHELOR</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Married</fullName>
+                <fullName>DIVORCED</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Single</fullName>
+                <fullName>MARRIED</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Widowed</fullName>
+                <fullName>SINGLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WIDOWED</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
             <picklist>Nature_of_Loan__pc</picklist>
             <values>
-                <fullName>External BT plus Top-up</fullName>
+                <fullName>Capital Equipment Purchase</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Fresh Loan</fullName>
+                <fullName>Commercial Property Purchase</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Internal BT</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchase of Commercial Property</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -495,10 +1444,6 @@
             </values>
             <values>
                 <fullName>Repurchase</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Top-Up Loan</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -520,23 +1465,23 @@
         <picklistValues>
             <picklist>Occupancy_Status__pc</picklist>
             <values>
-                <fullName>Co-Provided</fullName>
+                <fullName>COMPANY LEASE</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Others</fullName>
+                <fullName>GOVT%2E ACCOMODATION</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Owned</fullName>
+                <fullName>PARENTAL</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Parental</fullName>
+                <fullName>RENTED</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Rental</fullName>
+                <fullName>SELFOWNED</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -556,6 +1501,17 @@
             </values>
             <values>
                 <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pan_Card_Form_60__pc</picklist>
+            <values>
+                <fullName>Form 60</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pan Card</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -589,11 +1545,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Bus 2 - Retail 2 - 5</fullName>
+                <fullName>Bus 2 - Retail 2 -</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Bus 3 - Retail 6 - 9</fullName>
+                <fullName>Bus 3 - Retail 6 -</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -601,11 +1557,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Captive 1 - Super Strategic</fullName>
+                <fullName>Captive 1 - Supter</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Captive 2 - Strategic</fullName>
+                <fullName>Captive 2 - Strate</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -614,6 +1570,10 @@
             </values>
             <values>
                 <fullName>Cat A - FTU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cat A - FTU %28M and HCV%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -629,23 +1589,27 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>FBC-1</fullName>
+                <fullName>FBC - 1</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>FBC-2</fullName>
+                <fullName>FBC - 2</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>School-1</fullName>
+                <fullName>NA</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>School-2</fullName>
+                <fullName>School 1</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>School-3</fullName>
+                <fullName>School 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School 3</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -668,11 +1632,15 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Capital equipment purchase %28CAPEX%29</fullName>
+                <fullName>Capital Equipment</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Captive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Debt Consolidation</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -688,11 +1656,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchase of commercial property</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Refinance of existing loans</fullName>
+                <fullName>Renovation %2F Expansion</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -708,7 +1672,7 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Working capital</fullName>
+                <fullName>Working Capital</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -745,115 +1709,134 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT UDYAM - AVERAGE BANK BALANCE %28ABB%29</fullName>
+                <fullName>AMBIT UDYAM-Average Bank Balance %28ABB%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT UDYAM - COVID LINE OF CREDIT</fullName>
+                <fullName>AMBIT UDYAM-GST Udyam</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT UDYAM - GST UDYAM</fullName>
+                <fullName>AMBIT UDYAM-LIP Assessment</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT UDYAM - INCOME BASED</fullName>
+                <fullName>AMBIT UDYAM-Samarth Loan</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT UDYAM - LIP ASSESSMENT</fullName>
+                <fullName>AMBIT Udyam-Income Based</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - BANKING SURROGATE</fullName>
+                <fullName>AMBIT VYAPAR-GST Vyapar Loan</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - COVID LINE OF CREDIT</fullName>
+                <fullName>AMBIT VYAPAR-INCOME BASED</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - GST VYAPAR LOAN</fullName>
+                <fullName>AMBIT VYAPAR-LAP against Multi Tenanted Properties</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - INCOME BASED</fullName>
+                <fullName>AMBIT VYAPAR-Micro LAP</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - LAP AGAINST MULTI TENANTED PROPERTIES</fullName>
+                <fullName>AMBIT VYAPAR-Top-Up Loans for Existing Customers</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - LIP Program</fullName>
+                <fullName>AMBIT Vyapar- Surrogate</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - MICRO LAP</fullName>
+                <fullName>AMBIT-Udyam-Micro Business Loan</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - TATKAL VYAPAR</fullName>
+                <fullName>Ambit Udyam-COVID Line of Credit</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>AMBIT VYAPAR - TOP-UP LOANS FOR EXISTING CUSTOMERS</fullName>
+                <fullName>Ambit VYAPAR-Banking Surrogate</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Assessed Income Program</fullName>
+                <fullName>Ambit Vyapar-COVID Line of Credit</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Goods Segment UCV</fullName>
+                <fullName>Ambit-Rural Udyam-Assessed Income Program</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Income Based Program</fullName>
+                <fullName>Ambit-Rural Udyam-Income Program</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - AHMEDABAD</fullName>
+                <fullName>Ambit-Rural Vyapar-Assessed Income Program</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - DELHI</fullName>
+                <fullName>Ambit-Rural Vyapar-Income Program</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - INDORE</fullName>
+                <fullName>Ambit-Vyapar-Gram Samridhi</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - JAIPUR</fullName>
+                <fullName>Ambit-Vyapar-Micro LAP- Delhi</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - KALYAN</fullName>
+                <fullName>Ambit-Vyapar-Micro LAP- Indore</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - LUDHIANA</fullName>
+                <fullName>Ambit-Vyapar-Micro LAP- Kalyan</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - NASHIK</fullName>
+                <fullName>Ambit-Vyapar-Micro LAP- Rajkot</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>MICROLAP - RAJKOT</fullName>
+                <fullName>Ambit-Vyapar-Micro LAP-Karnataka</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>NIP in Imperfect Collateral</fullName>
+                <fullName>Goods Segment UCV %28 Pre-EMI %2F Tranche%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>NIP in Perfect Collateral</fullName>
+                <fullName>Goods Segment UCV%28No-Pre EMI%2FManual EMI%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Passenger Segment UCV</fullName>
+                <fullName>Passenger Segment UCV %28 Pre-EMI %2F Tranche%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger Segment UCV%28No-Pre EMI%2FManual EMI%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Segment__pc</picklist>
+            <values>
+                <fullName>AGRICULTURE AND ALLIED ACTIVITIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICES</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -890,27 +1873,11 @@
         <picklistValues>
             <picklist>Status__pc</picklist>
             <values>
-                <fullName>Appointment Re-schdeduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Appointment Scheduled</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>BM Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>CIBIL Updated</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Documentation in process</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not Contactable</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -927,22 +1894,6 @@
             </values>
             <values>
                 <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SM Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sales Co-ordinator Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sales Team Qualified</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Under Qualification process</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -1092,6 +2043,149 @@
             </values>
             <values>
                 <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Business__pc</picklist>
+            <values>
+                <fullName>AGRICULTURAL INFRASTRUCTURE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANCILLIARY ACTIVITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AUTOMOBILES SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHEMICAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMMERCIAL REAL ESTATE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPUTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPUTER SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSTRUCTION MATERIAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSUMER GOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTRACTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDUCATION INSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRICAL AND ELECTRONICS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ELECTRICAL AND ELECTRONICS SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FARM CREDIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOOD %26 RESTAURANT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOOD AND RESTAURANT SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTHCARE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTHCARE SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INDUSTRIAL INTERMEDIATE GOODS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JEWELLERY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEATHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METALS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NBFC %2F FINANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAPER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLASTICS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PROFESSIONAL SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RENTAL %2F ACCOMODATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RETAIL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RUBBER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEXTILES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRANSPORTATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WHOLE SALE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WOOD AND WOODEN PRODUCTS</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

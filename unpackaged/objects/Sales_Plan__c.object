@@ -389,6 +389,8 @@
         <columns>No_Of_Lead__c</columns>
         <columns>No_of_Meetings__c</columns>
         <columns>No_of_disbursement__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

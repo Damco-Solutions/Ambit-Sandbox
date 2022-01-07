@@ -10,9 +10,6 @@
         <field>Contact$Branch__c</field>
     </columns>
     <columns>
-        <field>Contact$Branch_Manager__c</field>
-    </columns>
-    <columns>
         <field>Contact$Owner</field>
     </columns>
     <columns>

@@ -9,23 +9,24 @@ trigger Meeting_Trigger on Meeting__c (after insert, before Update, Before inser
             ShareRecordsToManagers.shareRecords(RecId_OwnerId_Map,'Meeting__c');
         }
         
-        }
+    }
     if(trigger.isUpdate && trigger.isbefore){       
         for(Meeting__c ma:trigger.new){
             if(true){ 
                 MeetingTriggerHandler.validationcheckonReScheduled(Trigger.OldMap,Trigger.NewMap);
                 MeetingTriggerHandler.Ownerupdate(Trigger.New,Trigger.OldMap);
+               // MeetingTriggerHandler.checkonrelatedmetting(Trigger.New);
             }
         }
-            
+        
     }
     
     if(trigger.isInsert && trigger.isbefore){
-   
+        
         for(Meeting__c Mt:trigger.new){
-               MeetingTriggerHandler.Ownerupdateoninsert(Trigger.New);
-              
-          }               
+            MeetingTriggerHandler.Ownerupdateoninsert(Trigger.New);
+            //MeetingTriggerHandler.checkonrelatedmetting(Trigger.New);
+        }               
     }
     
     if(trigger.isUpdate && trigger.isAfter){       
@@ -35,7 +36,21 @@ trigger Meeting_Trigger on Meeting__c (after insert, before Update, Before inser
                 
             }
         }
-            
+        
     }
     
-    }
+     /*if(trigger.isUpdate || trigger.isInsert){       
+        for(Meeting__c ma:trigger.new){
+            if(true){ 
+                MeetingTriggerHandler.checkonrelatedmetting(Trigger.New);
+                
+            }
+        }
+        
+    }*/
+
+    
+     
+        
+    
+}

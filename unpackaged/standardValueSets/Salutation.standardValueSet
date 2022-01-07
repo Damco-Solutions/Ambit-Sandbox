@@ -2,28 +2,28 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Mr.</fullName>
+        <fullName>MRS</fullName>
         <default>false</default>
-        <label>Mr.</label>
+        <label>MRS</label>
     </standardValue>
     <standardValue>
-        <fullName>Ms.</fullName>
+        <fullName>M/S</fullName>
         <default>false</default>
-        <label>Ms.</label>
+        <label>M/S</label>
     </standardValue>
     <standardValue>
-        <fullName>Mrs.</fullName>
+        <fullName>MR</fullName>
         <default>false</default>
-        <label>Mrs.</label>
+        <label>MR</label>
     </standardValue>
     <standardValue>
-        <fullName>Dr.</fullName>
+        <fullName>DR</fullName>
         <default>false</default>
-        <label>Dr.</label>
+        <label>DR</label>
     </standardValue>
     <standardValue>
-        <fullName>Prof.</fullName>
+        <fullName>MS</fullName>
         <default>false</default>
-        <label>Prof.</label>
+        <label>MS</label>
     </standardValue>
 </StandardValueSet>

@@ -192,6 +192,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Applicant_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Applicant Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Applicant_Contact_Number_1__c</fullName>
         <externalId>false</externalId>
         <label>Applicant Contact Number 1</label>
@@ -240,6 +251,88 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Applied_Loan_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Applied Loan Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approved_ROI__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved ROI</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Branch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Branch</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Loan Accounts (Branch)</relationshipLabel>
+        <relationshipName>Loan_Accounts1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Constitution__c</fullName>
+        <externalId>false</externalId>
+        <label>Constitution</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Stage</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Non Individual</fullName>
+                    <default>false</default>
+                    <label>Non Individual</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>DPD__c</fullName>
         <externalId>false</externalId>
         <label>DPD</label>
@@ -255,7 +348,7 @@
         <fullName>DSA_Connector__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>DSA/Connector</label>
+        <label>DSA/Connector/Broker</label>
         <referenceTo>Account</referenceTo>
         <relationshipLabel>Loan Accounts</relationshipLabel>
         <relationshipName>Loan_Accounts</relationshipName>
@@ -263,6 +356,24 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Data_Entry_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Entry End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Entry_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Entry Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Disbursal_Amount__c</fullName>
@@ -305,6 +416,24 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>FCU_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>FCU End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FCU_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>FCU Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>FI_Inititation_Date__c</fullName>
         <externalId>false</externalId>
         <label>FI Inititation Date</label>
@@ -345,7 +474,7 @@
     <fields>
         <fullName>Final_Decision_Status__c</fullName>
         <externalId>false</externalId>
-        <label>Final Decision Status</label>
+        <label>Final Decision</label>
         <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -363,19 +492,39 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>IMD_Deposit_Date__c</fullName>
+        <fullName>IMD_Amount__c</fullName>
         <externalId>false</externalId>
-        <label>IMD Deposit Date</label>
+        <label>IMD Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IMD_Clearance_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>IMD Clearance Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>IMD_Status_Date__c</fullName>
+        <fullName>IMD_Presentation_Date__c</fullName>
         <externalId>false</externalId>
-        <label>IMD Status Date</label>
-        <length>35</length>
+        <label>IMD Presentation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IMD_STATUS__c</fullName>
+        <externalId>false</externalId>
+        <label>IMD STATUS</label>
+        <length>255</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -412,6 +561,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Installment_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Installment Frequency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Insurance_Amount__c</fullName>
@@ -523,6 +683,35 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Legal_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Loan_Account_Number__c</fullName>
         <externalId>false</externalId>
         <label>Loan Account Number</label>
@@ -541,6 +730,18 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Manager_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.ManagerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Manager Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Maturity_Date__c</fullName>
@@ -646,6 +847,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Pending_With__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending With</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Post_PD_Completion_Date__c</fullName>
         <externalId>false</externalId>
         <label>Post PD Completion Date</label>
@@ -675,6 +887,39 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Proposed_ROI__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposed ROI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Prospect_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Prospect Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Prospect_ID__c</fullName>
         <externalId>false</externalId>
         <label>Prospect ID</label>
@@ -684,6 +929,24 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QC_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>QC End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>QC_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>QC Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>RCU_Inititation_Date__c</fullName>
@@ -762,6 +1025,17 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Reject_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reject Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Reject_Remarks__c</fullName>
         <externalId>false</externalId>
         <label>Reject Remarks</label>
@@ -771,6 +1045,16 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remark_If_any__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks If any</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Residence_Address__c</fullName>
@@ -1005,6 +1289,53 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Technical_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Technical_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Technical_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Underwriting_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Underwriting End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Underwriting_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Underwriting Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>User__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1105,20 +1436,35 @@
         <columns>Applicant__c</columns>
         <columns>DSA_Connector__c</columns>
         <columns>LOAN_STATUS__c</columns>
+        <columns>Prospect_Code__c</columns>
+        <columns>Applicant_Code__c</columns>
         <columns>Disbursal_Amount__c</columns>
         <columns>ROI__c</columns>
         <columns>OWNER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>Prospect_Code__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </filters>
+        <filters>
+            <field>Applicant_Code__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </filters>
         <label>All</label>
     </listViews>
     <listViews>
         <fullName>Eligible_Loan_Accounts_for_Top_Up</fullName>
         <columns>NAME</columns>
         <columns>Applicant__c</columns>
+        <columns>Disbursal_Amount__c</columns>
         <columns>Disbursal_Date__c</columns>
-        <columns>DSA_Connector__c</columns>
-        <columns>loan_disbursal_time__c</columns>
-        <columns>Eligible_for_Top_Up_loan__c</columns>
+        <columns>ROI__c</columns>
+        <columns>LOAN_STATUS__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
         <filterScope>Mine</filterScope>
         <filters>
             <field>loan_disbursal_time__c</field>
@@ -1135,7 +1481,7 @@
             <operation>equals</operation>
             <value>0</value>
         </filters>
-        <label>Eligible Loan Accounts for Top Up</label>
+        <label>Eligible for Top Up Loan</label>
     </listViews>
     <nameField>
         <displayFormat>Loan-{0000}</displayFormat>

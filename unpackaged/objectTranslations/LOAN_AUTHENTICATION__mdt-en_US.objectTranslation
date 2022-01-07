@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>LOAN AUTHENTICATION</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>LOAN AUTHENTICATIONS</value>
+    </caseValues>
+    <fields>
+        <label><!-- APP_NAME --></label>
+        <name>APP_NAME__c</name>
+    </fields>
+    <fields>
+        <label><!-- APP_PASS --></label>
+        <name>APP_PASS__c</name>
+    </fields>
+    <fields>
+        <label><!-- APP_VERSION --></label>
+        <name>APP_VERSION__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authentication --></label>
+        <name>Authentication__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection --></label>
+        <name>Collection__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEVICE_ID --></label>
+        <name>DEVICE_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document --></label>
+        <name>Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing applicant search --></label>
+        <name>Existing_applicant_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- FORMNO --></label>
+        <name>FORMNO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Get loan details --></label>
+        <name>Get_loan_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- IPADDRESS --></label>
+        <name>IPADDRESS__c</name>
+    </fields>
+    <fields>
+        <label><!-- LATITUDE --></label>
+        <name>LATITUDE__c</name>
+    </fields>
+    <fields>
+        <label><!-- LONGITUDE --></label>
+        <name>LONGITUDE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Creation UCV --></label>
+        <name>Loan_Creation_UCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan TAT --></label>
+        <name>Loan_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Creation SME --></label>
+        <name>Loan_creation__c</name>
+    </fields>
+    <fields>
+        <label><!-- PDF Report --></label>
+        <name>PDF_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pancard search --></label>
+        <name>Pancard_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNIQUE_REQUEST_ID --></label>
+        <name>UNIQUE_REQUEST_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- USER_ID --></label>
+        <name>USER_ID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

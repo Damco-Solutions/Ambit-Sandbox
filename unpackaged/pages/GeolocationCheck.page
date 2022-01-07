@@ -1,0 +1,27 @@
+<apex:page standardController="Meeting__c" extensions="Geolocation">
+    <apex:form >>
+ <script type='text/javascript' src='/canvas/sdk/js/publisher.js'></script>
+  <script type = "text/javascript">
+    
+    window.onload = function(){
+    
+    var currPosition;
+    var lat;
+    var lng;
+    var showPosition = function(position) {
+        currPosition = position;
+        lat = currPosition.coords.latitude;
+        lng = currPosition.coords.longitude;
+ 
+        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.Geolocation.updateGeolocation}','{!eventId}', lat, lng,function(result, event) {
+            if (event.status) {
+                Sfdc.canvas.publisher.publish({ name : "publisher.close", payload : { refresh:"true" }});
+            }
+        });
+    };
+ 
+    navigator.geolocation.getCurrentPosition(showPosition);
+}
+    </script>
+           </apex:form>
+</apex:page>

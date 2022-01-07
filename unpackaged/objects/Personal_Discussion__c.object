@@ -271,13 +271,2103 @@
         <fullName>Cluster__c</fullName>
         <externalId>false</externalId>
         <label>Cluster</label>
-        <precision>18</precision>
         <required>false</required>
-        <scale>2</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Business__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AGRI COLD-STORAGE</fullName>
+                    <default>false</default>
+                    <label>AGRI COLD-STORAGE</label>
+                </value>
+                <value>
+                    <fullName>ACTOR/ SINGER/ ENTERTAINER/ PHOTOGRAPHER/ PAINTER</fullName>
+                    <default>false</default>
+                    <label>ACTOR/ SINGER/ ENTERTAINER/ PHOTOGRAPHER/ PAINTER</label>
+                </value>
+                <value>
+                    <fullName>ADVERTISING &amp; PROMOTIONS</fullName>
+                    <default>false</default>
+                    <label>ADVERTISING &amp; PROMOTIONS</label>
+                </value>
+                <value>
+                    <fullName>AGRI BUSINESS CENTER</fullName>
+                    <default>false</default>
+                    <label>AGRI BUSINESS CENTER</label>
+                </value>
+                <value>
+                    <fullName>AGRI GODOWN</fullName>
+                    <default>false</default>
+                    <label>AGRI GODOWN</label>
+                </value>
+                <value>
+                    <fullName>AGRI WAREHOUSE</fullName>
+                    <default>false</default>
+                    <label>AGRI WAREHOUSE</label>
+                </value>
+                <value>
+                    <fullName>AGRICULATURAL TOOLS</fullName>
+                    <default>false</default>
+                    <label>AGRICULATURAL TOOLS</label>
+                </value>
+                <value>
+                    <fullName>AIR CARGO</fullName>
+                    <default>false</default>
+                    <label>AIR CARGO</label>
+                </value>
+                <value>
+                    <fullName>ALUMINIUM PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>ALUMINIUM PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>AMBULANCE SERVICE</fullName>
+                    <default>false</default>
+                    <label>AMBULANCE SERVICE</label>
+                </value>
+                <value>
+                    <fullName>ANIMAL HUSBANDARY</fullName>
+                    <default>false</default>
+                    <label>ANIMAL HUSBANDARY</label>
+                </value>
+                <value>
+                    <fullName>ANIMATION</fullName>
+                    <default>false</default>
+                    <label>ANIMATION</label>
+                </value>
+                <value>
+                    <fullName>ARCHITECT</fullName>
+                    <default>false</default>
+                    <label>ARCHITECT</label>
+                </value>
+                <value>
+                    <fullName>ARTIFICIAL/IMITATION JEWELLERY</fullName>
+                    <default>false</default>
+                    <label>ARTIFICIAL/IMITATION JEWELLERY</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILE ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILE ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILE PARTS</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILE PARTS</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILE SERVICE CENTRE/GARAGE</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILE SERVICE CENTRE/GARAGE</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILES  -  AUTOMOBILE ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILES  -  AUTOMOBILE ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILES  -  AUTOMOBILE DEALER</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILES  -  AUTOMOBILE DEALER</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILES  -  AUTOMOBILE PARTS</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILES  -  AUTOMOBILE PARTS</label>
+                </value>
+                <value>
+                    <fullName>BABY CARE PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>BABY CARE PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</fullName>
+                    <default>false</default>
+                    <label>BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</label>
+                </value>
+                <value>
+                    <fullName>BEE-KEEPING</fullName>
+                    <default>false</default>
+                    <label>BEE-KEEPING</label>
+                </value>
+                <value>
+                    <fullName>BIO-FERTILIZER PRODUCTION</fullName>
+                    <default>false</default>
+                    <label>BIO-FERTILIZER PRODUCTION</label>
+                </value>
+                <value>
+                    <fullName>BIO-PESTICIDES PRODUCTION</fullName>
+                    <default>false</default>
+                    <label>BIO-PESTICIDES PRODUCTION</label>
+                </value>
+                <value>
+                    <fullName>BPO</fullName>
+                    <default>false</default>
+                    <label>BPO</label>
+                </value>
+                <value>
+                    <fullName>BROKER / AGENT</fullName>
+                    <default>false</default>
+                    <label>BROKER / AGENT</label>
+                </value>
+                <value>
+                    <fullName>BUILDER / DEVELOPER</fullName>
+                    <default>false</default>
+                    <label>BUILDER / DEVELOPER</label>
+                </value>
+                <value>
+                    <fullName>BUS ROUTE OPERATOR</fullName>
+                    <default>false</default>
+                    <label>BUS ROUTE OPERATOR</label>
+                </value>
+                <value>
+                    <fullName>CALL CENTERS</fullName>
+                    <default>false</default>
+                    <label>CALL CENTERS</label>
+                </value>
+                <value>
+                    <fullName>CAPTIVE USAGE</fullName>
+                    <default>false</default>
+                    <label>CAPTIVE USAGE</label>
+                </value>
+                <value>
+                    <fullName>CASTING &amp; FORGINGS</fullName>
+                    <default>false</default>
+                    <label>CASTING &amp; FORGINGS</label>
+                </value>
+                <value>
+                    <fullName>CATERER</fullName>
+                    <default>false</default>
+                    <label>CATERER</label>
+                </value>
+                <value>
+                    <fullName>CATTLE</fullName>
+                    <default>false</default>
+                    <label>CATTLE</label>
+                </value>
+                <value>
+                    <fullName>CEMENT</fullName>
+                    <default>false</default>
+                    <label>CEMENT</label>
+                </value>
+                <value>
+                    <fullName>CERAMICS/MARBLE/STONE/GRANITE</fullName>
+                    <default>false</default>
+                    <label>CERAMICS/MARBLE/STONE/GRANITE</label>
+                </value>
+                <value>
+                    <fullName>CHARTERED ACCOUNTANT</fullName>
+                    <default>false</default>
+                    <label>CHARTERED ACCOUNTANT</label>
+                </value>
+                <value>
+                    <fullName>CHEF</fullName>
+                    <default>false</default>
+                    <label>CHEF</label>
+                </value>
+                <value>
+                    <fullName>CHEMICAL  -  CHEMICALS</fullName>
+                    <default>false</default>
+                    <label>CHEMICAL  -  CHEMICALS</label>
+                </value>
+                <value>
+                    <fullName>CHEMICAL  -  PAINT &amp; VARNISHES</fullName>
+                    <default>false</default>
+                    <label>CHEMICAL  -  PAINT &amp; VARNISHES</label>
+                </value>
+                <value>
+                    <fullName>CHEMICAL  -  PESTICIDES</fullName>
+                    <default>false</default>
+                    <label>CHEMICAL  -  PESTICIDES</label>
+                </value>
+                <value>
+                    <fullName>CHEMICALS</fullName>
+                    <default>false</default>
+                    <label>CHEMICALS</label>
+                </value>
+                <value>
+                    <fullName>CIVIL CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>CIVIL CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>CLEARING &amp; FORWARDING AGENT</fullName>
+                    <default>false</default>
+                    <label>CLEARING &amp; FORWARDING AGENT</label>
+                </value>
+                <value>
+                    <fullName>COACHING CLASS</fullName>
+                    <default>false</default>
+                    <label>COACHING CLASS</label>
+                </value>
+                <value>
+                    <fullName>COLLEGE / PROFESSIONAL COURSE INSTITUTE</fullName>
+                    <default>false</default>
+                    <label>COLLEGE / PROFESSIONAL COURSE INSTITUTE</label>
+                </value>
+                <value>
+                    <fullName>COLOUR/PLUMBING CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>COLOUR/PLUMBING CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>COMMISSION AGENT</fullName>
+                    <default>false</default>
+                    <label>COMMISSION AGENT</label>
+                </value>
+                <value>
+                    <fullName>COMPUTER  -  COMPUTER HARDWARE</fullName>
+                    <default>false</default>
+                    <label>COMPUTER  -  COMPUTER HARDWARE</label>
+                </value>
+                <value>
+                    <fullName>COMPUTER  -  COMPUTER SPAREPARTS</fullName>
+                    <default>false</default>
+                    <label>COMPUTER  -  COMPUTER SPAREPARTS</label>
+                </value>
+                <value>
+                    <fullName>COMPUTER HARDWARE</fullName>
+                    <default>false</default>
+                    <label>COMPUTER HARDWARE</label>
+                </value>
+                <value>
+                    <fullName>COMPUTER REPAIR &amp; SERVICING</fullName>
+                    <default>false</default>
+                    <label>COMPUTER REPAIR &amp; SERVICING</label>
+                </value>
+                <value>
+                    <fullName>COMPUTER SPAREPARTS</fullName>
+                    <default>false</default>
+                    <label>COMPUTER SPAREPARTS</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION MATERIAL  -  CEMENT</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION MATERIAL  -  CEMENT</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION MATERIAL  -  CERAMICS/MARBLE/STONE/GRANITE</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION MATERIAL  -  CERAMICS/MARBLE/STONE/GRANITE</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL / BRICK / SAND</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL / BRICK / SAND</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION MATERIAL  -  HARDWARE STORE</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION MATERIAL  -  HARDWARE STORE</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION MATERIAL  -  SANITARYWARE</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION MATERIAL  -  SANITARYWARE</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION MATERIAL / BRICK / SAND</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION MATERIAL / BRICK / SAND</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS  -  BABY CARE PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS  -  BABY CARE PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS  -  COSMETICS /BEAUTY PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS  -  COSMETICS /BEAUTY PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS  -  DAIRY &amp; DAIRY PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS  -  DAIRY &amp; DAIRY PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS  -  EDIBLE OIL</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS  -  EDIBLE OIL</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS  -  GROCERY/FRUITS &amp; VEGETABLE STORE</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS  -  GROCERY/FRUITS &amp; VEGETABLE STORE</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS  -  HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS  -  HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS  -  STATIONERY / GENERAL STORE</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS  -  STATIONERY / GENERAL STORE</label>
+                </value>
+                <value>
+                    <fullName>CONTAINERS</fullName>
+                    <default>false</default>
+                    <label>CONTAINERS</label>
+                </value>
+                <value>
+                    <fullName>CONTRACT BASED DEPLOYMENT</fullName>
+                    <default>false</default>
+                    <label>CONTRACT BASED DEPLOYMENT</label>
+                </value>
+                <value>
+                    <fullName>COPPER</fullName>
+                    <default>false</default>
+                    <label>COPPER</label>
+                </value>
+                <value>
+                    <fullName>COSMETICS /BEAUTY PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>COSMETICS /BEAUTY PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>COURIER</fullName>
+                    <default>false</default>
+                    <label>COURIER</label>
+                </value>
+                <value>
+                    <fullName>DAIRY &amp; DAIRY PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>DAIRY &amp; DAIRY PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>DELIVERY AGENT</fullName>
+                    <default>false</default>
+                    <label>DELIVERY AGENT</label>
+                </value>
+                <value>
+                    <fullName>DIAGNOSTIC CENTRE</fullName>
+                    <default>false</default>
+                    <label>DIAGNOSTIC CENTRE</label>
+                </value>
+                <value>
+                    <fullName>DIAMONDS</fullName>
+                    <default>false</default>
+                    <label>DIAMONDS</label>
+                </value>
+                <value>
+                    <fullName>DIARY</fullName>
+                    <default>false</default>
+                    <label>DIARY</label>
+                </value>
+                <value>
+                    <fullName>DIRECT /BFSI SERVICE/SALES AGENT</fullName>
+                    <default>false</default>
+                    <label>DIRECT /BFSI SERVICE/SALES AGENT</label>
+                </value>
+                <value>
+                    <fullName>DOCTOR</fullName>
+                    <default>false</default>
+                    <label>DOCTOR</label>
+                </value>
+                <value>
+                    <fullName>DRIVER</fullName>
+                    <default>false</default>
+                    <label>DRIVER</label>
+                </value>
+                <value>
+                    <fullName>DYING/GINNING/TEXTURISING/TWISTING</fullName>
+                    <default>false</default>
+                    <label>DYING/GINNING/TEXTURISING/TWISTING</label>
+                </value>
+                <value>
+                    <fullName>E-COMMERCE</fullName>
+                    <default>false</default>
+                    <label>E-COMMERCE</label>
+                </value>
+                <value>
+                    <fullName>EDIBLE OIL</fullName>
+                    <default>false</default>
+                    <label>EDIBLE OIL</label>
+                </value>
+                <value>
+                    <fullName>EDUCATION SERVICE PROVIDER</fullName>
+                    <default>false</default>
+                    <label>EDUCATION SERVICE PROVIDER</label>
+                </value>
+                <value>
+                    <fullName>ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT/GOODS</fullName>
+                    <default>false</default>
+                    <label>ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT/GOODS</label>
+                </value>
+                <value>
+                    <fullName>ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT/GOODS</fullName>
+                    <default>false</default>
+                    <label>ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT/GOODS</label>
+                </value>
+                <value>
+                    <fullName>ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES &amp; ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES &amp; ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>ELECTRICAL CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>ELECTRICAL CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>ELECTRICAL EQUIPMENT/GOODS</fullName>
+                    <default>false</default>
+                    <label>ELECTRICAL EQUIPMENT/GOODS</label>
+                </value>
+                <value>
+                    <fullName>ELECTRONICS EQUIPMENT/GOODS</fullName>
+                    <default>false</default>
+                    <label>ELECTRONICS EQUIPMENT/GOODS</label>
+                </value>
+                <value>
+                    <fullName>EMBROIDERY</fullName>
+                    <default>false</default>
+                    <label>EMBROIDERY</label>
+                </value>
+                <value>
+                    <fullName>ENGINEER</fullName>
+                    <default>false</default>
+                    <label>ENGINEER</label>
+                </value>
+                <value>
+                    <fullName>EVENT MANAGEMENT</fullName>
+                    <default>false</default>
+                    <label>EVENT MANAGEMENT</label>
+                </value>
+                <value>
+                    <fullName>EXPORT &amp; IMPORT AGENT</fullName>
+                    <default>false</default>
+                    <label>EXPORT &amp; IMPORT AGENT</label>
+                </value>
+                <value>
+                    <fullName>FAST FOOD / JUICE CENTRE</fullName>
+                    <default>false</default>
+                    <label>FAST FOOD / JUICE CENTRE</label>
+                </value>
+                <value>
+                    <fullName>FOOD &amp; RESTAURANT  -  ICECREAM</fullName>
+                    <default>false</default>
+                    <label>FOOD &amp; RESTAURANT  -  ICECREAM</label>
+                </value>
+                <value>
+                    <fullName>FOOD &amp; RESTAURANT  -  SWEETMEAT SHOP</fullName>
+                    <default>false</default>
+                    <label>FOOD &amp; RESTAURANT  -  SWEETMEAT SHOP</label>
+                </value>
+                <value>
+                    <fullName>FOOD &amp; RESTAURANT  -  WINE/LIQUOR</fullName>
+                    <default>false</default>
+                    <label>FOOD &amp; RESTAURANT  -  WINE/LIQUOR</label>
+                </value>
+                <value>
+                    <fullName>FOOD PROCESSING</fullName>
+                    <default>false</default>
+                    <label>FOOD PROCESSING</label>
+                </value>
+                <value>
+                    <fullName>FURNITURE</fullName>
+                    <default>false</default>
+                    <label>FURNITURE</label>
+                </value>
+                <value>
+                    <fullName>GEMS &amp; STONES</fullName>
+                    <default>false</default>
+                    <label>GEMS &amp; STONES</label>
+                </value>
+                <value>
+                    <fullName>GENERATORS &amp; TRANSFORMERS</fullName>
+                    <default>false</default>
+                    <label>GENERATORS &amp; TRANSFORMERS</label>
+                </value>
+                <value>
+                    <fullName>GOLD</fullName>
+                    <default>false</default>
+                    <label>GOLD</label>
+                </value>
+                <value>
+                    <fullName>GOOD TRANSPORT</fullName>
+                    <default>false</default>
+                    <label>GOOD TRANSPORT</label>
+                </value>
+                <value>
+                    <fullName>GOVERNMENT CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>GOVERNMENT CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>GUEST HOUSE</fullName>
+                    <default>false</default>
+                    <label>GUEST HOUSE</label>
+                </value>
+                <value>
+                    <fullName>HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</fullName>
+                    <default>false</default>
+                    <label>HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</label>
+                </value>
+                <value>
+                    <fullName>HANDLING &amp; CONVEYORS</fullName>
+                    <default>false</default>
+                    <label>HANDLING &amp; CONVEYORS</label>
+                </value>
+                <value>
+                    <fullName>HANDLOOM</fullName>
+                    <default>false</default>
+                    <label>HANDLOOM</label>
+                </value>
+                <value>
+                    <fullName>HEALTHCARE  -  EYE CARE / OPTICIAN</fullName>
+                    <default>false</default>
+                    <label>HEALTHCARE  -  EYE CARE / OPTICIAN</label>
+                </value>
+                <value>
+                    <fullName>HEALTHCARE  -  HEALTHCARE PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>HEALTHCARE  -  HEALTHCARE PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>HEALTHCARE  -  MEDICINE</fullName>
+                    <default>false</default>
+                    <label>HEALTHCARE  -  MEDICINE</label>
+                </value>
+                <value>
+                    <fullName>HEALTHCARE  -  SURGICAL EQUIPMENTS</fullName>
+                    <default>false</default>
+                    <label>HEALTHCARE  -  SURGICAL EQUIPMENTS</label>
+                </value>
+                <value>
+                    <fullName>HEALTHCARE PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>HEALTHCARE PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>HORTICULTURE</fullName>
+                    <default>false</default>
+                    <label>HORTICULTURE</label>
+                </value>
+                <value>
+                    <fullName>HOSPITAL/NURSING HOME</fullName>
+                    <default>false</default>
+                    <label>HOSPITAL/NURSING HOME</label>
+                </value>
+                <value>
+                    <fullName>HOTEL / LODGE</fullName>
+                    <default>false</default>
+                    <label>HOTEL / LODGE</label>
+                </value>
+                <value>
+                    <fullName>HOUSING FINANCE COMPANY</fullName>
+                    <default>false</default>
+                    <label>HOUSING FINANCE COMPANY</label>
+                </value>
+                <value>
+                    <fullName>ICECREAM</fullName>
+                    <default>false</default>
+                    <label>ICECREAM</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS &amp; TRANSFORMERS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS &amp; TRANSFORMERS</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING &amp; CONVEYORS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING &amp; CONVEYORS</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS  -  VALVES &amp; FITTINGS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS  -  VALVES &amp; FITTINGS</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL SAFETY PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL SAFETY PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>INTERIOR DESIGNER</fullName>
+                    <default>false</default>
+                    <label>INTERIOR DESIGNER</label>
+                </value>
+                <value>
+                    <fullName>IRON &amp; STEEL PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>IRON &amp; STEEL PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>IT/SOFTWARE CONSULTANT</fullName>
+                    <default>false</default>
+                    <label>IT/SOFTWARE CONSULTANT</label>
+                </value>
+                <value>
+                    <fullName>JEWELLERY</fullName>
+                    <default>false</default>
+                    <label>JEWELLERY</label>
+                </value>
+                <value>
+                    <fullName>JEWELLERY  -  ARTIFICIAL/IMITATION JEWELLERY</fullName>
+                    <default>false</default>
+                    <label>JEWELLERY  -  ARTIFICIAL/IMITATION JEWELLERY</label>
+                </value>
+                <value>
+                    <fullName>JEWELLERY  -  DIAMONDS</fullName>
+                    <default>false</default>
+                    <label>JEWELLERY  -  DIAMONDS</label>
+                </value>
+                <value>
+                    <fullName>JEWELLERY  -  GEMS &amp; STONES</fullName>
+                    <default>false</default>
+                    <label>JEWELLERY  -  GEMS &amp; STONES</label>
+                </value>
+                <value>
+                    <fullName>JEWELLERY  -  GOLD</fullName>
+                    <default>false</default>
+                    <label>JEWELLERY  -  GOLD</label>
+                </value>
+                <value>
+                    <fullName>JEWELLERY  -  JEWELLERY</fullName>
+                    <default>false</default>
+                    <label>JEWELLERY  -  JEWELLERY</label>
+                </value>
+                <value>
+                    <fullName>JOB/RECRUITMENT CONSULTANT</fullName>
+                    <default>false</default>
+                    <label>JOB/RECRUITMENT CONSULTANT</label>
+                </value>
+                <value>
+                    <fullName>LABOUR CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>LABOUR CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>LAMINATES &amp; PLYWOODS</fullName>
+                    <default>false</default>
+                    <label>LAMINATES &amp; PLYWOODS</label>
+                </value>
+                <value>
+                    <fullName>LEATHER  -  LUGGAGE AND LEATHER BAGS</fullName>
+                    <default>false</default>
+                    <label>LEATHER  -  LUGGAGE AND LEATHER BAGS</label>
+                </value>
+                <value>
+                    <fullName>LEATHER  -  OTHER LEATHER GOODS</fullName>
+                    <default>false</default>
+                    <label>LEATHER  -  OTHER LEATHER GOODS</label>
+                </value>
+                <value>
+                    <fullName>LEATHER  -  SHOE/FOOTWARE</fullName>
+                    <default>false</default>
+                    <label>LEATHER  -  SHOE/FOOTWARE</label>
+                </value>
+                <value>
+                    <fullName>LIFT</fullName>
+                    <default>false</default>
+                    <label>LIFT</label>
+                </value>
+                <value>
+                    <fullName>LUGGAGE AND LEATHER BAGS</fullName>
+                    <default>false</default>
+                    <label>LUGGAGE AND LEATHER BAGS</label>
+                </value>
+                <value>
+                    <fullName>MECHANICAL GOODS</fullName>
+                    <default>false</default>
+                    <label>MECHANICAL GOODS</label>
+                </value>
+                <value>
+                    <fullName>MECHNICAL CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>MECHNICAL CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>MEDICINE</fullName>
+                    <default>false</default>
+                    <label>MEDICINE</label>
+                </value>
+                <value>
+                    <fullName>METAL MOULD</fullName>
+                    <default>false</default>
+                    <label>METAL MOULD</label>
+                </value>
+                <value>
+                    <fullName>METAL SCRAPS</fullName>
+                    <default>false</default>
+                    <label>METAL SCRAPS</label>
+                </value>
+                <value>
+                    <fullName>METALS  -  ALUMINIUM PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>METALS  -  ALUMINIUM PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>METALS  -  CASTING &amp; FORGINGS</fullName>
+                    <default>false</default>
+                    <label>METALS  -  CASTING &amp; FORGINGS</label>
+                </value>
+                <value>
+                    <fullName>METALS  -  COPPER</fullName>
+                    <default>false</default>
+                    <label>METALS  -  COPPER</label>
+                </value>
+                <value>
+                    <fullName>METALS  -  IRON &amp; STEEL PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>METALS  -  IRON &amp; STEEL PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>METALS  -  METAL MOULD</fullName>
+                    <default>false</default>
+                    <label>METALS  -  METAL MOULD</label>
+                </value>
+                <value>
+                    <fullName>METALS  -  METAL SCRAPS</fullName>
+                    <default>false</default>
+                    <label>METALS  -  METAL SCRAPS</label>
+                </value>
+                <value>
+                    <fullName>MICRO FINANCE INSTITUTION</fullName>
+                    <default>false</default>
+                    <label>MICRO FINANCE INSTITUTION</label>
+                </value>
+                <value>
+                    <fullName>MILLING PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>MILLING PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>MOBILE / ELECTRONIC / ELECTRIC GOODS REPAIRS</fullName>
+                    <default>false</default>
+                    <label>MOBILE / ELECTRONIC / ELECTRIC GOODS REPAIRS</label>
+                </value>
+                <value>
+                    <fullName>MOBILE PHONES &amp; ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>MOBILE PHONES &amp; ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>MOTORS</fullName>
+                    <default>false</default>
+                    <label>MOTORS</label>
+                </value>
+                <value>
+                    <fullName>NBFC - NON REAL ESTATE FUNDING</fullName>
+                    <default>false</default>
+                    <label>NBFC - NON REAL ESTATE FUNDING</label>
+                </value>
+                <value>
+                    <fullName>NBFC - REAL ESTATE FUNDING</fullName>
+                    <default>false</default>
+                    <label>NBFC - REAL ESTATE FUNDING</label>
+                </value>
+                <value>
+                    <fullName>OTHER LEATHER GOODS</fullName>
+                    <default>false</default>
+                    <label>OTHER LEATHER GOODS</label>
+                </value>
+                <value>
+                    <fullName>OTHER TRASPORTER</fullName>
+                    <default>false</default>
+                    <label>OTHER TRASPORTER</label>
+                </value>
+                <value>
+                    <fullName>PACKAGING MATERIAL</fullName>
+                    <default>false</default>
+                    <label>PACKAGING MATERIAL</label>
+                </value>
+                <value>
+                    <fullName>PAINT &amp; VARNISHES</fullName>
+                    <default>false</default>
+                    <label>PAINT &amp; VARNISHES</label>
+                </value>
+                <value>
+                    <fullName>PAPER  -  PAPER &amp; PAPER PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>PAPER  -  PAPER &amp; PAPER PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>PAPER  -  PAPER SCRAP</fullName>
+                    <default>false</default>
+                    <label>PAPER  -  PAPER SCRAP</label>
+                </value>
+                <value>
+                    <fullName>PAPER &amp; PAPER PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>PAPER &amp; PAPER PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>PAYING GUEST</fullName>
+                    <default>false</default>
+                    <label>PAYING GUEST</label>
+                </value>
+                <value>
+                    <fullName>PESTICIDES</fullName>
+                    <default>false</default>
+                    <label>PESTICIDES</label>
+                </value>
+                <value>
+                    <fullName>PETROLEUM PRODUCTS  -  KEROSENE / OTHER PETROLEUM PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>PETROLEUM PRODUCTS  -  KEROSENE / OTHER PETROLEUM PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>PETROLEUM PRODUCTS  -  LPG</fullName>
+                    <default>false</default>
+                    <label>PETROLEUM PRODUCTS  -  LPG</label>
+                </value>
+                <value>
+                    <fullName>PETROLEUM PRODUCTS  -  LUBRICANT OIL</fullName>
+                    <default>false</default>
+                    <label>PETROLEUM PRODUCTS  -  LUBRICANT OIL</label>
+                </value>
+                <value>
+                    <fullName>PETROLEUM PRODUCTS  -  PETROL PUMP</fullName>
+                    <default>false</default>
+                    <label>PETROLEUM PRODUCTS  -  PETROL PUMP</label>
+                </value>
+                <value>
+                    <fullName>PISCICULTURE</fullName>
+                    <default>false</default>
+                    <label>PISCICULTURE</label>
+                </value>
+                <value>
+                    <fullName>PLASTIC MOULDS</fullName>
+                    <default>false</default>
+                    <label>PLASTIC MOULDS</label>
+                </value>
+                <value>
+                    <fullName>PLASTIC PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>PLASTIC PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>PLASTICS  -  PLASTIC MOULDS</fullName>
+                    <default>false</default>
+                    <label>PLASTICS  -  PLASTIC MOULDS</label>
+                </value>
+                <value>
+                    <fullName>PLASTICS  -  PLASTIC PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>PLASTICS  -  PLASTIC PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>PLASTICS  -  PLASTIC SCRAP</fullName>
+                    <default>false</default>
+                    <label>PLASTICS  -  PLASTIC SCRAP</label>
+                </value>
+                <value>
+                    <fullName>POULTRY</fullName>
+                    <default>false</default>
+                    <label>POULTRY</label>
+                </value>
+                <value>
+                    <fullName>POWERLOOM</fullName>
+                    <default>false</default>
+                    <label>POWERLOOM</label>
+                </value>
+                <value>
+                    <fullName>PRINTING / PUBLISHING</fullName>
+                    <default>false</default>
+                    <label>PRINTING / PUBLISHING</label>
+                </value>
+                <value>
+                    <fullName>PROJECT MANGEMENT</fullName>
+                    <default>false</default>
+                    <label>PROJECT MANGEMENT</label>
+                </value>
+                <value>
+                    <fullName>PVC COMPOUND</fullName>
+                    <default>false</default>
+                    <label>PVC COMPOUND</label>
+                </value>
+                <value>
+                    <fullName>READYMADE/LADIES/UNISEX GARMENTS</fullName>
+                    <default>false</default>
+                    <label>READYMADE/LADIES/UNISEX GARMENTS</label>
+                </value>
+                <value>
+                    <fullName>RENTAL BUSINESS</fullName>
+                    <default>false</default>
+                    <label>RENTAL BUSINESS</label>
+                </value>
+                <value>
+                    <fullName>RESTAURANT</fullName>
+                    <default>false</default>
+                    <label>RESTAURANT</label>
+                </value>
+                <value>
+                    <fullName>RUBBER  -  RUBBER PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>RUBBER  -  RUBBER PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>RUBBER  -  TYRES</fullName>
+                    <default>false</default>
+                    <label>RUBBER  -  TYRES</label>
+                </value>
+                <value>
+                    <fullName>RUBBER PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>RUBBER PRODUCTS</label>
+                </value>
+                <value>
+                    <fullName>SALOON</fullName>
+                    <default>false</default>
+                    <label>SALOON</label>
+                </value>
+                <value>
+                    <fullName>SANITARYWARE</fullName>
+                    <default>false</default>
+                    <label>SANITARYWARE</label>
+                </value>
+                <value>
+                    <fullName>SCHOOL</fullName>
+                    <default>false</default>
+                    <label>SCHOOL</label>
+                </value>
+                <value>
+                    <fullName>SCIENTIST</fullName>
+                    <default>false</default>
+                    <label>SCIENTIST</label>
+                </value>
+                <value>
+                    <fullName>SECURITY/FACILITY MANAGEMENT</fullName>
+                    <default>false</default>
+                    <label>SECURITY/FACILITY MANAGEMENT</label>
+                </value>
+                <value>
+                    <fullName>SEED PRODUCTION</fullName>
+                    <default>false</default>
+                    <label>SEED PRODUCTION</label>
+                </value>
+                <value>
+                    <fullName>SERICULTURE</fullName>
+                    <default>false</default>
+                    <label>SERICULTURE</label>
+                </value>
+                <value>
+                    <fullName>SHIPPING</fullName>
+                    <default>false</default>
+                    <label>SHIPPING</label>
+                </value>
+                <value>
+                    <fullName>SHOE/FOOTWARE</fullName>
+                    <default>false</default>
+                    <label>SHOE/FOOTWARE</label>
+                </value>
+                <value>
+                    <fullName>SOFTWARE</fullName>
+                    <default>false</default>
+                    <label>SOFTWARE</label>
+                </value>
+                <value>
+                    <fullName>SPICE</fullName>
+                    <default>false</default>
+                    <label>SPICE</label>
+                </value>
+                <value>
+                    <fullName>STORAGE &amp; WAREHOUSING</fullName>
+                    <default>false</default>
+                    <label>STORAGE &amp; WAREHOUSING</label>
+                </value>
+                <value>
+                    <fullName>STORAGE BATTERIES</fullName>
+                    <default>false</default>
+                    <label>STORAGE BATTERIES</label>
+                </value>
+                <value>
+                    <fullName>SUB CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>SUB CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>SURGICAL EQUIPMENTS</fullName>
+                    <default>false</default>
+                    <label>SURGICAL EQUIPMENTS</label>
+                </value>
+                <value>
+                    <fullName>TAX &amp; ACCOUNT CONSULTING</fullName>
+                    <default>false</default>
+                    <label>TAX &amp; ACCOUNT CONSULTING</label>
+                </value>
+                <value>
+                    <fullName>TEXTILES  -  BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</fullName>
+                    <default>false</default>
+                    <label>TEXTILES  -  BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</label>
+                </value>
+                <value>
+                    <fullName>TEXTILES  -  EMBROIDERY</fullName>
+                    <default>false</default>
+                    <label>TEXTILES  -  EMBROIDERY</label>
+                </value>
+                <value>
+                    <fullName>TEXTILES  -  HANDLOOM</fullName>
+                    <default>false</default>
+                    <label>TEXTILES  -  HANDLOOM</label>
+                </value>
+                <value>
+                    <fullName>TEXTILES  -  KNITTING/WEAVING/SEWING</fullName>
+                    <default>false</default>
+                    <label>TEXTILES  -  KNITTING/WEAVING/SEWING</label>
+                </value>
+                <value>
+                    <fullName>TEXTILES  -  READYMADE/LADIES/UNISEX GARMENTS</fullName>
+                    <default>false</default>
+                    <label>TEXTILES  -  READYMADE/LADIES/UNISEX GARMENTS</label>
+                </value>
+                <value>
+                    <fullName>TEXTILES  -  YARN</fullName>
+                    <default>false</default>
+                    <label>TEXTILES  -  YARN</label>
+                </value>
+                <value>
+                    <fullName>TICKETING AGENCY</fullName>
+                    <default>false</default>
+                    <label>TICKETING AGENCY</label>
+                </value>
+                <value>
+                    <fullName>TIFFIN SERVICE</fullName>
+                    <default>false</default>
+                    <label>TIFFIN SERVICE</label>
+                </value>
+                <value>
+                    <fullName>TOUR &amp; TAVEL AGENCY</fullName>
+                    <default>false</default>
+                    <label>TOUR &amp; TAVEL AGENCY</label>
+                </value>
+                <value>
+                    <fullName>TRANSMISSION LINE TOWER</fullName>
+                    <default>false</default>
+                    <label>TRANSMISSION LINE TOWER</label>
+                </value>
+                <value>
+                    <fullName>TYRES</fullName>
+                    <default>false</default>
+                    <label>TYRES</label>
+                </value>
+                <value>
+                    <fullName>VALVES &amp; FITTINGS</fullName>
+                    <default>false</default>
+                    <label>VALVES &amp; FITTINGS</label>
+                </value>
+                <value>
+                    <fullName>WOOD AND WOODEN PRODUCTS  -  FURNITURE</fullName>
+                    <default>false</default>
+                    <label>WOOD AND WOODEN PRODUCTS  -  FURNITURE</label>
+                </value>
+                <value>
+                    <fullName>WOOD AND WOODEN PRODUCTS  -  LAMINATES &amp; PLYWOODS</fullName>
+                    <default>false</default>
+                    <label>WOOD AND WOODEN PRODUCTS  -  LAMINATES &amp; PLYWOODS</label>
+                </value>
+                <value>
+                    <fullName>YARN</fullName>
+                    <default>false</default>
+                    <label>YARN</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>LEATHER</controllingFieldValue>
+                <valueName>LUGGAGE AND LEATHER BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LEATHER</controllingFieldValue>
+                <valueName>OTHER LEATHER GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LEATHER</controllingFieldValue>
+                <valueName>SHOE/FOOTWARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>METALS</controllingFieldValue>
+                <valueName>ALUMINIUM PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>METALS</controllingFieldValue>
+                <valueName>CASTING &amp; FORGINGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>METALS</controllingFieldValue>
+                <valueName>COPPER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>METALS</controllingFieldValue>
+                <valueName>IRON &amp; STEEL PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>METALS</controllingFieldValue>
+                <valueName>METAL MOULD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>METALS</controllingFieldValue>
+                <valueName>METAL SCRAPS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NBFC / FINANCE</controllingFieldValue>
+                <valueName>HOUSING FINANCE COMPANY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NBFC / FINANCE</controllingFieldValue>
+                <valueName>MICRO FINANCE INSTITUTION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NBFC / FINANCE</controllingFieldValue>
+                <valueName>NBFC - NON REAL ESTATE FUNDING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NBFC / FINANCE</controllingFieldValue>
+                <valueName>NBFC - REAL ESTATE FUNDING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>ACTOR/ SINGER/ ENTERTAINER/ PHOTOGRAPHER/ PAINTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>ADVERTISING &amp; PROMOTIONS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>AMBULANCE SERVICE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>BPO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>CALL CENTERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>CLEARING &amp; FORWARDING AGENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>COURIER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>DELIVERY AGENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>DIRECT /BFSI SERVICE/SALES AGENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>DRIVER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>E-COMMERCE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>EVENT MANAGEMENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>EXPORT &amp; IMPORT AGENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>INTERIOR DESIGNER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>PRINTING / PUBLISHING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>SALOON</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>SECURITY/FACILITY MANAGEMENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>STORAGE &amp; WAREHOUSING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>TICKETING AGENCY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>TIFFIN SERVICE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER SERVICES</controllingFieldValue>
+                <valueName>TOUR &amp; TAVEL AGENCY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER</controllingFieldValue>
+                <valueName>PAPER &amp; PAPER PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PLASTICS</controllingFieldValue>
+                <valueName>PLASTIC MOULDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PLASTICS</controllingFieldValue>
+                <valueName>PLASTIC PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>ARCHITECT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>CHARTERED ACCOUNTANT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>CHEF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>DOCTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>ENGINEER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>IT/SOFTWARE CONSULTANT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>JOB/RECRUITMENT CONSULTANT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>PROJECT MANGEMENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>SCIENTIST</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PROFESSIONAL SERVICES</controllingFieldValue>
+                <valueName>TAX &amp; ACCOUNT CONSULTING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RENTAL / ACCOMODATION</controllingFieldValue>
+                <valueName>GUEST HOUSE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RENTAL / ACCOMODATION</controllingFieldValue>
+                <valueName>HOTEL / LODGE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RENTAL / ACCOMODATION</controllingFieldValue>
+                <valueName>PAYING GUEST</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RENTAL / ACCOMODATION</controllingFieldValue>
+                <valueName>RENTAL BUSINESS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>AUTOMOBILES  -  AUTOMOBILE ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>AUTOMOBILES  -  AUTOMOBILE DEALER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>AUTOMOBILES  -  AUTOMOBILE PARTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CHEMICAL  -  CHEMICALS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CHEMICAL  -  PAINT &amp; VARNISHES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CHEMICAL  -  PESTICIDES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <controllingFieldValue>COMPUTER</controllingFieldValue>
+                <valueName>COMPUTER  -  COMPUTER HARDWARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <controllingFieldValue>COMPUTER</controllingFieldValue>
+                <valueName>COMPUTER  -  COMPUTER SPAREPARTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSTRUCTION MATERIAL  -  CEMENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSTRUCTION MATERIAL  -  CERAMICS/MARBLE/STONE/GRANITE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <controllingFieldValue>CONSTRUCTION MATERIAL</controllingFieldValue>
+                <valueName>CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL / BRICK / SAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>CONSTRUCTION MATERIAL  -  HARDWARE STORE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSTRUCTION MATERIAL  -  SANITARYWARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSUMER GOODS  -  BABY CARE PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSUMER GOODS  -  COSMETICS /BEAUTY PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSUMER GOODS  -  DAIRY &amp; DAIRY PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSUMER GOODS  -  EDIBLE OIL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSUMER GOODS  -  GROCERY/FRUITS &amp; VEGETABLE STORE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>CONSUMER GOODS  -  HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>CONSUMER GOODS  -  STATIONERY / GENERAL STORE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT/GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT/GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES &amp; ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>FOOD &amp; RESTAURANT  -  ICECREAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>FOOD &amp; RESTAURANT  -  SWEETMEAT SHOP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>FOOD &amp; RESTAURANT  -  WINE/LIQUOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>HEALTHCARE  -  EYE CARE / OPTICIAN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>HEALTHCARE  -  HEALTHCARE PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>HEALTHCARE  -  MEDICINE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>HEALTHCARE  -  SURGICAL EQUIPMENTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS &amp; TRANSFORMERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING &amp; CONVEYORS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS  -  VALVES &amp; FITTINGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>JEWELLERY  -  ARTIFICIAL/IMITATION JEWELLERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>JEWELLERY  -  DIAMONDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>JEWELLERY  -  GEMS &amp; STONES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>JEWELLERY  -  GOLD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>JEWELLERY  -  JEWELLERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>LEATHER  -  LUGGAGE AND LEATHER BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>LEATHER  -  OTHER LEATHER GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>LEATHER  -  SHOE/FOOTWARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>METALS  -  ALUMINIUM PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>METALS  -  CASTING &amp; FORGINGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>METALS  -  COPPER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>METALS  -  IRON &amp; STEEL PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>METALS  -  METAL MOULD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>METALS  -  METAL SCRAPS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>PAPER  -  PAPER &amp; PAPER PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>PETROLEUM PRODUCTS  -  KEROSENE / OTHER PETROLEUM PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>PETROLEUM PRODUCTS  -  LPG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>PETROLEUM PRODUCTS  -  LUBRICANT OIL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>PETROLEUM PRODUCTS  -  PETROL PUMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>PLASTICS  -  PLASTIC MOULDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>PLASTICS  -  PLASTIC PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>RUBBER  -  RUBBER PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>RUBBER  -  TYRES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>TEXTILES  -  EMBROIDERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>TEXTILES  -  HANDLOOM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <valueName>TEXTILES  -  KNITTING/WEAVING/SEWING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>TEXTILES  -  READYMADE/LADIES/UNISEX GARMENTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>TEXTILES  -  YARN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>WOOD AND WOODEN PRODUCTS  -  FURNITURE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RETAIL</controllingFieldValue>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>WOOD AND WOODEN PRODUCTS  -  LAMINATES &amp; PLYWOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RUBBER</controllingFieldValue>
+                <valueName>RUBBER PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>RUBBER</controllingFieldValue>
+                <valueName>TYRES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSUMER GOODS</controllingFieldValue>
+                <valueName>BABY CARE PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSUMER GOODS</controllingFieldValue>
+                <valueName>COSMETICS /BEAUTY PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSUMER GOODS</controllingFieldValue>
+                <valueName>DAIRY &amp; DAIRY PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSUMER GOODS</controllingFieldValue>
+                <valueName>EDIBLE OIL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSUMER GOODS</controllingFieldValue>
+                <valueName>HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TEXTILES</controllingFieldValue>
+                <valueName>BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TEXTILES</controllingFieldValue>
+                <valueName>DYING/GINNING/TEXTURISING/TWISTING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TEXTILES</controllingFieldValue>
+                <valueName>EMBROIDERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TEXTILES</controllingFieldValue>
+                <valueName>HANDLOOM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TEXTILES</controllingFieldValue>
+                <valueName>POWERLOOM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TEXTILES</controllingFieldValue>
+                <valueName>READYMADE/LADIES/UNISEX GARMENTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TEXTILES</controllingFieldValue>
+                <valueName>YARN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONTRACTOR</controllingFieldValue>
+                <valueName>CIVIL CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONTRACTOR</controllingFieldValue>
+                <valueName>COLOUR/PLUMBING CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONTRACTOR</controllingFieldValue>
+                <valueName>ELECTRICAL CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONTRACTOR</controllingFieldValue>
+                <valueName>GOVERNMENT CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONTRACTOR</controllingFieldValue>
+                <valueName>LABOUR CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONTRACTOR</controllingFieldValue>
+                <valueName>MECHNICAL CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONTRACTOR</controllingFieldValue>
+                <valueName>SUB CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>AIR CARGO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>BUS ROUTE OPERATOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>CAPTIVE USAGE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>COMMISSION AGENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>CONTRACT BASED DEPLOYMENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>GOOD TRANSPORT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>OTHER TRASPORTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TRANSPORTATION</controllingFieldValue>
+                <valueName>SHIPPING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EDUCATION INSTITUTE</controllingFieldValue>
+                <valueName>COACHING CLASS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EDUCATION INSTITUTE</controllingFieldValue>
+                <valueName>COLLEGE / PROFESSIONAL COURSE INSTITUTE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EDUCATION INSTITUTE</controllingFieldValue>
+                <valueName>EDUCATION SERVICE PROVIDER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EDUCATION INSTITUTE</controllingFieldValue>
+                <valueName>SCHOOL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>PAPER  -  PAPER SCRAP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>PLASTICS  -  PLASTIC SCRAP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHOLE SALE</controllingFieldValue>
+                <valueName>TEXTILES  -  BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ELECTRICAL AND ELECTRONICS</controllingFieldValue>
+                <valueName>ELECTRICAL EQUIPMENT/GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ELECTRICAL AND ELECTRONICS</controllingFieldValue>
+                <valueName>ELECTRONICS EQUIPMENT/GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ELECTRICAL AND ELECTRONICS</controllingFieldValue>
+                <valueName>MOBILE PHONES &amp; ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WOOD AND WOODEN PRODUCTS</controllingFieldValue>
+                <valueName>FURNITURE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WOOD AND WOODEN PRODUCTS</controllingFieldValue>
+                <valueName>LAMINATES &amp; PLYWOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ELECTRICAL AND ELECTRONICS SERVICES</controllingFieldValue>
+                <valueName>MOBILE / ELECTRONIC / ELECTRIC GOODS REPAIRS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>ANIMAL HUSBANDARY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>BEE-KEEPING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>CATTLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>DIARY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>HORTICULTURE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>PISCICULTURE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>POULTRY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>SERICULTURE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FARM CREDIT</controllingFieldValue>
+                <valueName>SPICE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FOOD &amp; RESTAURANT</controllingFieldValue>
+                <valueName>ICECREAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FOOD AND RESTAURANT SERVICES</controllingFieldValue>
+                <valueName>CATERER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FOOD AND RESTAURANT SERVICES</controllingFieldValue>
+                <valueName>FAST FOOD / JUICE CENTRE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FOOD AND RESTAURANT SERVICES</controllingFieldValue>
+                <valueName>RESTAURANT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HEALTHCARE</controllingFieldValue>
+                <valueName>HEALTHCARE PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HEALTHCARE</controllingFieldValue>
+                <valueName>MEDICINE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HEALTHCARE</controllingFieldValue>
+                <valueName>SURGICAL EQUIPMENTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HEALTHCARE SERVICES</controllingFieldValue>
+                <valueName>DIAGNOSTIC CENTRE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HEALTHCARE SERVICES</controllingFieldValue>
+                <valueName>HOSPITAL/NURSING HOME</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURAL INFRASTRUCTURE</controllingFieldValue>
+                <valueName>AGRI COLD-STORAGE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURAL INFRASTRUCTURE</controllingFieldValue>
+                <valueName>AGRI GODOWN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURAL INFRASTRUCTURE</controllingFieldValue>
+                <valueName>AGRI WAREHOUSE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURAL INFRASTRUCTURE</controllingFieldValue>
+                <valueName>BIO-FERTILIZER PRODUCTION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURAL INFRASTRUCTURE</controllingFieldValue>
+                <valueName>BIO-PESTICIDES PRODUCTION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURAL INFRASTRUCTURE</controllingFieldValue>
+                <valueName>MILLING PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURAL INFRASTRUCTURE</controllingFieldValue>
+                <valueName>SEED PRODUCTION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANCILLIARY ACTIVITY</controllingFieldValue>
+                <valueName>AGRI BUSINESS CENTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANCILLIARY ACTIVITY</controllingFieldValue>
+                <valueName>FOOD PROCESSING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AUTOMOBILES</controllingFieldValue>
+                <valueName>AUTOMOBILE ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AUTOMOBILES</controllingFieldValue>
+                <valueName>AUTOMOBILE PARTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AUTOMOBILES SERVICES</controllingFieldValue>
+                <valueName>AUTOMOBILE SERVICE CENTRE/GARAGE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEMICAL</controllingFieldValue>
+                <valueName>CHEMICALS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEMICAL</controllingFieldValue>
+                <valueName>PAINT &amp; VARNISHES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEMICAL</controllingFieldValue>
+                <valueName>PESTICIDES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMMERCIAL REAL ESTATE</controllingFieldValue>
+                <valueName>BROKER / AGENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMMERCIAL REAL ESTATE</controllingFieldValue>
+                <valueName>BUILDER / DEVELOPER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMMERCIAL REAL ESTATE</controllingFieldValue>
+                <valueName>CONSTRUCTION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPUTER</controllingFieldValue>
+                <controllingFieldValue>COMPUTER SERVICES</controllingFieldValue>
+                <valueName>ANIMATION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPUTER</controllingFieldValue>
+                <controllingFieldValue>COMPUTER SERVICES</controllingFieldValue>
+                <valueName>SOFTWARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPUTER SERVICES</controllingFieldValue>
+                <valueName>COMPUTER REPAIR &amp; SERVICING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION MATERIAL</controllingFieldValue>
+                <valueName>CEMENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION MATERIAL</controllingFieldValue>
+                <valueName>CERAMICS/MARBLE/STONE/GRANITE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONSTRUCTION MATERIAL</controllingFieldValue>
+                <valueName>SANITARYWARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>AGRICULATURAL TOOLS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>CONTAINERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>GENERATORS &amp; TRANSFORMERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>HANDLING &amp; CONVEYORS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>INDUSTRIAL SAFETY PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>LIFT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>MECHANICAL GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>MOTORS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>PACKAGING MATERIAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>PVC COMPOUND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>STORAGE BATTERIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>TRANSMISSION LINE TOWER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INDUSTRIAL INTERMEDIATE GOODS</controllingFieldValue>
+                <valueName>VALVES &amp; FITTINGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>JEWELLERY</controllingFieldValue>
+                <valueName>ARTIFICIAL/IMITATION JEWELLERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>JEWELLERY</controllingFieldValue>
+                <valueName>DIAMONDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>JEWELLERY</controllingFieldValue>
+                <valueName>GEMS &amp; STONES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>JEWELLERY</controllingFieldValue>
+                <valueName>GOLD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>JEWELLERY</controllingFieldValue>
+                <valueName>JEWELLERY</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Comfortable_Loan_Amount__c</fullName>
@@ -346,14 +2436,14 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Yes</fullName>
+                    <fullName>Y</fullName>
                     <default>false</default>
-                    <label>Yes</label>
+                    <label>Y</label>
                 </value>
                 <value>
-                    <fullName>No</fullName>
+                    <fullName>N</fullName>
                     <default>false</default>
-                    <label>No</label>
+                    <label>N</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -658,19 +2748,19 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Agriculture and Allied Activities</fullName>
+                    <fullName>AGRICULTURE AND ALLIED ACTIVITIES</fullName>
                     <default>false</default>
-                    <label>Agriculture and Allied Activities</label>
+                    <label>AGRICULTURE AND ALLIED ACTIVITIES</label>
                 </value>
                 <value>
-                    <fullName>Manufacturing</fullName>
+                    <fullName>MANUFACTURING</fullName>
                     <default>false</default>
-                    <label>Manufacturing</label>
+                    <label>MANUFACTURING</label>
                 </value>
                 <value>
-                    <fullName>Services</fullName>
+                    <fullName>SERVICES</fullName>
                     <default>false</default>
-                    <label>Services</label>
+                    <label>SERVICES</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -712,12 +2802,332 @@
         <fullName>Type_of_Business__c</fullName>
         <externalId>false</externalId>
         <label>Type of Business</label>
-        <length>255</length>
         <required>false</required>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Segment__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AGRICULTURAL INFRASTRUCTURE</fullName>
+                    <default>false</default>
+                    <label>AGRICULTURAL INFRASTRUCTURE</label>
+                </value>
+                <value>
+                    <fullName>ANCILLIARY ACTIVITY</fullName>
+                    <default>false</default>
+                    <label>ANCILLIARY ACTIVITY</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILES</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILES</label>
+                </value>
+                <value>
+                    <fullName>AUTOMOBILES SERVICES</fullName>
+                    <default>false</default>
+                    <label>AUTOMOBILES SERVICES</label>
+                </value>
+                <value>
+                    <fullName>CHEMICAL</fullName>
+                    <default>false</default>
+                    <label>CHEMICAL</label>
+                </value>
+                <value>
+                    <fullName>COMMERCIAL REAL ESTATE</fullName>
+                    <default>false</default>
+                    <label>COMMERCIAL REAL ESTATE</label>
+                </value>
+                <value>
+                    <fullName>COMPUTER</fullName>
+                    <default>false</default>
+                    <label>COMPUTER</label>
+                </value>
+                <value>
+                    <fullName>COMPUTER SERVICES</fullName>
+                    <default>false</default>
+                    <label>COMPUTER SERVICES</label>
+                </value>
+                <value>
+                    <fullName>CONSTRUCTION MATERIAL</fullName>
+                    <default>false</default>
+                    <label>CONSTRUCTION MATERIAL</label>
+                </value>
+                <value>
+                    <fullName>CONSUMER GOODS</fullName>
+                    <default>false</default>
+                    <label>CONSUMER GOODS</label>
+                </value>
+                <value>
+                    <fullName>CONTRACTOR</fullName>
+                    <default>false</default>
+                    <label>CONTRACTOR</label>
+                </value>
+                <value>
+                    <fullName>EDUCATION INSTITUTE</fullName>
+                    <default>false</default>
+                    <label>EDUCATION INSTITUTE</label>
+                </value>
+                <value>
+                    <fullName>ELECTRICAL AND ELECTRONICS</fullName>
+                    <default>false</default>
+                    <label>ELECTRICAL AND ELECTRONICS</label>
+                </value>
+                <value>
+                    <fullName>ELECTRICAL AND ELECTRONICS SERVICES</fullName>
+                    <default>false</default>
+                    <label>ELECTRICAL AND ELECTRONICS SERVICES</label>
+                </value>
+                <value>
+                    <fullName>FARM CREDIT</fullName>
+                    <default>false</default>
+                    <label>FARM CREDIT</label>
+                </value>
+                <value>
+                    <fullName>FOOD &amp; RESTAURANT</fullName>
+                    <default>false</default>
+                    <label>FOOD &amp; RESTAURANT</label>
+                </value>
+                <value>
+                    <fullName>FOOD AND RESTAURANT SERVICES</fullName>
+                    <default>false</default>
+                    <label>FOOD AND RESTAURANT SERVICES</label>
+                </value>
+                <value>
+                    <fullName>HEALTHCARE</fullName>
+                    <default>false</default>
+                    <label>HEALTHCARE</label>
+                </value>
+                <value>
+                    <fullName>HEALTHCARE SERVICES</fullName>
+                    <default>false</default>
+                    <label>HEALTHCARE SERVICES</label>
+                </value>
+                <value>
+                    <fullName>INDUSTRIAL INTERMEDIATE GOODS</fullName>
+                    <default>false</default>
+                    <label>INDUSTRIAL INTERMEDIATE GOODS</label>
+                </value>
+                <value>
+                    <fullName>JEWELLERY</fullName>
+                    <default>false</default>
+                    <label>JEWELLERY</label>
+                </value>
+                <value>
+                    <fullName>LEATHER</fullName>
+                    <default>false</default>
+                    <label>LEATHER</label>
+                </value>
+                <value>
+                    <fullName>METALS</fullName>
+                    <default>false</default>
+                    <label>METALS</label>
+                </value>
+                <value>
+                    <fullName>NBFC / FINANCE</fullName>
+                    <default>false</default>
+                    <label>NBFC / FINANCE</label>
+                </value>
+                <value>
+                    <fullName>OTHER SERVICES</fullName>
+                    <default>false</default>
+                    <label>OTHER SERVICES</label>
+                </value>
+                <value>
+                    <fullName>PAPER</fullName>
+                    <default>false</default>
+                    <label>PAPER</label>
+                </value>
+                <value>
+                    <fullName>PLASTICS</fullName>
+                    <default>false</default>
+                    <label>PLASTICS</label>
+                </value>
+                <value>
+                    <fullName>PROFESSIONAL SERVICES</fullName>
+                    <default>false</default>
+                    <label>PROFESSIONAL SERVICES</label>
+                </value>
+                <value>
+                    <fullName>RENTAL / ACCOMODATION</fullName>
+                    <default>false</default>
+                    <label>RENTAL / ACCOMODATION</label>
+                </value>
+                <value>
+                    <fullName>RETAIL</fullName>
+                    <default>false</default>
+                    <label>RETAIL</label>
+                </value>
+                <value>
+                    <fullName>RUBBER</fullName>
+                    <default>false</default>
+                    <label>RUBBER</label>
+                </value>
+                <value>
+                    <fullName>TEXTILES</fullName>
+                    <default>false</default>
+                    <label>TEXTILES</label>
+                </value>
+                <value>
+                    <fullName>TRANSPORTATION</fullName>
+                    <default>false</default>
+                    <label>TRANSPORTATION</label>
+                </value>
+                <value>
+                    <fullName>WHOLE SALE</fullName>
+                    <default>false</default>
+                    <label>WHOLE SALE</label>
+                </value>
+                <value>
+                    <fullName>WOOD AND WOODEN PRODUCTS</fullName>
+                    <default>false</default>
+                    <label>WOOD AND WOODEN PRODUCTS</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURE AND ALLIED ACTIVITIES</controllingFieldValue>
+                <valueName>AGRICULTURAL INFRASTRUCTURE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURE AND ALLIED ACTIVITIES</controllingFieldValue>
+                <valueName>ANCILLIARY ACTIVITY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AGRICULTURE AND ALLIED ACTIVITIES</controllingFieldValue>
+                <valueName>FARM CREDIT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>AUTOMOBILES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>CHEMICAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>COMPUTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>CONSTRUCTION MATERIAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>CONSUMER GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>ELECTRICAL AND ELECTRONICS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>FOOD &amp; RESTAURANT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>HEALTHCARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>INDUSTRIAL INTERMEDIATE GOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>JEWELLERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>LEATHER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>METALS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>PAPER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>PLASTICS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>RUBBER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>TEXTILES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANUFACTURING</controllingFieldValue>
+                <valueName>WOOD AND WOODEN PRODUCTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>AUTOMOBILES SERVICES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>COMMERCIAL REAL ESTATE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>COMPUTER SERVICES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>CONTRACTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>EDUCATION INSTITUTE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>ELECTRICAL AND ELECTRONICS SERVICES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>FOOD AND RESTAURANT SERVICES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>HEALTHCARE SERVICES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>NBFC / FINANCE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>OTHER SERVICES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>PROFESSIONAL SERVICES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>RENTAL / ACCOMODATION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>RETAIL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>TRANSPORTATION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SERVICES</controllingFieldValue>
+                <valueName>WHOLE SALE</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <fields>
         <fullName>X2_Wheeler_Present__c</fullName>

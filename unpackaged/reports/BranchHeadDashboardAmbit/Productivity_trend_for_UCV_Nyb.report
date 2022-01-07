@@ -37,9 +37,6 @@
         <field>Contact$Branch__c</field>
     </columns>
     <columns>
-        <field>Contact$Branch_Manager__c</field>
-    </columns>
-    <columns>
         <field>Contact$Owner</field>
     </columns>
     <description>Product-wise - Productivity trend - Separate charts for UCV</description>

@@ -10,7 +10,7 @@ global class Incentive_Forecast_Unsecured implements Database.Batchable<sObject>
         String loanstatus= 'Disbursed';
         String loanstatus1= 'Rejected';
         Integer yr = System.Today().Year();
-        String query = 'Select Id,name,Disbursal_Amount__c,ROI__c,OwnerId,DSA_Connector__c,Applicant__r.Product__c,DSA_Connector__r.DSA_Connector__c,Disbursal_Date__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c From Loan_Account__c WHERE create_year__c =:yr and (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product)  and LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\'';
+        String query = 'Select Id,name,Disbursal_Amount__c,ROI__c,OwnerId,DSA_Connector__c,Applicant__r.Product__c,DSA_Connector__r.DSA_Connector__c,Disbursal_Date__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c From Loan_Account__c WHERE create_year__c =:yr and (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product)  and LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus1 + '\'';
         return Database.getQueryLocator(query);
     }
     global void execute(Database.BatchableContext BC, List<Loan_Account__c> scope){
@@ -157,11 +157,12 @@ global class Incentive_Forecast_Unsecured implements Database.Batchable<sObject>
         }
     }
     global void finish(Database.BatchableContext BC){
+          Incentive_Forecast_UCV bt = new Incentive_Forecast_UCV();
+          database.executebatch(bt);
            
     }
     global void execute(SchedulableContext sc){
-        SalesIncentiveBatchForUnsecured conInstance = new SalesIncentiveBatchForUnsecured();
-        database.executebatch(conInstance);
+        
     }
 
 }

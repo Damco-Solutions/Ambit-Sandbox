@@ -17,4 +17,8 @@
     <tabs>Industry_Margin</tabs>
     <tabs>Sales_Plan__c</tabs>
     <tabs>Meeting_Rating__c</tabs>
+    <tabs>Leave_Management</tabs>
+    <tabs>Batch_Log__c</tabs>
+    <tabs>User_Statistics__c</tabs>
+    <tabs>State_Code_Mapping__c</tabs>
 </CustomApplication>

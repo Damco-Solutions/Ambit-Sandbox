@@ -1,0 +1,7 @@
+@media (min-width:1025px) { /*Desktop Break point*/
+.THIS.slds-spinner_container {
+        z-index: 10000;
+    top: 35% !important;
+    bottom: 35% !important;
+    }
+}

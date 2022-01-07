@@ -9,6 +9,10 @@
         <value>Meetings</value>
     </caseValues>
     <fields>
+        <label><!-- Applicant Mobile no --></label>
+        <name>Applicant_Mobile_no__c</name>
+    </fields>
+    <fields>
         <label><!-- Applicant --></label>
         <name>Applicant__c</name>
         <relationshipLabel><!-- Meetings --></relationshipLabel>
@@ -37,8 +41,8 @@
             <translation><!-- Other Referral Source --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Others </masterLabel>
-            <translation><!-- Others  --></translation>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -97,7 +101,7 @@
         <name>Meeting_Agenda__c</name>
     </fields>
     <fields>
-        <label><!-- Meeting Details --></label>
+        <label><!-- Meeting Outcome --></label>
         <name>Meeting_Details__c</name>
         <picklistValues>
             <masterLabel>BT Cost</masterLabel>
@@ -290,6 +294,14 @@
         <name>Person_Met__c</name>
     </fields>
     <fields>
+        <label><!-- Referral Source --></label>
+        <name>Referral_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- RelatedTo Count --></label>
+        <name>RelatedTo_Count__c</name>
+    </fields>
+    <fields>
         <label><!-- Salesperson --></label>
         <name>Salesperson__c</name>
         <relationshipLabel><!-- Meetings --></relationshipLabel>
@@ -346,6 +358,10 @@
             <translation><!-- Other  --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <label><!-- owner name --></label>
+        <name>owner_name__c</name>
+    </fields>
     <layouts>
         <layout>Meeting Layout</layout>
         <sections>
@@ -373,6 +389,10 @@
         <label><!-- Check Out --></label>
         <name>Check_Out</name>
     </quickActions>
+    <quickActions>
+        <label><!-- Get  Geo Location --></label>
+        <name>Get_Geo_Location</name>
+    </quickActions>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- In Progress/Completed Meetings cannot be re-assigned --></errorMessage>
@@ -381,6 +401,14 @@
     <validationRules>
         <errorMessage><!-- Meeting Outcome can only be added for &apos;Completed&apos; meetings --></errorMessage>
         <name>Person_Met_and_Meeting_Outcome_can_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Referral Source Is Required --></errorMessage>
+        <name>Referral_source_name_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the record related to Meeting --></errorMessage>
+        <name>Related_To_Required</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Scheduled End Time Should be Greater than Scheduled Start Time --></errorMessage>

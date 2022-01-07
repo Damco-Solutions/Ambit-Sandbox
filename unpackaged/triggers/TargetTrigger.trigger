@@ -47,7 +47,7 @@ trigger TargetTrigger on Targets__c (before insert,before update,after insert,af
         List<Disbursement_Target_Table__c> DList = [SELECT Designation__c,CTC_Range_Min_In_Lakhs__c,CTC_Range_Max_In_Lakhs__c,Monthly_Target_In_Cr__c,Location__c FROM Disbursement_Target_Table__c LIMIT 50000];
         Set<id> UserIdSet = new Set<id>();
         for(Targets__c t:trigger.new){
-            if(trigger.isInsert ||(trigger.isUpdate && t.Salesperson__c != trigger.oldMap.get(t.id).Salesperson__c)){
+            if(trigger.isInsert ||trigger.isUpdate||(trigger.isUpdate && t.Salesperson__c != trigger.oldMap.get(t.id).Salesperson__c)){
                 system.debug('in trigger');
                 if(t.Salesperson__c !=null){
                     UserIdSet.add(t.Salesperson__c);

@@ -2,8 +2,11 @@
     doInit : function(component, event, helper) {
         var action = component.get("c.AcknowledgementRequest");    
         var AppId = component.get("v.recordId");
+        var cibicheck=$A.get("$Label.c.Cibil_Score_check");
+        var reqfield=$A.get("$Label.c.cibil_Validation"); 
         console.log(AppId);
-        
+        console.log(cibicheck);
+         console.log(reqfield);
         action.setParams({
             "AppId":AppId
         });
@@ -16,19 +19,30 @@
                 $A.get('e.force:refreshView').fire();
                 console.log(response.getReturnValue());
                 var rsp=response.getReturnValue();
+                if(rsp==reqfield){
+                       $A.get("e.force:closeQuickAction").fire();
+                         var toastEvent = $A.get("e.force:showToast");
+                    toastEvent.setParams({
+                        title : 'Error',
+                        message: reqfield,
+                        duration:'10000',
+                        key: 'info_alt',
+                        type: 'error',
+                        mode: 'pester'
+                    });
+                    toastEvent.fire();
+                    
+                }
+                
+               if(rsp!=cibicheck){
                 var res = rsp.replace("JSON-RESPONSE-OBJECT", "JSONRESPONSEOBJECT");
-                //var inprocessrs= rsp.replace("IN-PROCESS", "INPROCESS");
               const returnedObj = JSON.parse(res);
-             // const returendinpro=JSON.parse(inprocessrs);
                 var finishobj=returnedObj.FINISHED;
                 var test=returnedObj.REJECT;
-                console.log(JSON.stringify(test));
-                //var JSONRESPONSEOBJECT=returnedObj.FINISHED[0].JSONRESPONSEOBJECT;
                 var issuestatus;
                 console.log(returnedObj.STATUS);
-              //  console.log('JSONRESPONSEOBJECT'+JSONRESPONSEOBJECT);
-             // var inprogress=returendinpro.INPROCESS[0].STATUS;
-              var respstatus= returnedObj.STATUS; // = '0233XXXXX'
+             
+              var respstatus= returnedObj.STATUS; 
                 
                 if(finishobj!=undefined ){
                     issuestatus=returnedObj.FINISHED[0].STATUS;  
@@ -58,8 +72,14 @@
                 }
                 if(respstatus=='COMPLETED' && issuestatus=='SUCCESS'){
                        $A.get("e.force:closeQuickAction").fire();
+                    var number;
                      var score=returnedObj.FINISHED[0].JSONRESPONSEOBJECT.scoreList[0].score;
-                    var number =parseInt(score);  
+                   console.log('score->'+score);
+                    if(score=='000-1'){
+                        number=0.00;
+                    }else{
+                         number =parseInt(score);
+                    }
                     var toastEvent = $A.get("e.force:showToast");
                     toastEvent.setParams({
                         title : 'CIBIL Score Updated Succesfully',
@@ -112,8 +132,39 @@
                     });
                     toastEvent.fire();
                 }
+             }
+                if(rsp==cibicheck){
+                       $A.get("e.force:closeQuickAction").fire();
+                         var toastEvent = $A.get("e.force:showToast");
+                    toastEvent.setParams({
+                        title : 'Information',
+                        message: cibicheck,
+                        duration:' 5000',
+                        key: 'info_alt',
+                        type: 'info',
+                        mode: 'pester'
+                    });
+                    toastEvent.fire();
+                    
+                }
+                
+                
             }
+   
+            
         });
         $A.enqueueAction(action);
+            
+    },
+   // this function automatic call by aura:waiting event  
+    showSpinner: function(component, event, helper) {
+       // make Spinner attribute true for display loading spinner 
+        component.set("v.Spinner", true); 
+   },
+    
+ // this function automatic call by aura:doneWaiting event 
+    hideSpinner : function(component,event,helper){
+     // make Spinner attribute to false for hide loading spinner    
+       component.set("v.Spinner", false);
     }
 })

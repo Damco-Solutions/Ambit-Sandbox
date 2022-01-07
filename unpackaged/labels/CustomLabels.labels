@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>Cibil_Score_check</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cibil Score check</shortDescription>
+        <value>CIBIL Score Already Updated</value>
+    </labels>
+    <labels>
         <fullName>Environment</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -8,11 +15,73 @@
         <value>QA/UAT</value>
     </labels>
     <labels>
+        <fullName>Fetch_From_LOS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fetch From LOS</shortDescription>
+        <value>Fetch From LOS Button Will Only When LOAN STATUS is &quot;PENDING&quot;</value>
+    </labels>
+    <labels>
+        <fullName>Get_Loan_Detail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Get Loan Detail</shortDescription>
+        <value>Get Loan Detail Will only work if LOAN STATUS is &quot;DISBURSED&quot;</value>
+    </labels>
+    <labels>
         <fullName>GoogleApiURL</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>GoogleApiURL</shortDescription>
         <value>https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&amp;origins=</value>
+    </labels>
+    <labels>
+        <fullName>Loan_TAT_response</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loan TAT response</shortDescription>
+        <value>{
+&quot;STATUS&quot;: &quot;S&quot;,
+    &quot;MESSAGE&quot;: &quot;SUCCESS&quot;,
+    &quot;LOAN_DETAIL&quot;: {
+        &quot;LOAN_DETAIL&quot;: {
+            &quot;INC_METHOD&quot;: &quot;&quot;,
+                 &quot;DISBAMT&quot;: 0,
+            &quot;LOAN_ACTIVITY&quot;: [
+                {
+                    &quot;ACTIVITY_NAME&quot;: &quot;LOAN&quot;,
+                    &quot;SEQ_NO&quot;: 0,
+                    &quot;UPDATED_BY&quot;: 2473,
+                    &quot;UPDATED_DATE&quot;: &quot;10-NOV-2021&quot;,
+                    &quot;UPDATED_DATETIME&quot;: &quot;10-NOV-2021 00:00:00&quot;,
+                    &quot;ACTIVITY_ID&quot;: 1100106701,
+                    &quot;STATUS_NAME&quot;: &quot;FROZEN&quot;,
+                    &quot;ACTION_ID&quot;: 1000000005
+                }
+]
+              
+}}}</value>
+    </labels>
+    <labels>
+        <fullName>Loan_creation_response</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Loan creation response</shortDescription>
+        <value>{&quot;RECEIVE&quot;:{&quot;STATUS&quot;:&quot;S&quot;,&quot;MESSAGE&quot;:&quot;SUCCESS&quot;,&quot;ERR_DTLS&quot;:&quot;null&quot;,&quot;CUSTOMER_DETAILS&quot;:{&quot;LOAN_DETAIL&quot;:{&quot;EXT_PROSPECTCODE&quot;:&quot;&quot;,&quot;PROSPECTID&quot;:1000022319,&quot;PROSPECTCODE&quot;:&quot;AHM000000022318&quot;,&quot;CUSTOMER_DETAIL&quot;:[{&quot;EMPLOYMENTDETAILSID&quot;:1000049143,&quot;APPLICANTCODE&quot;:&quot;CN0000000055083&quot;,&quot;CUSTOMER_ENTITYTYPE&quot;:&quot;INDIVIDUAL&quot;,&quot;APPLICANT_NAME&quot;:&quot;Aditi singh&quot;,&quot;ADDRESS_DETAIL&quot;:[{&quot;ADDRESSTYPE&quot;:&quot;RESIDENCE ADDRESS&quot;,&quot;ADDRESSID&quot;:1000068464},{&quot;ADDRESSTYPE&quot;:&quot;PERMANENT ADDRESS&quot;,&quot;ADDRESSID&quot;:1000068465},{&quot;ADDRESSTYPE&quot;:&quot;OFFICE ADDRESS&quot;,&quot;ADDRESSID&quot;:1000068466}],&quot;APPLICANTID&quot;:1000054898,&quot;APPLICANTTYPE&quot;:&quot;APPLICANT&quot;,&quot;EXTERNAL_CUSTOMER_CODE&quot;:&quot;&quot;},{&quot;EMPLOYMENTDETAILSID&quot;:1000049144,&quot;APPLICANTCODE&quot;:&quot;CN0000000055084&quot;,&quot;CUSTOMER_ENTITYTYPE&quot;:&quot;INDIVIDUAL&quot;,&quot;APPLICANT_NAME&quot;:&quot;anand kumar&quot;,&quot;ADDRESS_DETAIL&quot;:[{&quot;ADDRESSTYPE&quot;:&quot;OFFICE ADDRESS&quot;,&quot;ADDRESSID&quot;:1000068467},{&quot;ADDRESSTYPE&quot;:&quot;RESIDENCE ADDRESS&quot;,&quot;ADDRESSID&quot;:1000068468},{&quot;ADDRESSTYPE&quot;:&quot;PERMANENT ADDRESS&quot;,&quot;ADDRESSID&quot;:1000068469}],&quot;APPLICANTID&quot;:1000054899,&quot;APPLICANTTYPE&quot;:&quot;CO-APPLICANT&quot;}]}}}}</value>
+    </labels>
+    <labels>
+        <fullName>PUSH_TO_LOS_On_Applicant</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PUSH TO LOS On Applicant</shortDescription>
+        <value>PUSH TO LOS Work Only, When Status Is Prospect</value>
+    </labels>
+    <labels>
+        <fullName>PUSH_TO_LOS_On_CO_Applicant</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PUSH TO LOS On CO-Applicant</shortDescription>
+        <value>PUSH TO LOS Button Work For APPLICANT Only</value>
     </labels>
     <labels>
         <fullName>Secured_Product</fullName>
@@ -43,10 +112,24 @@
         <value>BL</value>
     </labels>
     <labels>
+        <fullName>cibil_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cibil Validation</shortDescription>
+        <value>Please enter the required field- First name,Last name,Middle name,Loan Amount, Product, Gender, Birthdate,Name,CIBIL_ID,Mobile Phone, Flat_House_Number,Building Street,District,City,State ,Pincode ,CIBIL_ID_Number</value>
+    </labels>
+    <labels>
         <fullName>googelApikey</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>googelApikey</shortDescription>
-        <value>AIzaSyDOzfa37-Dvfv9dlX_OKhkxQxHh4EJKVmg</value>
+        <value>AIzaSyAc1yl4loHf7Jthne533RVmOekbCpHeA_o</value>
+    </labels>
+    <labels>
+        <fullName>site_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>site Url</shortDescription>
+        <value>dev-ambitportal.cs76.force.com/MeetingFeedback/Meeting_Feedback</value>
     </labels>
 </CustomLabels>

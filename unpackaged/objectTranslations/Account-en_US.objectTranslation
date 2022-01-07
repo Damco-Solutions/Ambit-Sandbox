@@ -39,6 +39,10 @@
         <name>Branch_Code__c</name>
     </fields>
     <fields>
+        <label><!-- Branch Coordinate --></label>
+        <name>Branch_Coordinate__c</name>
+    </fields>
+    <fields>
         <label><!-- Branch Manager Name --></label>
         <name>Branch_Manager__c</name>
         <relationshipLabel><!-- Accounts (Branch Manager Name) --></relationshipLabel>
@@ -51,12 +55,8 @@
         <label><!-- DSA / Connector --></label>
         <name>DSA_Connector__c</name>
         <picklistValues>
-            <masterLabel>Connector</masterLabel>
-            <translation><!-- Connector --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DSA</masterLabel>
-            <translation><!-- DSA --></translation>
+            <masterLabel>Direct Sales Agent</masterLabel>
+            <translation><!-- Direct Sales Agent --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -76,6 +76,10 @@
         <name>Email__c</name>
     </fields>
     <fields>
+        <label><!-- Index no --></label>
+        <name>Index_no__c</name>
+    </fields>
+    <fields>
         <label><!-- Location --></label>
         <name>Location__c</name>
     </fields>
@@ -91,6 +95,34 @@
         <label><!-- Primary User --></label>
         <name>Primary_User__c</name>
         <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager 1 --></label>
+        <name>Relationship_Manager_1__c</name>
+        <relationshipLabel><!-- Accounts (Relationship Manager 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager 2 --></label>
+        <name>Relationship_Manager_2__c</name>
+        <relationshipLabel><!-- Accounts (Relationship Manager 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sec Sourcing Channel --></label>
+        <name>Sec_Sourcing_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sourcing Channel-2 --></label>
+        <name>Sourcing_Channel_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- UCV Relationship Manager --></label>
+        <name>UCV_Relationship_Manager__c</name>
+        <relationshipLabel><!-- Accounts (UCV Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- last assign user --></label>
+        <name>last_assign_user__c</name>
+        <relationshipLabel><!-- Accounts (last assign user) --></relationshipLabel>
     </fields>
     <layouts>
         <layout>Account Layout</layout>

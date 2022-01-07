@@ -61,8 +61,25 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                     userMeetingsMap.put(meet.OwnerId,1);
                 }
             }
+             //----Added by Niyaz
+            //No of SANCTIONED
+             Map<id,decimal> SANCTIONEDLA_Map = new Map<id,decimal>();
+             for(Loan_Account__c la:[select id,name,Status__c,Applicant__r.OwnerId,Applicant__r.Loan_Amount__c from Loan_Account__c WHERE CALENDAR_MONTH(CreatedDate) =:mnth AND CALENDAR_YEAR(CreatedDate) =:CurrentYear]){
+               System.debug('la--- '+la);
+                 if(string.isNotBlank(la.LOAN_STATUS__c) && (la.LOAN_STATUS__c =='Approved')){
+                    if(SANCTIONEDLA_Map.containsKey(la.Applicant__r.OwnerId)){
+                        SANCTIONEDLA_Map.put(la.Applicant__r.OwnerId,(SANCTIONEDLA_Map.get(la.Applicant__r.OwnerId))+1);
+                    }else{
+                        SANCTIONEDLA_Map.put(la.Applicant__r.OwnerId,1);
+                    }
+                }
+             }
+            System.debug('SANCTIONEDLA_Map '+SANCTIONEDLA_Map);
+             //----Added by Niyaz
+            
             
             //meetings count added
+            
             
             //Meeting/Lead conversion ratio 
             Map<id,decimal> ConvertedLeadsMap = new Map<id,decimal>();
@@ -70,7 +87,7 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
             Map<id,decimal> ConvertedLeadsAmountMap = new Map<id,decimal>();
             Map<id,decimal> ApprovedLA_Map = new Map<id,decimal>();
             for(Loan_Account__c la:[select id,name,Status__c,Applicant__r.OwnerId,Applicant__r.Loan_Amount__c from Loan_Account__c WHERE CALENDAR_MONTH(CreatedDate) =:mnth AND CALENDAR_YEAR(CreatedDate) =:CurrentYear]){
-                if(string.isNotBlank(la.Status__c) && (la.Status__c =='Approved' || la.Status__c =='Disbursed' || la.Status__c =='Authorized' || la.Status__c =='Partially Disbursed')){
+                if(string.isNotBlank(la.LOAN_STATUS__c) && (la.LOAN_STATUS__c =='Approved' || la.LOAN_STATUS__c =='Disbursed' || la.LOAN_STATUS__c =='Authorized' || la.LOAN_STATUS__c =='Partially Disbursed')){
                     if(ApprovedLA_Map.containsKey(la.Applicant__r.OwnerId)){
                         ApprovedLA_Map.put(la.Applicant__r.OwnerId,(ApprovedLA_Map.get(la.Applicant__r.OwnerId))+1);
                     }else{
@@ -209,6 +226,10 @@ global class Target_Achievement_batch implements Database.Batchable<sObject> {
                 if(ApprovedLA_Map.containsKey(u.id) && ac.No_of_Files_Logged_In_Achieved__c !=null){
                     ac.Approval_Ratio_Achieved__c = (ApprovedLA_Map.get(u.id)/ac.No_of_Files_Logged_In_Achieved__c)*100;
                 }
+                //----Added by Niyaz
+                if(SANCTIONEDLA_Map.containsKey(u.id))
+                    ac.No_of_Sanctions__c = SANCTIONEDLA_Map.get(u.id);
+                //----Added by Niyaz
                 if(DisbursedLAMap.containsKey(u.id))
                     ac.No_of_Units_Disbursed_Achieved__c = DisbursedLAMap.get(u.id);
                 if(DisbursedAmountMap.containsKey(u.id))

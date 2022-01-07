@@ -5,7 +5,7 @@ global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Sche
         String Product = 'Lead - UCV';
         String loanstatus= 'Disbursed';
         String loanstatus1= 'Rejected';
-        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__c,OwnerId,Applicant__r.Product__c,LOAN_STATUS__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE Applicant__r.Product__c=\''+String.escapeSingleQuotes(Product)+'\' and create_year__c=:yr and LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\' ';
+        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__c,OwnerId,Applicant__r.Product__c,LOAN_STATUS__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE Applicant__r.Product__c=\''+String.escapeSingleQuotes(Product)+'\' and create_year__c=:yr and LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus1 + '\' ';
         system.debug(query);
         return Database.getQueryLocator(query);
     }
@@ -69,6 +69,8 @@ global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Sche
         system.debug('Agent_WIRR_UCV_DS_Map>>'+Agent_WIRR_UCV_DS_Map);
         system.debug('Agent_WIRR_UCV_NDS_Map>>'+Agent_WIRR_UCV_NDS_Map);
         system.debug('Agent_TotalLoanAmt_UCV_Map>>'+Agent_TotalLoanAmt_UCV_Map);
+        system.debug('Agent_LoanAmt_UCV_DS_Map>>'+Agent_LoanAmt_UCV_DS_Map);
+        system.debug('Agent_LoanAmt_UCV_NDS_Map>>'+Agent_LoanAmt_UCV_NDS_Map);
         //WIRR Calculation ended
         
         //Map of user and role name
@@ -145,10 +147,11 @@ global class Incentive_Forecast_UCV implements Database.batchable<sObject>, Sche
                 incent.Year__c = string.valueOf(system.today().Year());
                 incent.Incentive_Forecast_For_UCV__c=CappingAmount;
                 Agent_SalesIncentive_Map.put(personId,incent);
+                
             }
             /*Incentive added for UCV Loans*/
             
-            
+           system.debug('Agent_SalesIncentive_Map->'+Agent_SalesIncentive_Map); 
         }
         if(Agent_SalesIncentive_Map != null && Agent_SalesIncentive_Map.size()>0){
             try{

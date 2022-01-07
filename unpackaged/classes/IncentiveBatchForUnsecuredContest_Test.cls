@@ -50,7 +50,7 @@ public class IncentiveBatchForUnsecuredContest_Test {
         insert la3;   
         
         // create the User
-        user u1=TestDataFactory.CreateUser();
+        user u1=TestDataFactory.CreateUser(True);
         
         system.runAs(u1){
             Test.startTest();

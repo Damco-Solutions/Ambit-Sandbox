@@ -428,6 +428,11 @@
             <field>Value_Achieved__c</field>
             <table>Targets__c.Achievements__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>No_of_Sanctions__c</field>
+            <table>Targets__c.Achievements__r</table>
+        </columns>
         <masterLabel>Achievements</masterLabel>
     </sections>
 </ReportType>

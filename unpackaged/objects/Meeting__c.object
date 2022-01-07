@@ -166,6 +166,18 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>Applicant_Mobile_no__c</fullName>
+        <externalId>false</externalId>
+        <formula>Applicant__r.MobilePhone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Applicant Mobile no</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Applicant__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -210,9 +222,9 @@
                     <label>Existing Customer</label>
                 </value>
                 <value>
-                    <fullName>Others </fullName>
+                    <fullName>Others</fullName>
                     <default>false</default>
-                    <label>Others </label>
+                    <label>Others</label>
                 </value>
                 <value>
                     <fullName>Other Referral Source</fullName>
@@ -365,7 +377,7 @@
     <fields>
         <fullName>Meeting_Details__c</fullName>
         <externalId>false</externalId>
-        <label>Meeting Details</label>
+        <label>Meeting Outcome</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -713,6 +725,33 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Referral_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RelatedTo_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISPICKVAL( Category__c ,&apos;Others&apos;),ISPICKVAL( Category__c ,&apos;Other Referral Source&apos;)),1 ,0)+
+IF(ISBLANK(Collection_Task__c),0,1) +
+IF(ISBLANK(Loan_Account__c),0,1) +
+IF(ISBLANK(DSA_Connector__c),0,1) +
+IF(ISBLANK(Applicant__c),0,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RelatedTo Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Salesperson__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -820,6 +859,18 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>owner_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.FirstName+ &quot; &quot; + Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>owner name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Meeting</label>
     <listViews>
         <fullName>All</fullName>
@@ -879,6 +930,23 @@
         <errorConditionFormula>AND( !ISPICKVAL (Status__c, &quot;Completed&quot; ),
  !ISNULL(Text(Meeting_Outcome__c)))</errorConditionFormula>
         <errorMessage>Meeting Outcome can only be added for &apos;Completed&apos; meetings</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Referral_source_name_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+( ISPICKVAL( Category__c ,&apos;Others&apos;) || ISPICKVAL(Category__c , 
+  &apos;Other Referral Source&apos;) ),
+ISBLANK( Referral_Source__c )
+)</errorConditionFormula>
+        <errorDisplayField>Referral_Source__c</errorDisplayField>
+        <errorMessage>Referral Source Is Required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Related_To_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>RelatedTo_Count__c =0</errorConditionFormula>
+        <errorMessage>Please select the record related to Meeting</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Scheduled_End_Time_Should_be_Greater</fullName>

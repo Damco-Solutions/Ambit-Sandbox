@@ -22,7 +22,7 @@ global class SecuredIncentiveForecast_Batch_Connector implements Database.batcha
     
     global void execute(Database.BatchableContext BC, List<Loan_Account__c> scope){
         if(scope != null && scope.size()>0){
-            
+            system.debug('List: '+scope);
             /****** Incentives Calculation for Secured Loans- if sourcing through DSA, then for internal employee ******/
             
             Map<id,List<Loan_Account__c>> Agent_SecuredLoanList_Map = new Map<id,List<Loan_Account__c>>();

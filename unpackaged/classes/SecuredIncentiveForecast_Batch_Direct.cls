@@ -16,12 +16,13 @@ global class SecuredIncentiveForecast_Batch_Direct implements Database.batchable
         String loanstatus= 'Disbursed';
         String loanstatus1= 'Rejected';
        
-        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__c,OwnerId,Applicant__r.Product__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) AND DSA_Connector__c=null and  created_month__c=:mnth and create_year__c=:yr and  LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\'';
+        String query = 'Select Id,Disbursal_Amount__c,name,ROI__c,DSA_Connector__c,OwnerId,Applicant__r.Product__c,created_month__c,create_year__c,Applicant__r.Rate_Of_Interest__c,Applicant__r.Loan_Amount__c,Disbursal_Date__c From Loan_Account__c WHERE (Applicant__r.Product__c=:Product2 OR Applicant__r.Product__c=:Product) AND DSA_Connector__c=null and create_year__c=:yr and  LOAN_STATUS__c!= \'' + loanstatus + '\' and LOAN_STATUS__c!= \'' + loanstatus + '\'';
         return Database.getQueryLocator(query);
     }
     
     global void execute(Database.BatchableContext BC, List<Loan_Account__c> scope){
         if(scope != null && scope.size()>0){
+            system.debug('List: '+scope);
             Map<id,List<Loan_Account__c>> Agent_SecuredLoanList_Map = new Map<id,List<Loan_Account__c>>();
             Map<id,decimal> Agent_LoanAmt_Secured_Map = new Map<id,decimal>();
             for(Loan_Account__c loan:scope){
@@ -132,6 +133,8 @@ global class SecuredIncentiveForecast_Batch_Direct implements Database.batchable
     }
     
     global void finish(Database.BatchableContext BC){
+        Incentive_Forecast_Unsecured bt = new Incentive_Forecast_Unsecured();
+        database.executebatch(bt);
        
     }
 

@@ -123,8 +123,8 @@ public class DailyAttendance {
     }
    @AuraEnabled
     public static Map<String,string> currentGeoAddress(String latitude, String longitude){
-        
-        String url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+latitude+','+longitude+'&key=AIzaSyDOzfa37-Dvfv9dlX_OKhkxQxHh4EJKVmg';
+        string ApiKey = label.googelApikey;
+        String url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+latitude+','+longitude+'&key='+ApiKey;
         system.debug('url: '+ url);
         String jsonResult = getHttp(url);
         Map<String,Object> JsonMap = (Map<String,Object>)JSON.deserializeUntyped(jsonResult);

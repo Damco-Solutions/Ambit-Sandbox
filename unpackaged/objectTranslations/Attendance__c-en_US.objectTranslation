@@ -17,12 +17,20 @@
         <name>Approved__c</name>
     </fields>
     <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
         <label><!-- Date --></label>
         <name>Date__c</name>
     </fields>
     <fields>
         <label><!-- Day of the Week --></label>
         <name>Day_of_the_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Number --></label>
+        <name>Employee_Number__c</name>
     </fields>
     <fields>
         <label><!-- Salesperson --></label>

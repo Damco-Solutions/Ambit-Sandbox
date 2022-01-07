@@ -1,4 +1,8 @@
-<apex:page controller="CibiDocIntegration" docType="html-5.0" >
-  
-   {!PDFREPORT}
+<apex:page controller="CibiDocIntegration" contentType="application/PDF" sidebar="false" standardStylesheets="false"
+applyHtmlTag="false" applyBodyTag="false" showHeader="false">
+
+    <apex:form >
+        <apex:outputText escape="false" value="{!htmlcode}"/> 
+
+    </apex:form>
 </apex:page>

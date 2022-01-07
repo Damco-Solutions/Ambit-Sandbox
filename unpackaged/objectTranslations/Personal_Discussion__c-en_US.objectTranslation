@@ -56,6 +56,910 @@
     <fields>
         <label><!-- Cluster --></label>
         <name>Cluster__c</name>
+        <picklistValues>
+            <masterLabel>ACTOR/ SINGER/ ENTERTAINER/ PHOTOGRAPHER/ PAINTER</masterLabel>
+            <translation><!-- ACTOR/ SINGER/ ENTERTAINER/ PHOTOGRAPHER/ PAINTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADVERTISING &amp; PROMOTIONS</masterLabel>
+            <translation><!-- ADVERTISING &amp; PROMOTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI BUSINESS CENTER</masterLabel>
+            <translation><!-- AGRI BUSINESS CENTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI COLD-STORAGE</masterLabel>
+            <translation><!-- AGRI COLD-STORAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI GODOWN</masterLabel>
+            <translation><!-- AGRI GODOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI WAREHOUSE</masterLabel>
+            <translation><!-- AGRI WAREHOUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRICULATURAL TOOLS</masterLabel>
+            <translation><!-- AGRICULATURAL TOOLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AIR CARGO</masterLabel>
+            <translation><!-- AIR CARGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALUMINIUM PRODUCTS</masterLabel>
+            <translation><!-- ALUMINIUM PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBULANCE SERVICE</masterLabel>
+            <translation><!-- AMBULANCE SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANIMAL HUSBANDARY</masterLabel>
+            <translation><!-- ANIMAL HUSBANDARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANIMATION</masterLabel>
+            <translation><!-- ANIMATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARCHITECT</masterLabel>
+            <translation><!-- ARCHITECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARTIFICIAL/IMITATION JEWELLERY</masterLabel>
+            <translation><!-- ARTIFICIAL/IMITATION JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILE ACCESSORIES</masterLabel>
+            <translation><!-- AUTOMOBILE ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILE PARTS</masterLabel>
+            <translation><!-- AUTOMOBILE PARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILE SERVICE CENTRE/GARAGE</masterLabel>
+            <translation><!-- AUTOMOBILE SERVICE CENTRE/GARAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES  -  AUTOMOBILE ACCESSORIES</masterLabel>
+            <translation><!-- AUTOMOBILES  -  AUTOMOBILE ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES  -  AUTOMOBILE DEALER</masterLabel>
+            <translation><!-- AUTOMOBILES  -  AUTOMOBILE DEALER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES  -  AUTOMOBILE PARTS</masterLabel>
+            <translation><!-- AUTOMOBILES  -  AUTOMOBILE PARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BABY CARE PRODUCTS</masterLabel>
+            <translation><!-- BABY CARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</masterLabel>
+            <translation><!-- BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEE-KEEPING</masterLabel>
+            <translation><!-- BEE-KEEPING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIO-FERTILIZER PRODUCTION</masterLabel>
+            <translation><!-- BIO-FERTILIZER PRODUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIO-PESTICIDES PRODUCTION</masterLabel>
+            <translation><!-- BIO-PESTICIDES PRODUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BPO</masterLabel>
+            <translation><!-- BPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BROKER / AGENT</masterLabel>
+            <translation><!-- BROKER / AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUILDER / DEVELOPER</masterLabel>
+            <translation><!-- BUILDER / DEVELOPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUS ROUTE OPERATOR</masterLabel>
+            <translation><!-- BUS ROUTE OPERATOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALL CENTERS</masterLabel>
+            <translation><!-- CALL CENTERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPTIVE USAGE</masterLabel>
+            <translation><!-- CAPTIVE USAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CASTING &amp; FORGINGS</masterLabel>
+            <translation><!-- CASTING &amp; FORGINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATERER</masterLabel>
+            <translation><!-- CATERER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATTLE</masterLabel>
+            <translation><!-- CATTLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEMENT</masterLabel>
+            <translation><!-- CEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CERAMICS/MARBLE/STONE/GRANITE</masterLabel>
+            <translation><!-- CERAMICS/MARBLE/STONE/GRANITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARTERED ACCOUNTANT</masterLabel>
+            <translation><!-- CHARTERED ACCOUNTANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF</masterLabel>
+            <translation><!-- CHEF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL  -  CHEMICALS</masterLabel>
+            <translation><!-- CHEMICAL  -  CHEMICALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL  -  PAINT &amp; VARNISHES</masterLabel>
+            <translation><!-- CHEMICAL  -  PAINT &amp; VARNISHES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL  -  PESTICIDES</masterLabel>
+            <translation><!-- CHEMICAL  -  PESTICIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICALS</masterLabel>
+            <translation><!-- CHEMICALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIVIL CONTRACTOR</masterLabel>
+            <translation><!-- CIVIL CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLEARING &amp; FORWARDING AGENT</masterLabel>
+            <translation><!-- CLEARING &amp; FORWARDING AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COACHING CLASS</masterLabel>
+            <translation><!-- COACHING CLASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLLEGE / PROFESSIONAL COURSE INSTITUTE</masterLabel>
+            <translation><!-- COLLEGE / PROFESSIONAL COURSE INSTITUTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLOUR/PLUMBING CONTRACTOR</masterLabel>
+            <translation><!-- COLOUR/PLUMBING CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMMISSION AGENT</masterLabel>
+            <translation><!-- COMMISSION AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER  -  COMPUTER HARDWARE</masterLabel>
+            <translation><!-- COMPUTER  -  COMPUTER HARDWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER  -  COMPUTER SPAREPARTS</masterLabel>
+            <translation><!-- COMPUTER  -  COMPUTER SPAREPARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER HARDWARE</masterLabel>
+            <translation><!-- COMPUTER HARDWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER REPAIR &amp; SERVICING</masterLabel>
+            <translation><!-- COMPUTER REPAIR &amp; SERVICING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER SPAREPARTS</masterLabel>
+            <translation><!-- COMPUTER SPAREPARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION</masterLabel>
+            <translation><!-- CONSTRUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  CEMENT</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  CEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  CERAMICS/MARBLE/STONE/GRANITE</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  CERAMICS/MARBLE/STONE/GRANITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL / BRICK / SAND</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL / BRICK / SAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  HARDWARE STORE</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  HARDWARE STORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  SANITARYWARE</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  SANITARYWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL / BRICK / SAND</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL / BRICK / SAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  BABY CARE PRODUCTS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  BABY CARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  COSMETICS /BEAUTY PRODUCTS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  COSMETICS /BEAUTY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  DAIRY &amp; DAIRY PRODUCTS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  DAIRY &amp; DAIRY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  EDIBLE OIL</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  EDIBLE OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  GROCERY/FRUITS &amp; VEGETABLE STORE</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  GROCERY/FRUITS &amp; VEGETABLE STORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  STATIONERY / GENERAL STORE</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  STATIONERY / GENERAL STORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTAINERS</masterLabel>
+            <translation><!-- CONTAINERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTRACT BASED DEPLOYMENT</masterLabel>
+            <translation><!-- CONTRACT BASED DEPLOYMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COPPER</masterLabel>
+            <translation><!-- COPPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COSMETICS /BEAUTY PRODUCTS</masterLabel>
+            <translation><!-- COSMETICS /BEAUTY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COURIER</masterLabel>
+            <translation><!-- COURIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAIRY &amp; DAIRY PRODUCTS</masterLabel>
+            <translation><!-- DAIRY &amp; DAIRY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELIVERY AGENT</masterLabel>
+            <translation><!-- DELIVERY AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIAGNOSTIC CENTRE</masterLabel>
+            <translation><!-- DIAGNOSTIC CENTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIAMONDS</masterLabel>
+            <translation><!-- DIAMONDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIARY</masterLabel>
+            <translation><!-- DIARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECT /BFSI SERVICE/SALES AGENT</masterLabel>
+            <translation><!-- DIRECT /BFSI SERVICE/SALES AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOCTOR</masterLabel>
+            <translation><!-- DOCTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRIVER</masterLabel>
+            <translation><!-- DRIVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DYING/GINNING/TEXTURISING/TWISTING</masterLabel>
+            <translation><!-- DYING/GINNING/TEXTURISING/TWISTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-COMMERCE</masterLabel>
+            <translation><!-- E-COMMERCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDIBLE OIL</masterLabel>
+            <translation><!-- EDIBLE OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDUCATION SERVICE PROVIDER</masterLabel>
+            <translation><!-- EDUCATION SERVICE PROVIDER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES &amp; ACCESSORIES</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES &amp; ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL CONTRACTOR</masterLabel>
+            <translation><!-- ELECTRICAL CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRICAL EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRONICS EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRONICS EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMBROIDERY</masterLabel>
+            <translation><!-- EMBROIDERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENGINEER</masterLabel>
+            <translation><!-- ENGINEER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVENT MANAGEMENT</masterLabel>
+            <translation><!-- EVENT MANAGEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPORT &amp; IMPORT AGENT</masterLabel>
+            <translation><!-- EXPORT &amp; IMPORT AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAST FOOD / JUICE CENTRE</masterLabel>
+            <translation><!-- FAST FOOD / JUICE CENTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT  -  ICECREAM</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT  -  ICECREAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT  -  SWEETMEAT SHOP</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT  -  SWEETMEAT SHOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT  -  WINE/LIQUOR</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT  -  WINE/LIQUOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD PROCESSING</masterLabel>
+            <translation><!-- FOOD PROCESSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FURNITURE</masterLabel>
+            <translation><!-- FURNITURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEMS &amp; STONES</masterLabel>
+            <translation><!-- GEMS &amp; STONES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENERATORS &amp; TRANSFORMERS</masterLabel>
+            <translation><!-- GENERATORS &amp; TRANSFORMERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOLD</masterLabel>
+            <translation><!-- GOLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOOD TRANSPORT</masterLabel>
+            <translation><!-- GOOD TRANSPORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOVERNMENT CONTRACTOR</masterLabel>
+            <translation><!-- GOVERNMENT CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUEST HOUSE</masterLabel>
+            <translation><!-- GUEST HOUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</masterLabel>
+            <translation><!-- HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDLING &amp; CONVEYORS</masterLabel>
+            <translation><!-- HANDLING &amp; CONVEYORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDLOOM</masterLabel>
+            <translation><!-- HANDLOOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  EYE CARE / OPTICIAN</masterLabel>
+            <translation><!-- HEALTHCARE  -  EYE CARE / OPTICIAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  HEALTHCARE PRODUCTS</masterLabel>
+            <translation><!-- HEALTHCARE  -  HEALTHCARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  MEDICINE</masterLabel>
+            <translation><!-- HEALTHCARE  -  MEDICINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  SURGICAL EQUIPMENTS</masterLabel>
+            <translation><!-- HEALTHCARE  -  SURGICAL EQUIPMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE PRODUCTS</masterLabel>
+            <translation><!-- HEALTHCARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORTICULTURE</masterLabel>
+            <translation><!-- HORTICULTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOSPITAL/NURSING HOME</masterLabel>
+            <translation><!-- HOSPITAL/NURSING HOME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOTEL / LODGE</masterLabel>
+            <translation><!-- HOTEL / LODGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOUSING FINANCE COMPANY</masterLabel>
+            <translation><!-- HOUSING FINANCE COMPANY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICECREAM</masterLabel>
+            <translation><!-- ICECREAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS &amp; TRANSFORMERS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS &amp; TRANSFORMERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING &amp; CONVEYORS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING &amp; CONVEYORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  VALVES &amp; FITTINGS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  VALVES &amp; FITTINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL SAFETY PRODUCTS</masterLabel>
+            <translation><!-- INDUSTRIAL SAFETY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTERIOR DESIGNER</masterLabel>
+            <translation><!-- INTERIOR DESIGNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRON &amp; STEEL PRODUCTS</masterLabel>
+            <translation><!-- IRON &amp; STEEL PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT/SOFTWARE CONSULTANT</masterLabel>
+            <translation><!-- IT/SOFTWARE CONSULTANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  ARTIFICIAL/IMITATION JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY  -  ARTIFICIAL/IMITATION JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  DIAMONDS</masterLabel>
+            <translation><!-- JEWELLERY  -  DIAMONDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  GEMS &amp; STONES</masterLabel>
+            <translation><!-- JEWELLERY  -  GEMS &amp; STONES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  GOLD</masterLabel>
+            <translation><!-- JEWELLERY  -  GOLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY  -  JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOB/RECRUITMENT CONSULTANT</masterLabel>
+            <translation><!-- JOB/RECRUITMENT CONSULTANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LABOUR CONTRACTOR</masterLabel>
+            <translation><!-- LABOUR CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAMINATES &amp; PLYWOODS</masterLabel>
+            <translation><!-- LAMINATES &amp; PLYWOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER  -  LUGGAGE AND LEATHER BAGS</masterLabel>
+            <translation><!-- LEATHER  -  LUGGAGE AND LEATHER BAGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER  -  OTHER LEATHER GOODS</masterLabel>
+            <translation><!-- LEATHER  -  OTHER LEATHER GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER  -  SHOE/FOOTWARE</masterLabel>
+            <translation><!-- LEATHER  -  SHOE/FOOTWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIFT</masterLabel>
+            <translation><!-- LIFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUGGAGE AND LEATHER BAGS</masterLabel>
+            <translation><!-- LUGGAGE AND LEATHER BAGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECHANICAL GOODS</masterLabel>
+            <translation><!-- MECHANICAL GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECHNICAL CONTRACTOR</masterLabel>
+            <translation><!-- MECHNICAL CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDICINE</masterLabel>
+            <translation><!-- MEDICINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METAL MOULD</masterLabel>
+            <translation><!-- METAL MOULD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METAL SCRAPS</masterLabel>
+            <translation><!-- METAL SCRAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  ALUMINIUM PRODUCTS</masterLabel>
+            <translation><!-- METALS  -  ALUMINIUM PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  CASTING &amp; FORGINGS</masterLabel>
+            <translation><!-- METALS  -  CASTING &amp; FORGINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  COPPER</masterLabel>
+            <translation><!-- METALS  -  COPPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  IRON &amp; STEEL PRODUCTS</masterLabel>
+            <translation><!-- METALS  -  IRON &amp; STEEL PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  METAL MOULD</masterLabel>
+            <translation><!-- METALS  -  METAL MOULD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  METAL SCRAPS</masterLabel>
+            <translation><!-- METALS  -  METAL SCRAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICRO FINANCE INSTITUTION</masterLabel>
+            <translation><!-- MICRO FINANCE INSTITUTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MILLING PRODUCTS</masterLabel>
+            <translation><!-- MILLING PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE / ELECTRONIC / ELECTRIC GOODS REPAIRS</masterLabel>
+            <translation><!-- MOBILE / ELECTRONIC / ELECTRIC GOODS REPAIRS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE PHONES &amp; ACCESSORIES</masterLabel>
+            <translation><!-- MOBILE PHONES &amp; ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOTORS</masterLabel>
+            <translation><!-- MOTORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBFC - NON REAL ESTATE FUNDING</masterLabel>
+            <translation><!-- NBFC - NON REAL ESTATE FUNDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBFC - REAL ESTATE FUNDING</masterLabel>
+            <translation><!-- NBFC - REAL ESTATE FUNDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER LEATHER GOODS</masterLabel>
+            <translation><!-- OTHER LEATHER GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER TRASPORTER</masterLabel>
+            <translation><!-- OTHER TRASPORTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PACKAGING MATERIAL</masterLabel>
+            <translation><!-- PACKAGING MATERIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAINT &amp; VARNISHES</masterLabel>
+            <translation><!-- PAINT &amp; VARNISHES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER  -  PAPER &amp; PAPER PRODUCTS</masterLabel>
+            <translation><!-- PAPER  -  PAPER &amp; PAPER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER  -  PAPER SCRAP</masterLabel>
+            <translation><!-- PAPER  -  PAPER SCRAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER &amp; PAPER PRODUCTS</masterLabel>
+            <translation><!-- PAPER &amp; PAPER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAYING GUEST</masterLabel>
+            <translation><!-- PAYING GUEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PESTICIDES</masterLabel>
+            <translation><!-- PESTICIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  KEROSENE / OTHER PETROLEUM PRODUCTS</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  KEROSENE / OTHER PETROLEUM PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  LPG</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  LPG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  LUBRICANT OIL</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  LUBRICANT OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  PETROL PUMP</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  PETROL PUMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PISCICULTURE</masterLabel>
+            <translation><!-- PISCICULTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTIC MOULDS</masterLabel>
+            <translation><!-- PLASTIC MOULDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTIC PRODUCTS</masterLabel>
+            <translation><!-- PLASTIC PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS  -  PLASTIC MOULDS</masterLabel>
+            <translation><!-- PLASTICS  -  PLASTIC MOULDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS  -  PLASTIC PRODUCTS</masterLabel>
+            <translation><!-- PLASTICS  -  PLASTIC PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS  -  PLASTIC SCRAP</masterLabel>
+            <translation><!-- PLASTICS  -  PLASTIC SCRAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POULTRY</masterLabel>
+            <translation><!-- POULTRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POWERLOOM</masterLabel>
+            <translation><!-- POWERLOOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRINTING / PUBLISHING</masterLabel>
+            <translation><!-- PRINTING / PUBLISHING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROJECT MANGEMENT</masterLabel>
+            <translation><!-- PROJECT MANGEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PVC COMPOUND</masterLabel>
+            <translation><!-- PVC COMPOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>READYMADE/LADIES/UNISEX GARMENTS</masterLabel>
+            <translation><!-- READYMADE/LADIES/UNISEX GARMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENTAL BUSINESS</masterLabel>
+            <translation><!-- RENTAL BUSINESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESTAURANT</masterLabel>
+            <translation><!-- RESTAURANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER  -  RUBBER PRODUCTS</masterLabel>
+            <translation><!-- RUBBER  -  RUBBER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER  -  TYRES</masterLabel>
+            <translation><!-- RUBBER  -  TYRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER PRODUCTS</masterLabel>
+            <translation><!-- RUBBER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALOON</masterLabel>
+            <translation><!-- SALOON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANITARYWARE</masterLabel>
+            <translation><!-- SANITARYWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHOOL</masterLabel>
+            <translation><!-- SCHOOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCIENTIST</masterLabel>
+            <translation><!-- SCIENTIST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECURITY/FACILITY MANAGEMENT</masterLabel>
+            <translation><!-- SECURITY/FACILITY MANAGEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEED PRODUCTION</masterLabel>
+            <translation><!-- SEED PRODUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERICULTURE</masterLabel>
+            <translation><!-- SERICULTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHIPPING</masterLabel>
+            <translation><!-- SHIPPING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHOE/FOOTWARE</masterLabel>
+            <translation><!-- SHOE/FOOTWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOFTWARE</masterLabel>
+            <translation><!-- SOFTWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPICE</masterLabel>
+            <translation><!-- SPICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STORAGE &amp; WAREHOUSING</masterLabel>
+            <translation><!-- STORAGE &amp; WAREHOUSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STORAGE BATTERIES</masterLabel>
+            <translation><!-- STORAGE BATTERIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUB CONTRACTOR</masterLabel>
+            <translation><!-- SUB CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURGICAL EQUIPMENTS</masterLabel>
+            <translation><!-- SURGICAL EQUIPMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAX &amp; ACCOUNT CONSULTING</masterLabel>
+            <translation><!-- TAX &amp; ACCOUNT CONSULTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</masterLabel>
+            <translation><!-- TEXTILES  -  BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  EMBROIDERY</masterLabel>
+            <translation><!-- TEXTILES  -  EMBROIDERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  HANDLOOM</masterLabel>
+            <translation><!-- TEXTILES  -  HANDLOOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  KNITTING/WEAVING/SEWING</masterLabel>
+            <translation><!-- TEXTILES  -  KNITTING/WEAVING/SEWING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  READYMADE/LADIES/UNISEX GARMENTS</masterLabel>
+            <translation><!-- TEXTILES  -  READYMADE/LADIES/UNISEX GARMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  YARN</masterLabel>
+            <translation><!-- TEXTILES  -  YARN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKETING AGENCY</masterLabel>
+            <translation><!-- TICKETING AGENCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIFFIN SERVICE</masterLabel>
+            <translation><!-- TIFFIN SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUR &amp; TAVEL AGENCY</masterLabel>
+            <translation><!-- TOUR &amp; TAVEL AGENCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSMISSION LINE TOWER</masterLabel>
+            <translation><!-- TRANSMISSION LINE TOWER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TYRES</masterLabel>
+            <translation><!-- TYRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALVES &amp; FITTINGS</masterLabel>
+            <translation><!-- VALVES &amp; FITTINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOOD AND WOODEN PRODUCTS  -  FURNITURE</masterLabel>
+            <translation><!-- WOOD AND WOODEN PRODUCTS  -  FURNITURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOOD AND WOODEN PRODUCTS  -  LAMINATES &amp; PLYWOODS</masterLabel>
+            <translation><!-- WOOD AND WOODEN PRODUCTS  -  LAMINATES &amp; PLYWOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YARN</masterLabel>
+            <translation><!-- YARN --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Comfortable Loan Amount --></label>
@@ -81,12 +985,12 @@
         <label><!-- GST Applicable --></label>
         <name>GST_Applicable__c</name>
         <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -209,16 +1113,16 @@
         <label><!-- Segment --></label>
         <name>Segment__c</name>
         <picklistValues>
-            <masterLabel>Agriculture and Allied Activities</masterLabel>
-            <translation><!-- Agriculture and Allied Activities --></translation>
+            <masterLabel>AGRICULTURE AND ALLIED ACTIVITIES</masterLabel>
+            <translation><!-- AGRICULTURE AND ALLIED ACTIVITIES --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Manufacturing</masterLabel>
-            <translation><!-- Manufacturing --></translation>
+            <masterLabel>MANUFACTURING</masterLabel>
+            <translation><!-- MANUFACTURING --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Services</masterLabel>
-            <translation><!-- Services --></translation>
+            <masterLabel>SERVICES</masterLabel>
+            <translation><!-- SERVICES --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -236,6 +1140,146 @@
     <fields>
         <label><!-- Type of Business --></label>
         <name>Type_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>AGRICULTURAL INFRASTRUCTURE</masterLabel>
+            <translation><!-- AGRICULTURAL INFRASTRUCTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANCILLIARY ACTIVITY</masterLabel>
+            <translation><!-- ANCILLIARY ACTIVITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES</masterLabel>
+            <translation><!-- AUTOMOBILES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES SERVICES</masterLabel>
+            <translation><!-- AUTOMOBILES SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL</masterLabel>
+            <translation><!-- CHEMICAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMMERCIAL REAL ESTATE</masterLabel>
+            <translation><!-- COMMERCIAL REAL ESTATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER</masterLabel>
+            <translation><!-- COMPUTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER SERVICES</masterLabel>
+            <translation><!-- COMPUTER SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS</masterLabel>
+            <translation><!-- CONSUMER GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTRACTOR</masterLabel>
+            <translation><!-- CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDUCATION INSTITUTE</masterLabel>
+            <translation><!-- EDUCATION INSTITUTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS SERVICES</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARM CREDIT</masterLabel>
+            <translation><!-- FARM CREDIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD AND RESTAURANT SERVICES</masterLabel>
+            <translation><!-- FOOD AND RESTAURANT SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE</masterLabel>
+            <translation><!-- HEALTHCARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE SERVICES</masterLabel>
+            <translation><!-- HEALTHCARE SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER</masterLabel>
+            <translation><!-- LEATHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS</masterLabel>
+            <translation><!-- METALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBFC / FINANCE</masterLabel>
+            <translation><!-- NBFC / FINANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER SERVICES</masterLabel>
+            <translation><!-- OTHER SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER</masterLabel>
+            <translation><!-- PAPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS</masterLabel>
+            <translation><!-- PLASTICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROFESSIONAL SERVICES</masterLabel>
+            <translation><!-- PROFESSIONAL SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENTAL / ACCOMODATION</masterLabel>
+            <translation><!-- RENTAL / ACCOMODATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETAIL</masterLabel>
+            <translation><!-- RETAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER</masterLabel>
+            <translation><!-- RUBBER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES</masterLabel>
+            <translation><!-- TEXTILES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSPORTATION</masterLabel>
+            <translation><!-- TRANSPORTATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WHOLE SALE</masterLabel>
+            <translation><!-- WHOLE SALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOOD AND WOODEN PRODUCTS</masterLabel>
+            <translation><!-- WOOD AND WOODEN PRODUCTS --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- 2 Wheeler Present --></label>

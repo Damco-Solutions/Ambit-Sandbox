@@ -301,19 +301,31 @@
         <startsWith>Vowel</startsWith>
     </fields>
     <fields>
+        <label><!-- ASSIGNED_TO --></label>
+        <name>ASSIGNED_TO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aadhar as KYC --></label>
+        <name>Aadhar_as_KYC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Lead Information --></label>
+        <name>Additional_Lead_Information__c</name>
+    </fields>
+    <fields>
         <label><!-- Address Type --></label>
         <name>Address_Type__c</name>
         <picklistValues>
-            <masterLabel>Office Address</masterLabel>
-            <translation><!-- Office Address --></translation>
+            <masterLabel>OFFICE ADDRESS</masterLabel>
+            <translation><!-- OFFICE ADDRESS --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Permanent Address</masterLabel>
-            <translation><!-- Permanent Address --></translation>
+            <masterLabel>PERMANENT ADDRESS</masterLabel>
+            <translation><!-- PERMANENT ADDRESS --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Residential Address</masterLabel>
-            <translation><!-- Residential Address --></translation>
+            <masterLabel>RESIDENCE ADDRESS</masterLabel>
+            <translation><!-- RESIDENCE ADDRESS --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -325,9 +337,17 @@
         <name>Age_Norm_Eligibility__c</name>
     </fields>
     <fields>
+        <label><!-- Agent Code --></label>
+        <name>Agent_Code__c</name>
+    </fields>
+    <fields>
         <label><!-- Agent --></label>
         <name>Agent__c</name>
         <relationshipLabel><!-- Contacts (Agent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applicant Code --></label>
+        <name>Applicant_Code__c</name>
     </fields>
     <fields>
         <label><!-- Applicant Father Name --></label>
@@ -341,17 +361,21 @@
         <label><!-- Applicant Type --></label>
         <name>Applicant_Type__c</name>
         <picklistValues>
-            <masterLabel>Applicant</masterLabel>
-            <translation><!-- Applicant --></translation>
+            <masterLabel>APPLICANT</masterLabel>
+            <translation><!-- APPLICANT --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Co-Applicant</masterLabel>
-            <translation><!-- Co-Applicant --></translation>
+            <masterLabel>CO-APPLICANT</masterLabel>
+            <translation><!-- CO-APPLICANT --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Guarantor</masterLabel>
-            <translation><!-- Guarantor --></translation>
+            <masterLabel>GUARANTOR</masterLabel>
+            <translation><!-- GUARANTOR --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Applicant upload --></label>
+        <name>Applicant_upload__c</name>
     </fields>
     <fields>
         <label><!-- Application Form Type --></label>
@@ -374,6 +398,10 @@
         <name>Area_Mailing__c</name>
     </fields>
     <fields>
+        <label><!-- Area --></label>
+        <name>Area_Office__c</name>
+    </fields>
+    <fields>
         <label><!-- Authorised Person --></label>
         <name>Authorised_Person__c</name>
     </fields>
@@ -393,6 +421,11 @@
     <fields>
         <label><!-- Branch Manager --></label>
         <name>Branch_Manager__c</name>
+        <relationshipLabel><!-- Applicants (Branch Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>Branch_Name__c</name>
     </fields>
     <fields>
         <label><!-- Branch --></label>
@@ -406,6 +439,10 @@
     <fields>
         <label><!-- Building / Street Name --></label>
         <name>Building_Street_Name_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building / Street Name --></label>
+        <name>Building_Street_Name_Office__c</name>
     </fields>
     <fields>
         <label><!-- Business Type Remark --></label>
@@ -448,6 +485,10 @@
         <name>CIBIL_ID_Number__c</name>
     </fields>
     <fields>
+        <label><!-- CIBIL Document Uploaded --></label>
+        <name>CIBIL_ID_Upload__c</name>
+    </fields>
+    <fields>
         <label><!-- CIBIL ID --></label>
         <name>CIBIL_ID__c</name>
         <picklistValues>
@@ -455,8 +496,8 @@
             <translation><!-- Driving License Number (Permanent only) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Pan No</masterLabel>
-            <translation><!-- Pan No --></translation>
+            <masterLabel>Pan Card</masterLabel>
+            <translation><!-- Pan Card --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Passport Number</masterLabel>
@@ -466,6 +507,10 @@
             <masterLabel>Voter ID Number</masterLabel>
             <translation><!-- Voter ID Number --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIBIL SCORE DATE --></label>
+        <name>CIBIL_SCORE_DATE__c</name>
     </fields>
     <fields>
         <label><!-- CIBIL Score Eligibility Remarks --></label>
@@ -488,8 +533,20 @@
         <label><!-- Channel Type --></label>
         <name>Channel_Type__c</name>
         <picklistValues>
-            <masterLabel>Sales Team</masterLabel>
-            <translation><!-- Sales Team --></translation>
+            <masterLabel>Connector</masterLabel>
+            <translation><!-- Connector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSA</masterLabel>
+            <translation><!-- DSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Sourcing</masterLabel>
+            <translation><!-- Direct Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UCV Broker</masterLabel>
+            <translation><!-- UCV Broker --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -503,14 +560,933 @@
             <masterLabel>DST Manager</masterLabel>
             <translation><!-- DST Manager --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>UCV Manager</masterLabel>
+            <translation><!-- UCV Manager --></translation>
+        </picklistValues>
     </fields>
     <fields>
+        <help><!-- City will be auto populated based on Pincode --></help>
         <label><!-- City --></label>
         <name>City_Destination__c</name>
     </fields>
     <fields>
+        <help><!-- City will be auto populated based on Pincode --></help>
         <label><!-- City --></label>
         <name>City_Mailing__c</name>
+    </fields>
+    <fields>
+        <help><!-- City will be auto populated based on Pincode --></help>
+        <label><!-- City --></label>
+        <name>City_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cluster --></label>
+        <name>Cluster__c</name>
+        <picklistValues>
+            <masterLabel>ACTOR/ SINGER/ ENTERTAINER/ PHOTOGRAPHER/ PAINTER</masterLabel>
+            <translation><!-- ACTOR/ SINGER/ ENTERTAINER/ PHOTOGRAPHER/ PAINTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ADVERTISING &amp; PROMOTIONS</masterLabel>
+            <translation><!-- ADVERTISING &amp; PROMOTIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI BUSINESS CENTER</masterLabel>
+            <translation><!-- AGRI BUSINESS CENTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI COLD-STORAGE</masterLabel>
+            <translation><!-- AGRI COLD-STORAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI GODOWN</masterLabel>
+            <translation><!-- AGRI GODOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRI WAREHOUSE</masterLabel>
+            <translation><!-- AGRI WAREHOUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AGRICULATURAL TOOLS</masterLabel>
+            <translation><!-- AGRICULATURAL TOOLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AIR CARGO</masterLabel>
+            <translation><!-- AIR CARGO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ALUMINIUM PRODUCTS</masterLabel>
+            <translation><!-- ALUMINIUM PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMBULANCE SERVICE</masterLabel>
+            <translation><!-- AMBULANCE SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANIMAL HUSBANDARY</masterLabel>
+            <translation><!-- ANIMAL HUSBANDARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANIMATION</masterLabel>
+            <translation><!-- ANIMATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARCHITECT</masterLabel>
+            <translation><!-- ARCHITECT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARTIFICIAL/IMITATION JEWELLERY</masterLabel>
+            <translation><!-- ARTIFICIAL/IMITATION JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILE ACCESSORIES</masterLabel>
+            <translation><!-- AUTOMOBILE ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILE PARTS</masterLabel>
+            <translation><!-- AUTOMOBILE PARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILE SERVICE CENTRE/GARAGE</masterLabel>
+            <translation><!-- AUTOMOBILE SERVICE CENTRE/GARAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES  -  AUTOMOBILE ACCESSORIES</masterLabel>
+            <translation><!-- AUTOMOBILES  -  AUTOMOBILE ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES  -  AUTOMOBILE DEALER</masterLabel>
+            <translation><!-- AUTOMOBILES  -  AUTOMOBILE DEALER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES  -  AUTOMOBILE PARTS</masterLabel>
+            <translation><!-- AUTOMOBILES  -  AUTOMOBILE PARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BABY CARE PRODUCTS</masterLabel>
+            <translation><!-- BABY CARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</masterLabel>
+            <translation><!-- BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEE-KEEPING</masterLabel>
+            <translation><!-- BEE-KEEPING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIO-FERTILIZER PRODUCTION</masterLabel>
+            <translation><!-- BIO-FERTILIZER PRODUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIO-PESTICIDES PRODUCTION</masterLabel>
+            <translation><!-- BIO-PESTICIDES PRODUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BPO</masterLabel>
+            <translation><!-- BPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BROKER / AGENT</masterLabel>
+            <translation><!-- BROKER / AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUILDER / DEVELOPER</masterLabel>
+            <translation><!-- BUILDER / DEVELOPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BUS ROUTE OPERATOR</masterLabel>
+            <translation><!-- BUS ROUTE OPERATOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALL CENTERS</masterLabel>
+            <translation><!-- CALL CENTERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAPTIVE USAGE</masterLabel>
+            <translation><!-- CAPTIVE USAGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CASTING &amp; FORGINGS</masterLabel>
+            <translation><!-- CASTING &amp; FORGINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATERER</masterLabel>
+            <translation><!-- CATERER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATTLE</masterLabel>
+            <translation><!-- CATTLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEMENT</masterLabel>
+            <translation><!-- CEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CERAMICS/MARBLE/STONE/GRANITE</masterLabel>
+            <translation><!-- CERAMICS/MARBLE/STONE/GRANITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHARTERED ACCOUNTANT</masterLabel>
+            <translation><!-- CHARTERED ACCOUNTANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEF</masterLabel>
+            <translation><!-- CHEF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL  -  CHEMICALS</masterLabel>
+            <translation><!-- CHEMICAL  -  CHEMICALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL  -  PAINT &amp; VARNISHES</masterLabel>
+            <translation><!-- CHEMICAL  -  PAINT &amp; VARNISHES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL  -  PESTICIDES</masterLabel>
+            <translation><!-- CHEMICAL  -  PESTICIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICALS</masterLabel>
+            <translation><!-- CHEMICALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIVIL CONTRACTOR</masterLabel>
+            <translation><!-- CIVIL CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLEARING &amp; FORWARDING AGENT</masterLabel>
+            <translation><!-- CLEARING &amp; FORWARDING AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COACHING CLASS</masterLabel>
+            <translation><!-- COACHING CLASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLLEGE / PROFESSIONAL COURSE INSTITUTE</masterLabel>
+            <translation><!-- COLLEGE / PROFESSIONAL COURSE INSTITUTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COLOUR/PLUMBING CONTRACTOR</masterLabel>
+            <translation><!-- COLOUR/PLUMBING CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMMISSION AGENT</masterLabel>
+            <translation><!-- COMMISSION AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER  -  COMPUTER HARDWARE</masterLabel>
+            <translation><!-- COMPUTER  -  COMPUTER HARDWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER  -  COMPUTER SPAREPARTS</masterLabel>
+            <translation><!-- COMPUTER  -  COMPUTER SPAREPARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER HARDWARE</masterLabel>
+            <translation><!-- COMPUTER HARDWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER REPAIR &amp; SERVICING</masterLabel>
+            <translation><!-- COMPUTER REPAIR &amp; SERVICING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER SPAREPARTS</masterLabel>
+            <translation><!-- COMPUTER SPAREPARTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION</masterLabel>
+            <translation><!-- CONSTRUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  CEMENT</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  CEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  CERAMICS/MARBLE/STONE/GRANITE</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  CERAMICS/MARBLE/STONE/GRANITE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL / BRICK / SAND</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  CONSTRUCTION MATERIAL / BRICK / SAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  HARDWARE STORE</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  HARDWARE STORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL  -  SANITARYWARE</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL  -  SANITARYWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL / BRICK / SAND</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL / BRICK / SAND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  BABY CARE PRODUCTS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  BABY CARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  COSMETICS /BEAUTY PRODUCTS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  COSMETICS /BEAUTY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  DAIRY &amp; DAIRY PRODUCTS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  DAIRY &amp; DAIRY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  EDIBLE OIL</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  EDIBLE OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  GROCERY/FRUITS &amp; VEGETABLE STORE</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  GROCERY/FRUITS &amp; VEGETABLE STORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS  -  STATIONERY / GENERAL STORE</masterLabel>
+            <translation><!-- CONSUMER GOODS  -  STATIONERY / GENERAL STORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTAINERS</masterLabel>
+            <translation><!-- CONTAINERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTRACT BASED DEPLOYMENT</masterLabel>
+            <translation><!-- CONTRACT BASED DEPLOYMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COPPER</masterLabel>
+            <translation><!-- COPPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COSMETICS /BEAUTY PRODUCTS</masterLabel>
+            <translation><!-- COSMETICS /BEAUTY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COURIER</masterLabel>
+            <translation><!-- COURIER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAIRY &amp; DAIRY PRODUCTS</masterLabel>
+            <translation><!-- DAIRY &amp; DAIRY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DELIVERY AGENT</masterLabel>
+            <translation><!-- DELIVERY AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIAGNOSTIC CENTRE</masterLabel>
+            <translation><!-- DIAGNOSTIC CENTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIAMONDS</masterLabel>
+            <translation><!-- DIAMONDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIARY</masterLabel>
+            <translation><!-- DIARY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIRECT /BFSI SERVICE/SALES AGENT</masterLabel>
+            <translation><!-- DIRECT /BFSI SERVICE/SALES AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOCTOR</masterLabel>
+            <translation><!-- DOCTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRIVER</masterLabel>
+            <translation><!-- DRIVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DYING/GINNING/TEXTURISING/TWISTING</masterLabel>
+            <translation><!-- DYING/GINNING/TEXTURISING/TWISTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-COMMERCE</masterLabel>
+            <translation><!-- E-COMMERCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDIBLE OIL</masterLabel>
+            <translation><!-- EDIBLE OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDUCATION SERVICE PROVIDER</masterLabel>
+            <translation><!-- EDUCATION SERVICE PROVIDER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS  -  ELECTRICAL EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS  -  ELECTRONICS EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES &amp; ACCESSORIES</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS  -  MOBILE PHONES &amp; ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL CONTRACTOR</masterLabel>
+            <translation><!-- ELECTRICAL CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRICAL EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRONICS EQUIPMENT/GOODS</masterLabel>
+            <translation><!-- ELECTRONICS EQUIPMENT/GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMBROIDERY</masterLabel>
+            <translation><!-- EMBROIDERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENGINEER</masterLabel>
+            <translation><!-- ENGINEER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVENT MANAGEMENT</masterLabel>
+            <translation><!-- EVENT MANAGEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXPORT &amp; IMPORT AGENT</masterLabel>
+            <translation><!-- EXPORT &amp; IMPORT AGENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAST FOOD / JUICE CENTRE</masterLabel>
+            <translation><!-- FAST FOOD / JUICE CENTRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT  -  ICECREAM</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT  -  ICECREAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT  -  SWEETMEAT SHOP</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT  -  SWEETMEAT SHOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT  -  WINE/LIQUOR</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT  -  WINE/LIQUOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD PROCESSING</masterLabel>
+            <translation><!-- FOOD PROCESSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FURNITURE</masterLabel>
+            <translation><!-- FURNITURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GEMS &amp; STONES</masterLabel>
+            <translation><!-- GEMS &amp; STONES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENERATORS &amp; TRANSFORMERS</masterLabel>
+            <translation><!-- GENERATORS &amp; TRANSFORMERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOLD</masterLabel>
+            <translation><!-- GOLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOOD TRANSPORT</masterLabel>
+            <translation><!-- GOOD TRANSPORT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOVERNMENT CONTRACTOR</masterLabel>
+            <translation><!-- GOVERNMENT CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GUEST HOUSE</masterLabel>
+            <translation><!-- GUEST HOUSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS</masterLabel>
+            <translation><!-- HANDICRAFT/GIFT/ARTWORK/POOJA ITEMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDLING &amp; CONVEYORS</masterLabel>
+            <translation><!-- HANDLING &amp; CONVEYORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HANDLOOM</masterLabel>
+            <translation><!-- HANDLOOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  EYE CARE / OPTICIAN</masterLabel>
+            <translation><!-- HEALTHCARE  -  EYE CARE / OPTICIAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  HEALTHCARE PRODUCTS</masterLabel>
+            <translation><!-- HEALTHCARE  -  HEALTHCARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  MEDICINE</masterLabel>
+            <translation><!-- HEALTHCARE  -  MEDICINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE  -  SURGICAL EQUIPMENTS</masterLabel>
+            <translation><!-- HEALTHCARE  -  SURGICAL EQUIPMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE PRODUCTS</masterLabel>
+            <translation><!-- HEALTHCARE PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HORTICULTURE</masterLabel>
+            <translation><!-- HORTICULTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOSPITAL/NURSING HOME</masterLabel>
+            <translation><!-- HOSPITAL/NURSING HOME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOTEL / LODGE</masterLabel>
+            <translation><!-- HOTEL / LODGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOUSING FINANCE COMPANY</masterLabel>
+            <translation><!-- HOUSING FINANCE COMPANY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICECREAM</masterLabel>
+            <translation><!-- ICECREAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  AGRICULATURAL TOOLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS &amp; TRANSFORMERS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  GENERATORS &amp; TRANSFORMERS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING &amp; CONVEYORS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  HANDLING &amp; CONVEYORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  INDUSTRIAL SAFETY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  MECHANICAL GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  MOTORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  PACKAGING MATERIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  PVC COMPOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  STORAGE BATTERIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS  -  VALVES &amp; FITTINGS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS  -  VALVES &amp; FITTINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL SAFETY PRODUCTS</masterLabel>
+            <translation><!-- INDUSTRIAL SAFETY PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTERIOR DESIGNER</masterLabel>
+            <translation><!-- INTERIOR DESIGNER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRON &amp; STEEL PRODUCTS</masterLabel>
+            <translation><!-- IRON &amp; STEEL PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT/SOFTWARE CONSULTANT</masterLabel>
+            <translation><!-- IT/SOFTWARE CONSULTANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  ARTIFICIAL/IMITATION JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY  -  ARTIFICIAL/IMITATION JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  DIAMONDS</masterLabel>
+            <translation><!-- JEWELLERY  -  DIAMONDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  GEMS &amp; STONES</masterLabel>
+            <translation><!-- JEWELLERY  -  GEMS &amp; STONES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  GOLD</masterLabel>
+            <translation><!-- JEWELLERY  -  GOLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY  -  JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY  -  JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOB/RECRUITMENT CONSULTANT</masterLabel>
+            <translation><!-- JOB/RECRUITMENT CONSULTANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LABOUR CONTRACTOR</masterLabel>
+            <translation><!-- LABOUR CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAMINATES &amp; PLYWOODS</masterLabel>
+            <translation><!-- LAMINATES &amp; PLYWOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER  -  LUGGAGE AND LEATHER BAGS</masterLabel>
+            <translation><!-- LEATHER  -  LUGGAGE AND LEATHER BAGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER  -  OTHER LEATHER GOODS</masterLabel>
+            <translation><!-- LEATHER  -  OTHER LEATHER GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER  -  SHOE/FOOTWARE</masterLabel>
+            <translation><!-- LEATHER  -  SHOE/FOOTWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIFT</masterLabel>
+            <translation><!-- LIFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUGGAGE AND LEATHER BAGS</masterLabel>
+            <translation><!-- LUGGAGE AND LEATHER BAGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECHANICAL GOODS</masterLabel>
+            <translation><!-- MECHANICAL GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MECHNICAL CONTRACTOR</masterLabel>
+            <translation><!-- MECHNICAL CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDICINE</masterLabel>
+            <translation><!-- MEDICINE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METAL MOULD</masterLabel>
+            <translation><!-- METAL MOULD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METAL SCRAPS</masterLabel>
+            <translation><!-- METAL SCRAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  ALUMINIUM PRODUCTS</masterLabel>
+            <translation><!-- METALS  -  ALUMINIUM PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  CASTING &amp; FORGINGS</masterLabel>
+            <translation><!-- METALS  -  CASTING &amp; FORGINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  COPPER</masterLabel>
+            <translation><!-- METALS  -  COPPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  IRON &amp; STEEL PRODUCTS</masterLabel>
+            <translation><!-- METALS  -  IRON &amp; STEEL PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  METAL MOULD</masterLabel>
+            <translation><!-- METALS  -  METAL MOULD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS  -  METAL SCRAPS</masterLabel>
+            <translation><!-- METALS  -  METAL SCRAPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MICRO FINANCE INSTITUTION</masterLabel>
+            <translation><!-- MICRO FINANCE INSTITUTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MILLING PRODUCTS</masterLabel>
+            <translation><!-- MILLING PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE / ELECTRONIC / ELECTRIC GOODS REPAIRS</masterLabel>
+            <translation><!-- MOBILE / ELECTRONIC / ELECTRIC GOODS REPAIRS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOBILE PHONES &amp; ACCESSORIES</masterLabel>
+            <translation><!-- MOBILE PHONES &amp; ACCESSORIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOTORS</masterLabel>
+            <translation><!-- MOTORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBFC - NON REAL ESTATE FUNDING</masterLabel>
+            <translation><!-- NBFC - NON REAL ESTATE FUNDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBFC - REAL ESTATE FUNDING</masterLabel>
+            <translation><!-- NBFC - REAL ESTATE FUNDING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER LEATHER GOODS</masterLabel>
+            <translation><!-- OTHER LEATHER GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER TRASPORTER</masterLabel>
+            <translation><!-- OTHER TRASPORTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PACKAGING MATERIAL</masterLabel>
+            <translation><!-- PACKAGING MATERIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAINT &amp; VARNISHES</masterLabel>
+            <translation><!-- PAINT &amp; VARNISHES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER  -  PAPER &amp; PAPER PRODUCTS</masterLabel>
+            <translation><!-- PAPER  -  PAPER &amp; PAPER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER  -  PAPER SCRAP</masterLabel>
+            <translation><!-- PAPER  -  PAPER SCRAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER &amp; PAPER PRODUCTS</masterLabel>
+            <translation><!-- PAPER &amp; PAPER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAYING GUEST</masterLabel>
+            <translation><!-- PAYING GUEST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PESTICIDES</masterLabel>
+            <translation><!-- PESTICIDES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  KEROSENE / OTHER PETROLEUM PRODUCTS</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  KEROSENE / OTHER PETROLEUM PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  LPG</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  LPG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  LUBRICANT OIL</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  LUBRICANT OIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PETROLEUM PRODUCTS  -  PETROL PUMP</masterLabel>
+            <translation><!-- PETROLEUM PRODUCTS  -  PETROL PUMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PISCICULTURE</masterLabel>
+            <translation><!-- PISCICULTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTIC MOULDS</masterLabel>
+            <translation><!-- PLASTIC MOULDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTIC PRODUCTS</masterLabel>
+            <translation><!-- PLASTIC PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS  -  PLASTIC MOULDS</masterLabel>
+            <translation><!-- PLASTICS  -  PLASTIC MOULDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS  -  PLASTIC PRODUCTS</masterLabel>
+            <translation><!-- PLASTICS  -  PLASTIC PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS  -  PLASTIC SCRAP</masterLabel>
+            <translation><!-- PLASTICS  -  PLASTIC SCRAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POULTRY</masterLabel>
+            <translation><!-- POULTRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POWERLOOM</masterLabel>
+            <translation><!-- POWERLOOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRINTING / PUBLISHING</masterLabel>
+            <translation><!-- PRINTING / PUBLISHING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROJECT MANGEMENT</masterLabel>
+            <translation><!-- PROJECT MANGEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PVC COMPOUND</masterLabel>
+            <translation><!-- PVC COMPOUND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>READYMADE/LADIES/UNISEX GARMENTS</masterLabel>
+            <translation><!-- READYMADE/LADIES/UNISEX GARMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENTAL BUSINESS</masterLabel>
+            <translation><!-- RENTAL BUSINESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RESTAURANT</masterLabel>
+            <translation><!-- RESTAURANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER  -  RUBBER PRODUCTS</masterLabel>
+            <translation><!-- RUBBER  -  RUBBER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER  -  TYRES</masterLabel>
+            <translation><!-- RUBBER  -  TYRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER PRODUCTS</masterLabel>
+            <translation><!-- RUBBER PRODUCTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALOON</masterLabel>
+            <translation><!-- SALOON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SANITARYWARE</masterLabel>
+            <translation><!-- SANITARYWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCHOOL</masterLabel>
+            <translation><!-- SCHOOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCIENTIST</masterLabel>
+            <translation><!-- SCIENTIST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SECURITY/FACILITY MANAGEMENT</masterLabel>
+            <translation><!-- SECURITY/FACILITY MANAGEMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEED PRODUCTION</masterLabel>
+            <translation><!-- SEED PRODUCTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERICULTURE</masterLabel>
+            <translation><!-- SERICULTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHIPPING</masterLabel>
+            <translation><!-- SHIPPING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SHOE/FOOTWARE</masterLabel>
+            <translation><!-- SHOE/FOOTWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOFTWARE</masterLabel>
+            <translation><!-- SOFTWARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPICE</masterLabel>
+            <translation><!-- SPICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STORAGE &amp; WAREHOUSING</masterLabel>
+            <translation><!-- STORAGE &amp; WAREHOUSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STORAGE BATTERIES</masterLabel>
+            <translation><!-- STORAGE BATTERIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUB CONTRACTOR</masterLabel>
+            <translation><!-- SUB CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SURGICAL EQUIPMENTS</masterLabel>
+            <translation><!-- SURGICAL EQUIPMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAX &amp; ACCOUNT CONSULTING</masterLabel>
+            <translation><!-- TAX &amp; ACCOUNT CONSULTING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION</masterLabel>
+            <translation><!-- TEXTILES  -  BEDSHEET/BLANKET/QUILT/CUSHION COVER/CURTAINS/FLOOR CUSHION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  EMBROIDERY</masterLabel>
+            <translation><!-- TEXTILES  -  EMBROIDERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  HANDLOOM</masterLabel>
+            <translation><!-- TEXTILES  -  HANDLOOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  KNITTING/WEAVING/SEWING</masterLabel>
+            <translation><!-- TEXTILES  -  KNITTING/WEAVING/SEWING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  READYMADE/LADIES/UNISEX GARMENTS</masterLabel>
+            <translation><!-- TEXTILES  -  READYMADE/LADIES/UNISEX GARMENTS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES  -  YARN</masterLabel>
+            <translation><!-- TEXTILES  -  YARN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TICKETING AGENCY</masterLabel>
+            <translation><!-- TICKETING AGENCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIFFIN SERVICE</masterLabel>
+            <translation><!-- TIFFIN SERVICE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOUR &amp; TAVEL AGENCY</masterLabel>
+            <translation><!-- TOUR &amp; TAVEL AGENCY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSMISSION LINE TOWER</masterLabel>
+            <translation><!-- TRANSMISSION LINE TOWER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TYRES</masterLabel>
+            <translation><!-- TYRES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VALVES &amp; FITTINGS</masterLabel>
+            <translation><!-- VALVES &amp; FITTINGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOOD AND WOODEN PRODUCTS  -  FURNITURE</masterLabel>
+            <translation><!-- WOOD AND WOODEN PRODUCTS  -  FURNITURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOOD AND WOODEN PRODUCTS  -  LAMINATES &amp; PLYWOODS</masterLabel>
+            <translation><!-- WOOD AND WOODEN PRODUCTS  -  LAMINATES &amp; PLYWOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YARN</masterLabel>
+            <translation><!-- YARN --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Co-Applicant 10 --></label>
@@ -589,6 +1565,10 @@
     </fields>
     <fields>
         <label><!-- Company Name --></label>
+        <name>Company_Name_NON_ind__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
         <name>Company_Name__c</name>
     </fields>
     <fields>
@@ -604,52 +1584,60 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Signed Consent Received --></label>
+        <name>Consent_Received_From_Applicant__c</name>
+    </fields>
+    <fields>
         <label><!-- Constitution --></label>
         <name>Constitution__c</name>
         <picklistValues>
-            <masterLabel>LLP</masterLabel>
-            <translation><!-- LLP --></translation>
+            <masterLabel>ARTIFICAIL JUDICAL PERSON</masterLabel>
+            <translation><!-- ARTIFICAIL JUDICAL PERSON --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Other</masterLabel>
-            <translation><!-- Other --></translation>
+            <masterLabel>ASSOCIATION OF PERSONS</masterLabel>
+            <translation><!-- ASSOCIATION OF PERSONS --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Partnership</masterLabel>
-            <translation><!-- Partnership --></translation>
+            <masterLabel>BODY OF INDIVIDUALS</masterLabel>
+            <translation><!-- BODY OF INDIVIDUALS --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Private Limited</masterLabel>
-            <translation><!-- Private Limited --></translation>
+            <masterLabel>COMPANY (PUBLIC/PRIVATE LIMITED)</masterLabel>
+            <translation><!-- COMPANY (PUBLIC/PRIVATE LIMITED) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Proprietership</masterLabel>
-            <translation><!-- Proprietership --></translation>
+            <masterLabel>GOVERNMENT AGENCY</masterLabel>
+            <translation><!-- GOVERNMENT AGENCY --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Public Limited</masterLabel>
-            <translation><!-- Public Limited --></translation>
+            <masterLabel>HINDU UNDIVIDED FAMILY</masterLabel>
+            <translation><!-- HINDU UNDIVIDED FAMILY --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>SENP</masterLabel>
-            <translation><!-- SENP --></translation>
+            <masterLabel>INDIVIDUAL</masterLabel>
+            <translation><!-- INDIVIDUAL --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>SEP</masterLabel>
-            <translation><!-- SEP --></translation>
+            <masterLabel>LOCAL AUTHORITY</masterLabel>
+            <translation><!-- LOCAL AUTHORITY --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Salaried</masterLabel>
-            <translation><!-- Salaried --></translation>
+            <masterLabel>PARTNERSHIP FIRM/LIMITED LIABILITY PARTNERSHIP</masterLabel>
+            <translation><!-- PARTNERSHIP FIRM/LIMITED LIABILITY PARTNERSHIP --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Society</masterLabel>
-            <translation><!-- Society --></translation>
+            <masterLabel>PROPRIETARY</masterLabel>
+            <translation><!-- PROPRIETARY --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Trust</masterLabel>
-            <translation><!-- Trust --></translation>
+            <masterLabel>TRUST</masterLabel>
+            <translation><!-- TRUST --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created date --></label>
+        <name>Created_date__c</name>
     </fields>
     <fields>
         <label><!-- Cross Sell --></label>
@@ -684,6 +1672,22 @@
         <name>Date_of_Incorporation__c</name>
     </fields>
     <fields>
+        <label><!-- Destination Address --></label>
+        <name>Destination_Current_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Address --></label>
+        <name>Destination_Non_Individual_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Address --></label>
+        <name>Destination_Office_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Address --></label>
+        <name>Destination_Permanent_Address__c</name>
+    </fields>
+    <fields>
         <label><!-- District --></label>
         <name>District_Destination__c</name>
     </fields>
@@ -692,29 +1696,97 @@
         <name>District_Mailing__c</name>
     </fields>
     <fields>
+        <label><!-- District --></label>
+        <name>District_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document No. --></label>
+        <name>Document_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>Aadhar as KYC</masterLabel>
+            <translation><!-- Aadhar as KYC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driving License</masterLabel>
+            <translation><!-- Driving License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport</masterLabel>
+            <translation><!-- Passport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voter ID</masterLabel>
+            <translation><!-- Voter ID --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <help><!-- To be uploaded in case of physical form only --></help>
         <label><!-- Document Uploaded --></label>
         <name>Document_Uploaded__c</name>
     </fields>
     <fields>
+        <label><!-- Driving License --></label>
+        <name>Driving_License__c</name>
+    </fields>
+    <fields>
         <label><!-- Education --></label>
         <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>Diploma</masterLabel>
+            <translation><!-- Diploma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
         <picklistValues>
             <masterLabel>Graduate</masterLabel>
             <translation><!-- Graduate --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Post Graduate</masterLabel>
-            <translation><!-- Post Graduate --></translation>
+            <masterLabel>High School</masterLabel>
+            <translation><!-- High School --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Under Graduate</masterLabel>
-            <translation><!-- Under Graduate --></translation>
+            <masterLabel>ITI</masterLabel>
+            <translation><!-- ITI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Education</masterLabel>
+            <translation><!-- No Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Graduate</masterLabel>
+            <translation><!-- Non-Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Graduate</masterLabel>
+            <translation><!-- Post-Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary School</masterLabel>
+            <translation><!-- Primary School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional</masterLabel>
+            <translation><!-- Professional --></translation>
         </picklistValues>
     </fields>
     <fields>
         <label><!-- Employee Code --></label>
         <name>Employee_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- FORMNO --></label>
+        <name>FORMNO__c</name>
     </fields>
     <fields>
         <label><!-- Flat / House Number --></label>
@@ -725,8 +1797,32 @@
         <name>Flat_House_Number_Mailing__c</name>
     </fields>
     <fields>
-        <label><!-- Form 60 Uploaded --></label>
+        <label><!-- Flat / House Number --></label>
+        <name>Flat_House_Number_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Application form uploaded --></label>
         <name>Form_60_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form-60 --></label>
+        <name>Form_60__c</name>
+    </fields>
+    <fields>
+        <label><!-- GST Applicable --></label>
+        <name>GST_Applicable__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GST Number --></label>
+        <name>GST_Number__c</name>
     </fields>
     <fields>
         <label><!-- Gender --></label>
@@ -740,8 +1836,8 @@
             <translation><!-- Male --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Transgender</masterLabel>
-            <translation><!-- Transgender --></translation>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -790,8 +1886,28 @@
         <name>Land_Mark_Mailing__c</name>
     </fields>
     <fields>
+        <label><!-- Land Mark --></label>
+        <name>Land_Mark_Office__c</name>
+    </fields>
+    <fields>
         <label><!-- Loan Amount --></label>
         <name>Loan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address --></label>
+        <name>Mailing_Current_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address --></label>
+        <name>Mailing_Non_Individual_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address --></label>
+        <name>Mailing_Office_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address --></label>
+        <name>Mailing_Permanent_Address__c</name>
     </fields>
     <fields>
         <label><!-- Manager --></label>
@@ -802,52 +1918,124 @@
         <label><!-- Marital Status --></label>
         <name>Marital_Status__c</name>
         <picklistValues>
-            <masterLabel>Divorced</masterLabel>
-            <translation><!-- Divorced --></translation>
+            <masterLabel>BACHELOR</masterLabel>
+            <translation><!-- BACHELOR --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Married</masterLabel>
-            <translation><!-- Married --></translation>
+            <masterLabel>DIVORCED</masterLabel>
+            <translation><!-- DIVORCED --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Single</masterLabel>
-            <translation><!-- Single --></translation>
+            <masterLabel>MARRIED</masterLabel>
+            <translation><!-- MARRIED --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Widowed</masterLabel>
-            <translation><!-- Widowed --></translation>
+            <masterLabel>SINGLE</masterLabel>
+            <translation><!-- SINGLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WIDOWED</masterLabel>
+            <translation><!-- WIDOWED --></translation>
         </picklistValues>
     </fields>
     <fields>
         <label><!-- Nature of Loan --></label>
         <name>Nature_of_Loan__c</name>
         <picklistValues>
-            <masterLabel>External BT plus Top-up</masterLabel>
-            <translation><!-- External BT plus Top-up --></translation>
+            <masterLabel>BALANCE TRANSFER</masterLabel>
+            <translation><!-- BALANCE TRANSFER --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Fresh Loan</masterLabel>
-            <translation><!-- Fresh Loan --></translation>
+            <masterLabel>BT+Top-Up- LAP Commercial</masterLabel>
+            <translation><!-- BT+Top-Up- LAP Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BT+Top-Up- LAP Residential</masterLabel>
+            <translation><!-- BT+Top-Up- LAP Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Transfer-LAP Commercial</masterLabel>
+            <translation><!-- Balance Transfer-LAP Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Transfer-LAP Residential</masterLabel>
+            <translation><!-- Balance Transfer-LAP Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Expansion</masterLabel>
+            <translation><!-- Business Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Equipment Purchase</masterLabel>
+            <translation><!-- Capital Equipment Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Property Purchase</masterLabel>
+            <translation><!-- Commercial Property Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Loan</masterLabel>
+            <translation><!-- Education Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External BT &amp; Topup</masterLabel>
+            <translation><!-- External BT &amp; Topup --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Internal BT</masterLabel>
             <translation><!-- Internal BT --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Purchase of Commercial Property</masterLabel>
-            <translation><!-- Purchase of Commercial Property --></translation>
+            <masterLabel>Inventory Funding</masterLabel>
+            <translation><!-- Inventory Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice Discounting</masterLabel>
+            <translation><!-- Invoice Discounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAP commercial</masterLabel>
+            <translation><!-- LAP commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LAP residential</masterLabel>
+            <translation><!-- LAP residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onward Lending</masterLabel>
+            <translation><!-- Onward Lending --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Refinance</masterLabel>
             <translation><!-- Refinance --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Refinance of Existing Loan</masterLabel>
+            <translation><!-- Refinance of Existing Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renovation / Expansion</masterLabel>
+            <translation><!-- Renovation / Expansion --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Repurchase</masterLabel>
             <translation><!-- Repurchase --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Top-Up Loan</masterLabel>
-            <translation><!-- Top-Up Loan --></translation>
+            <masterLabel>Term Loan</masterLabel>
+            <translation><!-- Term Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top-Up-LAP Commercial</masterLabel>
+            <translation><!-- Top-Up-LAP Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top-Up-LAP Residential</masterLabel>
+            <translation><!-- Top-Up-LAP Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working Capital</masterLabel>
+            <translation><!-- Working Capital --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -857,6 +2045,10 @@
     <fields>
         <label><!-- No of Years in Business --></label>
         <name>No_of_Years_in_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- OFFICE  ADDRESS ID --></label>
+        <name>OFFICE_ADDRESS_ID__c</name>
     </fields>
     <fields>
         <label><!-- OK to Proceed --></label>
@@ -875,27 +2067,51 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- OVD Address --></label>
+        <name>OVD_Current_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- OVD Address --></label>
+        <name>OVD_Non_Individual_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- OVD Address --></label>
+        <name>OVD_Office_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- OVD Address --></label>
+        <name>OVD_Permanent_Address__c</name>
+    </fields>
+    <fields>
         <label><!-- Occupancy Status --></label>
         <name>Occupancy_Status__c</name>
         <picklistValues>
-            <masterLabel>Co-Provided</masterLabel>
-            <translation><!-- Co-Provided --></translation>
+            <masterLabel>COMPANY LEASE</masterLabel>
+            <translation><!-- COMPANY LEASE --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Others</masterLabel>
-            <translation><!-- Others --></translation>
+            <masterLabel>FAMILY OWNED</masterLabel>
+            <translation><!-- FAMILY OWNED --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Owned</masterLabel>
-            <translation><!-- Owned --></translation>
+            <masterLabel>GOVT. ACCOMODATION</masterLabel>
+            <translation><!-- GOVT. ACCOMODATION --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Parental</masterLabel>
-            <translation><!-- Parental --></translation>
+            <masterLabel>IN LAWS</masterLabel>
+            <translation><!-- IN LAWS --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Rental</masterLabel>
-            <translation><!-- Rental --></translation>
+            <masterLabel>PARENTAL</masterLabel>
+            <translation><!-- PARENTAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENTED</masterLabel>
+            <translation><!-- RENTED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SELFOWNED</masterLabel>
+            <translation><!-- SELFOWNED --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -907,12 +2123,45 @@
         <name>PAN_Number__c</name>
     </fields>
     <fields>
+        <label><!-- PERMANENT ADDRESS ID --></label>
+        <name>PERMANENT_ADDRESS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pan Card/Form 60 --></label>
+        <name>Pan_Card_Form_60__c</name>
+        <picklistValues>
+            <masterLabel>Form 60</masterLabel>
+            <translation><!-- Form 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pan Card</masterLabel>
+            <translation><!-- Pan Card --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pan Card --></label>
+        <name>Pan_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Applicant --></label>
+        <name>Parent_Applicant__c</name>
+        <relationshipLabel><!-- Applicants (Parent Applicant) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Passport --></label>
+        <name>Passport__c</name>
+    </fields>
+    <fields>
         <label><!-- Pincode --></label>
         <name>Pincode_Destination__c</name>
     </fields>
     <fields>
         <label><!-- Pincode --></label>
         <name>Pincode_Mailing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pincode --></label>
+        <name>Pincode_Office__c</name>
     </fields>
     <fields>
         <label><!-- Product --></label>
@@ -946,24 +2195,24 @@
             <translation><!-- Bus 1 - FTB --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Bus 2 - Retail 2 - 5</masterLabel>
-            <translation><!-- Bus 2 - Retail 2 - 5 --></translation>
+            <masterLabel>Bus 2 - Retail 2 -</masterLabel>
+            <translation><!-- Bus 2 - Retail 2 - --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Bus 3 - Retail 6 - 9</masterLabel>
-            <translation><!-- Bus 3 - Retail 6 - 9 --></translation>
+            <masterLabel>Bus 3 - Retail 6 -</masterLabel>
+            <translation><!-- Bus 3 - Retail 6 - --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Bus 4 - Strategic</masterLabel>
             <translation><!-- Bus 4 - Strategic --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Captive 1 - Super Strategic</masterLabel>
-            <translation><!-- Captive 1 - Super Strategic --></translation>
+            <masterLabel>Captive 1 - Supter</masterLabel>
+            <translation><!-- Captive 1 - Supter --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Captive 2 - Strategic</masterLabel>
-            <translation><!-- Captive 2 - Strategic --></translation>
+            <masterLabel>Captive 2 - Strate</masterLabel>
+            <translation><!-- Captive 2 - Strate --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Captive 3 - Retail</masterLabel>
@@ -972,6 +2221,10 @@
         <picklistValues>
             <masterLabel>Cat A - FTU</masterLabel>
             <translation><!-- Cat A - FTU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat A - FTU (M and HCV)</masterLabel>
+            <translation><!-- Cat A - FTU (M and HCV) --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Cat A1 - FTB</masterLabel>
@@ -986,24 +2239,28 @@
             <translation><!-- Cat C - Retail 6-9 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>FBC-1</masterLabel>
-            <translation><!-- FBC-1 --></translation>
+            <masterLabel>FBC - 1</masterLabel>
+            <translation><!-- FBC - 1 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>FBC-2</masterLabel>
-            <translation><!-- FBC-2 --></translation>
+            <masterLabel>FBC - 2</masterLabel>
+            <translation><!-- FBC - 2 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>School-1</masterLabel>
-            <translation><!-- School-1 --></translation>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>School-2</masterLabel>
-            <translation><!-- School-2 --></translation>
+            <masterLabel>School 1</masterLabel>
+            <translation><!-- School 1 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>School-3</masterLabel>
-            <translation><!-- School-3 --></translation>
+            <masterLabel>School 2</masterLabel>
+            <translation><!-- School 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School 3</masterLabel>
+            <translation><!-- School 3 --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Strategic</masterLabel>
@@ -1013,6 +2270,14 @@
             <masterLabel>Super Strategic</masterLabel>
             <translation><!-- Super Strategic --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prospect Code --></label>
+        <name>Prospect_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Id --></label>
+        <name>Prospect_Id__c</name>
     </fields>
     <fields>
         <label><!-- Purpose --></label>
@@ -1026,12 +2291,16 @@
             <translation><!-- Business Expansion --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Capital equipment purchase (CAPEX)</masterLabel>
-            <translation><!-- Capital equipment purchase (CAPEX) --></translation>
+            <masterLabel>Capital Equipment</masterLabel>
+            <translation><!-- Capital Equipment --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Captive</masterLabel>
             <translation><!-- Captive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Consolidation</masterLabel>
+            <translation><!-- Debt Consolidation --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Education Institutions</masterLabel>
@@ -1046,12 +2315,8 @@
             <translation><!-- Others --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Purchase of commercial property</masterLabel>
-            <translation><!-- Purchase of commercial property --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Refinance of existing loans</masterLabel>
-            <translation><!-- Refinance of existing loans --></translation>
+            <masterLabel>Renovation / Expansion</masterLabel>
+            <translation><!-- Renovation / Expansion --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>To meet temporary mismatch in cash flow</masterLabel>
@@ -1066,9 +2331,13 @@
             <translation><!-- Transporter - Strategic --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Working capital</masterLabel>
-            <translation><!-- Working capital --></translation>
+            <masterLabel>Working Capital</masterLabel>
+            <translation><!-- Working Capital --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RESIDENCE  ADDRESS ID --></label>
+        <name>RESIDENCE_ADDRESS_ID__c</name>
     </fields>
     <fields>
         <label><!-- RTR Norms Eligibility --></label>
@@ -1099,6 +2368,11 @@
         <name>Referral_Source_Name__c</name>
     </fields>
     <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>Relationship_Manager__c</name>
+        <relationshipLabel><!-- Applicants (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Relationship with Applicant --></label>
         <name>Relationship_with_Applicant__c</name>
     </fields>
@@ -1111,7 +2385,15 @@
         <name>SM_SO__c</name>
     </fields>
     <fields>
-        <label><!-- Same As Destination Address --></label>
+        <label><!-- SOURCING_AGENT-1 --></label>
+        <name>SOURCING_AGENT_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same As Office Address --></label>
+        <name>Same_As_Current_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same As Residence Address --></label>
         <name>Same_As_Destination_Address__c</name>
     </fields>
     <fields>
@@ -1122,122 +2404,146 @@
             <translation><!-- AMBIT UDYAM - 100 DAYS VARIANT --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT UDYAM - AVERAGE BANK BALANCE (ABB)</masterLabel>
-            <translation><!-- AMBIT UDYAM - AVERAGE BANK BALANCE (ABB) --></translation>
+            <masterLabel>AMBIT UDYAM-Average Bank Balance (ABB)</masterLabel>
+            <translation><!-- AMBIT UDYAM-Average Bank Balance (ABB) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT UDYAM - COVID LINE OF CREDIT</masterLabel>
-            <translation><!-- AMBIT UDYAM - COVID LINE OF CREDIT --></translation>
+            <masterLabel>AMBIT UDYAM-GST Udyam</masterLabel>
+            <translation><!-- AMBIT UDYAM-GST Udyam --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT UDYAM - GST UDYAM</masterLabel>
-            <translation><!-- AMBIT UDYAM - GST UDYAM --></translation>
+            <masterLabel>AMBIT UDYAM-LIP Assessment</masterLabel>
+            <translation><!-- AMBIT UDYAM-LIP Assessment --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT UDYAM - INCOME BASED</masterLabel>
-            <translation><!-- AMBIT UDYAM - INCOME BASED --></translation>
+            <masterLabel>AMBIT UDYAM-Samarth Loan</masterLabel>
+            <translation><!-- AMBIT UDYAM-Samarth Loan --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT UDYAM - LIP ASSESSMENT</masterLabel>
-            <translation><!-- AMBIT UDYAM - LIP ASSESSMENT --></translation>
+            <masterLabel>AMBIT Udyam-Income Based</masterLabel>
+            <translation><!-- AMBIT Udyam-Income Based --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - BANKING SURROGATE</masterLabel>
-            <translation><!-- AMBIT VYAPAR - BANKING SURROGATE --></translation>
+            <masterLabel>AMBIT VYAPAR-GST Vyapar Loan</masterLabel>
+            <translation><!-- AMBIT VYAPAR-GST Vyapar Loan --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - COVID LINE OF CREDIT</masterLabel>
-            <translation><!-- AMBIT VYAPAR - COVID LINE OF CREDIT --></translation>
+            <masterLabel>AMBIT VYAPAR-INCOME BASED</masterLabel>
+            <translation><!-- AMBIT VYAPAR-INCOME BASED --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - GST VYAPAR LOAN</masterLabel>
-            <translation><!-- AMBIT VYAPAR - GST VYAPAR LOAN --></translation>
+            <masterLabel>AMBIT VYAPAR-LAP against Multi Tenanted Properties</masterLabel>
+            <translation><!-- AMBIT VYAPAR-LAP against Multi Tenanted Properties --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - INCOME BASED</masterLabel>
-            <translation><!-- AMBIT VYAPAR - INCOME BASED --></translation>
+            <masterLabel>AMBIT VYAPAR-Micro LAP</masterLabel>
+            <translation><!-- AMBIT VYAPAR-Micro LAP --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - LAP AGAINST MULTI TENANTED PROPERTIES</masterLabel>
-            <translation><!-- AMBIT VYAPAR - LAP AGAINST MULTI TENANTED PROPERTIES --></translation>
+            <masterLabel>AMBIT VYAPAR-Top-Up Loans for Existing Customers</masterLabel>
+            <translation><!-- AMBIT VYAPAR-Top-Up Loans for Existing Customers --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - LIP Program</masterLabel>
-            <translation><!-- AMBIT VYAPAR - LIP Program --></translation>
+            <masterLabel>AMBIT Vyapar- Surrogate</masterLabel>
+            <translation><!-- AMBIT Vyapar- Surrogate --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - MICRO LAP</masterLabel>
-            <translation><!-- AMBIT VYAPAR - MICRO LAP --></translation>
+            <masterLabel>AMBIT-Udyam-Micro Business Loan</masterLabel>
+            <translation><!-- AMBIT-Udyam-Micro Business Loan --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - TATKAL VYAPAR</masterLabel>
-            <translation><!-- AMBIT VYAPAR - TATKAL VYAPAR --></translation>
+            <masterLabel>Ambit Udyam-COVID Line of Credit</masterLabel>
+            <translation><!-- Ambit Udyam-COVID Line of Credit --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AMBIT VYAPAR - TOP-UP LOANS FOR EXISTING CUSTOMERS</masterLabel>
-            <translation><!-- AMBIT VYAPAR - TOP-UP LOANS FOR EXISTING CUSTOMERS --></translation>
+            <masterLabel>Ambit VYAPAR-Banking Surrogate</masterLabel>
+            <translation><!-- Ambit VYAPAR-Banking Surrogate --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Assessed Income Program</masterLabel>
-            <translation><!-- Assessed Income Program --></translation>
+            <masterLabel>Ambit Vyapar-COVID Line of Credit</masterLabel>
+            <translation><!-- Ambit Vyapar-COVID Line of Credit --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Goods Segment UCV</masterLabel>
-            <translation><!-- Goods Segment UCV --></translation>
+            <masterLabel>Ambit-Rural Udyam-Assessed Income Program</masterLabel>
+            <translation><!-- Ambit-Rural Udyam-Assessed Income Program --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Income Based Program</masterLabel>
-            <translation><!-- Income Based Program --></translation>
+            <masterLabel>Ambit-Rural Udyam-Income Program</masterLabel>
+            <translation><!-- Ambit-Rural Udyam-Income Program --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - AHMEDABAD</masterLabel>
-            <translation><!-- MICROLAP - AHMEDABAD --></translation>
+            <masterLabel>Ambit-Rural Vyapar-Assessed Income Program</masterLabel>
+            <translation><!-- Ambit-Rural Vyapar-Assessed Income Program --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - DELHI</masterLabel>
-            <translation><!-- MICROLAP - DELHI --></translation>
+            <masterLabel>Ambit-Rural Vyapar-Income Program</masterLabel>
+            <translation><!-- Ambit-Rural Vyapar-Income Program --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - INDORE</masterLabel>
-            <translation><!-- MICROLAP - INDORE --></translation>
+            <masterLabel>Ambit-Vyapar-Gram Samridhi</masterLabel>
+            <translation><!-- Ambit-Vyapar-Gram Samridhi --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - JAIPUR</masterLabel>
-            <translation><!-- MICROLAP - JAIPUR --></translation>
+            <masterLabel>Ambit-Vyapar-Micro LAP- Delhi</masterLabel>
+            <translation><!-- Ambit-Vyapar-Micro LAP- Delhi --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - KALYAN</masterLabel>
-            <translation><!-- MICROLAP - KALYAN --></translation>
+            <masterLabel>Ambit-Vyapar-Micro LAP- Indore</masterLabel>
+            <translation><!-- Ambit-Vyapar-Micro LAP- Indore --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - LUDHIANA</masterLabel>
-            <translation><!-- MICROLAP - LUDHIANA --></translation>
+            <masterLabel>Ambit-Vyapar-Micro LAP- Kalyan</masterLabel>
+            <translation><!-- Ambit-Vyapar-Micro LAP- Kalyan --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - NASHIK</masterLabel>
-            <translation><!-- MICROLAP - NASHIK --></translation>
+            <masterLabel>Ambit-Vyapar-Micro LAP- Rajkot</masterLabel>
+            <translation><!-- Ambit-Vyapar-Micro LAP- Rajkot --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>MICROLAP - RAJKOT</masterLabel>
-            <translation><!-- MICROLAP - RAJKOT --></translation>
+            <masterLabel>Ambit-Vyapar-Micro LAP-Karnataka</masterLabel>
+            <translation><!-- Ambit-Vyapar-Micro LAP-Karnataka --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>NIP in Imperfect Collateral</masterLabel>
-            <translation><!-- NIP in Imperfect Collateral --></translation>
+            <masterLabel>Goods Segment UCV ( Pre-EMI / Tranche)</masterLabel>
+            <translation><!-- Goods Segment UCV ( Pre-EMI / Tranche) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>NIP in Perfect Collateral</masterLabel>
-            <translation><!-- NIP in Perfect Collateral --></translation>
+            <masterLabel>Goods Segment UCV(No-Pre EMI/Manual EMI)</masterLabel>
+            <translation><!-- Goods Segment UCV(No-Pre EMI/Manual EMI) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Passenger Segment UCV</masterLabel>
-            <translation><!-- Passenger Segment UCV --></translation>
+            <masterLabel>Passenger Segment UCV ( Pre-EMI / Tranche)</masterLabel>
+            <translation><!-- Passenger Segment UCV ( Pre-EMI / Tranche) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passenger Segment UCV(No-Pre EMI/Manual EMI)</masterLabel>
+            <translation><!-- Passenger Segment UCV(No-Pre EMI/Manual EMI) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>AGRICULTURE AND ALLIED ACTIVITIES</masterLabel>
+            <translation><!-- AGRICULTURE AND ALLIED ACTIVITIES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANUFACTURING</masterLabel>
+            <translation><!-- MANUFACTURING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERVICES</masterLabel>
+            <translation><!-- SERVICES --></translation>
         </picklistValues>
     </fields>
     <fields>
         <label><!-- Service Location --></label>
         <name>Service_Location__c</name>
         <relationshipLabel><!-- Contacts (Service Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sourcing Channel-1 --></label>
+        <name>Sourcing_Channel_1__c</name>
     </fields>
     <fields>
         <label><!-- Sourcing Channel --></label>
@@ -1281,39 +2587,30 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- State will be auto populated based on Pincode --></help>
         <label><!-- State --></label>
         <name>State_Destination__c</name>
     </fields>
     <fields>
+        <help><!-- State will be auto populated based on Pincode --></help>
         <label><!-- State --></label>
         <name>State_Mailing__c</name>
+    </fields>
+    <fields>
+        <help><!-- State will be auto populated based on Pincode --></help>
+        <label><!-- State --></label>
+        <name>State_Office__c</name>
     </fields>
     <fields>
         <label><!-- Status --></label>
         <name>Status__c</name>
         <picklistValues>
-            <masterLabel>Appointment Re-schdeduled</masterLabel>
-            <translation><!-- Appointment Re-schdeduled --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Appointment Scheduled</masterLabel>
-            <translation><!-- Appointment Scheduled --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>BM Queue</masterLabel>
-            <translation><!-- BM Queue --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>CIBIL Updated</masterLabel>
             <translation><!-- CIBIL Updated --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Documentation in process</masterLabel>
-            <translation><!-- Documentation in process --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Not Contactable</masterLabel>
-            <translation><!-- Not Contactable --></translation>
+            <masterLabel>Login Files Completed</masterLabel>
+            <translation><!-- Login Files Completed --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Not Eligible</masterLabel>
@@ -1330,22 +2627,6 @@
         <picklistValues>
             <masterLabel>Prospect</masterLabel>
             <translation><!-- Prospect --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>SM Queue</masterLabel>
-            <translation><!-- SM Queue --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Sales Co-ordinator Queue</masterLabel>
-            <translation><!-- Sales Co-ordinator Queue --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Sales Team Qualified</masterLabel>
-            <translation><!-- Sales Team Qualified --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Under Qualification process</masterLabel>
-            <translation><!-- Under Qualification process --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -1374,6 +2655,14 @@
         <picklistValues>
             <masterLabel>FLDG DSA</masterLabel>
             <translation><!-- FLDG DSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Activity</masterLabel>
+            <translation><!-- Marketing Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tele-calling</masterLabel>
+            <translation><!-- Tele-calling --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Used CV Broker</masterLabel>
@@ -1466,8 +2755,160 @@
         <name>Time_At_Address_In_Years__c</name>
     </fields>
     <fields>
+        <label><!-- Time at Current Address --></label>
+        <name>Time_at_Current_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Business --></label>
+        <name>Type_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>AGRICULTURAL INFRASTRUCTURE</masterLabel>
+            <translation><!-- AGRICULTURAL INFRASTRUCTURE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ANCILLIARY ACTIVITY</masterLabel>
+            <translation><!-- ANCILLIARY ACTIVITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES</masterLabel>
+            <translation><!-- AUTOMOBILES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUTOMOBILES SERVICES</masterLabel>
+            <translation><!-- AUTOMOBILES SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEMICAL</masterLabel>
+            <translation><!-- CHEMICAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMMERCIAL REAL ESTATE</masterLabel>
+            <translation><!-- COMMERCIAL REAL ESTATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER</masterLabel>
+            <translation><!-- COMPUTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMPUTER SERVICES</masterLabel>
+            <translation><!-- COMPUTER SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSTRUCTION MATERIAL</masterLabel>
+            <translation><!-- CONSTRUCTION MATERIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER GOODS</masterLabel>
+            <translation><!-- CONSUMER GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONTRACTOR</masterLabel>
+            <translation><!-- CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDUCATION INSTITUTE</masterLabel>
+            <translation><!-- EDUCATION INSTITUTE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELECTRICAL AND ELECTRONICS SERVICES</masterLabel>
+            <translation><!-- ELECTRICAL AND ELECTRONICS SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FARM CREDIT</masterLabel>
+            <translation><!-- FARM CREDIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD &amp; RESTAURANT</masterLabel>
+            <translation><!-- FOOD &amp; RESTAURANT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOOD AND RESTAURANT SERVICES</masterLabel>
+            <translation><!-- FOOD AND RESTAURANT SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE</masterLabel>
+            <translation><!-- HEALTHCARE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HEALTHCARE SERVICES</masterLabel>
+            <translation><!-- HEALTHCARE SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INDUSTRIAL INTERMEDIATE GOODS</masterLabel>
+            <translation><!-- INDUSTRIAL INTERMEDIATE GOODS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JEWELLERY</masterLabel>
+            <translation><!-- JEWELLERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEATHER</masterLabel>
+            <translation><!-- LEATHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METALS</masterLabel>
+            <translation><!-- METALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NBFC / FINANCE</masterLabel>
+            <translation><!-- NBFC / FINANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER SERVICES</masterLabel>
+            <translation><!-- OTHER SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER</masterLabel>
+            <translation><!-- PAPER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLASTICS</masterLabel>
+            <translation><!-- PLASTICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROFESSIONAL SERVICES</masterLabel>
+            <translation><!-- PROFESSIONAL SERVICES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RENTAL / ACCOMODATION</masterLabel>
+            <translation><!-- RENTAL / ACCOMODATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RETAIL</masterLabel>
+            <translation><!-- RETAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUBBER</masterLabel>
+            <translation><!-- RUBBER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEXTILES</masterLabel>
+            <translation><!-- TEXTILES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRANSPORTATION</masterLabel>
+            <translation><!-- TRANSPORTATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WHOLE SALE</masterLabel>
+            <translation><!-- WHOLE SALE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOOD AND WOODEN PRODUCTS</masterLabel>
+            <translation><!-- WOOD AND WOODEN PRODUCTS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Type of Cross Sell --></label>
         <name>Type_of_Cross_Sell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voter ID --></label>
+        <name>Voter_ID__c</name>
     </fields>
     <fields>
         <help><!-- If with deviation, kindly provide justification --></help>
@@ -1476,6 +2917,10 @@
     </fields>
     <layouts>
         <layout>Individual</layout>
+        <sections>
+            <label><!-- Branch Details --></label>
+            <section>Branch Details</section>
+        </sections>
         <sections>
             <label><!-- CIBIL &amp; KYC Details --></label>
             <section>CIBIL &amp; KYC Details</section>
@@ -1489,10 +2934,6 @@
             <section>Co-Applicants</section>
         </sections>
         <sections>
-            <label><!-- Destination Address --></label>
-            <section>Destination Address</section>
-        </sections>
-        <sections>
             <label><!-- Guarantors --></label>
             <section>Guarantors</section>
         </sections>
@@ -1501,19 +2942,35 @@
             <section>Loan Specific Details</section>
         </sections>
         <sections>
-            <label><!-- Mailing Address --></label>
-            <section>Mailing Address</section>
+            <label><!-- OFFICE ADDRESS --></label>
+            <section>OFFICE ADDRESS</section>
         </sections>
         <sections>
-            <label><!-- Referral Details --></label>
-            <section>Referral Details</section>
+            <label><!-- PERMANENT ADDRESS --></label>
+            <section>PERMANENT ADDRESS</section>
+        </sections>
+        <sections>
+            <label><!-- RESIDENCE ADDRESS --></label>
+            <section>RESIDENCE ADDRESS</section>
+        </sections>
+        <sections>
+            <label><!-- Sourcing Details --></label>
+            <section>Sourcing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Details --></label>
+            <section>Status Details</section>
+        </sections>
+        <sections>
+            <label><!-- Unique Identification --></label>
+            <section>Unique Identification</section>
         </sections>
     </layouts>
     <layouts>
         <layout>Non Individual</layout>
         <sections>
-            <label><!-- CIBIL &amp; KYC Details --></label>
-            <section>CIBIL &amp; KYC Details</section>
+            <label><!-- Branch Details --></label>
+            <section>Branch Details</section>
         </sections>
         <sections>
             <label><!-- Cardinal Rules --></label>
@@ -1528,10 +2985,6 @@
             <section>Company Information</section>
         </sections>
         <sections>
-            <label><!-- Destination Address --></label>
-            <section>Destination Address</section>
-        </sections>
-        <sections>
             <label><!-- Guarantors --></label>
             <section>Guarantors</section>
         </sections>
@@ -1540,17 +2993,29 @@
             <section>Loan Specific Details</section>
         </sections>
         <sections>
-            <label><!-- Mailing Address --></label>
-            <section>Mailing Address</section>
+            <label><!-- OFFICE ADDRESS --></label>
+            <section>OFFICE ADDRESS</section>
         </sections>
         <sections>
-            <label><!-- Referral Details --></label>
-            <section>Referral Details</section>
+            <label><!-- PERMANENT ADDRESS --></label>
+            <section>PERMANENT ADDRESS</section>
+        </sections>
+        <sections>
+            <label><!-- Sourcing Details --></label>
+            <section>Sourcing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Details --></label>
+            <section>Status Details</section>
         </sections>
     </layouts>
     <quickActions>
         <label><!-- Check CIBIL Score --></label>
         <name>Check_CIBIL_Score</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- PUSH TO LOS --></label>
+        <name>PUSH_TO_LOS</name>
     </quickActions>
     <recordTypes>
         <label><!-- Individual --></label>
@@ -1566,6 +3031,34 @@
         <name>Agent_Required</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Please Enter the following details. as- Gender,Birthdate,Email,Mobile Phone,loan amount,
+Product --></errorMessage>
+        <name>Applicant_upload_Ind</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter the following details. as- Gender,Birthdate,Email,Mobile Phone,loan amount,
+Product, company name --></errorMessage>
+        <name>Applicant_upload_Non_Ind</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- 1) Ind Applicant Info - All except for Phone no.
+2) Address - all except for landmark
+3) Loan Specific details - All
+4) CIBIL - All except for Yes with Mandatory
+5) Branch - All Mandatory
+6) Sourcing Details-all except for Type of cross-sell --></errorMessage>
+        <name>Before_sending_to_BM_for_Individual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- 1) Non-Ind Applicant Info - All except for CIN,Phone no.
+2) Address - all except for landmark
+3) Loan Specific details - All
+4) CIBIL - All except for Yes with Mandatory
+5) Branch - All Mandatory
+6) Sourcing Details-all except for Type of cross-sell --></errorMessage>
+        <name>Before_sending_to_BM_for_Non_Individual</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Business Vintage as per policy remarks is required --></errorMessage>
         <name>Business_Vintage_as_per_policy</name>
     </validationRules>
@@ -1574,7 +3067,11 @@
         <name>CIBIL_Score_Eligibility_remarks</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- 1.Applicant Information - Gender, Date of Birth
+        <errorMessage><!-- Check cibil score button will not work. --></errorMessage>
+        <name>CIBIL_Score_Not_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- 1.Applicant Information - Gender, Date of Birth  
 2.Address - all the fields except for landmark
 3.Loan Specific details - all the fields except for Authorised Person,Company Name
 4.CIBIL section all the fields except for OK to Proceed
@@ -1582,20 +3079,72 @@
         <name>CIBIL_Trigger_stage_for_Individual</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Application Form Type should be Physical |Application Form Uploaded should be check | CIBIL Score should not be blank --></errorMessage>
+        <name>CIBIL_Update_Valiation</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Please provide CIN No. --></errorMessage>
         <name>CIN_No_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot select more than one Destination Address checkbox. --></errorMessage>
+        <name>Destination_Address_Selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You Can not Fill Document No in the case of Aadhar as KYC. --></errorMessage>
+        <name>Doc_No_Validation_on_AdharAsKY_Selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Document No. --></errorMessage>
+        <name>Document_No_value_for_Ind</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in Document No. Don&apos;t fill in case of Adhar as KYC --></errorMessage>
+        <name>Document_Type_and_Document_No_Validation</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please enter Employee Code --></errorMessage>
         <name>Employee_Code_Required</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Enter The Pan Card  No. --></errorMessage>
+        <name>Enter_the_pan_card</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter The Pan Card  No. --></errorMessage>
+        <name>Enter_the_pan_card_for_co_applicant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter The First Name --></errorMessage>
+        <name>First_Name_Mandatory_For_Ind</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Business Type Remark is required --></errorMessage>
         <name>For_Business_Type_Remarks</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Please Fill Pan Card --></errorMessage>
+        <name>Form_16_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Document Type. --></errorMessage>
+        <name>Form_60_and_Document_Type_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- GST No shoud be 15 charactres alphanumeric. --></errorMessage>
+        <name>GST_No_15_character_alphanumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter The Applicant Spouse Name --></errorMessage>
+        <name>IF_Marital_Status_Married</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Age Norm Eligibility Remarks Is Required --></errorMessage>
         <name>If_Age_Norm_Eligibility_Remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- GST Number should be Blank --></errorMessage>
+        <name>If_GST_APP_IS_NO</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Negative property address Remarks  Required --></errorMessage>
@@ -1606,20 +3155,341 @@
         <name>If_RTR_Norms_Remarks</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- Please input Co-applicant --></errorMessage>
+        <name>If_coapplicant_not_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Applicant Father Name --></errorMessage>
+        <name>Ind_Applicant_Father_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter  Applicant Spouse Name --></errorMessage>
+        <name>Ind_Applicant_Spouse_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Application Form Type --></errorMessage>
+        <name>Ind_Application_Form_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Application Form Uploaded --></errorMessage>
+        <name>Ind_Application_Form_Uploaded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter The Birthdate --></errorMessage>
+        <name>Ind_Birthdate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter CIBIL Document ID No. --></errorMessage>
+        <name>Ind_CIBIL_ID_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter CIBIL ID Upload --></errorMessage>
+        <name>Ind_CIBIL_ID_Upload</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter CIBIL Score Date --></errorMessage>
+        <name>Ind_Cibil_Score_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter CIBIL Score --></errorMessage>
+        <name>Ind_Cibil_score</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Signed Consent Received --></errorMessage>
+        <name>Ind_Consent_Received_From_Applicant</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Documents for CIBIL generation --></errorMessage>
+        <name>Ind_Documents_CIBIL_generation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Gender --></errorMessage>
+        <name>Ind_Gender</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Marital Status --></errorMessage>
+        <name>Ind_Marital_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Name without any Special characters --></errorMessage>
+        <name>Ind_Name_No_Special_char</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Cluster --></errorMessage>
+        <name>Ind_Non_Ind_Cluster</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter GST Applicable --></errorMessage>
+        <name>Ind_Non_Ind_GSTApplicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Type of Business --></errorMessage>
+        <name>Ind_Non_Ind_Type_of_Business</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Relationship with Applicant --></errorMessage>
+        <name>Ind_Non_Ind_co_app_Relationship_with_App</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter The Pan Card --></errorMessage>
+        <name>Ind_Pan_Card_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Pan Card /Form 60 --></errorMessage>
+        <name>Ind_Pan_Card_Form_60</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Area --></errorMessage>
+        <name>Ind_and_Non_Ind_Area_Destination</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Area 1 --></errorMessage>
+        <name>Ind_and_Non_Ind_Area_Mailing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Area --></errorMessage>
+        <name>Ind_and_Non_Ind_Area_Office</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Branch --></errorMessage>
+        <name>Ind_and_Non_Ind_Branch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Branch Manager --></errorMessage>
+        <name>Ind_and_Non_Ind_Branch_Manager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Building Street Name Mailing --></errorMessage>
+        <name>Ind_and_Non_Ind_Building_St_Name_Mailing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Building Street Name --></errorMessage>
+        <name>Ind_and_Non_Ind_Building_Street_Name_Des</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Building Street Name --></errorMessage>
+        <name>Ind_and_Non_Ind_Building_Street_Name_Off</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Channel --></errorMessage>
+        <name>Ind_and_Non_Ind_Channel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter City --></errorMessage>
+        <name>Ind_and_Non_Ind_City_Destination</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter City --></errorMessage>
+        <name>Ind_and_Non_Ind_City_Mailing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter City --></errorMessage>
+        <name>Ind_and_Non_Ind_City_Office</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Company name --></errorMessage>
+        <name>Ind_and_Non_Ind_Company_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Customer Type --></errorMessage>
+        <name>Ind_and_Non_Ind_Customer_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter DSA/ Connector / Broker --></errorMessage>
+        <name>Ind_and_Non_Ind_DSA_Connector_Broker</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter District --></errorMessage>
+        <name>Ind_and_Non_Ind_District_Destination</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter District --></errorMessage>
+        <name>Ind_and_Non_Ind_District_Mailing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter District --></errorMessage>
+        <name>Ind_and_Non_Ind_District_Office</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Flat House Number --></errorMessage>
+        <name>Ind_and_Non_Ind_Flat_House_No_Mailing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Flat House Number --></errorMessage>
+        <name>Ind_and_Non_Ind_Flat_House_No_Office</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Nature of Loan --></errorMessage>
+        <name>Ind_and_Non_Ind_Nature_of_Loan</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Occupancy Status --></errorMessage>
+        <name>Ind_and_Non_Ind_Occupancy_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Pincode --></errorMessage>
+        <name>Ind_and_Non_Ind_Pincode_Destination</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Pincode --></errorMessage>
+        <name>Ind_and_Non_Ind_Pincode_Mailing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Pincode --></errorMessage>
+        <name>Ind_and_Non_Ind_Pincode_Office</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Product --></errorMessage>
+        <name>Ind_and_Non_Ind_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Purpose --></errorMessage>
+        <name>Ind_and_Non_Ind_Purpose</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Rate Of Interest --></errorMessage>
+        <name>Ind_and_Non_Ind_Rate_Of_Interest</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Scheme --></errorMessage>
+        <name>Ind_and_Non_Ind_Scheme</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Segment --></errorMessage>
+        <name>Ind_and_Non_Ind_Segment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Service Location --></errorMessage>
+        <name>Ind_and_Non_Ind_Service_Location</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Sourcing Location --></errorMessage>
+        <name>Ind_and_Non_Ind_Sourcing_Location</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Sourcing Team --></errorMessage>
+        <name>Ind_and_Non_Ind_Sourcing_Team</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter State --></errorMessage>
+        <name>Ind_and_Non_Ind_State_Destination</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter State --></errorMessage>
+        <name>Ind_and_Non_Ind_State_Mailing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter State --></errorMessage>
+        <name>Ind_and_Non_Ind_State_Office</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Sub Channel Type --></errorMessage>
+        <name>Ind_and_Non_Ind_Sub_Channel_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Tenure In Months --></errorMessage>
+        <name>Ind_and_Non_Ind_Tenure_In_Months</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter No. of years At Current Address --></errorMessage>
+        <name>Ind_and_Non_Ind_Time_At_Address_In_Years</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Loan Amount --></errorMessage>
+        <name>Ind_and_Non_Ind_loan_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter  Email --></errorMessage>
+        <name>Ind_and_Non_ind_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Flat House Number --></errorMessage>
+        <name>Ind_and_Non_ind_Flat_House_Number_Destin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot select more than one Mailing Address checkbox. --></errorMessage>
+        <name>Mailing_Address_Selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter the 10 Digit Mobile No. --></errorMessage>
+        <name>Mobile_No_length_to_be_10</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Company Type --></errorMessage>
+        <name>Non_Ind_Company_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Constitution --></errorMessage>
+        <name>Non_Ind_Constitution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Date of Incorporation --></errorMessage>
+        <name>Non_Ind_Date_of_Incorporation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Name with only &quot;&amp;&quot; Special characters --></errorMessage>
+        <name>Non_Ind_Name_Special_char_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter No of Years in Business --></errorMessage>
+        <name>Non_Ind_No_of_Years_in_Business</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot select more than one OVD Address checkbox. --></errorMessage>
+        <name>OVD_Adress_Selection</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Please provide a Sub Status --></errorMessage>
         <name>Other_Sub_Status_Required</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please enter PAN Number --></errorMessage>
-        <name>PAN_No_Mandatory</name>
+        <errorMessage><!-- Total Length of PAN Card should be 10 Character (Alpha numeric) --></errorMessage>
+        <name>PAN_CARD_10_character_alphanumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Non Individual 5th digit of PAN Card should match name of the Company. --></errorMessage>
+        <name>Pan_Card_5th_digit_validatio_NonInd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Individual 5th digit of PAN Card should match with Surname of the Applicant. --></errorMessage>
+        <name>Pan_Card_5th_digit_validation_individual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You Can not Fill Pan Card. --></errorMessage>
+        <name>Pan_Card_Validation_on_Form_60_Selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pan Card Field Should be blank --></errorMessage>
+        <name>Pan_card_not_required_for_Ind</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please enter Type of Cross sell --></errorMessage>
         <name>Type_of_Cross_Sell_Required</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- First Five characters of PAN Card should be alphabet character.
+6th to 9th characters of PAN Card should be numeric digit.
+The last digit of PAN Card should be alphabet character --></errorMessage>
+        <name>Validations_for_PAN_Card_no</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First 2 characters should be numeric.
+From 3rd character to 12th Character (both inclusive) should match with PAN of the main applicant.
+13th Character should be numeric.
+14th Character should be alphabet: “Z” . --></errorMessage>
+        <name>Validations_on_GST_No</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- Please provide Deviation Reason --></errorMessage>
         <name>With_Deviation_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Mailing Address or Destination Address can be checked --></errorMessage>
+        <name>non_mailing_add_dens_addrss_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only OVD Address can be checked --></errorMessage>
+        <name>non_mailing_office_Adddress_OVD_check</name>
     </validationRules>
     <webLinks>
         <label><!-- GoogleMaps --></label>

@@ -3,7 +3,7 @@
         <center>
          <apex:pageBlock id="out" rendered="{!feedbackcheck!='True'}">
              <apex:OutputText rendered="{!feedbackcheck !='True'}" style="font-weight:bold;font-size:large">
-                  <strong style="font-size:1.5vw;">Please provide your rating</strong>
+                  <strong style="font-size:1.5vw;">ON A SCALE OF 1-5,HOW WOULD YOU RATE OUR MEETING</strong>
                     <strong></strong>
                  </apex:OutputText> 
                                 
@@ -72,7 +72,7 @@
 }
 </style>
 <apex:outputPanel styleClass="star-rating">  
-        <div style="text-align: center">{!if(isnull(rating),'No value selected',text(rating)&' stars')}<br/>
+        <div style="text-align: center">{!if(isnull(rating),'',text(rating) & 'stars')}<br/>
          <apex:selectRadio value="{!rating}" layout="lineDirection">
          <apex:actionSupport event="onclick" reRender="form" />
             <apex:selectOption itemValue="1"></apex:selectOption>
@@ -83,24 +83,24 @@
         </apex:selectRadio>
         </div> 
       <apex:outputText rendered="{!feedbackcheck !='True'}">
-           <p><br /><span style="color: #ff0000;">*</span>On a scale of 1-5, how would you rate our Meeting-:<br />1-Poor &nbsp;2&ndash;Fair 3&ndash;Average&nbsp;4&ndash;Good 5&ndash;Excellent</p></apex:outputText>
+          <h4><br /><strong style="font-size:1.0vw;"><span style="color: #ff0000;">*</span>1-Poor &nbsp;2&ndash;Fair 3&ndash;Average&nbsp;4&ndash;Good 5&ndash;Excellent</strong></h4></apex:outputText>
 </apex:outputPanel> 
                    
         </apex:pageBlock>
              <apex:outputPanel layout="block" html-align="center">
-               <apex:commandButton value="SUBMIT" action="{!save}"  id="start_button" rendered="{!feedbackcheck!='True'}"/>
+               <apex:commandButton value="SUBMIT" style="font-size:1.2vw;" action="{!save}"  id="start_button" rendered="{!feedbackcheck!='True'}"/>
             </apex:outputPanel>
             <center>
          <apex:outputText rendered="{!feedbackcheck=='True' && response=='False' }" style="font-weight:bold;font-size:large">
              <p align="center">
-                    <strong style="font-size:1.5vw;">Thank you for your Rating </strong>
+                    <strong style="font-size:1.5vw;">THANK YOU FOR YOUR FEEDBACK </strong>
                     <strong></strong>
                 </p>
          
           </apex:outputText>
                 <apex:outputText rendered="{!response=='True' && feedbackcheck=='True'}" style="font-weight:bold;font-size:large">
              <p align="center">
-                    <strong style="font-size:1.5vw;">Thank you. The rating is already captured. </strong>
+                    <strong style="font-size:1.5vw;">THANK YOU. FEEDBACK IS ALREADY REGISTERED </strong>
                     <strong></strong>
                 </p>
          

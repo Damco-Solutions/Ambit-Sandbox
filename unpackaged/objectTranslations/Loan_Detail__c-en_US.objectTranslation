@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Loan Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Loan Detail</value>
+    </caseValues>
+    <fields>
+        <label><!-- UNIQUE_REQUEST_ID --></label>
+        <name>UNIQUE_REQUEST_ID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

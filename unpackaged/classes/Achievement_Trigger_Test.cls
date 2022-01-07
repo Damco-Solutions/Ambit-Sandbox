@@ -1,5 +1,6 @@
 @istest
 public class Achievement_Trigger_Test {
+    
     public static testmethod void test1(){
         
         Profile p = [SELECT Id FROM Profile WHERE Name='System Administrator'];
@@ -14,7 +15,8 @@ public class Achievement_Trigger_Test {
         ac.Lead_Generation_Achieved__c=5;
         ac.No_of_Files_Logged_In_Achieved__c=4;
         ac.User__c=u.id;
-        
+        ac.Month__c='November';
+        ac.Year__c='2021';
         insert ac;
         
         ac.Net_PF_Achieved__c=1.2;

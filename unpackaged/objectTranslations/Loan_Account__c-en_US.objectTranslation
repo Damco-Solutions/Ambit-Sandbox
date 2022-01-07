@@ -17,6 +17,10 @@
         <name>Agent_Name__c</name>
     </fields>
     <fields>
+        <label><!-- Applicant Code --></label>
+        <name>Applicant_Code__c</name>
+    </fields>
+    <fields>
         <label><!-- Applicant Contact Number 1 --></label>
         <name>Applicant_Contact_Number_1__c</name>
     </fields>
@@ -34,13 +38,54 @@
         <relationshipLabel><!-- Loan Accounts (Lead) --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Applied Loan Amount --></label>
+        <name>Applied_Loan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved ROI --></label>
+        <name>Approved_ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Loan Accounts (Branch) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Constitution --></label>
+        <name>Constitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Stage --></label>
+        <name>Current_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Individual</masterLabel>
+            <translation><!-- Non Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- DPD --></label>
         <name>DPD__c</name>
     </fields>
     <fields>
-        <label><!-- DSA/Connector --></label>
+        <label><!-- DSA/Connector/Broker --></label>
         <name>DSA_Connector__c</name>
         <relationshipLabel><!-- Loan Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data Entry End Date --></label>
+        <name>Data_Entry_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Entry Start Date --></label>
+        <name>Data_Entry_Start_Date__c</name>
     </fields>
     <fields>
         <label><!-- Disbursal Amount --></label>
@@ -59,6 +104,14 @@
         <name>Eligible_for_Top_Up_loan__c</name>
     </fields>
     <fields>
+        <label><!-- FCU End Date --></label>
+        <name>FCU_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FCU Start Date --></label>
+        <name>FCU_Start_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- FI Inititation Date --></label>
         <name>FI_Inititation_Date__c</name>
     </fields>
@@ -75,7 +128,7 @@
         <name>Final_Decision_Date__c</name>
     </fields>
     <fields>
-        <label><!-- Final Decision Status --></label>
+        <label><!-- Final Decision --></label>
         <name>Final_Decision_Status__c</name>
     </fields>
     <fields>
@@ -83,12 +136,20 @@
         <name>First_EMI_Date__c</name>
     </fields>
     <fields>
-        <label><!-- IMD Deposit Date --></label>
-        <name>IMD_Deposit_Date__c</name>
+        <label><!-- IMD Amount --></label>
+        <name>IMD_Amount__c</name>
     </fields>
     <fields>
-        <label><!-- IMD Status Date --></label>
-        <name>IMD_Status_Date__c</name>
+        <label><!-- IMD Clearance Date --></label>
+        <name>IMD_Clearance_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMD Presentation Date --></label>
+        <name>IMD_Presentation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMD STATUS --></label>
+        <name>IMD_STATUS__c</name>
     </fields>
     <fields>
         <label><!-- In Principle Go-No-Go Date --></label>
@@ -101,6 +162,10 @@
     <fields>
         <label><!-- Installment Amount --></label>
         <name>Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Frequency --></label>
+        <name>Installment_Frequency__c</name>
     </fields>
     <fields>
         <label><!-- Insurance Amount --></label>
@@ -147,12 +212,28 @@
         <name>Legal_2_Report_Status__c</name>
     </fields>
     <fields>
+        <label><!-- Legal Completion Date --></label>
+        <name>Legal_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Start Date --></label>
+        <name>Legal_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Status --></label>
+        <name>Legal_Status__c</name>
+    </fields>
+    <fields>
         <label><!-- Loan Account Number --></label>
         <name>Loan_Account_Number__c</name>
     </fields>
     <fields>
         <label><!-- Login Date --></label>
         <name>Login_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Id --></label>
+        <name>Manager_Id__c</name>
     </fields>
     <fields>
         <label><!-- Maturity Date --></label>
@@ -195,6 +276,10 @@
         <name>PROPERTY_ADDRESS_IN_CASE_OF_LAP__c</name>
     </fields>
     <fields>
+        <label><!-- Pending With --></label>
+        <name>Pending_With__c</name>
+    </fields>
+    <fields>
         <label><!-- Post PD Completion Date --></label>
         <name>Post_PD_Completion_Date__c</name>
     </fields>
@@ -207,8 +292,28 @@
         <name>Principal_Outstanding__c</name>
     </fields>
     <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed ROI --></label>
+        <name>Proposed_ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Code --></label>
+        <name>Prospect_Code__c</name>
+    </fields>
+    <fields>
         <label><!-- Prospect ID --></label>
         <name>Prospect_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- QC End Date --></label>
+        <name>QC_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- QC Start Date --></label>
+        <name>QC_Start_Date__c</name>
     </fields>
     <fields>
         <label><!-- RCU Inititation Date --></label>
@@ -247,8 +352,16 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Reject Reason --></label>
+        <name>Reject_Reason__c</name>
+    </fields>
+    <fields>
         <label><!-- Reject Remarks --></label>
         <name>Reject_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks If any --></label>
+        <name>Remark_If_any__c</name>
     </fields>
     <fields>
         <label><!-- Residence Address --></label>
@@ -355,6 +468,26 @@
         <name>Technical_3_Report_Status__c</name>
     </fields>
     <fields>
+        <label><!-- Technical Completion Date --></label>
+        <name>Technical_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Start Date --></label>
+        <name>Technical_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Status --></label>
+        <name>Technical_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Underwriting End Date --></label>
+        <name>Underwriting_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Underwriting Start Date --></label>
+        <name>Underwriting_Start_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- User --></label>
         <name>User__c</name>
         <relationshipLabel><!-- Loan Accounts --></relationshipLabel>
@@ -394,6 +527,22 @@
             <section>Custom Links</section>
         </sections>
         <sections>
+            <label><!-- FCU Status --></label>
+            <section>FCU Status</section>
+        </sections>
+        <sections>
+            <label><!-- FI Status --></label>
+            <section>FI Status</section>
+        </sections>
+        <sections>
+            <label><!-- IMD Details --></label>
+            <section>IMD Details</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Status --></label>
+            <section>Legal Status</section>
+        </sections>
+        <sections>
             <label><!-- Post Sanction Details --></label>
             <section>Post Sanction Details</section>
         </sections>
@@ -402,10 +551,26 @@
             <section>Pre Sanction Details</section>
         </sections>
         <sections>
+            <label><!-- Technical Status --></label>
+            <section>Technical Status</section>
+        </sections>
+        <sections>
             <label><!-- Top-up Loan Eligibility --></label>
             <section>Top-up Loan Eligibility</section>
         </sections>
+        <sections>
+            <label><!-- Underwriting Status --></label>
+            <section>Underwriting Status</section>
+        </sections>
     </layouts>
+    <quickActions>
+        <label><!-- Fetch From LOS --></label>
+        <name>Fetch_From_LOS</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Get Loan Detail --></label>
+        <name>Get_Loan_Detail</name>
+    </quickActions>
     <sharingReasons>
         <label><!-- sharing  record with above role --></label>
         <name>sharing_record_with_above_role</name>

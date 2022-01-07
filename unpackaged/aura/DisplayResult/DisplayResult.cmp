@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global">
+    <aura:attribute name="Get_Result" type="string" default="test" />
+    <aura:handler event="c:Result" action="{!c.getValueFromApplicationEvent}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.getValueFromApplicationEvent}" />
+     <ui:button label="Sum" press="{!c.Add}"/>
+    The result is {!v.Get_Result}
+</aura:component>
